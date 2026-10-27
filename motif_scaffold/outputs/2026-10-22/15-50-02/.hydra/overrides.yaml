@@ -1,0 +1,8 @@
+- inference.input_pdb=/scratch/users/bvbell/xlink/motif_scaffold/inputs/9pi9_motif_H3L3.pdb
+- inference.output_prefix=/scratch/users/bvbell/xlink/motif_scaffold/runs/smoke/smoke
+- inference.ckpt_override_path=/home/groups/possu/RFdiffusion/models/Complex_base_ckpt.pt
+- contigmap.contigs=[E175-251/0 2-4/A101-107/2-6/B91-95/1-3]
+- ppi.hotspot_res=[E183,E239,E243,E245]
+- inference.num_designs=1
+- denoiser.noise_scale_ca=0
+- denoiser.noise_scale_frame=0

@@ -1,13 +1,24 @@
-# run data: large, regenerable, or machine-specific
-*/output/
-*/inputs/
-*/logs/
-*/tasks/
-*/fab_complete/
-*/interim_complete/
-*/timing/
-*_clean.pdb
+# Run data: too large for git, or regenerable. NOTE: $SCRATCH purges files untouched
+# for 90 days and holds the only copy of everything listed here.
+flexddg/*/output/
+flexddg/*/inputs/
+flexddg/*/logs/
+flexddg/*/tasks/
+flexddg/*/fab_complete/
+flexddg/*/interim_complete/
+flexddg/*/timing/
+flexddg/*/*_clean.pdb
+motif_scaffold/runs/
+motif_scaffold/runs_prod/
+motif_scaffold/logs/
+
+# Upstream clone of Kortemme-Lab/flex_ddG_tutorial; its files used here are in flexddg/flexddg/
+flex_ddG_tutorial/
+
+# Superseded by flexddg/flexddg/; still read by CLDN array job 49679178, delete once it finishes
+flexddg/pipeline/
+
+# Machine-local
+.claude/
 *.tmp
 __pycache__/
-# superseded by flexddg/; still read by CLDN array job 49679178, delete after it finishes
-pipeline/
