@@ -1,0 +1,282 @@
+== A_N31A
+E
+NATAA
+start
+31 A PIKAA A
+9pi9_clean.pdb
+== A_Y32A
+E
+NATAA
+start
+32 A PIKAA A
+9pi9_clean.pdb
+== A_D62A
+E
+NATAA
+start
+62 A PIKAA A
+9pi9_clean.pdb
+== A_F101A
+E
+NATAA
+start
+101 A PIKAA A
+9pi9_clean.pdb
+== A_S103A
+E
+NATAA
+start
+103 A PIKAA A
+9pi9_clean.pdb
+== A_S104A
+E
+NATAA
+start
+104 A PIKAA A
+9pi9_clean.pdb
+== A_Y105A
+E
+NATAA
+start
+105 A PIKAA A
+9pi9_clean.pdb
+== A_W106A
+E
+NATAA
+start
+106 A PIKAA A
+9pi9_clean.pdb
+== A_Y107A
+E
+NATAA
+start
+107 A PIKAA A
+9pi9_clean.pdb
+== B_D1A
+E
+NATAA
+start
+1 B PIKAA A
+9pi9_clean.pdb
+== B_I2A
+E
+NATAA
+start
+2 B PIKAA A
+9pi9_clean.pdb
+== B_Q27A
+E
+NATAA
+start
+27 B PIKAA A
+9pi9_clean.pdb
+== B_D28A
+E
+NATAA
+start
+28 B PIKAA A
+9pi9_clean.pdb
+== B_V29A
+E
+NATAA
+start
+29 B PIKAA A
+9pi9_clean.pdb
+== B_S30A
+E
+NATAA
+start
+30 B PIKAA A
+9pi9_clean.pdb
+== B_I31A
+E
+NATAA
+start
+31 B PIKAA A
+9pi9_clean.pdb
+== B_Y49A
+E
+NATAA
+start
+49 B PIKAA A
+9pi9_clean.pdb
+== B_S50A
+E
+NATAA
+start
+50 B PIKAA A
+9pi9_clean.pdb
+== B_Y53A
+E
+NATAA
+start
+53 B PIKAA A
+9pi9_clean.pdb
+== B_S67A
+E
+NATAA
+start
+67 B PIKAA A
+9pi9_clean.pdb
+== B_H91A
+E
+NATAA
+start
+91 B PIKAA A
+9pi9_clean.pdb
+== B_Y92A
+E
+NATAA
+start
+92 B PIKAA A
+9pi9_clean.pdb
+== B_I93A
+E
+NATAA
+start
+93 B PIKAA A
+9pi9_clean.pdb
+== B_T94A
+E
+NATAA
+start
+94 B PIKAA A
+9pi9_clean.pdb
+== B_P95A
+E
+NATAA
+start
+95 B PIKAA A
+9pi9_clean.pdb
+== E_D32A
+E
+NATAA
+start
+32 E PIKAA A
+9pi9_clean.pdb
+== E_T35A
+E
+NATAA
+start
+35 E PIKAA A
+9pi9_clean.pdb
+== E_P37A
+E
+NATAA
+start
+37 E PIKAA A
+9pi9_clean.pdb
+== E_T38A
+E
+NATAA
+start
+38 E PIKAA A
+9pi9_clean.pdb
+== E_S67A
+E
+NATAA
+start
+67 E PIKAA A
+9pi9_clean.pdb
+== E_E175A
+E
+NATAA
+start
+175 E PIKAA A
+9pi9_clean.pdb
+== E_R177A
+E
+NATAA
+start
+177 E PIKAA A
+9pi9_clean.pdb
+== E_R178A
+E
+NATAA
+start
+178 E PIKAA A
+9pi9_clean.pdb
+== E_L179A
+E
+NATAA
+start
+179 E PIKAA A
+9pi9_clean.pdb
+== E_R181A
+E
+NATAA
+start
+181 E PIKAA A
+9pi9_clean.pdb
+== E_E182A
+E
+NATAA
+start
+182 E PIKAA A
+9pi9_clean.pdb
+== E_R183A
+E
+NATAA
+start
+183 E PIKAA A
+9pi9_clean.pdb
+== E_R185A
+E
+NATAA
+start
+185 E PIKAA A
+9pi9_clean.pdb
+== E_Q237A
+E
+NATAA
+start
+237 E PIKAA A
+9pi9_clean.pdb
+== E_R239A
+E
+NATAA
+start
+239 E PIKAA A
+9pi9_clean.pdb
+== E_L242A
+E
+NATAA
+start
+242 E PIKAA A
+9pi9_clean.pdb
+== E_D243A
+E
+NATAA
+start
+243 E PIKAA A
+9pi9_clean.pdb
+== E_L244A
+E
+NATAA
+start
+244 E PIKAA A
+9pi9_clean.pdb
+== E_R245A
+E
+NATAA
+start
+245 E PIKAA A
+9pi9_clean.pdb
+== E_R247A
+E
+NATAA
+start
+247 E PIKAA A
+9pi9_clean.pdb
+== E_E249A
+E
+NATAA
+start
+249 E PIKAA A
+9pi9_clean.pdb
+== E_P250A
+E
+NATAA
+start
+250 E PIKAA A
+9pi9_clean.pdb

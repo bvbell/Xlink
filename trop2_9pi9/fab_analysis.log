@@ -1,0 +1,75 @@
+mut_dG
+score_type_name  backrub_steps case_name  ...  scored_state total_score
+0                        35000   A_W106A  ...        mut_dG   -32.07395
+0                        35000   A_W106A  ...        mut_dG   -33.94708
+0                        35000   A_W106A  ...        mut_dG   -33.77821
+0                        35000   A_W106A  ...        mut_dG   -34.01193
+0                        35000    B_V29A  ...        mut_dG   -35.92777
+0                        35000    B_V29A  ...        mut_dG   -36.21431
+0                        35000    B_V29A  ...        mut_dG   -36.10207
+0                        35000    B_V29A  ...        mut_dG   -36.01781
+0                        35000    B_P95A  ...        mut_dG   -37.11668
+0                        35000    B_P95A  ...        mut_dG   -36.70319
+0                        35000    B_P95A  ...        mut_dG   -36.57023
+0                        35000    B_P95A  ...        mut_dG   -36.50613
+0                        35000    B_H91A  ...        mut_dG   -37.17788
+0                        35000    B_H91A  ...        mut_dG   -37.50857
+0                        35000    B_H91A  ...        mut_dG   -37.13404
+0                        35000    B_H91A  ...        mut_dG   -37.16156
+0                        35000     B_I2A  ...        mut_dG   -35.78828
+0                        35000     B_I2A  ...        mut_dG   -35.04468
+0                        35000     B_I2A  ...        mut_dG   -35.18505
+0                        35000     B_I2A  ...        mut_dG   -35.43879
+
+[20 rows x 6 columns]
+
+wt_dG
+score_type_name  backrub_steps case_name  ...  scored_state total_score
+0                        35000   A_W106A  ...         wt_dG   -33.54024
+0                        35000   A_W106A  ...         wt_dG   -35.30385
+0                        35000   A_W106A  ...         wt_dG   -35.09734
+0                        35000   A_W106A  ...         wt_dG   -35.35295
+0                        35000    B_V29A  ...         wt_dG   -35.95449
+0                        35000    B_V29A  ...         wt_dG   -36.36952
+0                        35000    B_V29A  ...         wt_dG   -36.14921
+0                        35000    B_V29A  ...         wt_dG   -36.08555
+0                        35000    B_P95A  ...         wt_dG   -36.98218
+0                        35000    B_P95A  ...         wt_dG   -36.22913
+0                        35000    B_P95A  ...         wt_dG   -36.18583
+0                        35000    B_P95A  ...         wt_dG   -36.15003
+0                        35000    B_H91A  ...         wt_dG   -37.19586
+0                        35000    B_H91A  ...         wt_dG   -37.46873
+0                        35000    B_H91A  ...         wt_dG   -37.13491
+0                        35000    B_H91A  ...         wt_dG   -37.17052
+0                        35000     B_I2A  ...         wt_dG   -35.88145
+0                        35000     B_I2A  ...         wt_dG   -35.17670
+0                        35000     B_I2A  ...         wt_dG   -35.21088
+0                        35000     B_I2A  ...         wt_dG   -35.42273
+
+[20 rows x 6 columns]
+
+ddG
+score_type_name  backrub_steps case_name  ...  scored_state total_score
+0                        35000   A_W106A  ...           ddG    1.466290
+0                        35000   A_W106A  ...           ddG    1.356770
+0                        35000   A_W106A  ...           ddG    1.319130
+0                        35000   A_W106A  ...           ddG    1.341010
+0                        35000   A_W106A  ...           ddG    1.504751
+0                        35000   A_W106A  ...           ddG    1.404730
+0                        35000   A_W106A  ...           ddG    1.443748
+0                        35000   A_W106A  ...           ddG    1.471095
+0                        35000    B_V29A  ...           ddG    0.026720
+0                        35000    B_V29A  ...           ddG    0.155210
+0                        35000    B_V29A  ...           ddG    0.047140
+0                        35000    B_V29A  ...           ddG    0.067740
+0                        35000    B_V29A  ...           ddG    0.113989
+0                        35000    B_V29A  ...           ddG    0.148710
+0                        35000    B_V29A  ...           ddG    0.061989
+0                        35000    B_V29A  ...           ddG    0.072072
+0                        35000    B_P95A  ...           ddG   -0.134500
+0                        35000    B_P95A  ...           ddG   -0.474050
+0                        35000    B_P95A  ...           ddG   -0.384410
+0                        35000    B_P95A  ...           ddG   -0.356110
+
+[20 rows x 6 columns]
+

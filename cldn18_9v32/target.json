@@ -1,0 +1,6 @@
+{"title": "CLDN18.2 (9v32)",
+ "pdb": "../../9v32_complex.pdb",
+ "groups": {"fab": ["H", "L"], "antigen": ["A"]},
+ "move": "antigen",
+ "chain_labels": {"H": "Heavy chain", "L": "Light chain", "A": "CLDN18.2"},
+ "scan": {"side": ["fab"]}}

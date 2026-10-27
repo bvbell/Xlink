@@ -1,0 +1,33 @@
+interface residues (<5.0 A heavy atom): 33
+skipped (Ala/Gly/PCA/disulfide Cys): H102GLY L33GLY A42ALA A59GLY
+to scan: 29
+  H   33 TRP  3.3 A
+  H   99 SER  3.3 A
+  H  100 TRP  3.8 A
+  H  101 ARG  3.5 A
+  H  103 ASN  3.4 A
+  L   31 ASN  3.0 A
+  L   32 SER  4.0 A
+  L   34 ASN  4.3 A
+  L   36 LYS  3.7 A
+  L   38 TYR  3.5 A
+  L   56 TRP  3.2 A
+  L   97 ASP  3.8 A
+  L   98 TYR  3.2 A
+  L   99 SER  3.0 A
+  L  100 TYR  2.3 A
+  L  102 PHE  4.6 A
+  A   39 PRO  4.8 A
+  A   40 VAL  3.0 A
+  A   41 THR  3.6 A
+  A   43 VAL  3.5 A
+  A   45 ASN  3.0 A
+  A   54 VAL  4.3 A
+  A   56 GLU  3.1 A
+  A   57 SER  2.3 A
+  A   58 SER  3.3 A
+  A   60 PHE  3.5 A
+  A   62 GLU  3.5 A
+  A  167 THR  4.0 A
+  A  169 TYR  4.2 A
+29 mutations, 16 on the Fab

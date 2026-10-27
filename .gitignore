@@ -1,0 +1,13 @@
+# run data: large, regenerable, or machine-specific
+*/output/
+*/inputs/
+*/logs/
+*/tasks/
+*/fab_complete/
+*/interim_complete/
+*/timing/
+*_clean.pdb
+*.tmp
+__pycache__/
+# superseded by flexddg/; still read by CLDN array job 49679178, delete after it finishes
+pipeline/

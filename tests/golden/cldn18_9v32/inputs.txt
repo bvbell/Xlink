@@ -1,0 +1,174 @@
+== H_W33A
+A
+NATAA
+start
+33 H PIKAA A
+9v32_clean.pdb
+== H_S99A
+A
+NATAA
+start
+99 H PIKAA A
+9v32_clean.pdb
+== H_W100A
+A
+NATAA
+start
+100 H PIKAA A
+9v32_clean.pdb
+== H_R101A
+A
+NATAA
+start
+101 H PIKAA A
+9v32_clean.pdb
+== H_N103A
+A
+NATAA
+start
+103 H PIKAA A
+9v32_clean.pdb
+== L_N31A
+A
+NATAA
+start
+31 L PIKAA A
+9v32_clean.pdb
+== L_S32A
+A
+NATAA
+start
+32 L PIKAA A
+9v32_clean.pdb
+== L_N34A
+A
+NATAA
+start
+34 L PIKAA A
+9v32_clean.pdb
+== L_K36A
+A
+NATAA
+start
+36 L PIKAA A
+9v32_clean.pdb
+== L_Y38A
+A
+NATAA
+start
+38 L PIKAA A
+9v32_clean.pdb
+== L_W56A
+A
+NATAA
+start
+56 L PIKAA A
+9v32_clean.pdb
+== L_D97A
+A
+NATAA
+start
+97 L PIKAA A
+9v32_clean.pdb
+== L_Y98A
+A
+NATAA
+start
+98 L PIKAA A
+9v32_clean.pdb
+== L_S99A
+A
+NATAA
+start
+99 L PIKAA A
+9v32_clean.pdb
+== L_Y100A
+A
+NATAA
+start
+100 L PIKAA A
+9v32_clean.pdb
+== L_F102A
+A
+NATAA
+start
+102 L PIKAA A
+9v32_clean.pdb
+== A_P39A
+A
+NATAA
+start
+39 A PIKAA A
+9v32_clean.pdb
+== A_V40A
+A
+NATAA
+start
+40 A PIKAA A
+9v32_clean.pdb
+== A_T41A
+A
+NATAA
+start
+41 A PIKAA A
+9v32_clean.pdb
+== A_V43A
+A
+NATAA
+start
+43 A PIKAA A
+9v32_clean.pdb
+== A_N45A
+A
+NATAA
+start
+45 A PIKAA A
+9v32_clean.pdb
+== A_V54A
+A
+NATAA
+start
+54 A PIKAA A
+9v32_clean.pdb
+== A_E56A
+A
+NATAA
+start
+56 A PIKAA A
+9v32_clean.pdb
+== A_S57A
+A
+NATAA
+start
+57 A PIKAA A
+9v32_clean.pdb
+== A_S58A
+A
+NATAA
+start
+58 A PIKAA A
+9v32_clean.pdb
+== A_F60A
+A
+NATAA
+start
+60 A PIKAA A
+9v32_clean.pdb
+== A_E62A
+A
+NATAA
+start
+62 A PIKAA A
+9v32_clean.pdb
+== A_T167A
+A
+NATAA
+start
+167 A PIKAA A
+9v32_clean.pdb
+== A_Y169A
+A
+NATAA
+start
+169 A PIKAA A
+9v32_clean.pdb

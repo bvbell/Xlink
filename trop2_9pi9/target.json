@@ -1,0 +1,6 @@
+{"title": "TROP2 (9pi9)",
+ "pdb": "../../9pi9_complex.pdb",
+ "groups": {"fab": ["A", "B"], "antigen": ["E"]},
+ "move": "antigen",
+ "chain_labels": {"A": "Heavy chain", "B": "Light chain", "E": "TROP2"},
+ "scan": {"side": ["fab"]}}
