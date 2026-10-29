@@ -1,0 +1,6 @@
+{"title": "mu-opioid receptor + nanobody (Coot model)",
+ "pdb": "../../uor_complex.pdb",
+ "groups": {"nanobody": ["A"], "receptor": ["B"]},
+ "move": "receptor",
+ "chain_labels": {"A": "Nanobody", "B": "mu-opioid receptor"},
+ "scan": {"side": ["nanobody"]}}

@@ -1,0 +1,27 @@
+interface residues (<5.0 A heavy atom): 57
+skipped (ALA/GLY/PCA/disulfide): A29ALA B152CYS
+to scan (nanobody side): 23
+  A   30 GLN  2.6 A
+  A   31 TYR  4.3 A
+  A   32 LEU  2.7 A
+  A   33 TRP  3.8 A
+  A   37 TYR  2.6 A
+  A   47 LEU  4.1 A
+  A   52 TYR  4.1 A
+  A   53 SER  2.7 A
+  A   54 GLU  2.9 A
+  A   56 LYS  3.2 A
+  A   96 LEU  4.3 A
+  A   98 VAL  2.7 A
+  A  100 VAL  2.9 A
+  A  101 SER  4.2 A
+  A  102 TYR  2.5 A
+  A  103 ASN  2.9 A
+  A  104 PHE  3.4 A
+  A  105 PHE  3.3 A
+  A  106 PHE  2.9 A
+  A  107 ARG  3.3 A
+  A  108 SER  3.8 A
+  A  109 TYR  3.8 A
+  A  111 GLU  2.3 A
+23 mutations: 23 in mutations_nanobody.txt

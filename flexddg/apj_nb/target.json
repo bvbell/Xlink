@@ -1,0 +1,7 @@
+{"title": "APJ (5VBL rubredoxin chimera) + d006 nanobody, AF3 model",
+ "pdb": "../../apj_complex.pdb",
+ "groups": {"nanobody": ["A"], "receptor": ["B"]},
+ "move": "receptor",
+ "chain_labels": {"A": "d006 nanobody", "B": "APJ"},
+ "scan": {"side": ["nanobody"]},
+ "slurm": {"time": "06:00:00"}}
