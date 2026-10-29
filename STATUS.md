@@ -73,11 +73,20 @@ cd cyclize && python3 tests/test_cyclize.py      # ~2 s, no Rosetta, confirms th
 
 ## Repo hygiene
 
-Everything is in `$SCRATCH`, purged at 90 days of no modification. Nothing here is a sole copy of
-anything that matters -- but the working tree has a lot of uncommitted content: `cyclize/`,
-`apj_scaffolds/`, `uOR_scaffolds/`, `flexddg/{apj_nb,uor_nb,cldn6_9v32fab}/`, `prep/`, `scripts/`, and
-several loose PDB/CIF files at the root. Commit and push before relying on any of it. Copy final
-designs and summaries to `$GROUP_HOME` or Oak.
+Everything is in `$SCRATCH`, purged at 90 days of no modification, so the git remote
+(`git@github.com:bvbell/Xlink.git`) is the durable copy.
+
+Committed: the `cyclize` package and both target configs, the scaffolds, both complex PDBs, and the
+`apj_nb`/`uor_nb` alascan summaries and plots. The ~6 GB of trajectories under `*/output/` is
+gitignored and regenerable.
+
+Still uncommitted and worth a decision: `prep/`, `scripts/`, `flexddg/cldn6_9v32fab/`, and several
+loose PDB/CIF files at the repo root (`apj_complex.pdb` and `uor_complex.pdb` are now tracked, but
+`cldn6_9v32fab_complex.pdb`, `cldn6_9v32fab_relaxed_complex.pdb`, the Coot `Rosetta_9_real_trunc_*`
+model and `d006_lmpnn_fkd2_run7_af3 (1).cif` are not). `prep/` matters most: the two prep notes it
+holds are what the flexddg README points at for input provenance.
+
+Copy final designs and summaries to `$GROUP_HOME` or Oak.
 
 Rosetta: use `ml rosetta/3.14` for anything you run; `/home/groups/possu/Rosetta` is an older checkout
 kept for reading source, offline docs and integration tests.
