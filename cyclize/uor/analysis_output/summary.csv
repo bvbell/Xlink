@@ -1,12 +1,12 @@
 variant,scaffold,route,added,turn,nstruct,closed,closure_yield,passed,pass_rate_of_closed,best_motif_rmsd
 short__ssmut__CYS-CYS,short,ssmut,,,50,50,1.0,50,1.0,0.0
 short__amide__DALA-GLY,short,amide,DALA-GLY,I',50,50,1.0,46,0.92,0.0
-short__ssapp__DCYD-DCYD,short,ssapp,DCYS:disulfide-DCYS:disulfide,,50,50,1.0,44,0.88,0.02
+short__ssapp__DCYD-DCYD,short,ssapp,DCYS:disulfide-DCYS:disulfide,,50,50,1.0,45,0.9,0.02
 medium__amide__DPRO-PRO,medium,amide,DPRO-PRO,II',50,50,1.0,41,0.82,0.38
-short__ssapp__DCYD-CYD,short,ssapp,CYD-DCYS:disulfide,,50,50,1.0,40,0.8,0.02
 short__amide__DPRO-PRO,short,amide,DPRO-PRO,II',50,50,1.0,39,0.78,0.0
-short__ssapp__CYD-CYD,short,ssapp,CYD-CYD,,50,50,1.0,37,0.74,0.02
-short__ssapp__CYD-DCYD,short,ssapp,DCYS:disulfide-CYD,,50,50,1.0,36,0.72,0.02
+short__ssapp__DCYD-CYD,short,ssapp,CYD-DCYS:disulfide,,50,50,1.0,38,0.76,0.02
+short__ssapp__CYD-DCYD,short,ssapp,DCYS:disulfide-CYD,,50,50,1.0,37,0.74,0.02
+short__ssapp__CYD-CYD,short,ssapp,CYD-CYD,,50,50,1.0,34,0.68,0.02
 short__amide__GLY-GLY,short,amide,GLY-GLY,I'/II',50,50,1.0,31,0.62,0.01
 medium__amide__DALA-GLY,medium,amide,DALA-GLY,I',50,50,1.0,28,0.56,0.64
 short__amide__DPRO-GLY,short,amide,DPRO-GLY,II',50,50,1.0,27,0.54,0.0

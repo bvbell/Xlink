@@ -174,6 +174,15 @@ register **i + j = 209**; all six scaffolds are on-register and therefore even-l
   S-S distance and the yields across the fix. `scripts/rescore.py` reads PDBs as-is and never
   reproduced the artifact, so the rescored numbers were already clean.
 
+  **The reruns barely moved the yields**: apj `ssapp` 232 -> **240** passed of 600 closed, uOR
+  `ssapp` 197 -> **194**, uOR `ssmut` 50 -> **50**. So the validation filters (motif RMSD, seed phi,
+  clash) are insensitive to the artifact. That does not settle the geometry question -- those
+  filters are coarse, and a turn can shift well within them. Note also that the rerun drew
+  **different RNG seeds** (`run_task` seeds from position in the task file, and the rerun task file
+  holds only the disulfide variants), so pre-versus-post is two independent samples rather than a
+  paired comparison; a +-8/600 difference is within sampling noise. Distribution-level comparison
+  via `compare_prebug.py` is still valid; per-structure pairing is not.
+
   Whether the bug moved *geometry* as well as scores is an **inference, not yet a measurement**:
   phi(1) is fixed garbage that minimisation cannot touch, but psi(1) is real and free and residue 1
   sits in the GenKIC loop with backbone enabled in the relax MoveMap, so relax should have optimised

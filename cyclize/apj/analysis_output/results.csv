@@ -249,206 +249,206 @@ long__amide__GLY-GLY,long,amide,long_0047.pdb,0.6066244042071649,175.45282101491
 long__amide__GLY-GLY,long,amide,long_0048.pdb,0.5636432546613467,150.11250777791406,2.6824367664339874,G13,L156,True,
 long__amide__GLY-GLY,long,amide,long_0049.pdb,1.3094476416343348,177.35593759704707,3.9274223440118634,G13,L156,False,motif drifted 1.31 A (limit 1.00)
 long__amide__GLY-GLY,long,amide,long_0050.pdb,1.0797526156601953,-177.50442320326638,4.111580924476714,G13,L156,False,"motif drifted 1.08 A (limit 1.00); seeded residue 13 came out at phi -178, wrong handedness for a I'/II' turn"
-long__ssapp__CYD-CYD,long,ssapp,long_0001.pdb,1.4554764579764201,,3.2894636806687654,C14,L156,False,motif drifted 1.46 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0002.pdb,1.2780744749297879,,3.798846609278812,C14,L156,False,motif drifted 1.28 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0003.pdb,1.2047432068534467,,4.1974903332013165,C14,L156,False,motif drifted 1.20 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0004.pdb,1.104224207772797,,2.9542568870909434,C1,E157,False,motif drifted 1.10 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0005.pdb,1.486010447448522,,3.9588768073992306,C14,L156,False,motif drifted 1.49 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0006.pdb,1.6046693645045693,,3.6145192064217833,C14,L156,False,motif drifted 1.60 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0007.pdb,0.7737656172310422,,4.035814716022252,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0008.pdb,1.6007102526272072,,1.8618146401952054,C14,L156,False,motif drifted 1.60 A (limit 1.00); added residue C14 within 1.86 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-CYD,long,ssapp,long_0009.pdb,1.8991891553989988,,0.7564111375647832,C14,L156,False,motif drifted 1.90 A (limit 1.00); added residue C14 within 0.76 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-CYD,long,ssapp,long_0010.pdb,0.9854452724327212,,3.051348831322497,C1,E157,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0011.pdb,1.6554890249973688,,2.6061451386991568,C14,L156,False,motif drifted 1.66 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0012.pdb,0.8981308707786617,,4.494901451065575,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0013.pdb,1.3658309705361218,,1.9033834085322687,C14,L156,False,motif drifted 1.37 A (limit 1.00); added residue C14 within 1.90 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-CYD,long,ssapp,long_0014.pdb,0.794885690617507,,3.6960059165541828,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0015.pdb,1.4443031423295527,,3.8608673037897607,C1,E157,False,motif drifted 1.44 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0016.pdb,1.7404808355907617,,2.8647353639021604,C14,L156,False,motif drifted 1.74 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0017.pdb,1.5285997583346778,,3.067241287730022,C14,L156,False,motif drifted 1.53 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0018.pdb,1.4927768623888666,,3.444417447531841,C14,L156,False,motif drifted 1.49 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0019.pdb,0.9476513319389394,,4.42626531116471,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0020.pdb,1.0331832795727152,,3.373245283776172,C14,L156,False,motif drifted 1.03 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0021.pdb,1.0059018900726044,,4.082342859813113,C14,L156,False,motif drifted 1.01 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0022.pdb,0.946999859895311,,2.062887801695302,C14,L156,False,added residue C14 within 2.06 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-CYD,long,ssapp,long_0023.pdb,1.1742246770940123,,3.524908276307559,C1,E157,False,motif drifted 1.17 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0024.pdb,1.667719035247157,,2.815044631023248,C14,L156,False,motif drifted 1.67 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0025.pdb,1.6779469813797665,,0.9400398281019067,C14,L156,False,motif drifted 1.68 A (limit 1.00); added residue C14 within 0.94 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-CYD,long,ssapp,long_0026.pdb,1.5273623231620286,,3.383079992589269,C14,L156,False,motif drifted 1.53 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0027.pdb,1.2406710797538594,,3.6895837311468402,C1,E157,False,motif drifted 1.24 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0028.pdb,0.9592522473237086,,1.8232731274655134,C14,L156,False,added residue C14 within 1.82 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-CYD,long,ssapp,long_0029.pdb,1.4523775800079433,,3.44189522724529,C14,L156,False,motif drifted 1.45 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0030.pdb,0.7748932806445923,,4.537617451541051,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0031.pdb,1.2232368734880639,,3.95234216620688,C14,L156,False,motif drifted 1.22 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0032.pdb,1.5438550864612919,,2.965073930719042,C14,L156,False,motif drifted 1.54 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0033.pdb,1.1075821522114837,,3.7578325272092026,C14,L156,False,motif drifted 1.11 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0034.pdb,1.5232685234746954,,2.5249315622924895,C14,L156,False,motif drifted 1.52 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0035.pdb,0.9937517605279717,,4.006990896368254,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0036.pdb,0.7867994621669447,,2.9372401593485584,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0037.pdb,1.5778342155858633,,2.7596728746406307,C14,L156,False,motif drifted 1.58 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0038.pdb,1.25714578858555,,3.644137843747809,C14,L156,False,motif drifted 1.26 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0039.pdb,0.8356004617164213,,4.648707421368918,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0040.pdb,0.9177019266777429,,3.617913027946735,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0041.pdb,1.0115328682541376,,3.673800899938735,C1,E157,False,motif drifted 1.01 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0042.pdb,1.502812023702263,,2.7542304844497907,C14,L156,False,motif drifted 1.50 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0043.pdb,1.6615137265997661,,2.3268594792634083,C14,L156,False,motif drifted 1.66 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0044.pdb,1.4703234161996857,,3.6184070599552602,C1,E157,False,motif drifted 1.47 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0045.pdb,1.3383633817066063,,3.3582367356755425,C14,L156,False,motif drifted 1.34 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0046.pdb,0.9360676076439592,,3.9163834807772058,C14,L156,True,
-long__ssapp__CYD-CYD,long,ssapp,long_0047.pdb,1.509557186736997,,4.222964235549919,C14,L156,False,motif drifted 1.51 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0048.pdb,1.2335226889312634,,2.0029466262909277,C14,L156,False,motif drifted 1.23 A (limit 1.00); added residue C14 within 2.00 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-CYD,long,ssapp,long_0049.pdb,1.4056851572468423,,3.7119474860884347,C14,L156,False,motif drifted 1.41 A (limit 1.00)
-long__ssapp__CYD-CYD,long,ssapp,long_0050.pdb,1.3524261834978806,,2.9359578848405854,C14,L156,False,motif drifted 1.35 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0001.pdb,1.3842541259203474,,3.108951415408618,C14,L156,False,motif drifted 1.38 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0002.pdb,0.5811602103155121,,2.6981560978002967,C14,L156,True,
-long__ssapp__CYD-DCYD,long,ssapp,long_0003.pdb,2.0151684443219606,,3.742453529610708,C14,L156,False,motif drifted 2.02 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0004.pdb,1.0950007053657052,,1.8850810520830583,C14,L156,False,motif drifted 1.10 A (limit 1.00); added residue C14 within 1.89 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0005.pdb,0.6048169414814787,,3.9966858405667622,C14,L156,True,
-long__ssapp__CYD-DCYD,long,ssapp,long_0006.pdb,1.4175033287843617,,2.919722557387073,C14,L156,False,motif drifted 1.42 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0007.pdb,1.503193311939403,,2.6397014922145945,C14,L156,False,motif drifted 1.50 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0008.pdb,1.226576941366242,,1.8152375702380137,C14,L156,False,motif drifted 1.23 A (limit 1.00); added residue C14 within 1.82 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0009.pdb,1.3997359375390126,,4.078138409253699,c1,E157,False,motif drifted 1.40 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0010.pdb,0.9175493326529507,,2.2243120531821177,C14,L156,True,
-long__ssapp__CYD-DCYD,long,ssapp,long_0011.pdb,1.574693471226111,,2.366099135598792,C14,L156,False,motif drifted 1.57 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0012.pdb,1.143553783298149,,3.1573036856368275,c1,E157,False,motif drifted 1.14 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0013.pdb,1.420349219801461,,4.374642122251226,C14,L156,False,motif drifted 1.42 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0014.pdb,1.2575469946928748,,1.9409562690711295,C14,L156,False,motif drifted 1.26 A (limit 1.00); added residue C14 within 1.94 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0015.pdb,1.081273238826931,,1.7964265462109665,C14,L156,False,motif drifted 1.08 A (limit 1.00); added residue C14 within 1.80 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0016.pdb,1.6366484317559786,,4.0433001755432105,C14,L156,False,motif drifted 1.64 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0017.pdb,1.1608950346170905,,3.5918249083694853,C14,L156,False,motif drifted 1.16 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0018.pdb,1.4876815473177019,,4.0347852777453355,C14,L156,False,motif drifted 1.49 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0019.pdb,0.8014317255114903,,3.7251835614737807,C14,L156,True,
-long__ssapp__CYD-DCYD,long,ssapp,long_0020.pdb,1.3341769042505498,,4.111412660385518,C14,L156,False,motif drifted 1.33 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0021.pdb,1.6414888986869163,,4.094012807269457,C14,L156,False,motif drifted 1.64 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0022.pdb,1.193744860386401,,1.7130267579559577,C14,L156,False,motif drifted 1.19 A (limit 1.00); added residue C14 within 1.71 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0023.pdb,1.0424669247311538,,3.2018135058267894,C14,L156,False,motif drifted 1.04 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0024.pdb,1.576088660501391,,3.7691678712204366,c1,E157,False,motif drifted 1.58 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0025.pdb,1.4599225943414096,,3.04364447510802,c1,E157,False,motif drifted 1.46 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0026.pdb,1.4964003446535419,,3.1329258216425364,C14,L156,False,motif drifted 1.50 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0027.pdb,1.2723669294972046,,3.2463747818252218,C14,L156,False,motif drifted 1.27 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0028.pdb,1.4997064141915177,,2.8598917221013034,c1,E157,False,motif drifted 1.50 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0029.pdb,0.7736949361283475,,3.8384171315405298,C14,L156,True,
-long__ssapp__CYD-DCYD,long,ssapp,long_0030.pdb,1.8223216737753845,,1.1701124579060531,C14,L156,False,motif drifted 1.82 A (limit 1.00); added residue C14 within 1.17 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0031.pdb,0.9125541294057801,,3.6180198471143004,C14,L156,True,
-long__ssapp__CYD-DCYD,long,ssapp,long_0032.pdb,1.308660990557255,,3.429415459141834,C14,L156,False,motif drifted 1.31 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0033.pdb,1.505302674886636,,2.9703121856377948,C14,L156,False,motif drifted 1.51 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0034.pdb,1.5906723199961363,,3.596279786706256,c1,E157,False,motif drifted 1.59 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0035.pdb,1.566210254927729,,2.0362950023771305,C14,L156,False,motif drifted 1.57 A (limit 1.00); added residue C14 within 2.04 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0036.pdb,0.9151537684222539,,1.7523796123027973,C14,L156,False,added residue C14 within 1.75 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0037.pdb,1.0771729725066361,,4.1422834769035415,C14,L156,False,motif drifted 1.08 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0038.pdb,1.2240256766388304,,3.6460566285962592,C14,L156,False,motif drifted 1.22 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0039.pdb,1.0478705026178494,,1.9371625168179805,C14,L156,False,motif drifted 1.05 A (limit 1.00); added residue C14 within 1.94 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0040.pdb,1.564178615408484,,1.8724642009857126,C14,L156,False,motif drifted 1.56 A (limit 1.00); added residue C14 within 1.87 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0041.pdb,1.6253435230244677,,3.028501442703392,C14,L156,False,motif drifted 1.63 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0042.pdb,1.1709982989541206,,3.256693672767095,C14,L156,False,motif drifted 1.17 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0043.pdb,1.3374824736780078,,3.137422357295175,c1,E157,False,motif drifted 1.34 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0044.pdb,1.5919174848186475,,2.663537821733524,C14,L156,False,motif drifted 1.59 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0045.pdb,1.150069494884164,,3.608390368270361,C14,L156,False,motif drifted 1.15 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0046.pdb,1.885866917407453,,2.557977159734836,C14,L156,False,motif drifted 1.89 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0047.pdb,1.514622308282509,,4.028813104220244,C14,L156,False,motif drifted 1.51 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0048.pdb,1.0592582597893496,,1.7773427755667524,C14,L156,False,motif drifted 1.06 A (limit 1.00); added residue C14 within 1.78 A of receptor L156 (limit 2.20)
-long__ssapp__CYD-DCYD,long,ssapp,long_0049.pdb,1.5462870274004756,,2.4755550224544627,C14,L156,False,motif drifted 1.55 A (limit 1.00)
-long__ssapp__CYD-DCYD,long,ssapp,long_0050.pdb,1.5946652397742573,,4.2776018915912895,C14,L156,False,motif drifted 1.59 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0001.pdb,2.2560908229768106,,0.5913918338924493,c14,L156,False,motif drifted 2.26 A (limit 1.00); added residue c14 within 0.59 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0002.pdb,1.6111696092659051,,2.80486106049038,c14,L156,False,motif drifted 1.61 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0003.pdb,1.4996389828727867,,2.3489325397124903,c14,L156,False,motif drifted 1.50 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0004.pdb,1.0006583074275868,,3.3297883057433437,c14,L156,False,motif drifted 1.00 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0005.pdb,0.8132492127658874,,3.29386977923719,c14,L156,True,
-long__ssapp__DCYD-CYD,long,ssapp,long_0006.pdb,1.0349794478445036,,2.6966646526229514,c14,L156,False,motif drifted 1.03 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0007.pdb,1.615348317061413,,1.5899109515215204,c14,L156,False,motif drifted 1.62 A (limit 1.00); added residue c14 within 1.59 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0008.pdb,1.5739264797514771,,3.597513977558706,c14,L156,False,motif drifted 1.57 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0009.pdb,0.7010260122970967,,1.3069783639430057,c14,L156,False,added residue c14 within 1.31 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0010.pdb,0.9091423803314871,,3.376181574308419,c14,L156,True,
-long__ssapp__DCYD-CYD,long,ssapp,long_0011.pdb,1.2915308415293905,,3.647876486978984,c14,L156,False,motif drifted 1.29 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0012.pdb,1.70446082307963,,1.2575015006539065,c14,L156,False,motif drifted 1.70 A (limit 1.00); added residue c14 within 1.26 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0013.pdb,1.2984824999501703,,3.198127376346057,c14,L156,False,motif drifted 1.30 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0014.pdb,1.4631899074981187,,2.5785415825748563,c14,L156,False,motif drifted 1.46 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0015.pdb,0.8267495224554159,,3.6266208884362334,c14,L156,True,
-long__ssapp__DCYD-CYD,long,ssapp,long_0016.pdb,1.860020964421972,,1.4675067164293387,c14,L156,False,motif drifted 1.86 A (limit 1.00); added residue c14 within 1.47 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0017.pdb,0.9139650073766663,,2.935255520955679,c14,L156,True,
-long__ssapp__DCYD-CYD,long,ssapp,long_0018.pdb,1.2778395586844078,,2.537947107245116,c14,L156,False,motif drifted 1.28 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0019.pdb,0.8359046328572372,,2.9353092729500867,c14,L156,True,
-long__ssapp__DCYD-CYD,long,ssapp,long_0020.pdb,2.0352067330563584,,1.897763373124004,c14,L156,False,motif drifted 2.04 A (limit 1.00); added residue c14 within 1.90 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0021.pdb,1.358281695531693,,3.444128990633206,C1,E157,False,motif drifted 1.36 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0022.pdb,1.8423979968987598,,2.8723093194225258,c14,L156,False,motif drifted 1.84 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0023.pdb,1.5534245841932695,,3.7937154639394954,c14,L156,False,motif drifted 1.55 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0024.pdb,1.8195177981972375,,1.3196953586392053,c14,L156,False,motif drifted 1.82 A (limit 1.00); added residue c14 within 1.32 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0025.pdb,0.9950018844042468,,2.9190772003156487,c14,L156,True,
-long__ssapp__DCYD-CYD,long,ssapp,long_0026.pdb,1.272551699419574,,1.2229102465937476,c14,L156,False,motif drifted 1.27 A (limit 1.00); added residue c14 within 1.22 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0027.pdb,2.06221636645646,,0.622042150214688,c14,L156,False,motif drifted 2.06 A (limit 1.00); added residue c14 within 0.62 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0028.pdb,1.4787000917515472,,1.2119816517412934,c14,L156,False,motif drifted 1.48 A (limit 1.00); added residue c14 within 1.21 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0029.pdb,1.3887984654771037,,3.328977613089188,c14,L156,False,motif drifted 1.39 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0030.pdb,2.0029735703150693,,0.7090604401816997,c14,L156,False,motif drifted 2.00 A (limit 1.00); added residue c14 within 0.71 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0031.pdb,1.6117422440264677,,2.0931934149501585,c14,L156,False,motif drifted 1.61 A (limit 1.00); added residue c14 within 2.09 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0032.pdb,1.7575616590149534,,1.0644335832039198,c14,L156,False,motif drifted 1.76 A (limit 1.00); added residue c14 within 1.06 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0033.pdb,1.8252821784805493,,0.932975996019389,c14,L156,False,motif drifted 1.83 A (limit 1.00); added residue c14 within 0.93 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0034.pdb,1.7438248676005002,,1.33401076210743,c14,L156,False,motif drifted 1.74 A (limit 1.00); added residue c14 within 1.33 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0035.pdb,1.9053478368335854,,0.8497599340569597,c14,L156,False,motif drifted 1.91 A (limit 1.00); added residue c14 within 0.85 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0036.pdb,1.586670316737734,,1.6177075964903787,c14,L156,False,motif drifted 1.59 A (limit 1.00); added residue c14 within 1.62 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0037.pdb,1.4421506101034454,,3.573591704370167,c14,L156,False,motif drifted 1.44 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0038.pdb,1.5978279095331738,,1.6855069043733948,c14,L156,False,motif drifted 1.60 A (limit 1.00); added residue c14 within 1.69 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0039.pdb,1.9551824576053067,,0.95174261388025,c14,L156,False,motif drifted 1.96 A (limit 1.00); added residue c14 within 0.95 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0040.pdb,0.8432684343527728,,3.5479304269784566,c14,L156,True,
-long__ssapp__DCYD-CYD,long,ssapp,long_0041.pdb,0.906239634384986,,2.3269108026428915,c14,L156,True,
-long__ssapp__DCYD-CYD,long,ssapp,long_0042.pdb,1.3823654764865254,,2.9281031855665356,c14,L156,False,motif drifted 1.38 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0043.pdb,2.0275044510066893,,1.3825990865254614,c14,L156,False,motif drifted 2.03 A (limit 1.00); added residue c14 within 1.38 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0044.pdb,1.9404178720321896,,1.1067434470037654,c14,L156,False,motif drifted 1.94 A (limit 1.00); added residue c14 within 1.11 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0045.pdb,1.411153517943096,,2.7168113563430483,c14,L156,False,motif drifted 1.41 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0046.pdb,1.8166060829651853,,0.9683833674343423,c14,L156,False,motif drifted 1.82 A (limit 1.00); added residue c14 within 0.97 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0047.pdb,1.2088018438219847,,2.6810302590862976,c14,L156,False,motif drifted 1.21 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0048.pdb,1.8156202316598,,1.1845563930048948,c14,L156,False,motif drifted 1.82 A (limit 1.00); added residue c14 within 1.18 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-CYD,long,ssapp,long_0049.pdb,1.4981527691723937,,2.973420663382889,c14,L156,False,motif drifted 1.50 A (limit 1.00)
-long__ssapp__DCYD-CYD,long,ssapp,long_0050.pdb,1.5648388981513557,,3.3274984751157084,c14,L156,False,motif drifted 1.56 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0001.pdb,0.8119100708018941,,3.2617308924587096,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0002.pdb,0.9153035237894498,,3.3635639482557256,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0003.pdb,0.8032078471231111,,3.4682667665889846,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0004.pdb,1.6517626239852579,,1.0970115198032693,c14,L156,False,motif drifted 1.65 A (limit 1.00); added residue c14 within 1.10 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0005.pdb,1.762360603511128,,1.6127080431836236,c14,L156,False,motif drifted 1.76 A (limit 1.00); added residue c14 within 1.61 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0006.pdb,1.09843556758485,,2.841946149204622,c14,L156,False,motif drifted 1.10 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0007.pdb,0.9226359742720702,,2.709156191587688,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0008.pdb,1.5482542119806197,,1.8799357182682017,c14,L156,False,motif drifted 1.55 A (limit 1.00); added residue c14 within 1.88 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0009.pdb,0.7641150839700436,,1.8316901730465105,c14,L156,False,added residue c14 within 1.83 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0010.pdb,0.92925843812549,,3.5218481717401295,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0011.pdb,1.9708594622168707,,1.8589239342039012,c14,L156,False,motif drifted 1.97 A (limit 1.00); added residue c14 within 1.86 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0012.pdb,1.3598933023372273,,2.178702425417943,c14,L156,False,motif drifted 1.36 A (limit 1.00); added residue c14 within 2.18 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0013.pdb,1.9453104273741726,,0.8393058992977946,c14,L156,False,motif drifted 1.95 A (limit 1.00); added residue c14 within 0.84 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0014.pdb,1.864925739049705,,1.3370483425666015,c14,L156,False,motif drifted 1.86 A (limit 1.00); added residue c14 within 1.34 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0015.pdb,1.3511161794166446,,1.7864065713984332,c14,L156,False,motif drifted 1.35 A (limit 1.00); added residue c14 within 1.79 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0016.pdb,1.4895651481522898,,2.9858658874036035,c14,L156,False,motif drifted 1.49 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0017.pdb,1.939170724270298,,3.510678657815317,c14,L156,False,motif drifted 1.94 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0018.pdb,1.2906377499101052,,2.8790563527514137,c14,L156,False,motif drifted 1.29 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0019.pdb,1.1597011448288284,,2.741367516370625,c14,L156,False,motif drifted 1.16 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0020.pdb,1.8965071602904398,,0.8756347542904585,c14,L156,False,motif drifted 1.90 A (limit 1.00); added residue c14 within 0.88 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0021.pdb,0.7922176161399207,,3.359264983961147,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0022.pdb,1.456000121435545,,3.2732490099942364,c1,E157,False,motif drifted 1.46 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0023.pdb,1.5327189479667798,,2.9768034484976975,c14,L156,False,motif drifted 1.53 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0024.pdb,1.069108864233254,,2.743010176214988,c14,L156,False,motif drifted 1.07 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0025.pdb,1.5822268976775453,,3.4699976270783623,c14,L156,False,motif drifted 1.58 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0026.pdb,1.0585518380126666,,2.677209533304587,c14,L156,False,motif drifted 1.06 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0027.pdb,1.705235427501217,,3.8879912432148425,c14,L156,False,motif drifted 1.71 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0028.pdb,1.640952434260519,,3.711529578135711,c14,L156,False,motif drifted 1.64 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0029.pdb,0.5660527790920453,,2.5411565370279012,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0030.pdb,1.905455683117708,,1.1836337577195766,c14,L156,False,motif drifted 1.91 A (limit 1.00); added residue c14 within 1.18 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0031.pdb,1.8219354075005896,,1.420632232602672,c14,L156,False,motif drifted 1.82 A (limit 1.00); added residue c14 within 1.42 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0032.pdb,0.7973570753770834,,2.781521936403337,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0033.pdb,1.8573381697859064,,3.608822171161618,c14,L156,False,motif drifted 1.86 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0034.pdb,0.6169288500397261,,3.4295003586201296,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0035.pdb,2.1819690204851456,,1.0316631646818544,c14,L156,False,motif drifted 2.18 A (limit 1.00); added residue c14 within 1.03 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0036.pdb,1.5193256788161653,,1.036271305329558,c14,L156,False,motif drifted 1.52 A (limit 1.00); added residue c14 within 1.04 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0037.pdb,1.2834234602287005,,2.822416846618567,c14,L156,False,motif drifted 1.28 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0038.pdb,0.735688997650384,,2.763063859907273,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0039.pdb,1.881818170501316,,0.871665621712435,c14,L156,False,motif drifted 1.88 A (limit 1.00); added residue c14 within 0.87 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0040.pdb,1.7951823378836387,,1.9920960700541561,c14,L156,False,motif drifted 1.80 A (limit 1.00); added residue c14 within 1.99 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0041.pdb,1.965308834836902,,0.880433436462257,c14,L156,False,motif drifted 1.97 A (limit 1.00); added residue c14 within 0.88 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0042.pdb,1.163860605837536,,2.733250633296494,c14,L156,False,motif drifted 1.16 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0043.pdb,1.3831225385894073,,2.891281524169155,c14,L156,False,motif drifted 1.38 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0044.pdb,1.853859833356595,,1.9887635134929054,c14,L156,False,motif drifted 1.85 A (limit 1.00); added residue c14 within 1.99 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0045.pdb,1.5011078882007411,,2.6781050896285494,c14,L156,False,motif drifted 1.50 A (limit 1.00)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0046.pdb,0.8017993220149124,,2.8900448074794047,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0047.pdb,2.147105593072969,,0.6803325606704244,c14,L156,False,motif drifted 2.15 A (limit 1.00); added residue c14 within 0.68 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0048.pdb,1.9032783848897479,,1.5482388580309898,c14,L156,False,motif drifted 1.90 A (limit 1.00); added residue c14 within 1.55 A of receptor L156 (limit 2.20)
-long__ssapp__DCYD-DCYD,long,ssapp,long_0049.pdb,0.8935740176208958,,2.435815066436737,c14,L156,True,
-long__ssapp__DCYD-DCYD,long,ssapp,long_0050.pdb,1.5501721666152386,,3.4781827054030665,c14,L156,False,motif drifted 1.55 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0001.pdb,1.409831875664839,,3.29256206661016,C14,L156,False,motif drifted 1.41 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0002.pdb,1.086618425927329,,3.0432561786205907,C14,L156,False,motif drifted 1.09 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0003.pdb,1.1033803401453652,,2.451803577116344,C1,E157,False,motif drifted 1.10 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0004.pdb,1.2256152213197518,,1.998558230481062,C14,L156,False,motif drifted 1.23 A (limit 1.00); added residue C14 within 2.00 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0005.pdb,1.436081008874883,,3.289765450348401,C14,L156,False,motif drifted 1.44 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0006.pdb,0.8958157751237249,,2.1188409611569887,C14,L156,False,added residue C14 within 2.12 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0007.pdb,1.0170380018123664,,3.4766949400278717,C14,L156,False,motif drifted 1.02 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0008.pdb,0.7442136762030718,,2.0884604920967993,C14,L156,False,added residue C14 within 2.09 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0009.pdb,1.7245579910751203,,3.5306147420707386,C14,L156,False,motif drifted 1.72 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0010.pdb,1.5438057177288158,,2.6506950089251022,C14,L156,False,motif drifted 1.54 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0011.pdb,1.349566823803109,,3.740045530171897,C14,L156,False,motif drifted 1.35 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0012.pdb,0.806608856328645,,2.315429489691093,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0013.pdb,1.2940153548671693,,3.4119324337237558,C1,E157,False,motif drifted 1.29 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0014.pdb,0.929517400265837,,3.5966734742974924,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0015.pdb,1.4646107989091046,,3.7208060393751476,C1,E157,False,motif drifted 1.46 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0016.pdb,1.1709142272441955,,2.9030016301338244,C14,L156,False,motif drifted 1.17 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0017.pdb,1.6360044557437585,,2.373429799435859,C14,L156,False,motif drifted 1.64 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0018.pdb,1.5418806231894595,,2.6960909481634983,C14,L156,False,motif drifted 1.54 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0019.pdb,1.0664838628185556,,1.684292271045039,C14,L156,False,motif drifted 1.07 A (limit 1.00); added residue C14 within 1.68 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0020.pdb,1.4328983001173665,,2.6614260701037193,C14,L156,False,motif drifted 1.43 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0021.pdb,1.2831798284530929,,3.8527696453604183,C14,L156,False,motif drifted 1.28 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0022.pdb,1.7286717885304934,,2.8048721714734595,C14,L156,False,motif drifted 1.73 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0023.pdb,1.839243951760494,,0.9482812942481375,C14,L156,False,motif drifted 1.84 A (limit 1.00); added residue C14 within 0.95 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0024.pdb,0.6952138484765927,,4.163375553477792,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0025.pdb,1.3073553870056354,,4.27217980898499,C14,L156,False,motif drifted 1.31 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0026.pdb,2.0153750097910756,,0.6390453022994393,C14,L156,False,motif drifted 2.02 A (limit 1.00); added residue C14 within 0.64 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0027.pdb,1.0343973229033234,,4.06738070102456,C14,L156,False,motif drifted 1.03 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0028.pdb,1.1056766182948508,,2.4652472114916195,C1,E157,False,motif drifted 1.11 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0029.pdb,0.7949344201861749,,3.0543147596636633,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0030.pdb,0.8817489795474547,,3.733335923746057,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0031.pdb,1.2824385841318438,,3.1763584517130363,C1,E157,False,motif drifted 1.28 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0032.pdb,0.8248288594444686,,2.995005627557114,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0033.pdb,1.4636818650290424,,3.4391676652663663,C14,L156,False,motif drifted 1.46 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0034.pdb,0.6800474068277539,,3.086246112646995,C1,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0035.pdb,1.4583018350354788,,1.6439331977150609,C14,L156,False,motif drifted 1.46 A (limit 1.00); added residue C14 within 1.64 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0036.pdb,1.5699091486342043,,2.989026282973293,C14,L156,False,motif drifted 1.57 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0037.pdb,0.8001697665093702,,3.7654722113285106,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0038.pdb,1.598866503253775,,2.4350410202976396,C14,L156,False,motif drifted 1.60 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0039.pdb,0.6915576637702815,,2.967764731954831,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0040.pdb,1.2086799841005558,,3.6123705481160737,C14,L156,False,motif drifted 1.21 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0041.pdb,1.7885711974000806,,1.0919081505383028,C14,L156,False,motif drifted 1.79 A (limit 1.00); added residue C14 within 1.09 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0042.pdb,1.277969378506391,,3.507149089733559,C14,L156,False,motif drifted 1.28 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0043.pdb,1.5047739266061533,,4.021247921364237,C14,L156,False,motif drifted 1.50 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0044.pdb,1.1070862994457327,,3.1640115239466446,C14,L156,False,motif drifted 1.11 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0045.pdb,0.8176841638470113,,3.9116251381482883,C14,L156,True,
+long__ssapp__CYD-CYD,long,ssapp,long_0046.pdb,1.4949201584584544,,3.9456449495384147,C14,L156,False,motif drifted 1.49 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0047.pdb,1.5855726556503698,,1.9559671169955024,C14,L156,False,motif drifted 1.59 A (limit 1.00); added residue C14 within 1.96 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-CYD,long,ssapp,long_0048.pdb,1.5877823536492794,,3.9428194917506993,C1,E157,False,motif drifted 1.59 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0049.pdb,1.6461125621175159,,2.588909609217231,C14,L156,False,motif drifted 1.65 A (limit 1.00)
+long__ssapp__CYD-CYD,long,ssapp,long_0050.pdb,0.6909786177003499,,2.9670460437100052,C14,L156,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0001.pdb,1.7489008153529553,,3.6141258941552254,C14,L156,False,motif drifted 1.75 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0002.pdb,1.006499732830455,,2.985782292130533,C14,L156,False,motif drifted 1.01 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0003.pdb,1.1921993137945472,,3.5218331337213256,C14,L156,False,motif drifted 1.19 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0004.pdb,1.2587086025919627,,3.5711269219901065,C14,L156,False,motif drifted 1.26 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0005.pdb,1.242351366141098,,3.2345215593475123,C14,L156,False,motif drifted 1.24 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0006.pdb,0.9875086493001664,,2.1044915799272355,C14,L156,False,added residue C14 within 2.10 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-DCYD,long,ssapp,long_0007.pdb,0.9389547411902098,,3.8226211745343206,C14,L156,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0008.pdb,1.1624329917806968,,4.014866823014239,C14,L156,False,motif drifted 1.16 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0009.pdb,1.3656840345747774,,3.173888768046302,C14,L156,False,motif drifted 1.37 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0010.pdb,1.0273533729552724,,4.107514455325853,C14,L156,False,motif drifted 1.03 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0011.pdb,1.3170663430278073,,3.573162473308155,C14,L156,False,motif drifted 1.32 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0012.pdb,1.4599465088763273,,3.9822494065112095,C14,L156,False,motif drifted 1.46 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0013.pdb,1.242045924237566,,3.3851217257942987,c1,E157,False,motif drifted 1.24 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0014.pdb,0.6300112108395306,,3.921438899229628,C14,L156,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0015.pdb,1.5972653202223892,,2.2173244205134233,C14,L156,False,motif drifted 1.60 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0016.pdb,1.6604974931967968,,2.8473903048001894,C14,L156,False,motif drifted 1.66 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0017.pdb,0.8088373653001139,,3.536677394541984,C14,L156,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0018.pdb,1.1006760224278527,,3.8741413139855396,C14,L156,False,motif drifted 1.10 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0019.pdb,1.5054586472987344,,3.011038048434946,c1,E157,False,motif drifted 1.51 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0020.pdb,1.3893274151345703,,3.446723389449615,C14,L156,False,motif drifted 1.39 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0021.pdb,1.1155415198369627,,3.3853290444190485,C14,L156,False,motif drifted 1.12 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0022.pdb,1.3709943915141745,,2.659463222820016,C14,L156,False,motif drifted 1.37 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0023.pdb,1.9833915667022048,,1.0098164276736703,C14,L156,False,motif drifted 1.98 A (limit 1.00); added residue C14 within 1.01 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-DCYD,long,ssapp,long_0024.pdb,1.2728605379702875,,3.8343144199209305,c1,E157,False,motif drifted 1.27 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0025.pdb,0.914406289214571,,3.7937558434712475,c1,E157,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0026.pdb,1.5152353760817638,,2.3478152896431146,C14,L156,False,motif drifted 1.52 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0027.pdb,1.6514317635870892,,3.1441989144429674,C14,L156,False,motif drifted 1.65 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0028.pdb,1.5951441957022214,,3.2562297742631943,C14,L156,False,motif drifted 1.60 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0029.pdb,1.0080768318059121,,2.272502301195026,C14,L156,False,motif drifted 1.01 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0030.pdb,1.6565111781272535,,3.267554168926152,C14,L156,False,motif drifted 1.66 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0031.pdb,1.5196847195336198,,3.137594998584572,C14,L156,False,motif drifted 1.52 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0032.pdb,1.2004634150264113,,3.7528811262304167,C14,L156,False,motif drifted 1.20 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0033.pdb,1.2815998620003588,,3.1948328957373096,C14,L156,False,motif drifted 1.28 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0034.pdb,0.7393485296964629,,3.752114647135548,C14,L156,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0035.pdb,0.9438777740335363,,3.4722557945206485,C14,L156,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0036.pdb,1.6493410704678204,,2.932811351934967,C14,L156,False,motif drifted 1.65 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0037.pdb,1.3592047932136138,,3.2852164500215335,c1,E157,False,motif drifted 1.36 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0038.pdb,1.1447616513220922,,3.58532229536616,c1,E157,False,motif drifted 1.14 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0039.pdb,1.078418432169315,,4.201865266376768,C14,L156,False,motif drifted 1.08 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0040.pdb,1.6782861392497532,,2.4133151877907584,C14,L156,False,motif drifted 1.68 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0041.pdb,1.6568966365846798,,2.546588767074025,C14,L156,False,motif drifted 1.66 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0042.pdb,1.0006217617850848,,4.124897467773489,C14,L156,False,motif drifted 1.00 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0043.pdb,0.8114935653256612,,1.7309231851075868,C14,L156,False,added residue C14 within 1.73 A of receptor L156 (limit 2.20)
+long__ssapp__CYD-DCYD,long,ssapp,long_0044.pdb,1.4757878480220512,,2.7863968905600536,C14,L156,False,motif drifted 1.48 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0045.pdb,1.684942446212371,,2.951163718633253,C14,L156,False,motif drifted 1.68 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0046.pdb,0.8839826650441616,,3.880503838494929,C14,L156,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0047.pdb,1.4475397244096462,,3.946048127247216,C14,L156,False,motif drifted 1.45 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0048.pdb,0.4814689771538195,,3.859365470164517,C14,L156,True,
+long__ssapp__CYD-DCYD,long,ssapp,long_0049.pdb,1.52018527038561,,3.5689685165672143,c1,E157,False,motif drifted 1.52 A (limit 1.00)
+long__ssapp__CYD-DCYD,long,ssapp,long_0050.pdb,0.8111628678002356,,3.120354013558804,C14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0001.pdb,0.6267816278124245,,2.7946338385790312,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0002.pdb,1.2457685950428428,,3.4315195137192167,c14,L156,False,motif drifted 1.25 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0003.pdb,0.7626187438242181,,2.7251519545461598,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0004.pdb,0.9142104363830892,,2.921515256996485,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0005.pdb,0.7270045044882012,,2.5692505699919232,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0006.pdb,1.4602617902342188,,1.8012302718888582,c14,L156,False,motif drifted 1.46 A (limit 1.00); added residue c14 within 1.80 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0007.pdb,1.5063412639210016,,2.8240767690100417,c14,L156,False,motif drifted 1.51 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0008.pdb,0.9971046107841353,,2.743397229773914,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0009.pdb,0.8751435905820834,,2.7440066633458007,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0010.pdb,0.7385155784601811,,3.219685789029112,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0011.pdb,0.872759647142101,,3.092537945524256,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0012.pdb,1.9312319458882006,,1.3648106785086298,c14,L156,False,motif drifted 1.93 A (limit 1.00); added residue c14 within 1.36 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0013.pdb,1.8971904157973212,,0.846031141956206,c14,L156,False,motif drifted 1.90 A (limit 1.00); added residue c14 within 0.85 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0014.pdb,1.3611383225283242,,3.1608573874063817,c14,L156,False,motif drifted 1.36 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0015.pdb,1.700977597248398,,3.588232121583955,c14,L156,False,motif drifted 1.70 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0016.pdb,1.4949890288137373,,2.9617072412935768,c14,L156,False,motif drifted 1.49 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0017.pdb,1.9855458881910673,,1.0056802186223919,c14,L156,False,motif drifted 1.99 A (limit 1.00); added residue c14 within 1.01 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0018.pdb,0.7561552995022693,,3.1794953808430555,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0019.pdb,1.2444281157183965,,2.854586201699576,c14,L156,False,motif drifted 1.24 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0020.pdb,2.0519618614394806,,0.6782213221859059,c14,L156,False,motif drifted 2.05 A (limit 1.00); added residue c14 within 0.68 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0021.pdb,0.8137840154349707,,2.7892627453241863,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0022.pdb,0.8323006920540313,,3.2178673449059865,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0023.pdb,1.3798733604078233,,2.5760611745037787,c14,L156,False,motif drifted 1.38 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0024.pdb,2.0393932648019057,,1.4323561963624016,c14,L156,False,motif drifted 2.04 A (limit 1.00); added residue c14 within 1.43 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0025.pdb,1.2251733706144388,,3.327147271257519,c14,L156,False,motif drifted 1.23 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0026.pdb,1.2545637535839553,,2.1719981720356114,c14,L156,False,motif drifted 1.25 A (limit 1.00); added residue c14 within 2.17 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0027.pdb,1.9096991448446554,,1.0275404700013078,c14,L156,False,motif drifted 1.91 A (limit 1.00); added residue c14 within 1.03 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0028.pdb,1.9153768619620113,,0.901186854724328,c14,L156,False,motif drifted 1.92 A (limit 1.00); added residue c14 within 0.90 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0029.pdb,1.5260321382961464,,2.42059250916083,c14,L156,False,motif drifted 1.53 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0030.pdb,1.7137454474928573,,1.7371260293146389,c14,L156,False,motif drifted 1.71 A (limit 1.00); added residue c14 within 1.74 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0031.pdb,1.795273691981536,,1.0778143576641015,c14,L156,False,motif drifted 1.80 A (limit 1.00); added residue c14 within 1.08 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0032.pdb,1.3421598244689512,,3.4629484251938214,c14,L156,False,motif drifted 1.34 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0033.pdb,1.973256307278652,,0.7683369658619462,c14,L156,False,motif drifted 1.97 A (limit 1.00); added residue c14 within 0.77 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0034.pdb,1.5126208246089927,,1.87487146516584,c14,L156,False,motif drifted 1.51 A (limit 1.00); added residue c14 within 1.87 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0035.pdb,0.7874667298444568,,3.1983289494953167,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0036.pdb,0.7053597279360126,,2.8162461252997777,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0037.pdb,0.677321877376702,,3.156102284823266,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0038.pdb,1.2213399270724707,,2.815734475461947,c14,L156,False,motif drifted 1.22 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0039.pdb,1.6979449276726963,,1.3765275875021252,c14,L156,False,motif drifted 1.70 A (limit 1.00); added residue c14 within 1.38 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0040.pdb,1.1078600718245417,,2.885635716996092,c14,L156,False,motif drifted 1.11 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0041.pdb,1.5864959954869668,,3.9144406030181633,c14,L156,False,motif drifted 1.59 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0042.pdb,2.0271699894817865,,0.7570336625448676,c14,L156,False,motif drifted 2.03 A (limit 1.00); added residue c14 within 0.76 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-CYD,long,ssapp,long_0043.pdb,1.0935069275638896,,2.575025563386296,c14,L156,False,motif drifted 1.09 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0044.pdb,0.7989456272903981,,2.725163609060611,c14,L156,True,
+long__ssapp__DCYD-CYD,long,ssapp,long_0045.pdb,1.1058680335466826,,2.708699977637527,c14,L156,False,motif drifted 1.11 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0046.pdb,1.4763083509321493,,3.04605025901925,c14,L156,False,motif drifted 1.48 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0047.pdb,1.3910736991413435,,2.653633996292506,c14,L156,False,motif drifted 1.39 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0048.pdb,1.8648860373599256,,3.230818143779105,c14,L156,False,motif drifted 1.86 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0049.pdb,1.283610732675249,,3.12820351728726,c14,L156,False,motif drifted 1.28 A (limit 1.00)
+long__ssapp__DCYD-CYD,long,ssapp,long_0050.pdb,1.6135478355536597,,2.5921320988396634,c14,L156,False,motif drifted 1.61 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0001.pdb,1.122449665441153,,2.6963101398402256,c14,L156,False,motif drifted 1.12 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0002.pdb,1.0326437477762311,,2.3377588454300446,c14,L156,False,motif drifted 1.03 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0003.pdb,1.559716221042286,,2.8597228139029,c14,L156,False,motif drifted 1.56 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0004.pdb,1.5400633316671999,,2.228830478599622,c14,L156,False,motif drifted 1.54 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0005.pdb,0.7609411177365142,,2.5946857853283816,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0006.pdb,1.5615428828985363,,1.4804354300243978,c14,L156,False,motif drifted 1.56 A (limit 1.00); added residue c14 within 1.48 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0007.pdb,0.7462226205135063,,3.153000701918746,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0008.pdb,1.2641830415457853,,2.812496151812056,c14,L156,False,motif drifted 1.26 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0009.pdb,0.3947446207243488,,2.643638097821132,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0010.pdb,1.4898420572501383,,2.701630871702445,c14,L156,False,motif drifted 1.49 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0011.pdb,1.8110155098963014,,0.3162624456557697,c14,L156,False,motif drifted 1.81 A (limit 1.00); added residue c14 within 0.32 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0012.pdb,1.6936879776761868,,1.9199731611903577,c14,L156,False,motif drifted 1.69 A (limit 1.00); added residue c14 within 1.92 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0013.pdb,1.990952400741478,,1.9605241292410136,c14,L156,False,motif drifted 1.99 A (limit 1.00); added residue c14 within 1.96 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0014.pdb,1.396593822157974,,2.180353395043194,c14,L156,False,motif drifted 1.40 A (limit 1.00); added residue c14 within 2.18 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0015.pdb,1.6363920806968388,,3.366878282917967,c14,L156,False,motif drifted 1.64 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0016.pdb,1.3407631116001217,,2.3817547633673812,c14,L156,False,motif drifted 1.34 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0017.pdb,0.7934958107225533,,2.6034210517983363,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0018.pdb,2.0983961379199925,,0.7844512609990202,c14,L156,False,motif drifted 2.10 A (limit 1.00); added residue c14 within 0.78 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0019.pdb,1.8931105081345752,,0.8157158030473302,c14,L156,False,motif drifted 1.89 A (limit 1.00); added residue c14 within 0.82 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0020.pdb,0.9190548090837786,,3.1723913812824205,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0021.pdb,1.795418694381253,,4.042593633582508,c14,L156,False,motif drifted 1.80 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0022.pdb,1.9951175530549663,,0.6368002471613371,c14,L156,False,motif drifted 2.00 A (limit 1.00); added residue c14 within 0.64 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0023.pdb,1.6006385951412159,,1.3695222379802843,c14,L156,False,motif drifted 1.60 A (limit 1.00); added residue c14 within 1.37 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0024.pdb,1.2165654970566075,,2.727233658458161,c14,L156,False,motif drifted 1.22 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0025.pdb,1.5121404810026775,,2.944316916711338,c14,L156,False,motif drifted 1.51 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0026.pdb,1.1734839518682936,,2.1038342885776777,c14,L156,False,motif drifted 1.17 A (limit 1.00); added residue c14 within 2.10 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0027.pdb,1.680571315565279,,1.6022365114332413,c14,L156,False,motif drifted 1.68 A (limit 1.00); added residue c14 within 1.60 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0028.pdb,1.9971528960423215,,2.731481840901179,c14,L156,False,motif drifted 2.00 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0029.pdb,1.457651834058675,,1.3572031412245222,c14,L156,False,motif drifted 1.46 A (limit 1.00); added residue c14 within 1.36 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0030.pdb,1.3616261499656455,,2.5553146066008567,c14,L156,False,motif drifted 1.36 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0031.pdb,1.9980054021547202,,0.756572116528932,c14,L156,False,motif drifted 2.00 A (limit 1.00); added residue c14 within 0.76 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0032.pdb,1.650246449866143,,3.1177929206674158,c14,L156,False,motif drifted 1.65 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0033.pdb,0.5755172090528612,,2.96208917204135,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0034.pdb,2.0062177747311307,,0.805449709400955,c14,L156,False,motif drifted 2.01 A (limit 1.00); added residue c14 within 0.81 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0035.pdb,1.4952237067457417,,2.4472608393608097,c14,L156,False,motif drifted 1.50 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0036.pdb,0.6602163070565182,,3.1539554585036815,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0037.pdb,0.9803764070258492,,3.3669961112271105,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0038.pdb,2.0414648350638647,,0.8527562146455233,c14,L156,False,motif drifted 2.04 A (limit 1.00); added residue c14 within 0.85 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0039.pdb,1.2183499466630008,,3.565577125120495,c14,L156,False,motif drifted 1.22 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0040.pdb,0.7215941422747421,,3.1245339964369694,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0041.pdb,0.6415017638785755,,3.128712977869285,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0042.pdb,1.6420987601764572,,3.4888783517717847,c14,L156,False,motif drifted 1.64 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0043.pdb,1.671172986134271,,1.6412509368241661,c14,L156,False,motif drifted 1.67 A (limit 1.00); added residue c14 within 1.64 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0044.pdb,2.0390981504303514,,0.7645766975876572,c14,L156,False,motif drifted 2.04 A (limit 1.00); added residue c14 within 0.76 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0045.pdb,1.7159345440161906,,2.5442845064733697,c14,L156,False,motif drifted 1.72 A (limit 1.00)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0046.pdb,0.6194480302867166,,2.6487740406985885,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0047.pdb,0.7875908860410679,,2.559437108546422,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0048.pdb,0.7329370822456212,,2.55635823359321,c14,L156,True,
+long__ssapp__DCYD-DCYD,long,ssapp,long_0049.pdb,1.0502739859409327,,1.8952879943809513,c14,L156,False,motif drifted 1.05 A (limit 1.00); added residue c14 within 1.90 A of receptor L156 (limit 2.20)
+long__ssapp__DCYD-DCYD,long,ssapp,long_0050.pdb,2.1169465911149423,,0.5559063448363348,c14,L156,False,motif drifted 2.12 A (limit 1.00); added residue c14 within 0.56 A of receptor L156 (limit 2.20)
 medium__amide__DPRO-GLY,medium,amide,medium_0001.pdb,1.480583260348721,65.60909899788766,2.125801936467599,p11,L156,False,motif drifted 1.48 A (limit 1.00); added residue p11 within 2.13 A of receptor L156 (limit 2.20)
 medium__amide__DPRO-GLY,medium,amide,medium_0002.pdb,0.3710917886157171,77.10235485477023,4.167479030026008,p11,L156,True,
 medium__amide__DPRO-GLY,medium,amide,medium_0003.pdb,0.5517306006643902,80.43332500246127,3.824598771033067,p11,L156,True,
@@ -699,206 +699,206 @@ medium__amide__GLY-GLY,medium,amide,medium_0047.pdb,0.8290996097318916,91.106059
 medium__amide__GLY-GLY,medium,amide,medium_0048.pdb,1.382175788140096,-95.4528381688216,3.8326310945120237,G12,E181,False,"motif drifted 1.38 A (limit 1.00); seeded residue 11 came out at phi -95, wrong handedness for a I'/II' turn"
 medium__amide__GLY-GLY,medium,amide,medium_0049.pdb,0.6206051212426474,142.33495245753224,5.209015483124864,G12,M312,True,
 medium__amide__GLY-GLY,medium,amide,medium_0050.pdb,1.9484861367264619,63.034970331337114,2.786809902801865,G11,L156,False,motif drifted 1.95 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0001.pdb,1.3975961505386854,,1.7527200111461279,C12,E157,False,motif drifted 1.40 A (limit 1.00); added residue C12 within 1.75 A of receptor E157 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0002.pdb,0.2681831430783059,,2.6767005116528786,C12,L156,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0003.pdb,1.6380736916757315,,3.4996223623592932,C12,E157,False,motif drifted 1.64 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0004.pdb,1.5204608326657916,,2.40580785308756,C1,E181,False,motif drifted 1.52 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0005.pdb,0.5069838857688413,,2.5700851433974448,C12,L156,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0006.pdb,1.4599192711334426,,2.0197096883343395,C12,E157,False,motif drifted 1.46 A (limit 1.00); added residue C12 within 2.02 A of receptor E157 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0007.pdb,1.6422899543688845,,2.804521030745421,C12,L156,False,motif drifted 1.64 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0008.pdb,1.8544243316570432,,4.36326893219531,C12,L156,False,motif drifted 1.85 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0009.pdb,1.7514070762881857,,1.8909966290751625,C1,E181,False,motif drifted 1.75 A (limit 1.00); added residue C1 within 1.89 A of receptor E181 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0010.pdb,0.24722603589597444,,2.9663700086138305,C1,Y4,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0011.pdb,1.6791710824752835,,4.791687146595578,C12,E157,False,motif drifted 1.68 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0012.pdb,0.7573850472129525,,3.506488878224459,C12,L156,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0013.pdb,1.7457681603513902,,2.112486600915184,C12,L156,False,motif drifted 1.75 A (limit 1.00); added residue C12 within 2.11 A of receptor L156 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0014.pdb,1.8082637267729225,,4.973961681727936,C12,E157,False,motif drifted 1.81 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0015.pdb,1.6976456043615888,,2.092934997445362,C1,E181,False,motif drifted 1.70 A (limit 1.00); added residue C1 within 2.09 A of receptor E181 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0016.pdb,1.667488140507851,,3.1372109280809464,C1,E181,False,motif drifted 1.67 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0017.pdb,1.6678281984814205,,2.029185289789044,C1,E181,False,motif drifted 1.67 A (limit 1.00); added residue C1 within 2.03 A of receptor E181 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0018.pdb,0.1874124269105286,,2.455760120977723,C12,L156,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0019.pdb,0.4295617887816935,,4.36362817779692,C12,L156,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0020.pdb,1.7219066633855737,,1.6445050887021249,C12,Y165,False,motif drifted 1.72 A (limit 1.00); added residue C12 within 1.64 A of receptor Y165 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0021.pdb,1.5852867211933221,,1.7238126910545026,C12,L156,False,motif drifted 1.59 A (limit 1.00); added residue C12 within 1.72 A of receptor L156 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0022.pdb,1.790827439224118,,2.9321241862709866,C12,L156,False,motif drifted 1.79 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0023.pdb,1.789054366756609,,1.9107215659337087,C1,E181,False,motif drifted 1.79 A (limit 1.00); added residue C1 within 1.91 A of receptor E181 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0024.pdb,1.7176047872916824,,4.668444072855368,C1,E181,False,motif drifted 1.72 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0025.pdb,1.7327738984151786,,2.974839357085652,C12,L156,False,motif drifted 1.73 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0026.pdb,1.8590309668384344,,3.8899633557100346,C12,L156,False,motif drifted 1.86 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0027.pdb,1.6892445229410542,,1.4115616227244148,C12,L156,False,motif drifted 1.69 A (limit 1.00); added residue C12 within 1.41 A of receptor L156 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0028.pdb,0.6702754461669074,,3.0794150839155496,C12,L156,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0029.pdb,1.8011358031437181,,2.5844145048087808,C12,Y165,False,motif drifted 1.80 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0030.pdb,1.6960738009499707,,2.3377421211821976,C1,E181,False,motif drifted 1.70 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0031.pdb,1.900264687659229,,2.3398286567959405,C12,L156,False,motif drifted 1.90 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0032.pdb,0.3789713197907753,,3.010616320477051,C1,M312,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0033.pdb,1.6707870706073495,,3.953469421761284,C12,L156,False,motif drifted 1.67 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0034.pdb,1.418439330822584,,2.7931661740378897,C12,E157,False,motif drifted 1.42 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0035.pdb,1.798870640258777,,1.4021862149657258,C12,Y165,False,motif drifted 1.80 A (limit 1.00); added residue C12 within 1.40 A of receptor Y165 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0036.pdb,1.4718455156916146,,2.6792705959391903,C1,E181,False,motif drifted 1.47 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0037.pdb,1.6626137591891341,,1.9669223431493328,C12,E157,False,motif drifted 1.66 A (limit 1.00); added residue C12 within 1.97 A of receptor E157 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0038.pdb,1.6982781074764939,,3.015323752249894,C12,L156,False,motif drifted 1.70 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0039.pdb,0.57959755301377,,3.798073026096159,C12,L156,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0040.pdb,1.6344743392032892,,3.5669876832483434,C12,L156,False,motif drifted 1.63 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0041.pdb,1.6490055838559574,,2.5308229410364493,C1,E181,False,motif drifted 1.65 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0042.pdb,1.7644741839156344,,2.6669109112464793,C12,L156,False,motif drifted 1.76 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0043.pdb,1.7100241212932312,,2.326773993663383,C1,E181,False,motif drifted 1.71 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0044.pdb,1.5285308829296456,,5.418464216924567,C1,Y295,False,motif drifted 1.53 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0045.pdb,1.8149196793421185,,2.8938636593165405,C1,E181,False,motif drifted 1.81 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0046.pdb,1.38836576377795,,2.6277719506997292,C12,E157,False,motif drifted 1.39 A (limit 1.00)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0047.pdb,1.3764315554723001,,1.5419815333752118,C12,Y165,False,motif drifted 1.38 A (limit 1.00); added residue C12 within 1.54 A of receptor Y165 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0048.pdb,1.77927793682736,,2.0927959338042177,C12,L156,False,motif drifted 1.78 A (limit 1.00); added residue C12 within 2.09 A of receptor L156 (limit 2.20)
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0049.pdb,0.4724886821406603,,3.969870107558594,C12,L156,True,
-medium__ssapp__CYD-CYD,medium,ssapp,medium_0050.pdb,0.5921412861827074,,3.7952643303768423,C12,L156,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0001.pdb,1.4914817612783196,,3.2355915260777053,C12,E157,False,motif drifted 1.49 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0002.pdb,1.6880508476150824,,4.62902651339695,C12,E157,False,motif drifted 1.69 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0003.pdb,1.4871294475610422,,2.354931232978032,C12,E157,False,motif drifted 1.49 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0004.pdb,0.3964024010838525,,2.440638548461342,C12,L156,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0005.pdb,1.6156822333691923,,2.2792577138850127,C12,L156,False,motif drifted 1.62 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0006.pdb,1.8303608573080665,,2.545293893985322,C12,L156,False,motif drifted 1.83 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0007.pdb,1.6808171313264546,,2.7010895426551085,c1,E181,False,motif drifted 1.68 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0008.pdb,1.8312925962463094,,2.6273966711752736,C12,L156,False,motif drifted 1.83 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0009.pdb,0.5489656591015957,,2.2508758192879057,C12,L156,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0010.pdb,1.7120282158862827,,2.366994209450807,C12,Y165,False,motif drifted 1.71 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0011.pdb,0.3692505817642003,,3.773925508639872,C12,L156,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0012.pdb,1.8510765193079117,,3.234978809828036,c1,E181,False,motif drifted 1.85 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0013.pdb,1.5383936536774467,,2.2331234108629943,c1,E181,False,motif drifted 1.54 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0014.pdb,1.4329357518214227,,2.0392462581555177,C12,L156,False,motif drifted 1.43 A (limit 1.00); added residue C12 within 2.04 A of receptor L156 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0015.pdb,0.24277194072809624,,4.085982312769987,C12,L156,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0016.pdb,1.6900728435482577,,2.949568039521676,c1,E181,False,motif drifted 1.69 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0017.pdb,0.22807826122729988,,2.6714185053686603,C12,L156,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0018.pdb,1.8506525945644126,,2.38368467228821,c1,E181,False,motif drifted 1.85 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0019.pdb,1.8134896630125503,,3.078887498355944,c1,E181,False,motif drifted 1.81 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0020.pdb,1.538443739926019,,3.388023079722647,C12,E157,False,motif drifted 1.54 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0021.pdb,1.514712522441887,,2.8132962800631582,c1,E181,False,motif drifted 1.51 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0022.pdb,1.5370505026449572,,3.0859371731267315,C12,L156,False,motif drifted 1.54 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0023.pdb,1.7930915465130588,,2.247088241844756,C12,L156,False,motif drifted 1.79 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0024.pdb,1.8709644842347999,,1.4020452560775116,c1,E181,False,motif drifted 1.87 A (limit 1.00); added residue c1 within 1.40 A of receptor E181 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0025.pdb,1.3984783108622854,,2.082203545033254,C12,E157,False,motif drifted 1.40 A (limit 1.00); added residue C12 within 2.08 A of receptor E157 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0026.pdb,1.6158809723482603,,5.450381088240893,C12,Y4,False,motif drifted 1.62 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0027.pdb,0.4625627840698247,,4.091334493432584,c1,Y4,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0028.pdb,0.5839369352985657,,3.4699450892305785,c1,Y4,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0029.pdb,1.4084660663289101,,2.146953729918966,C12,E157,False,motif drifted 1.41 A (limit 1.00); added residue C12 within 2.15 A of receptor E157 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0030.pdb,1.6980391226082885,,5.108303199714334,C12,Y4,False,motif drifted 1.70 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0031.pdb,1.7808108806441147,,4.9979796423008604,C12,L156,False,motif drifted 1.78 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0032.pdb,1.7941977100772726,,1.8437923669658343,C12,L156,False,motif drifted 1.79 A (limit 1.00); added residue C12 within 1.84 A of receptor L156 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0033.pdb,1.798735953961652,,2.8646539259913144,C12,L156,False,motif drifted 1.80 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0034.pdb,1.7413609529627039,,5.092703949658878,c1,E181,False,motif drifted 1.74 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0035.pdb,1.8584287577147385,,2.2763535448128014,C12,L156,False,motif drifted 1.86 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0036.pdb,1.653401254524303,,1.970709907043537,c1,E181,False,motif drifted 1.65 A (limit 1.00); added residue c1 within 1.97 A of receptor E181 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0037.pdb,1.8111127060903405,,2.809262525582514,C12,L156,False,motif drifted 1.81 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0038.pdb,1.5978624244898407,,0.5718222479607294,C12,L156,False,motif drifted 1.60 A (limit 1.00); added residue C12 within 0.57 A of receptor L156 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0039.pdb,1.2685547851207015,,2.120457385670773,C12,E157,False,motif drifted 1.27 A (limit 1.00); added residue C12 within 2.12 A of receptor E157 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0040.pdb,1.4899818924455175,,2.7863451494626155,C12,L156,False,motif drifted 1.49 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0041.pdb,1.6107953731253009,,2.4467159314605866,c1,E181,False,motif drifted 1.61 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0042.pdb,1.8133718602528213,,3.259591802587326,c1,E181,False,motif drifted 1.81 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0043.pdb,1.59398418164346,,1.856550004640103,C12,E157,False,motif drifted 1.59 A (limit 1.00); added residue C12 within 1.86 A of receptor E157 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0044.pdb,1.832946968053602,,3.3054063099414353,C12,L156,False,motif drifted 1.83 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0045.pdb,1.797228114541295,,3.3399846465917853,C12,E157,False,motif drifted 1.80 A (limit 1.00)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0046.pdb,0.34281296764018865,,3.8045993163521796,C12,L156,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0047.pdb,1.4519953467327933,,1.6662694163643865,C12,E157,False,motif drifted 1.45 A (limit 1.00); added residue C12 within 1.67 A of receptor E157 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0048.pdb,1.7558850686878915,,1.970186767384488,c1,E181,False,motif drifted 1.76 A (limit 1.00); added residue c1 within 1.97 A of receptor E181 (limit 2.20)
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0049.pdb,0.2941749538041042,,2.7323112169964943,C12,E157,True,
-medium__ssapp__CYD-DCYD,medium,ssapp,medium_0050.pdb,1.750039054096463,,5.028569797903687,c1,E181,False,motif drifted 1.75 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0001.pdb,1.3653394446860003,,3.2789284798053764,c12,Q163,False,motif drifted 1.37 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0002.pdb,1.7937652729578741,,2.451975351767277,c12,L156,False,motif drifted 1.79 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0003.pdb,1.5400922539195014,,2.5636638559146303,C1,E181,False,motif drifted 1.54 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0004.pdb,1.702871617651211,,2.3646918562889554,C1,E181,False,motif drifted 1.70 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0005.pdb,0.7258719359264466,,2.9229354248668833,C1,Y4,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0006.pdb,1.4621950910156518,,2.3939850575016517,c12,L156,False,motif drifted 1.46 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0007.pdb,1.3292205359429385,,3.5843031911433005,C1,E181,False,motif drifted 1.33 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0008.pdb,1.7944035664653157,,2.0561935556851068,c12,L156,False,motif drifted 1.79 A (limit 1.00); added residue c12 within 2.06 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0009.pdb,1.5377111250557893,,2.2876006296237277,c12,L156,False,motif drifted 1.54 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0010.pdb,0.5444154893449953,,3.421218619914616,C1,M312,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0011.pdb,0.15287779144351585,,1.4708666072548209,c12,L156,False,added residue c12 within 1.47 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0012.pdb,1.7008736793513437,,5.37589079693974,c12,Y4,False,motif drifted 1.70 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0013.pdb,1.8310230778375198,,2.3672858834053696,c12,L156,False,motif drifted 1.83 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0014.pdb,0.19946936318535208,,2.3811825310482555,c12,L156,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0015.pdb,1.5775786728791463,,2.6676426181283497,C1,E181,False,motif drifted 1.58 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0016.pdb,1.8579952632713768,,3.5430054369238753,C1,E181,False,motif drifted 1.86 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0017.pdb,0.33544363469526883,,4.106759068375328,c12,L156,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0018.pdb,0.4182437710807551,,3.156557516980804,c12,L156,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0019.pdb,1.5679887130413666,,2.2358668012593577,C1,E181,False,motif drifted 1.57 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0020.pdb,1.7643965929239085,,2.0076536801294504,C1,E181,False,motif drifted 1.76 A (limit 1.00); added residue C1 within 2.01 A of receptor E181 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0021.pdb,1.724996065680526,,1.8490000144402263,C1,E181,False,motif drifted 1.72 A (limit 1.00); added residue C1 within 1.85 A of receptor E181 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0022.pdb,1.837807028747534,,3.675708190422211,c12,E157,False,motif drifted 1.84 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0023.pdb,1.7266990146620276,,2.7164636341281643,C1,E181,False,motif drifted 1.73 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0024.pdb,1.6143283965622717,,1.965100751534652,c12,L156,False,motif drifted 1.61 A (limit 1.00); added residue c12 within 1.97 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0025.pdb,1.7077153208254896,,1.6707403937370982,C1,E181,False,motif drifted 1.71 A (limit 1.00); added residue C1 within 1.67 A of receptor E181 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0026.pdb,1.5331912267389767,,2.195708679030524,c12,L156,False,motif drifted 1.53 A (limit 1.00); added residue c12 within 2.20 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0027.pdb,1.6052316637208153,,4.977711163461774,c12,L156,False,motif drifted 1.61 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0028.pdb,1.4850865860401457,,2.4359547688388115,c12,L156,False,motif drifted 1.49 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0029.pdb,0.6707462922122756,,3.801367037842784,C1,Y4,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0030.pdb,0.7624386542574518,,3.173102958340752,c12,Q163,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0031.pdb,0.9496142915961938,,1.333002699479169,C1,Y4,False,added residue C1 within 1.33 A of receptor Y4 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0032.pdb,1.4928616539469017,,2.38900776581987,c12,L156,False,motif drifted 1.49 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0033.pdb,1.5720513527695543,,2.1900850393147335,C1,Y295,False,motif drifted 1.57 A (limit 1.00); added residue C1 within 2.19 A of receptor Y295 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0034.pdb,1.8160386747171653,,2.0841248549448546,c12,L156,False,motif drifted 1.82 A (limit 1.00); added residue c12 within 2.08 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0035.pdb,1.8571836085497824,,2.3059290663692105,c12,L156,False,motif drifted 1.86 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0036.pdb,1.8094603015084356,,2.3685067667328936,c12,L156,False,motif drifted 1.81 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0037.pdb,1.7887299592801458,,3.1388410252134173,C1,E181,False,motif drifted 1.79 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0038.pdb,0.7802900824332817,,2.621146825918219,C1,Y4,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0039.pdb,0.5822396875808717,,3.333157925811641,c12,L156,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0040.pdb,0.6066224628129324,,2.9870822994614987,C1,Y4,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0041.pdb,1.8209828484125659,,1.7370884546983798,c12,L156,False,motif drifted 1.82 A (limit 1.00); added residue c12 within 1.74 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0042.pdb,1.8170063427767897,,2.2561980265971826,c12,L156,False,motif drifted 1.82 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0043.pdb,1.6675428331143234,,2.916158119192332,c12,L156,False,motif drifted 1.67 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0044.pdb,1.8026801823814569,,2.649497398118347,c12,L156,False,motif drifted 1.80 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0045.pdb,1.85714284673384,,3.9744395287300986,c12,L156,False,motif drifted 1.86 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0046.pdb,1.666967494865418,,3.245759079203095,c12,Q163,False,motif drifted 1.67 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0047.pdb,0.7708550971161153,,3.086057731542843,C1,Y4,True,
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0048.pdb,1.6851871711029485,,3.0195989947984017,C1,E181,False,motif drifted 1.69 A (limit 1.00)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0049.pdb,1.8988880056233848,,2.090939965885535,c12,L156,False,motif drifted 1.90 A (limit 1.00); added residue c12 within 2.09 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-CYD,medium,ssapp,medium_0050.pdb,0.28020783319379744,,3.2942317930543465,c12,Q163,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0001.pdb,1.6664105592554634,,2.4588223976512094,c1,E181,False,motif drifted 1.67 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0002.pdb,1.4982331368948245,,2.5301135078217385,c12,L156,False,motif drifted 1.50 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0003.pdb,1.83287609426233,,3.6468892254724437,c12,L156,False,motif drifted 1.83 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0004.pdb,1.7568979679082781,,2.58981520616346,c1,E181,False,motif drifted 1.76 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0005.pdb,1.7628113449229235,,2.2928495423335096,c12,L156,False,motif drifted 1.76 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0006.pdb,1.6412129793703418,,3.7831660143903867,c12,E157,False,motif drifted 1.64 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0007.pdb,1.603092620435668,,2.7435132465037393,c1,E181,False,motif drifted 1.60 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0008.pdb,1.8064777682415571,,3.7421877803466765,c12,E157,False,motif drifted 1.81 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0009.pdb,1.9842564858173435,,3.764090880150242,c1,E181,False,motif drifted 1.98 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0010.pdb,1.8571905234030512,,2.5640630811707603,c12,L156,False,motif drifted 1.86 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0011.pdb,0.5489459024991085,,3.3604780016305154,c1,Y4,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0012.pdb,0.23291916394935067,,2.774776464463015,c12,L156,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0013.pdb,1.8517330179638247,,2.5025953324276102,c12,L156,False,motif drifted 1.85 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0014.pdb,1.8282156961976788,,2.6031507193930503,c12,L156,False,motif drifted 1.83 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0015.pdb,0.7841847936922816,,0.9593049487609694,c12,Q163,False,added residue c12 within 0.96 A of receptor Q163 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0016.pdb,1.6395018893295215,,2.1205765799297334,c12,L156,False,motif drifted 1.64 A (limit 1.00); added residue c12 within 2.12 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0017.pdb,1.4593090643512496,,2.8583610940038477,c12,L156,False,motif drifted 1.46 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0018.pdb,1.8016911870938477,,2.61442913367134,c12,L156,False,motif drifted 1.80 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0019.pdb,1.8823538393501933,,2.3255205219676722,c12,L156,False,motif drifted 1.88 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0020.pdb,1.7176889449685984,,2.161939694889272,c12,L156,False,motif drifted 1.72 A (limit 1.00); added residue c12 within 2.16 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0021.pdb,0.03281220299531169,,1.7301029359465474,c12,L156,False,added residue c12 within 1.73 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0022.pdb,1.8618837076528616,,2.8937907875738986,c12,L156,False,motif drifted 1.86 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0023.pdb,1.6306061758622379,,2.5400418587783387,c12,L156,False,motif drifted 1.63 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0024.pdb,0.9103210221151865,,2.0745724530051155,c1,Y4,False,added residue c1 within 2.07 A of receptor Y4 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0025.pdb,1.7862199259435274,,2.1737172582629007,c12,L156,False,motif drifted 1.79 A (limit 1.00); added residue c12 within 2.17 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0026.pdb,0.32862837670660117,,3.1335982875626445,c12,L156,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0027.pdb,1.8575095308039709,,2.037116362813924,c12,L156,False,motif drifted 1.86 A (limit 1.00); added residue c12 within 2.04 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0028.pdb,1.6360587902842632,,2.3338394659703714,c12,L156,False,motif drifted 1.64 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0029.pdb,1.551198106822768,,2.198183284202551,c12,L156,False,motif drifted 1.55 A (limit 1.00); added residue c12 within 2.20 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0030.pdb,0.6016456534421403,,3.340527735290048,c12,Q163,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0031.pdb,0.596048713321889,,4.12677359002385,c12,L156,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0032.pdb,1.8721333168300638,,2.888160084035016,c12,L156,False,motif drifted 1.87 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0033.pdb,1.863082580769891,,2.749663117708476,c12,L156,False,motif drifted 1.86 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0034.pdb,0.07644261354384677,,2.5083909071206967,c12,L156,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0035.pdb,1.3919555718101664,,3.8194053952952225,c12,L156,False,motif drifted 1.39 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0036.pdb,1.311971047891083,,2.6943875499182863,c12,L156,False,motif drifted 1.31 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0037.pdb,1.5587333054192611,,2.1990823478478814,c12,L156,False,motif drifted 1.56 A (limit 1.00); added residue c12 within 2.20 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0038.pdb,1.5042200397080006,,2.5125707859057167,c12,L156,False,motif drifted 1.50 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0039.pdb,1.822229974385273,,4.044987029151889,c12,E157,False,motif drifted 1.82 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0040.pdb,1.5165117968192472,,2.41457753433295,c1,E181,False,motif drifted 1.52 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0041.pdb,0.20012476393313747,,2.9518741789006566,c12,L156,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0042.pdb,1.8010916656041067,,1.9992441138611652,c12,L156,False,motif drifted 1.80 A (limit 1.00); added residue c12 within 2.00 A of receptor L156 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0043.pdb,0.6794969736677093,,3.733776963318329,c12,Q163,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0044.pdb,0.7948842296211388,,3.366643013860847,c12,Q163,True,
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0045.pdb,1.432064185458846,,3.19629712243849,c1,E181,False,motif drifted 1.43 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0046.pdb,1.8196519747027862,,2.9860454292271736,c1,E181,False,motif drifted 1.82 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0047.pdb,1.6642167435718205,,2.214452389003028,c1,E181,False,motif drifted 1.66 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0048.pdb,1.5776571853836925,,1.4599298442445845,c1,E181,False,motif drifted 1.58 A (limit 1.00); added residue c1 within 1.46 A of receptor E181 (limit 2.20)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0049.pdb,1.7968742874246029,,4.108303353288914,c12,E157,False,motif drifted 1.80 A (limit 1.00)
-medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0050.pdb,1.5470275172837247,,2.3523089755091267,c1,E181,False,motif drifted 1.55 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0001.pdb,1.3360389437314777,,2.449930822869433,C12,E157,False,motif drifted 1.34 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0002.pdb,2.0158160033205577,,2.0923864580519704,C12,L156,False,motif drifted 2.02 A (limit 1.00); added residue C12 within 2.09 A of receptor L156 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0003.pdb,1.8484133698464376,,3.0838988547114883,C12,L156,False,motif drifted 1.85 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0004.pdb,1.6477229784065324,,1.979423053470811,C1,Y295,False,motif drifted 1.65 A (limit 1.00); added residue C1 within 1.98 A of receptor Y295 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0005.pdb,0.33416388181130335,,2.844940824361812,C12,L156,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0006.pdb,0.17392720924558944,,2.246086798128111,C12,L156,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0007.pdb,1.8874807190531953,,1.8837294678640402,C12,L156,False,motif drifted 1.89 A (limit 1.00); added residue C12 within 1.88 A of receptor L156 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0008.pdb,1.8779433417518707,,2.940056629509353,C12,L156,False,motif drifted 1.88 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0009.pdb,1.7996076058735584,,2.1013192066660955,C12,Y165,False,motif drifted 1.80 A (limit 1.00); added residue C12 within 2.10 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0010.pdb,1.8583091180583877,,2.320601933365624,C12,L156,False,motif drifted 1.86 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0011.pdb,1.471952015978054,,2.8370384436499494,C1,Y295,False,motif drifted 1.47 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0012.pdb,0.1543288821622268,,2.906751872976924,C12,L156,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0013.pdb,1.9019461670413436,,3.0040289910949096,C12,L156,False,motif drifted 1.90 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0014.pdb,1.4645381734507654,,2.6043203955836964,C12,E157,False,motif drifted 1.46 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0015.pdb,1.5818245766189403,,2.5891067955699216,C12,E157,False,motif drifted 1.58 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0016.pdb,1.6650100336725462,,1.9863460200582939,C12,E157,False,motif drifted 1.67 A (limit 1.00); added residue C12 within 1.99 A of receptor E157 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0017.pdb,1.8609596278666853,,2.3319609707999613,C12,L156,False,motif drifted 1.86 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0018.pdb,1.4991246230586628,,2.7814790867226207,C1,E181,False,motif drifted 1.50 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0019.pdb,1.5589140104522217,,3.8082713280639062,C1,E181,False,motif drifted 1.56 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0020.pdb,1.6153959798854003,,0.6737464441928042,C12,Y165,False,motif drifted 1.62 A (limit 1.00); added residue C12 within 0.67 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0021.pdb,1.5786450548827178,,2.5347478025139547,C1,E181,False,motif drifted 1.58 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0022.pdb,1.5962180085667357,,1.3889617170882351,C12,Y165,False,motif drifted 1.60 A (limit 1.00); added residue C12 within 1.39 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0023.pdb,0.3580344590246779,,2.677851439164623,C12,L156,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0024.pdb,0.4729098751662246,,3.1732462950101374,C12,L156,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0025.pdb,1.99000392930078,,2.3679503063450467,C12,L156,False,motif drifted 1.99 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0026.pdb,1.5770294244827014,,2.1522049236199368,C12,E157,False,motif drifted 1.58 A (limit 1.00); added residue C12 within 2.15 A of receptor E157 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0027.pdb,1.7432945167134937,,1.9563537331596332,C1,E181,False,motif drifted 1.74 A (limit 1.00); added residue C1 within 1.96 A of receptor E181 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0028.pdb,1.5521803521214828,,4.694021792256431,C1,E181,False,motif drifted 1.55 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0029.pdb,1.7649906093406913,,5.02804224224709,C12,L156,False,motif drifted 1.76 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0030.pdb,1.677384395825261,,2.54473687592728,C1,E181,False,motif drifted 1.68 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0031.pdb,1.7880484699878696,,1.6484497324252678,C12,Y165,False,motif drifted 1.79 A (limit 1.00); added residue C12 within 1.65 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0032.pdb,1.6094028007675365,,2.9765037712353686,C12,Y165,False,motif drifted 1.61 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0033.pdb,1.4789722898167434,,1.328054769823714,C12,Y165,False,motif drifted 1.48 A (limit 1.00); added residue C12 within 1.33 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0034.pdb,0.4166826104409975,,2.127756228604292,C12,E157,False,added residue C12 within 2.13 A of receptor E157 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0035.pdb,1.1126515021609966,,3.0805819029053207,C1,Y4,False,motif drifted 1.11 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0036.pdb,1.7214511246840243,,2.386644429135942,C12,L156,False,motif drifted 1.72 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0037.pdb,1.6846215259144734,,2.4208223915881932,C12,E157,False,motif drifted 1.68 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0038.pdb,0.5333259454362597,,2.698760063058206,C1,Y4,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0039.pdb,1.417350939266713,,5.109548731497207,C12,Y4,False,motif drifted 1.42 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0040.pdb,0.22183786474568792,,3.8675952997991634,C1,Y4,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0041.pdb,0.46059855110864983,,4.060768289589062,C12,L156,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0042.pdb,0.24484315309496243,,4.005588329707944,C12,L156,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0043.pdb,0.8118867191954795,,2.4261815342528,C12,L156,True,
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0044.pdb,1.808779293930627,,1.8816883400251039,C12,Y165,False,motif drifted 1.81 A (limit 1.00); added residue C12 within 1.88 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0045.pdb,1.7665272980602484,,2.6582637558746836,C1,E181,False,motif drifted 1.77 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0046.pdb,1.4933632015757021,,3.0424865641250864,C12,L156,False,motif drifted 1.49 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0047.pdb,1.5343170022060633,,2.5395036554457127,C12,E157,False,motif drifted 1.53 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0048.pdb,1.3461454631982948,,2.9841265920401385,C12,E157,False,motif drifted 1.35 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0049.pdb,1.5466103544961352,,2.244486775964677,C12,E157,False,motif drifted 1.55 A (limit 1.00)
+medium__ssapp__CYD-CYD,medium,ssapp,medium_0050.pdb,1.5658509711899118,,1.9214766802951375,C12,L156,False,motif drifted 1.57 A (limit 1.00); added residue C12 within 1.92 A of receptor L156 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0001.pdb,1.6376107423185156,,3.186770340901428,c1,E181,False,motif drifted 1.64 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0002.pdb,1.8571604881311703,,3.01237103404609,C12,L156,False,motif drifted 1.86 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0003.pdb,1.6418563354428635,,1.3177587117815863,C12,Y165,False,motif drifted 1.64 A (limit 1.00); added residue C12 within 1.32 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0004.pdb,1.6244838644466197,,2.477296717553225,C12,E157,False,motif drifted 1.62 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0005.pdb,1.4361152822600254,,3.15064599770624,C12,E157,False,motif drifted 1.44 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0006.pdb,0.6891097580254915,,1.7767520837360913,C12,Q163,False,added residue C12 within 1.78 A of receptor Q163 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0007.pdb,0.5045597816610955,,3.177574540181287,C12,L156,True,
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0008.pdb,1.8465615617742759,,2.951866223468147,C12,L156,False,motif drifted 1.85 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0009.pdb,1.8536142017614694,,3.3325168584193783,c1,E181,False,motif drifted 1.85 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0010.pdb,1.656131062991061,,2.0912798790178035,C12,Y165,False,motif drifted 1.66 A (limit 1.00); added residue C12 within 2.09 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0011.pdb,1.8664834628434852,,2.741597753116456,C12,L156,False,motif drifted 1.87 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0012.pdb,1.6783005845039758,,2.188028270325956,C12,Y165,False,motif drifted 1.68 A (limit 1.00); added residue C12 within 2.19 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0013.pdb,1.4585317706237575,,2.156728561318899,C12,E157,False,motif drifted 1.46 A (limit 1.00); added residue C12 within 2.16 A of receptor E157 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0014.pdb,1.5337916879375586,,2.246494369302305,C12,L156,False,motif drifted 1.53 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0015.pdb,2.0609534722489022,,3.601245015557473,C12,L156,False,motif drifted 2.06 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0016.pdb,1.7914848597762802,,3.2344469902556074,C12,L156,False,motif drifted 1.79 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0017.pdb,1.6215235806881598,,2.5178903873267293,C12,L156,False,motif drifted 1.62 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0018.pdb,1.8574915353648886,,2.773386061486349,c1,E181,False,motif drifted 1.86 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0019.pdb,1.5953421462278097,,3.149955476135494,c1,E181,False,motif drifted 1.60 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0020.pdb,1.6933933025947228,,2.904343461220922,c1,E181,False,motif drifted 1.69 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0021.pdb,1.7109938708150552,,2.3006760086429736,C12,L156,False,motif drifted 1.71 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0022.pdb,1.6405389161631307,,4.106159386166678,c1,E181,False,motif drifted 1.64 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0023.pdb,1.757907133200889,,2.5425434866247327,C12,L156,False,motif drifted 1.76 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0024.pdb,1.8080805273744558,,3.3194759951456234,C12,L156,False,motif drifted 1.81 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0025.pdb,1.5975441375250994,,2.3538833652795415,c1,E181,False,motif drifted 1.60 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0026.pdb,1.742062260408769,,3.080836242110609,C12,L156,False,motif drifted 1.74 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0027.pdb,1.7596707335952322,,1.1166001347532868,c1,E181,False,motif drifted 1.76 A (limit 1.00); added residue c1 within 1.12 A of receptor E181 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0028.pdb,1.62183774818747,,0.9112132159347206,C12,Y165,False,motif drifted 1.62 A (limit 1.00); added residue C12 within 0.91 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0029.pdb,0.47224486185872966,,3.9276467191993194,C12,L156,True,
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0030.pdb,1.5995929793654775,,2.640863226373377,C12,L156,False,motif drifted 1.60 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0031.pdb,1.7668823498159354,,3.5232526251350786,C12,L156,False,motif drifted 1.77 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0032.pdb,0.719534222576259,,3.373434114617192,C12,E157,True,
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0033.pdb,1.3403552320915364,,3.540097651573633,c1,E181,False,motif drifted 1.34 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0034.pdb,1.6493417168116038,,0.8480194893682309,C12,L156,False,motif drifted 1.65 A (limit 1.00); added residue C12 within 0.85 A of receptor L156 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0035.pdb,1.65091350767105,,2.4526520408120254,c1,E181,False,motif drifted 1.65 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0036.pdb,1.3424394059699998,,3.168050781900183,c1,E181,False,motif drifted 1.34 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0037.pdb,1.151067701872331,,2.301138193230915,C12,E157,False,motif drifted 1.15 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0038.pdb,1.6263747521336247,,2.451026367760956,C12,Y165,False,motif drifted 1.63 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0039.pdb,1.678433128299556,,3.002965423173987,C12,L156,False,motif drifted 1.68 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0040.pdb,1.432598590397516,,1.8831254770357768,C12,E157,False,motif drifted 1.43 A (limit 1.00); added residue C12 within 1.88 A of receptor E157 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0041.pdb,1.3088695348015258,,1.9496861026789298,C12,E157,False,motif drifted 1.31 A (limit 1.00); added residue C12 within 1.95 A of receptor E157 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0042.pdb,1.6163325235901977,,1.7709831946078498,C12,E157,False,motif drifted 1.62 A (limit 1.00); added residue C12 within 1.77 A of receptor E157 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0043.pdb,1.6687529195015594,,1.577421759414067,C12,Y165,False,motif drifted 1.67 A (limit 1.00); added residue C12 within 1.58 A of receptor Y165 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0044.pdb,1.8449162756324413,,2.5302324942886396,C12,L156,False,motif drifted 1.84 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0045.pdb,1.5829296442046712,,3.1031243220948204,C12,E157,False,motif drifted 1.58 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0046.pdb,1.6743578823317946,,2.0148944300716636,C12,E157,False,motif drifted 1.67 A (limit 1.00); added residue C12 within 2.01 A of receptor E157 (limit 2.20)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0047.pdb,1.6974790476932766,,2.705666631158079,C12,Y165,False,motif drifted 1.70 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0048.pdb,1.515861027609964,,2.811164996227692,c1,E181,False,motif drifted 1.52 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0049.pdb,1.7889061089257519,,3.880717921997314,C12,L156,False,motif drifted 1.79 A (limit 1.00)
+medium__ssapp__CYD-DCYD,medium,ssapp,medium_0050.pdb,1.5904843840705836,,2.671606893819404,c1,E181,False,motif drifted 1.59 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0001.pdb,1.6116833305903386,,4.585011584993529,c12,E157,False,motif drifted 1.61 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0002.pdb,0.3238780414478118,,2.643614792965542,C1,Y4,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0003.pdb,1.8016771312022497,,2.170150219177896,C1,E181,False,motif drifted 1.80 A (limit 1.00); added residue C1 within 2.17 A of receptor E181 (limit 2.20)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0004.pdb,1.8209821784380331,,2.658561041528381,c12,L156,False,motif drifted 1.82 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0005.pdb,1.7375619147363806,,1.8262022450260005,c12,L156,False,motif drifted 1.74 A (limit 1.00); added residue c12 within 1.83 A of receptor L156 (limit 2.20)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0006.pdb,0.3466233431327694,,2.5004013055419323,C1,Y4,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0007.pdb,0.30422158404469746,,3.2371081748292823,c12,L156,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0008.pdb,1.7415279709163007,,3.7342446780839107,c12,L156,False,motif drifted 1.74 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0009.pdb,1.7904830244322794,,2.352318026958784,c12,L156,False,motif drifted 1.79 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0010.pdb,0.22930731675267726,,3.1577572788323827,c12,L156,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0011.pdb,1.4697353897604515,,2.9200365002857893,c12,L156,False,motif drifted 1.47 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0012.pdb,1.7152026219157677,,2.8727800135914197,c12,L156,False,motif drifted 1.72 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0013.pdb,1.4376524349739161,,2.5962989432989847,C1,E181,False,motif drifted 1.44 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0014.pdb,1.8649550014087077,,1.6964052951659476,c12,L156,False,motif drifted 1.86 A (limit 1.00); added residue c12 within 1.70 A of receptor L156 (limit 2.20)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0015.pdb,0.14922836444253734,,3.4070113310127863,c12,L156,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0016.pdb,1.6885907132375173,,2.298026441136009,c12,L156,False,motif drifted 1.69 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0017.pdb,1.6194323969917253,,2.659172834451085,c12,L156,False,motif drifted 1.62 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0018.pdb,1.5550648906140996,,3.937300342294837,c12,L156,False,motif drifted 1.56 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0019.pdb,1.6775291645039299,,2.5674356949623287,c12,L156,False,motif drifted 1.68 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0020.pdb,1.823268939997516,,3.194770606944315,c12,L156,False,motif drifted 1.82 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0021.pdb,0.2656268244092399,,3.2155138054413155,c12,L156,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0022.pdb,0.14552823865385273,,3.6571622877192116,c12,Q163,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0023.pdb,1.6079631137677137,,3.7468609420830283,c12,L156,False,motif drifted 1.61 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0024.pdb,0.11818176897468066,,3.3438045618017576,c12,L156,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0025.pdb,1.7245381089296223,,2.4224061336763367,C1,E181,False,motif drifted 1.72 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0026.pdb,0.5799416701212161,,3.2980671060879914,c12,L156,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0027.pdb,1.9272335867779984,,3.4479586471434276,C1,E181,False,motif drifted 1.93 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0028.pdb,1.6267555345060956,,2.509535378685063,C1,E181,False,motif drifted 1.63 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0029.pdb,0.787612211261214,,1.0922814966780223,C1,Y4,False,added residue C1 within 1.09 A of receptor Y4 (limit 2.20)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0030.pdb,0.5248491916086501,,2.105906552688446,c12,L156,False,added residue c12 within 2.11 A of receptor L156 (limit 2.20)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0031.pdb,1.6703822667054378,,2.3747489807317903,c12,L156,False,motif drifted 1.67 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0032.pdb,1.5328715204246044,,2.2053392886217917,c12,L156,False,motif drifted 1.53 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0033.pdb,1.7742218202243092,,3.1909729740190804,c12,L156,False,motif drifted 1.77 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0034.pdb,1.7508783100833205,,2.532969371105194,c12,L156,False,motif drifted 1.75 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0035.pdb,0.33211770132904866,,4.0959679502860284,c12,L156,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0036.pdb,1.428889550180713,,2.273541310069009,C1,E181,False,motif drifted 1.43 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0037.pdb,1.6465251415663544,,2.2144349062760114,c12,L156,False,motif drifted 1.65 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0038.pdb,0.8985261725103106,,3.5819805730977055,c12,E157,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0039.pdb,1.7044702572247765,,2.0835214294811872,C1,E181,False,motif drifted 1.70 A (limit 1.00); added residue C1 within 2.08 A of receptor E181 (limit 2.20)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0040.pdb,1.6876012782895198,,1.9864362528599744,C1,E181,False,motif drifted 1.69 A (limit 1.00); added residue C1 within 1.99 A of receptor E181 (limit 2.20)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0041.pdb,1.4483691274443409,,2.502872675003911,c12,L156,False,motif drifted 1.45 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0042.pdb,1.6696512272158868,,4.465558065870154,c12,Y4,False,motif drifted 1.67 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0043.pdb,1.7789436760529824,,1.8986153008871984,c12,L156,False,motif drifted 1.78 A (limit 1.00); added residue c12 within 1.90 A of receptor L156 (limit 2.20)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0044.pdb,1.5224724757875807,,3.2688651236662447,c12,E157,False,motif drifted 1.52 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0045.pdb,1.5744010406973459,,2.5172997073307632,C1,E181,False,motif drifted 1.57 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0046.pdb,1.484490419171406,,3.5311982811609286,c12,E157,False,motif drifted 1.48 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0047.pdb,1.839372196929988,,3.6894548538312684,c12,L156,False,motif drifted 1.84 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0048.pdb,1.5861806447700495,,2.716235675844745,c12,L156,False,motif drifted 1.59 A (limit 1.00)
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0049.pdb,0.5373030003383197,,2.615740140124274,C1,Y4,True,
+medium__ssapp__DCYD-CYD,medium,ssapp,medium_0050.pdb,1.677960090435353,,2.6889745688154876,c12,L156,False,motif drifted 1.68 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0001.pdb,1.6527064819297204,,2.975628787558494,c12,L156,False,motif drifted 1.65 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0002.pdb,1.8038024953591247,,4.163304286759067,c12,E157,False,motif drifted 1.80 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0003.pdb,1.5131384092289883,,2.385847421091571,c12,L156,False,motif drifted 1.51 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0004.pdb,1.6289761985492766,,2.75037778813676,c12,L156,False,motif drifted 1.63 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0005.pdb,1.604480099117657,,3.967278280193758,c12,L156,False,motif drifted 1.60 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0006.pdb,1.6596808521441169,,3.4929874899838236,c12,L156,False,motif drifted 1.66 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0007.pdb,1.6551324146170188,,2.4114355824506197,c12,L156,False,motif drifted 1.66 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0008.pdb,1.5196749757588255,,2.50888111201177,c12,L156,False,motif drifted 1.52 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0009.pdb,1.769500048642827,,2.2484454499556543,c12,L156,False,motif drifted 1.77 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0010.pdb,1.6769878764185275,,2.044998436766491,c1,E181,False,motif drifted 1.68 A (limit 1.00); added residue c1 within 2.04 A of receptor E181 (limit 2.20)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0011.pdb,1.734539235018631,,4.913260351302964,c12,L156,False,motif drifted 1.73 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0012.pdb,1.7418529859929992,,2.920379197886761,c12,L156,False,motif drifted 1.74 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0013.pdb,0.19030321605044537,,2.3188469539245564,c1,M312,True,
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0014.pdb,1.4539655460805831,,4.284783273191458,c12,E157,False,motif drifted 1.45 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0015.pdb,1.4605917055736475,,2.2315526912182873,c12,L156,False,motif drifted 1.46 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0016.pdb,1.5775341431655898,,3.30825024194088,c12,E157,False,motif drifted 1.58 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0017.pdb,1.47479379450554,,3.1014715796081957,c12,L156,False,motif drifted 1.47 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0018.pdb,1.607115765095044,,2.9358941839286006,c12,L156,False,motif drifted 1.61 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0019.pdb,0.5163370314346519,,2.501029910942279,c12,L156,True,
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0020.pdb,1.8467227374563637,,2.501974281994474,c12,L156,False,motif drifted 1.85 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0021.pdb,0.6677429154386352,,3.764671524933527,c1,Y4,True,
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0022.pdb,1.6496540859145155,,2.0396208944754317,c12,L156,False,motif drifted 1.65 A (limit 1.00); added residue c12 within 2.04 A of receptor L156 (limit 2.20)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0023.pdb,1.5580375370817818,,2.64488343001509,c12,Q163,False,motif drifted 1.56 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0024.pdb,1.8064590907590823,,2.2624793267634056,c1,E181,False,motif drifted 1.81 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0025.pdb,1.6988694102638386,,4.547970435048888,c12,L156,False,motif drifted 1.70 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0026.pdb,1.8348155388640275,,3.50175242980129,c12,L156,False,motif drifted 1.83 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0027.pdb,1.9540257557179834,,1.814959474199958,c1,E181,False,motif drifted 1.95 A (limit 1.00); added residue c1 within 1.81 A of receptor E181 (limit 2.20)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0028.pdb,0.15022158899300395,,4.122632985137286,c12,E157,True,
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0029.pdb,1.4036433034416196,,2.257302582289863,c12,Q163,False,motif drifted 1.40 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0030.pdb,1.541363846210029,,3.487966837801994,c12,L156,False,motif drifted 1.54 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0031.pdb,1.692418823485593,,1.9985086651727184,c12,Y165,False,motif drifted 1.69 A (limit 1.00); added residue c12 within 2.00 A of receptor Y165 (limit 2.20)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0032.pdb,1.5493284692860771,,3.9407531004449528,c12,L156,False,motif drifted 1.55 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0033.pdb,1.831507608063464,,2.563680118416228,c12,L156,False,motif drifted 1.83 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0034.pdb,1.4830706336882686,,3.144750403077189,c12,L156,False,motif drifted 1.48 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0035.pdb,1.681719141058004,,3.238494341029016,c12,E157,False,motif drifted 1.68 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0036.pdb,1.5860887724781954,,2.528331638819252,c12,L156,False,motif drifted 1.59 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0037.pdb,1.7384847905988587,,4.891842243927029,c12,Y4,False,motif drifted 1.74 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0038.pdb,1.8158617106843928,,4.367622474753781,c12,Y4,False,motif drifted 1.82 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0039.pdb,1.779197796115812,,1.9284443770043462,c12,L156,False,motif drifted 1.78 A (limit 1.00); added residue c12 within 1.93 A of receptor L156 (limit 2.20)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0040.pdb,1.821932566448434,,4.015443579581859,c12,E157,False,motif drifted 1.82 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0041.pdb,1.5542396154160236,,2.876373897591722,c12,L156,False,motif drifted 1.55 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0042.pdb,1.7427191567103093,,2.2609375193068546,c12,L156,False,motif drifted 1.74 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0043.pdb,0.6651634001819089,,3.2868040016707853,c1,Y4,True,
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0044.pdb,1.8025456967761055,,1.8947586151928437,c12,L156,False,motif drifted 1.80 A (limit 1.00); added residue c12 within 1.89 A of receptor L156 (limit 2.20)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0045.pdb,1.5401725447264865,,3.5032296155578786,c1,E181,False,motif drifted 1.54 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0046.pdb,1.8477785389615604,,2.112785394580129,c12,L156,False,motif drifted 1.85 A (limit 1.00); added residue c12 within 2.11 A of receptor L156 (limit 2.20)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0047.pdb,1.7316728797015646,,2.328117105002926,c1,E181,False,motif drifted 1.73 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0048.pdb,1.7000699217981639,,3.5678698183261908,c1,E181,False,motif drifted 1.70 A (limit 1.00)
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0049.pdb,0.7298620619730677,,2.3636188912812566,c1,Y4,True,
+medium__ssapp__DCYD-DCYD,medium,ssapp,medium_0050.pdb,1.577023892113418,,3.5589419062981973,c12,L156,False,motif drifted 1.58 A (limit 1.00)
 short__amide__DPRO-GLY,short,amide,short_0001.pdb,0.6460879535450142,48.77864609688022,4.159363192307542,p9,M312,True,
 short__amide__DPRO-GLY,short,amide,short_0002.pdb,0.7283853981972893,51.813406150272385,4.135970265096503,p9,M312,True,
 short__amide__DPRO-GLY,short,amide,short_0003.pdb,0.658003501234169,49.970608670869375,4.149686041781579,p9,M312,True,
@@ -1149,203 +1149,203 @@ short__amide__GLY-GLY,short,amide,short_0047.pdb,0.14107811016836302,122.1594692
 short__amide__GLY-GLY,short,amide,short_0048.pdb,0.1264630048574444,120.58532848938813,4.251870480717492,G9,Y4,True,
 short__amide__GLY-GLY,short,amide,short_0049.pdb,0.1235948174352987,120.08491945157296,4.253223653810554,G9,Y4,True,
 short__amide__GLY-GLY,short,amide,short_0050.pdb,0.12737502182369165,101.04530824607087,2.0011927315361793,G10,M312,False,added residue G10 within 2.00 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0001.pdb,0.153547744524505,,3.913104985138956,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0002.pdb,0.18792552556205006,,3.97643002459145,C10,Y4,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0003.pdb,0.2067968738123438,,3.9306116851185555,C1,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0004.pdb,0.1361801338231278,,3.817284369899673,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0005.pdb,0.4458115484979078,,1.9438847231976513,C1,M312,False,added residue C1 within 1.94 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0006.pdb,0.13824104113519328,,4.236469039983611,C1,Y295,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0007.pdb,0.21605264710615107,,3.9407833676200847,C1,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0008.pdb,0.15288901826248838,,4.229642907412276,C10,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0009.pdb,0.21839919416713316,,3.0160145833410006,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0010.pdb,0.09121737629623947,,1.5106949748979597,C1,M312,False,added residue C1 within 1.51 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0011.pdb,0.2305750577504893,,3.7667209555559027,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0012.pdb,0.21784858675378976,,2.9542895299593,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0013.pdb,0.4401660063623432,,1.9156923558513812,C1,M312,False,added residue C1 within 1.92 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0014.pdb,0.17110495341540632,,2.053534833715795,C1,E181,False,added residue C1 within 2.05 A of receptor E181 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0015.pdb,0.1942091453575987,,4.0108021793861806,C1,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0016.pdb,0.20437497452001194,,2.7407601221123756,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0017.pdb,0.23241108531425575,,1.034646815651614,C1,Y295,False,added residue C1 within 1.03 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0018.pdb,0.20693718862587748,,3.930644812687969,C1,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0019.pdb,0.23310063065365694,,2.850912493249281,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0020.pdb,0.24620365152049856,,3.934032130575227,C10,Y4,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0021.pdb,0.18447941907960497,,3.9905123493122834,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0022.pdb,0.21803981329878805,,3.018101495182676,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0023.pdb,0.3680405334311303,,1.181291562495967,C1,Y295,False,added residue C1 within 1.18 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0024.pdb,0.20608961360314176,,3.125815613541196,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0025.pdb,0.18219779082738566,,4.191187964385031,C1,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0026.pdb,0.2073985621619567,,3.1238612281095013,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0027.pdb,0.1981056191776665,,4.194941158249248,C1,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0028.pdb,0.23263640677191805,,2.8576979744368414,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0029.pdb,0.1672119191071624,,0.8073769376215553,C1,Y295,False,added residue C1 within 0.81 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0030.pdb,0.20646764604083948,,3.1256827209818514,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0031.pdb,0.25937177405952183,,3.9559183150064814,C10,Y4,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0032.pdb,0.15558089658602475,,4.228576637993827,C10,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0033.pdb,0.21107729035717304,,3.9542903187186327,C10,Y4,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0034.pdb,0.20714920151963562,,3.9291029734035448,C1,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0035.pdb,0.24329539120484162,,1.1596890590150282,C1,Y295,False,added residue C1 within 1.16 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0036.pdb,0.27659296782936155,,1.2880522633313858,C1,M312,False,added residue C1 within 1.29 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0037.pdb,0.17508268678199088,,2.332716576916789,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0038.pdb,0.16259648252470923,,2.8485525865545607,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0039.pdb,0.15937957874537026,,3.33454278042322,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0040.pdb,0.33738228979202933,,1.6178814567858706,C1,M312,False,added residue C1 within 1.62 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0041.pdb,0.20426658548860543,,3.1344733520477543,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0042.pdb,0.19405290986469367,,4.012128617563102,C1,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0043.pdb,0.1553820521799114,,4.227888487266225,C10,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0044.pdb,0.20581048013951408,,3.130698082593247,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0045.pdb,0.13894551392256016,,3.9607717087609666,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0046.pdb,0.2185076456051346,,3.0165312059735814,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0047.pdb,0.18029873721611311,,4.210511899524666,C10,M312,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0048.pdb,0.21855809489185088,,3.0164797698808257,C1,E181,True,
-short__ssapp__CYD-CYD,short,ssapp,short_0049.pdb,0.26211586726676633,,1.3559912492780517,C1,M312,False,added residue C1 within 1.36 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-CYD,short,ssapp,short_0050.pdb,0.14788370401059925,,2.5032805920108507,C1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0001.pdb,0.203532156569097,,3.9107733468670878,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0002.pdb,0.09137054762830228,,0.7444368425229309,c1,M312,False,added residue c1 within 0.74 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0003.pdb,0.18258686452139822,,3.283564193388408,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0004.pdb,0.2417259533276209,,0.5877512875436435,c1,Y295,False,added residue c1 within 0.59 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0005.pdb,0.25254786298562826,,3.920792163905235,C10,Y4,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0006.pdb,0.25246623928700856,,3.921501065357174,C10,Y4,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0007.pdb,0.17508013199445555,,2.2334086531026034,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0008.pdb,0.22538307881383826,,0.8068561843447435,c1,M312,False,added residue c1 within 0.81 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0009.pdb,0.13942155347008756,,4.239674710310049,C10,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0010.pdb,0.23686241707115546,,3.1584919098831,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0011.pdb,0.23024323460068696,,2.5182759745330054,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0012.pdb,0.17493909624833018,,2.2359468896181998,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0013.pdb,0.18267183461159636,,4.210991972952278,C10,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0014.pdb,0.17314714480490165,,3.67869970712626,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0015.pdb,0.15630217152849812,,3.9929292815069815,c1,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0016.pdb,0.18441252613839343,,3.9881947547585224,C10,Y4,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0017.pdb,0.2691219131779837,,0.4265489586983362,c1,Y295,False,added residue c1 within 0.43 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0018.pdb,0.20816588007310802,,3.384222927533581,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0019.pdb,0.2437926648440903,,1.5904073617351024,c1,M312,False,added residue c1 within 1.59 A of receptor M312 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0020.pdb,0.2027404594716756,,3.928570336484408,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0021.pdb,0.19485649131256166,,3.160826821985092,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0022.pdb,0.5094212290676488,,0.9402479107873725,c1,Y295,False,added residue c1 within 0.94 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0023.pdb,0.21428838589268687,,2.816229591337922,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0024.pdb,0.15702152509220682,,3.9329018392856865,c1,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0025.pdb,0.17417759346935818,,1.9932497905657378,c1,E181,False,added residue c1 within 1.99 A of receptor E181 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0026.pdb,0.2217833457750402,,1.3537684200191775,c1,E181,False,added residue c1 within 1.35 A of receptor E181 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0027.pdb,0.18134503632361,,4.210662134473688,C10,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0028.pdb,0.20446925241490976,,2.9320979416923287,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0029.pdb,0.23735348836348902,,3.1657313747096634,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0030.pdb,0.17520895292860517,,4.214830767777704,C10,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0031.pdb,0.23669769865758847,,3.1650992940193867,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0032.pdb,0.22934751057485125,,3.120883588553599,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0033.pdb,0.08439458510909291,,3.0943830330009954,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0034.pdb,0.4924748568110365,,1.0709184060904497,c1,Y295,False,added residue c1 within 1.07 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0035.pdb,0.22994370744311746,,2.8433623537922696,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0036.pdb,0.16214981820436233,,2.9895559983665345,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0037.pdb,0.16556201001169807,,2.6342831369909265,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0038.pdb,0.15165613455558904,,3.3894860031503065,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0039.pdb,0.18066260852542532,,4.210655265985143,C10,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0040.pdb,0.14062238567539337,,4.239065085827122,C10,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0041.pdb,0.22103371368405597,,2.2479344232589407,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0042.pdb,0.14512931594955644,,0.7107487615389548,c1,Y295,False,added residue c1 within 0.71 A of receptor Y295 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0043.pdb,0.17221969641139379,,3.262195436118013,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0044.pdb,0.19107458748320616,,1.01177259788961,c1,E181,False,added residue c1 within 1.01 A of receptor E181 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0045.pdb,0.1952133538989057,,3.1579018441759925,c1,E181,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0046.pdb,0.13562674771874944,,4.243182968040101,C10,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0047.pdb,0.15367923939573683,,3.961366735938563,c1,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0048.pdb,0.14998925543313857,,4.233735900806185,C10,M312,True,
-short__ssapp__CYD-DCYD,short,ssapp,short_0049.pdb,0.011491335879486067,,1.985283342972658,c1,E181,False,added residue c1 within 1.99 A of receptor E181 (limit 2.20)
-short__ssapp__CYD-DCYD,short,ssapp,short_0050.pdb,0.17791010225487722,,3.228043811504975,c1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0001.pdb,0.06696727647821314,,3.63639293071736,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0002.pdb,0.120167396441854,,3.641178216229434,C1,Y295,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0003.pdb,0.06652545115575494,,3.640899871101282,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0004.pdb,0.21401963058747642,,3.2086633430877094,C1,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0005.pdb,0.3455711422495411,,4.00252428854865,C1,Y295,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0006.pdb,0.27115400508108967,,1.9153181140769089,C1,Y295,False,added residue C1 within 1.92 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0007.pdb,0.07581938394034092,,4.110697568072568,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0008.pdb,0.06235840943455427,,3.603902464478511,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0009.pdb,0.37083730071485255,,0.7746275730175101,C1,Y295,False,added residue C1 within 0.77 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0010.pdb,0.2465637964279787,,3.6584867715525786,C1,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0011.pdb,0.3665591139143006,,1.2249411769327834,C1,Y295,False,added residue C1 within 1.22 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0012.pdb,0.045472380587613555,,2.918787946234365,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0013.pdb,0.2133558468270127,,4.111352327974262,c10,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0014.pdb,0.21219837945478265,,3.187271422072055,C1,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0015.pdb,0.13754616272216,,1.9029059046626666,C1,E181,False,added residue C1 within 1.90 A of receptor E181 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0016.pdb,0.19298839129485226,,4.172855389533039,c10,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0017.pdb,0.11004702009640065,,3.2107454745762314,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0018.pdb,0.21256580185913015,,3.1983351405128317,C1,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0019.pdb,0.21275782961060666,,3.203689059802337,C1,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0020.pdb,0.35591122358391836,,2.0961537873858043,C1,E181,False,added residue C1 within 2.10 A of receptor E181 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0021.pdb,0.40725443430321234,,0.904285718995314,C1,Y295,False,added residue C1 within 0.90 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0022.pdb,0.06051107026081634,,4.278845250210875,c10,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0023.pdb,0.1370643976061445,,2.309265350073165,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0024.pdb,0.1120780153217073,,3.9683528800399057,c10,Y4,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0025.pdb,0.09121090482445604,,3.673033072318212,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0026.pdb,0.2844170992778478,,4.019969214787601,c10,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0027.pdb,0.1057805235160054,,2.0783642958612765,C1,E181,False,added residue C1 within 2.08 A of receptor E181 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0028.pdb,0.20404609444732827,,3.728671561410452,C1,Y295,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0029.pdb,0.2547870503051115,,0.8090672914659969,C1,Y295,False,added residue C1 within 0.81 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0030.pdb,0.12247156816257025,,3.582772177905894,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0031.pdb,0.06720709214952406,,3.634594013321065,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0032.pdb,0.16005087812438112,,2.720224575533743,C1,Y295,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0033.pdb,0.07719401045275431,,4.066203550063868,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0034.pdb,0.46899977206745136,,1.2661984405085993,C1,Y295,False,added residue C1 within 1.27 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0035.pdb,0.15774769174991415,,2.020980272314539,C1,M312,False,added residue C1 within 2.02 A of receptor M312 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0036.pdb,0.10714582845253953,,2.0941340494306218,C1,E181,False,added residue C1 within 2.09 A of receptor E181 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0037.pdb,0.2805120518589133,,3.834867659781343,c10,Y4,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0038.pdb,0.14993190771913753,,3.829366951167964,C1,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0039.pdb,0.0665290111062516,,3.9819267801841063,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0040.pdb,0.06786580816642625,,3.6272733459085114,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0041.pdb,0.3407984637622638,,4.1719585219316,C1,Y295,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0042.pdb,0.10712911310847263,,3.4072754707644113,C1,Y295,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0043.pdb,0.4775027292778661,,0.6341406215623812,C1,Y295,False,added residue C1 within 0.63 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0044.pdb,0.060043111249725695,,4.27926621087293,c10,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0045.pdb,0.19281594850728298,,4.175258992790615,c10,M312,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0046.pdb,0.06597564263673202,,3.6454318703708966,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0047.pdb,0.06747241053818842,,3.9765903575623054,C1,E181,True,
-short__ssapp__DCYD-CYD,short,ssapp,short_0048.pdb,0.17268085453011675,,1.4057803274545577,C1,M312,False,added residue C1 within 1.41 A of receptor M312 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0049.pdb,0.08312755919878823,,0.7609907890974426,C1,Y295,False,added residue C1 within 0.76 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-CYD,short,ssapp,short_0050.pdb,0.11942556330511381,,3.1462995164961995,C1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0001.pdb,0.16328498613860923,,0.696638659232723,c1,M312,False,added residue c1 within 0.70 A of receptor M312 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0002.pdb,0.21492142651374216,,3.8937650537043953,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0003.pdb,0.11838610757121308,,2.310794302260406,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0004.pdb,0.05839539254291722,,4.127482960462209,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0005.pdb,0.1755108417715329,,4.149626296333139,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0006.pdb,0.052442140417269426,,4.27489989729228,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0007.pdb,0.2103585175717774,,3.8909977870306194,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0008.pdb,0.34278733611610085,,1.1079921220497897,c1,Y295,False,added residue c1 within 1.11 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0009.pdb,0.13236318545675382,,3.3014659151694756,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0010.pdb,0.4544558425390016,,4.5936354838909725,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0011.pdb,0.18337218316245704,,4.138119260039435,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0012.pdb,0.4278788414304632,,1.3117132681550014,c1,Y295,False,added residue c1 within 1.31 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0013.pdb,0.24552683189674118,,4.059427781737904,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0014.pdb,0.14698838803182698,,4.192320257034517,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0015.pdb,0.4430916546723023,,2.9600195029353236,c1,Y295,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0016.pdb,0.13025001729660163,,3.289028176829391,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0017.pdb,0.18038012629819683,,4.140321728294391,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0018.pdb,0.0551914890659587,,3.0951143454498444,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0019.pdb,0.20923057584385402,,3.8972605536899794,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0020.pdb,0.14889509377008678,,3.3888249099984753,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0021.pdb,0.19781616934478508,,3.8852827682562188,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0022.pdb,0.048446799993042355,,2.894929249732002,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0023.pdb,0.21362501948122498,,4.093185676795172,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0024.pdb,0.1291169075538093,,2.8090689048068676,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0025.pdb,0.21610976459390174,,4.107029443890067,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0026.pdb,0.2183287275448659,,4.093701308127945,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0027.pdb,0.01689907453897632,,3.7710382972962533,c1,Y295,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0028.pdb,0.12437723203087622,,2.601736364171607,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0029.pdb,0.3198766805930825,,0.6130029010453688,c1,Y295,False,added residue c1 within 0.61 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0030.pdb,0.3933026499480874,,1.4329066041317948,c1,Y295,False,added residue c1 within 1.43 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0031.pdb,0.0595823104191195,,2.889290201900181,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0032.pdb,0.11864573846636885,,3.297061015913783,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0033.pdb,0.24545117471204003,,4.087954536250845,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0034.pdb,0.1126206532840631,,2.028827697797099,c1,Y295,False,added residue c1 within 2.03 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0035.pdb,0.11750016896638568,,4.199956861921867,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0036.pdb,0.22571153949415032,,3.884754354269646,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0037.pdb,0.0723698958933282,,3.893346632420653,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0038.pdb,0.34012749403909315,,3.275437439555875,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0039.pdb,0.26566082535752256,,1.1807868867578883,c1,Y295,False,added residue c1 within 1.18 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0040.pdb,0.3134016344843464,,0.5764002015727958,c1,Y295,False,added residue c1 within 0.58 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0041.pdb,0.20022475832618913,,4.144948895571516,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0042.pdb,0.26536526476915934,,3.8776257713336184,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0043.pdb,0.43509935453130577,,2.7986658675436624,c1,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0044.pdb,0.3627563380296058,,3.6616471102174954,c1,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0045.pdb,0.31976080760740266,,0.6110556132983234,c1,Y295,False,added residue c1 within 0.61 A of receptor Y295 (limit 2.20)
-short__ssapp__DCYD-DCYD,short,ssapp,short_0046.pdb,0.058079744173077416,,4.1298262240820165,c1,E181,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0047.pdb,0.2104301402720791,,4.135341924098448,c10,M312,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0048.pdb,0.2860531743335928,,3.8746378542637956,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0049.pdb,0.22549128772485635,,3.8862529713607117,c10,Y4,True,
-short__ssapp__DCYD-DCYD,short,ssapp,short_0050.pdb,0.24078429449835959,,3.8651446486552428,c10,Y4,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0001.pdb,0.15057737532675233,,2.1741984981584093,C1,M312,False,added residue C1 within 2.17 A of receptor M312 (limit 2.20)
+short__ssapp__CYD-CYD,short,ssapp,short_0002.pdb,0.2202393413946046,,3.0474119880459503,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0003.pdb,0.2665797429350622,,0.8177191041599379,C1,Y295,False,added residue C1 within 0.82 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-CYD,short,ssapp,short_0004.pdb,0.2110456643938764,,3.9533429193729606,C10,Y4,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0005.pdb,0.19075076270821278,,2.856555506725902,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0006.pdb,0.19416326002058915,,4.01134619285003,C1,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0007.pdb,0.13878167518441428,,3.9628506247389996,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0008.pdb,0.2327385800750947,,2.855893080777224,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0009.pdb,0.20564440065130135,,3.1306367224983327,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0010.pdb,0.2318664420606642,,3.7682031996970733,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0011.pdb,0.4115760139164744,,0.7746904797136164,C1,Y295,False,added residue C1 within 0.77 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-CYD,short,ssapp,short_0012.pdb,0.16868169214985937,,2.035812207686782,C1,E181,False,added residue C1 within 2.04 A of receptor E181 (limit 2.20)
+short__ssapp__CYD-CYD,short,ssapp,short_0013.pdb,0.22496981461268448,,3.026356265594107,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0014.pdb,0.18027471996465902,,4.21041064366842,C10,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0015.pdb,0.22265477075204335,,2.429519970509137,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0016.pdb,0.22006920483928277,,3.0492293901387746,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0017.pdb,0.23079609941643445,,3.764756389874805,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0018.pdb,0.17249138611512163,,4.217749127355399,C10,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0019.pdb,0.15963950927102274,,3.2246930852157605,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0020.pdb,0.15038227771032275,,3.966453832359199,C1,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0021.pdb,0.20795792824429657,,3.9359744742015472,C1,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0022.pdb,0.21853033787211024,,3.0166594892977985,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0023.pdb,0.22321816526284122,,2.424690563350656,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0024.pdb,0.1626512560590231,,2.8591232322890234,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0025.pdb,0.15991003799593784,,3.217121904545955,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0026.pdb,0.2567008474652105,,3.919017277054241,C10,Y4,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0027.pdb,0.14965774983988278,,4.231603112106918,C10,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0028.pdb,0.25578854153082514,,3.921071458537999,C10,Y4,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0029.pdb,0.23288158740463616,,2.852324524900424,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0030.pdb,0.1540567896590198,,3.1738712707557424,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0031.pdb,0.2514156573366618,,0.7955375544203859,C1,M312,False,added residue C1 within 0.80 A of receptor M312 (limit 2.20)
+short__ssapp__CYD-CYD,short,ssapp,short_0032.pdb,0.14941953854657636,,4.232155576563019,C10,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0033.pdb,0.15756808644387682,,3.1018803306746108,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0034.pdb,0.2179579987990754,,2.5835404749595803,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0035.pdb,0.2225470377256618,,2.4328805476340087,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0036.pdb,0.1678810245429187,,2.030236867338309,C1,E181,False,added residue C1 within 2.03 A of receptor E181 (limit 2.20)
+short__ssapp__CYD-CYD,short,ssapp,short_0037.pdb,0.2177240250425766,,3.0255672562872054,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0038.pdb,0.4105264821955417,,0.7674251788806473,C1,Y295,False,added residue C1 within 0.77 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-CYD,short,ssapp,short_0039.pdb,0.22003103363461265,,3.0462295665114287,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0040.pdb,0.13885144458742107,,3.8250221452530906,C10,Y4,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0041.pdb,0.11149931740496616,,2.669995897849061,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0042.pdb,0.2568225409884936,,3.9208709856999193,C10,Y4,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0043.pdb,0.1858261268362918,,2.6829257622194187,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0044.pdb,0.19771603075120578,,4.200164517060406,C10,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0045.pdb,0.1532282678109459,,3.173988562180701,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0046.pdb,0.21810959040515795,,3.01887464257989,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0047.pdb,0.24321627789904263,,3.0366377561053155,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0048.pdb,0.17992572775114563,,4.210343920383909,C10,M312,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0049.pdb,0.21811641374627352,,3.0170582629719,C1,E181,True,
+short__ssapp__CYD-CYD,short,ssapp,short_0050.pdb,0.18491494843872103,,4.207383490763069,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0001.pdb,0.214325882171583,,4.188372831989751,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0002.pdb,0.25819829221509116,,1.4949654295779085,c1,M312,False,added residue c1 within 1.49 A of receptor M312 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0003.pdb,0.17925380533794213,,3.2141830504740145,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0004.pdb,0.15586576651920042,,3.9766343620778546,c1,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0005.pdb,0.2050393005448157,,2.263534800536275,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0006.pdb,0.2692302644135162,,0.4265809532786196,c1,Y295,False,added residue c1 within 0.43 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0007.pdb,0.19592514572186998,,3.963808065854895,C10,Y4,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0008.pdb,0.15404212751370672,,4.060813036065129,c1,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0009.pdb,0.17533085427373088,,4.215326440037679,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0010.pdb,0.2036051014998004,,3.9284381835738094,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0011.pdb,0.2328795696838224,,0.8727978514679541,c1,Y295,False,added residue c1 within 0.87 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0012.pdb,0.19138105687694176,,1.0157005683725113,c1,E181,False,added residue c1 within 1.02 A of receptor E181 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0013.pdb,0.21487327547394808,,1.0176153296280022,c1,Y295,False,added residue c1 within 1.02 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0014.pdb,0.1409493108505763,,3.280461577639731,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0015.pdb,0.16137735604989042,,3.297621528815719,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0016.pdb,0.2002188933708035,,0.8308337214881236,c1,Y295,False,added residue c1 within 0.83 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0017.pdb,0.1520956434433656,,1.058009217643842,c1,Y295,False,added residue c1 within 1.06 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0018.pdb,0.24194404211983453,,0.586124756589285,c1,Y295,False,added residue c1 within 0.59 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0019.pdb,0.17509370701490173,,4.215905177084572,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0020.pdb,0.14980711659558302,,3.803132259229554,C10,Y4,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0021.pdb,0.15278881141666312,,2.4913472709688977,c1,Y295,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0022.pdb,0.12949058416195466,,2.024696287599133,c1,E181,False,added residue c1 within 2.02 A of receptor E181 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0023.pdb,0.21450741693288608,,4.187927341762415,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0024.pdb,0.19071552032363875,,4.032234371127328,C10,Y4,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0025.pdb,0.24231640899593257,,2.5242430100396596,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0026.pdb,0.19111773872284915,,3.182229424833589,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0027.pdb,0.2660986353361671,,1.489272178591552,c1,M312,False,added residue c1 within 1.49 A of receptor M312 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0028.pdb,0.18190754296011105,,4.210168694804849,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0029.pdb,0.19885948080755622,,3.0169363629962724,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0030.pdb,0.17482024850758393,,2.2371304175072138,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0031.pdb,0.08077874614904434,,3.0687661038694163,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0032.pdb,0.25228832085139996,,3.920211404705526,C10,Y4,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0033.pdb,0.21650248252544796,,1.3607704981822495,c1,E181,False,added residue c1 within 1.36 A of receptor E181 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0034.pdb,0.15560081666113076,,3.9461144737283376,c1,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0035.pdb,0.16850431116443995,,2.9647567476383294,c1,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0036.pdb,0.20031205016013698,,0.8291595008273356,c1,Y295,False,added residue c1 within 0.83 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0037.pdb,0.17599999343022998,,4.214674026006436,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0038.pdb,0.1783128574964645,,4.212242219113254,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0039.pdb,0.2732151020666666,,0.5137187706191322,c1,Y295,False,added residue c1 within 0.51 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0040.pdb,0.18208847680461046,,4.209494112496027,C10,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0041.pdb,0.15460658991572723,,3.9491126947394632,c1,M312,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0042.pdb,0.2228739228151519,,2.8752707703925555,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0043.pdb,0.2527101277729228,,3.9214639750290803,C10,Y4,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0044.pdb,0.23632213185326717,,3.1361010134753817,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0045.pdb,0.2685699406493826,,0.42024603224742224,c1,Y295,False,added residue c1 within 0.42 A of receptor Y295 (limit 2.20)
+short__ssapp__CYD-DCYD,short,ssapp,short_0046.pdb,0.24057594885060413,,3.922693471152236,C10,Y4,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0047.pdb,0.1514893984476116,,3.3869800107714676,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0048.pdb,0.20359629545933505,,3.916417190523638,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0049.pdb,0.1654987912936349,,2.632259739882182,c1,E181,True,
+short__ssapp__CYD-DCYD,short,ssapp,short_0050.pdb,0.19798247808479855,,3.1055617354915146,c1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0001.pdb,0.2055685741788261,,3.8643734359658524,c10,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0002.pdb,0.09310094550502339,,4.232404098989754,c10,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0003.pdb,0.21416468600521835,,3.205108429489402,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0004.pdb,0.19194635727638218,,4.173672754680004,c10,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0005.pdb,0.30451156743579605,,4.037738857372871,C1,Y295,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0006.pdb,0.03886658249126004,,4.136039124702724,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0007.pdb,0.3686178719440168,,1.1435674587433655,C1,M312,False,added residue C1 within 1.14 A of receptor M312 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0008.pdb,0.284258279311187,,4.019936163302017,c10,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0009.pdb,0.23793981445835655,,3.1979708288295807,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0010.pdb,0.1923244871475812,,4.173811922125642,c10,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0011.pdb,0.314911601698102,,4.120421223392364,C1,Y295,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0012.pdb,0.14149621151010616,,3.8951683888436834,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0013.pdb,0.24210271352180024,,3.853739319222449,c10,Y4,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0014.pdb,0.0999851192670275,,3.5897521200007376,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0015.pdb,0.2729396492108749,,2.8976229298089504,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0016.pdb,0.21323470562221333,,3.2012880116196816,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0017.pdb,0.21307221428728657,,3.2010490430654075,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0018.pdb,0.1598197580946154,,1.8517478260247446,C1,M312,False,added residue C1 within 1.85 A of receptor M312 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0019.pdb,0.12988334208157107,,4.215851842218794,c10,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0020.pdb,0.25297410852180136,,1.27746936375955,C1,Y295,False,added residue C1 within 1.28 A of receptor Y295 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0021.pdb,0.2484426061624518,,3.6852565379689026,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0022.pdb,0.3693100107862344,,1.3710150987284666,C1,M312,False,added residue C1 within 1.37 A of receptor M312 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0023.pdb,0.12696576789881456,,3.122261146087945,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0024.pdb,0.21530696766506485,,3.5416246822281594,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0025.pdb,0.08790055319219611,,1.6677216293090118,C1,E181,False,added residue C1 within 1.67 A of receptor E181 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0026.pdb,0.09449660946169534,,3.9918435138118156,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0027.pdb,0.3420293302100221,,4.178824216688157,C1,Y295,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0028.pdb,0.06768968167018846,,3.585510871750903,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0029.pdb,0.09309388749098776,,3.6526187175553204,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0030.pdb,0.4072871520128428,,0.9029578391072233,C1,Y295,False,added residue C1 within 0.90 A of receptor Y295 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0031.pdb,0.12394940919961595,,2.8457005313183323,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0032.pdb,0.3473623176267002,,4.005058840705814,C1,Y295,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0033.pdb,0.17673624585467718,,3.4201084120298484,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0034.pdb,0.26241823641740536,,2.1439502023275465,C1,M312,False,added residue C1 within 2.14 A of receptor M312 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0035.pdb,0.19169583976862256,,4.174229965846807,c10,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0036.pdb,0.15096195433925866,,2.309873601035297,C1,Y295,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0037.pdb,0.3694426790727165,,0.6702187746431117,C1,Y295,False,added residue C1 within 0.67 A of receptor Y295 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0038.pdb,0.10863501857971013,,3.382178536402266,C1,Y295,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0039.pdb,0.24322056913137616,,3.8528535277920106,c10,Y4,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0040.pdb,0.022455180491400918,,3.806136086049592,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0041.pdb,0.16007216111063435,,1.6945230530492976,C1,E181,False,added residue C1 within 1.69 A of receptor E181 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0042.pdb,0.23231307205577062,,4.096030248436537,c10,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0043.pdb,0.24337584175018978,,3.8532151805753347,c10,Y4,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0044.pdb,0.06861259576525858,,3.185152013403987,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0045.pdb,0.36319667521599125,,1.218655311437219,C1,Y295,False,added residue C1 within 1.22 A of receptor Y295 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0046.pdb,0.21299313939432754,,3.201898679159369,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0047.pdb,0.11906457869175972,,3.138583580132725,C1,E181,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0048.pdb,0.2468624583659207,,3.2347478274978343,C1,M312,True,
+short__ssapp__DCYD-CYD,short,ssapp,short_0049.pdb,0.24253418103467522,,1.294169114606484,C1,Y295,False,added residue C1 within 1.29 A of receptor Y295 (limit 2.20)
+short__ssapp__DCYD-CYD,short,ssapp,short_0050.pdb,0.060195985192225715,,4.286921106872252,c10,M312,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0001.pdb,0.10776373715082428,,2.8608153100856604,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0002.pdb,0.2636154006253402,,3.8710561768772127,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0003.pdb,0.12018808428267388,,3.30159778334923,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0004.pdb,0.28852032199181155,,2.2194867302637404,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0005.pdb,0.26559005551439335,,3.8712710776534247,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0006.pdb,0.21636576232401686,,4.10754858266656,c10,M312,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0007.pdb,0.20999235863545884,,3.895406096976996,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0008.pdb,0.1392544596606391,,1.5241632228076085,c1,E181,False,added residue c1 within 1.52 A of receptor E181 (limit 2.20)
+short__ssapp__DCYD-DCYD,short,ssapp,short_0009.pdb,0.21986598386909204,,3.88981213119954,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0010.pdb,0.47891900571137025,,3.4772133114114374,c1,Y295,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0011.pdb,0.21642703828515114,,3.889034722246164,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0012.pdb,0.06133187719181446,,4.235113963078895,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0013.pdb,0.34294429629031736,,3.827370681184645,c1,M312,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0014.pdb,0.08463189247865333,,3.520198648756727,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0015.pdb,0.29321141060505107,,3.9061594994347772,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0016.pdb,0.15917793702487704,,1.215323740236284,c1,M312,False,added residue c1 within 1.22 A of receptor M312 (limit 2.20)
+short__ssapp__DCYD-DCYD,short,ssapp,short_0017.pdb,0.43582722390593187,,2.786961008578113,c1,M312,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0018.pdb,0.13830321519214503,,2.3220332664770282,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0019.pdb,0.20705101754853955,,4.175051026809069,c10,M312,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0020.pdb,0.25921616104685385,,3.8590260926416833,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0021.pdb,0.12154387176230574,,2.2782045468963843,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0022.pdb,0.2665967219867058,,3.8651635819926873,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0023.pdb,0.13099046117105012,,3.3158670630171394,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0024.pdb,0.08249154548219671,,3.923272238073858,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0025.pdb,0.05985848157196542,,4.2794134469789,c10,M312,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0026.pdb,0.064909616620925,,3.937159463384202,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0027.pdb,0.21513059242969512,,3.892389136936268,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0028.pdb,0.058774067062970635,,4.1140506178089655,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0029.pdb,0.08057156363856774,,3.5506785670537204,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0030.pdb,0.06232698875419879,,4.228273632991241,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0031.pdb,0.21229699669850022,,3.8830509812239242,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0032.pdb,0.06504662317171564,,3.970795212143518,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0033.pdb,0.3125482420174869,,0.5815853342343004,c1,Y295,False,added residue c1 within 0.58 A of receptor Y295 (limit 2.20)
+short__ssapp__DCYD-DCYD,short,ssapp,short_0034.pdb,0.31256285922873794,,0.5841788079834004,c1,Y295,False,added residue c1 within 0.58 A of receptor Y295 (limit 2.20)
+short__ssapp__DCYD-DCYD,short,ssapp,short_0035.pdb,0.2149397825472197,,3.898449553746145,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0036.pdb,0.240261638937629,,3.8687503735606183,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0037.pdb,0.34210075968693215,,3.8295781605508,c1,M312,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0038.pdb,0.28514995290649475,,3.873667755845743,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0039.pdb,0.34363808668776213,,1.1117077228624808,c1,M312,False,added residue c1 within 1.11 A of receptor M312 (limit 2.20)
+short__ssapp__DCYD-DCYD,short,ssapp,short_0040.pdb,0.24170191476556563,,3.8651078084077093,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0041.pdb,0.13245871698627193,,3.2984080446410076,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0042.pdb,0.3618788639914422,,1.157465940433955,c1,Y295,False,added residue c1 within 1.16 A of receptor Y295 (limit 2.20)
+short__ssapp__DCYD-DCYD,short,ssapp,short_0043.pdb,0.08550805051469156,,3.5251209975929596,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0044.pdb,0.2260949581521419,,3.8835513911205672,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0045.pdb,0.16310349833274762,,0.7008851127940031,c1,M312,False,added residue c1 within 0.70 A of receptor M312 (limit 2.20)
+short__ssapp__DCYD-DCYD,short,ssapp,short_0046.pdb,0.08577014431782691,,3.8874859309440803,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0047.pdb,0.058142096356722885,,4.062497371993235,c1,E181,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0048.pdb,0.2103535528293263,,3.904796915665691,c10,Y4,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0049.pdb,0.3442481863884153,,4.08746344430032,c1,M312,True,
+short__ssapp__DCYD-DCYD,short,ssapp,short_0050.pdb,0.12815276881482285,,3.1197848121079823,c1,E181,True,
