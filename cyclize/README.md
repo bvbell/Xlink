@@ -137,7 +137,7 @@ Measured during development on apj/long; these are the non-obvious results worth
   simple_cycpep_predict's terminal_disulfide setup (the S-S torsion, both side chains CA-CB-SG, and
   what backbone each terminal Cys has), which takes it to 8/8.
 - **Sampling saturates long before nstruct 50, so pass counts badly overstate how many designs there
-  are.** Clustering the 1200 passing structures on N/CA/C RMSD (`scripts/degeneracy.py`) gives **112
+  are.** Clustering the passing structures on N/CA/C RMSD (`scripts/degeneracy.py`) gave **112
   distinct conformations at 1.0 A** -- apj 51, uOR 61. The variants with the best pass rates are the
   most collapsed, not the most productive: apj `short__amide__DALA-GLY` and `DPRO-PRO` are 50/50 and
   still a single cluster at **0.25 A**. Pooling across turn seeds is worse -- apj's 402 short

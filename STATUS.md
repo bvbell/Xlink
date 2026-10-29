@@ -3,43 +3,57 @@
 Last updated 2026-10-29. Hand-maintained; `cyclize status <target>` and `flexddg status <target>` are
 the live sources of truth for job state.
 
-## Results — all 55 variants complete
+## Results — the original 55-variant grid
 
-Both arrays and both retries finished; every variant closed 50/50. **2750 structures, 1200 passed
-validation.** Numbers from `cyclize/<target>/analysis_output/summary.csv`.
+Every variant closed 50/50. **2750 structures, 1205 passed validation.** Numbers from
+`cyclize/<target>/analysis_output/summary.csv`, regenerated 2026-10-29 after the disulfide routes
+were rerun under the `rm_lower` fix — so the `ssapp`/`ssmut` rows differ slightly from earlier
+versions of this file (apj `ssapp` was 232, uOR `ssapp` was 197; see Open questions).
+
+A separate 126-variant i+1 sweep lives in `apj_i1/` and `uor_i1/` and is reported below.
 
 | target | route   | variants | closed | passed | rate |
 | ------ | ------- | -------- | ------ | ------ | ---- |
 | apj    | `amide` | 15       | 750    | 403    | 54%  |
-| apj    | `ssapp` | 12       | 600    | 232    | 39%  |
+| apj    | `ssapp` | 12       | 600    | 240    | 40%  |
 | uor    | `amide` | 15       | 750    | 318    | 42%  |
-| uor    | `ssapp` | 12       | 600    | 197    | 33%  |
+| uor    | `ssapp` | 12       | 600    | 194    | 32%  |
 | uor    | `ssmut` | 1        | 50     | 50     | 100% |
 
 **Closure is not the discriminator — every variant closed 50/50.** The scaffold is:
 
-| scaffold | apj          | uor          |
-| -------- | ------------ | ------------ |
-| short    | **89%**      | **72%**      |
-| medium   | 24%          | 27%          |
-| long     | 28%          | 19%          |
+| scaffold | apj      | uor      |
+| -------- | -------- | -------- |
+| short    | **91%**  | **71%**  |
+| medium   | 22%      | 27%      |
+| long     | 30%      | 19%      |
 
-The shortest motif wins on both targets by a factor of 3, which is the **opposite** of what hotspot
-coverage predicts: short keeps only 60-67% of the alanine-scan signal but is far and away the most
-buildable. Fewer released motif residues means less for the sampler to distort. Whether that trade is
-worth it cannot be settled from these numbers -- it needs ddG on the survivors.
+The shortest motif wins on both targets by a factor of 3, the **opposite** of what hotspot coverage
+predicts: short keeps only 60-67% of the alanine-scan signal but is far and away the most buildable.
 
-Best per target:
+**Two later results cut against reading much into this table, and both are below.** Pass rate
+largely measures how collapsed a variant's conformational ensemble is, not how good it is — the 1200
+passers are only 112 distinct backbones. And on apj the interface score reorders the winners
+outright: `short__amide__DALA-GLY` tops this table at 50/50 but scores only -15.4 REU, against
+-25.2 for `short__amide__DPRO-GLY`.
+
+Best per target **by pass count**, which is the weakest of the three rankings now available:
 
 - **apj**: `short__amide__ASN-GLY`, `short__amide__DALA-GLY`, `short__amide__DPRO-GLY` -- all 50/50,
   best motif RMSD **0.09 A**. Four of the five turn seeds pass at 100% on short.
 - **uor**: `short__ssmut__CYS-CYS` 50/50 at **0.00 A** (it reproduces the native backbone exactly, by
   construction), then `short__amide__DALA-GLY` 46/50 and `short__ssapp__DCYD-DCYD` 44/50.
 
-`ASN-GLY` is the sharpest scaffold split on apj -- 50/50 on short, 4/50 on long, 2/50 on medium -- so
-turn choice is strongly scaffold-dependent and the five-seed sweep earned its keep.
+`ASN-GLY` looked like the sharpest scaffold split on apj -- 50/50 on short, 4/50 on long, 2/50 on
+medium. Treat that with caution: the medium and long arms rest on 2-4 structures, which clustering
+showed collapse to 1-2 distinct backbones, and the i+1 sweep has since found six identities tying
+`ASN-GLY` on short. The five-seed grid was too small to support the conclusion drawn from it.
 
-### The 1200 passers are 112 distinct conformations
+### The passers are far fewer distinct conformations
+
+*(Figures below are from the pre-rerun set of 1200; job 50173650 regenerates them against the
+current 1205. The disulfide reruns changed yields by under 1%, so expect these numbers to shift
+slightly, not to change in kind.)*
 
 Clustering every passing structure on N/CA/C backbone RMSD (`cyclize/scripts/degeneracy.py`,
 plotted in `cyclize/scripts/degeneracy.png`) gives **112 distinct conformations at 1.0 A** -- apj 51,
@@ -148,10 +162,10 @@ scaffold split" rests on 2-4 structures.
 register **i + j = 209**; all six scaffolds are on-register and therefore even-length.
 
 **Not started:**
-- Flex ddG on the closed macrocycles -- the single biggest gap. Validation only filters on motif RMSD,
-  seed handedness and receptor clash; **no number here is a binding energy.** Re-scoring the 1200
-  survivors through `flexddg/` would give values directly comparable to the nanobody scans, and is the
-  only way to test whether `short` winning on buildability survives contact with affinity.
+- Flex ddG on the closed macrocycles. **Deliberately dropped as a gate** -- the motifs come from real
+  binders, so the designs are ranked on torsion quality plus a fast interface score instead
+  (`scripts/rescore.py`, `scripts/interface.py`). Flex ddG at ~19 CPU-hours per point remains the
+  validation tool for a final shortlist, not a ranking tool.
 - `cldn6_9v32fab/` scan.
 - Whether APJ's R27 + Y33 (5.6 REU of CDR1) contact the same receptor surface as the CDR3 tip. This
   decides how much affinity a CDR3-only macrocycle can possibly retain, and is still an open question.
