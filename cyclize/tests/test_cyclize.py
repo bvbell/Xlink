@@ -113,6 +113,10 @@ def test_plan_indices():
     # The rama perturber aborts on residues lacking a polymer connection; in this topology the ring
     # closes through the S-S, so residues 1 and 14 are polymer-terminal.
     check('ssapp polymer termini excluded', ss['polymer_termini'], {1, 14})
+    # The motif offset must reach the manifest: validation pairs design to native positionally, and
+    # an offset of 0 here misaligned every pair, so the first apj run scored 0 of 150 ssapp structures.
+    check('ssapp motif offset is 1', ss['motif_range'][0] - 1, 1)
+    check('amide motif offset is 0', amide['motif_range'][0] - 1, 0)
 
     x = build.xml(vs['long__amide__DPRO-GLY'], amide, config.DEFAULTS['protocol'])
     check('DPRO is built', 'resname="DPRO"' in x, True)

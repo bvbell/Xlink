@@ -36,14 +36,16 @@ def rmsd(a, b):
     return math.sqrt(sum(struct.dist(x, y) ** 2 for x, y in zip(a, b)) / len(a))
 
 
-def superimpose_on_motif(design, native_motif, atom='CA'):
+def superimpose_on_motif(design, native_motif, atom='CA', offset=0):
     '''Fit `design` onto the native motif using the motif residues they share.
 
-    `design` and `native_motif` are residue lists; pairing is positional over the motif, which is how
-    build.py lays the pose out (motif first, added residues last -- or shifted by one for ssapp).
-    Returns (transform, motif_rmsd, paired_count).
+    `design` and `native_motif` are residue lists. Pairing is positional, but `offset` is the number of
+    design residues that precede the motif -- 1 for the ssapp route, which PREPENDS a Cys, so the motif
+    starts at design position 2. Getting this wrong silently misaligns every pair and the name check
+    then rejects all of them: the first apj run scored 0 of 150 ssapp structures for exactly that
+    reason. Returns (transform, motif_rmsd, paired_count).
     '''
-    pairs = [(d, n) for d, n in zip(design, native_motif)
+    pairs = [(d, n) for d, n in zip(design[offset:], native_motif)
              if atom in d.atoms and atom in n.atoms and d.name == n.name]
     if len(pairs) < 3:
         raise struct.StructError('only %d motif residues matched by name and position; the design and '
@@ -78,10 +80,11 @@ def seed_phi(design, seed_num):
     return pp.get(seed_num, (None, None))[0]
 
 
-def check(design_path, native_motif, receptor, motif_nums, clash=3.0, motif_rmsd=1.0, seed_num=None):
+def check(design_path, native_motif, receptor, motif_nums, clash=3.0, motif_rmsd=1.0, seed_num=None,
+          offset=0):
     '''-> dict verdict for one closed design.'''
     des = struct.chain_residues(struct.read(design_path), 'A')
-    transform, rms, npair = superimpose_on_motif(des, native_motif)
+    transform, rms, npair = superimpose_on_motif(des, native_motif, offset=offset)
     dist, dres, rres = min_receptor_distance(des, receptor, transform, skip_nums=set(motif_nums))
     reasons = []
     if rms > motif_rmsd:

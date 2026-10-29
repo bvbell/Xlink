@@ -23,13 +23,15 @@ def analyse(cfg):
         native = struct.chain_residues(struct.read(cfg['scaffolds'][man['scaffold']],
                                                   cfg['motif_chain']), cfg['motif_chain'])
         seed_num = man['n_motif'] + 1 if man['route'] == 'amide' and man['added'] else None
-        motif_nums = range(1, man['n_motif'] + 1)
+        # ssapp prepends a Cys, so the motif starts at design position 2, not 1.
+        offset = man.get('motif_range', [1])[0] - 1
+        motif_nums = range(offset + 1, offset + man['n_motif'] + 1)
         got = sorted(glob.glob(os.path.join(runner.variant_dir(cfg, vid), '*.pdb')))
         passes, best = 0, None
         for f in got:
             try:
                 r = validate.check(f, native, rec, motif_nums, cfg['validate']['clash'],
-                                   cfg['validate']['motif_rmsd'], seed_num)
+                                   cfg['validate']['motif_rmsd'], seed_num, offset=offset)
             except (struct.StructError, ValueError) as e:
                 rows.append({'variant': vid, 'structure': os.path.basename(f), 'pass': False,
                              'reasons': 'unreadable: %s' % e})

@@ -266,6 +266,7 @@ def write_variant(cfg, variant, residues, dest):
                      'motif_first_pdb': residues[0].num, 'motif_last_pdb': residues[-1].num,
                      'motif_seq': struct.sequence(residues), 'n_motif': p['n'],
                      'rosetta_loop': p['loop'], 'rosetta_last': p['last'],
+                     'motif_range': list(p['motif_range']),
                      'rosetta_to_pdb': {str(k): v for k, v in p['r2pdb'].items()}})
     json.dump(manifest, open(os.path.join(dest, 'input.json'), 'w'), indent=1, sort_keys=True)
     return dest

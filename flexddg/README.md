@@ -4,12 +4,35 @@
 which purges files not modified for 90 days: push this repo somewhere, and copy final summaries/plots to
 `$GROUP_HOME` or Oak.
 
-| dir            | complex               | groups (chains)                  | moved   |
-| -------------- | --------------------- | -------------------------------- | ------- |
-| `trop2_9pi9/`  | `../9pi9_complex.pdb` | fab (A heavy, B light), antigen (E) | antigen |
-| `cldn18_9v32/` | `../9v32_complex.pdb` | fab (H heavy, L light), antigen (A) | antigen |
+| dir               | complex                        | groups (chains)                     | moved    | scanned  |
+| ----------------- | ------------------------------ | ----------------------------------- | -------- | -------- |
+| `trop2_9pi9/`     | `../9pi9_complex.pdb`          | fab (A heavy, B light), antigen (E) | antigen  | fab      |
+| `cldn18_9v32/`    | `../9v32_complex.pdb`          | fab (H heavy, L light), antigen (A) | antigen  | fab      |
+| `cldn6_9v32fab/`  | `../cldn6_9v32fab_complex.pdb` | fab (H heavy, L light), antigen (A) | antigen  | fab      |
+| `uor_nb/`         | `../uor_complex.pdb`           | nanobody (A), receptor (B)          | receptor | nanobody |
+| `apj_nb/`         | `../apj_complex.pdb`           | nanobody (A), receptor (B)          | receptor | nanobody |
 
 `../flexddg_ala` is a symlink to `trop2_9pi9/` (`motif_scaffold/build_input*.py` use that path).
+
+The last three are described in `../prep/cldn6_chimera_prep.md` and `../prep/nanobody_gpcr_prep.md`, which
+record how each input structure was built and what is wrong with it. Read those before trusting a number:
+
+- **`cldn6_9v32fab/`** is a chimera, not a measured complex: CLDN6 superimposed onto CLDN18.2 in 9v32
+  (PyMOL `super`, 1.60 A over 763 atom pairs, 38% identity) with the Fab left where it was. The raw
+  superposition had 56 heavy-atom pairs under 2.0 A against the Fab, so it is relaxed first — see
+  `cldn6_9v32fab/relax/relax.sbatch`. Whether those clashes are a placement artifact or the actual
+  reason this Fab is CLDN18.2-specific is an open question the ddG numbers alone will not settle.
+- **`uor_nb/`** is a Coot-built model of a nanobody on the human mu-opioid receptor (OPRM1 68-353; chain B
+  numbering is OPRM1 minus 65). Clean input: no gaps, breaks, altlocs or missing atoms.
+- **`apj_nb/`** is an AlphaFold3 model of the d006 nanobody on APJ. Chain B is the PDB **5VBL** construct,
+  so it carries that construct's five mutations (V117A, T177N, **W261K** at the W6.48 toggle switch,
+  C325L, C326M) and has *C. pasteurianum* rubredoxin replacing ICL3 at chain-B residues 213-266. The
+  rubredoxin is 39 A from the nanobody and has no Fe (four bare thiolates adding score noise, no
+  interface effect); it can be deleted if it ever causes trouble.
+
+Both nanobodies bind the **extracellular** face with CDR3 in the orthosteric pocket, so no interface
+residue is membrane-buried and scoring the complex in solution is defensible. Neither receptor has a
+ligand modelled.
 
 ## Use
 
