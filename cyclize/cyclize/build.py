@@ -171,9 +171,16 @@ def xml(variant, p, protocol):
     for num, name in p['mutate']:
         out.append('    <MutateResidue name="mut%d" target="%d" new_res="%s" preserve_atom_coords="0"/>'
                    % (num, num, name))
-    # A macrocycle has no termini; the patches must come off before a bond can be declared across them.
-    out += ['    <ModifyVariantType name="rm_upper" remove_type="UPPER_TERMINUS_VARIANT" residue_selector="last"/>',
-            '    <ModifyVariantType name="rm_lower" remove_type="LOWER_TERMINUS_VARIANT" residue_selector="first"/>']
+    # A head-to-tail macrocycle has no termini; the patches must come off before a bond can be
+    # declared across them. A disulfide-closed ring still HAS termini -- the backbone really is
+    # linear and the ring closes through S-S -- so stripping them there leaves residue 1 with nothing
+    # bonded to its N, and Rosetta then scores its rama at phi = 0, a forbidden region, inventing
+    # about +10 REU of phantom energy. That was emitted unconditionally until 2026-10-29 and biased
+    # the FastRelax of every ssapp and ssmut run before then; see "Known caveats" in the README.
+    strip_termini = p['close']['atom1'] != 'SG'
+    if strip_termini:
+        out += ['    <ModifyVariantType name="rm_upper" remove_type="UPPER_TERMINUS_VARIANT" residue_selector="last"/>',
+                '    <ModifyVariantType name="rm_lower" remove_type="LOWER_TERMINUS_VARIANT" residue_selector="first"/>']
     c = p['close']
     if p['declare']:
         out.append('    <DeclareBond name="declare" res1="%d" atom1="%s" res2="%d" atom2="%s" '
@@ -246,7 +253,8 @@ def xml(variant, p, protocol):
         out.append('    <Add mover="build"/>')
     for num, _ in p['mutate']:
         out.append('    <Add mover="mut%d"/>' % num)
-    out += ['    <Add mover="rm_upper"/>', '    <Add mover="rm_lower"/>']
+    if strip_termini:
+        out += ['    <Add mover="rm_upper"/>', '    <Add mover="rm_lower"/>']
     if p['declare']:
         out.append('    <Add mover="declare"/>')
     if p['sample']:

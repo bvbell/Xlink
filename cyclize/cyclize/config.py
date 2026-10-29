@@ -25,15 +25,23 @@ DEFAULTS = {
     'scan': None,
     'hotspot': 1.0,
     'routes': ['amide', 'ssapp', 'ssmut'],
+    # Sweep every legal identity at i+1 of the turn instead of using the five hand-picked
+    # TURN_SEEDS. Only the amide route has an i+1 to sweep; ssapp and ssmut are unaffected.
+    'redesign_i1': False,
     'protocol': {'nstruct': 50, 'closure_attempts': 2000, 'min_solutions': 1,
                  'scorefxn': 'ref2015', 'relax_rounds': 1, 'design_i2': False, 'rama_cutoff': None, 'seed_rama_cutoff': None, 'coord_dev': 0.5,
+                 # target_loop was read by inputs.py but missing here, so _merge rejected any
+                 # cyclize.json that set it -- the option was unreachable. See variants.TARGET_LOOP.
+                 'target_loop': 5,
                  'extra_flags': []},
     # clash 2.2 A, not 3.0: the native APJ interface packs motif residues to 2.44-2.80 A of the
     # receptor (F104 2.44, E108 2.65, K110 2.70), so a 3.0 A cutoff rejects the native structure
     # itself. 2.2 A is below anything observed natively, so it flags only real overlap.
     'validate': {'clash': 2.2, 'motif_rmsd': 1.0},
+    # per_task: variants per array task. One variant runs in about a minute, so a task per variant
+    # is mostly queue latency and is poor scheduler etiquette; 20 gives tasks of roughly 20 minutes.
     'slurm': {'partition': 'normal,possu', 'time': '02:00:00', 'mem': '2G', 'max_concurrent': 100,
-              'analysis_time': '00:30:00', 'analysis_mem': '4G'},
+              'per_task': 20, 'analysis_time': '00:30:00', 'analysis_mem': '4G'},
     'rosetta_module': 'biology rosetta/3.14',
 }
 REQUIRED = ['complex', 'scaffolds']

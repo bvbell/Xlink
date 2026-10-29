@@ -1,0 +1,10 @@
+{"title": "APJ d006 CDR3 macrocycles -- i+1 turn sweep",
+ "complex": "../../apj_complex.pdb",
+ "motif_chain": "A",
+ "receptor_chain": "B",
+ "scaffolds": {"short": "../../apj_scaffolds/short.pdb",
+               "medium": "../../apj_scaffolds/medium.pdb",
+               "long": "../../apj_scaffolds/long.pdb"},
+ "scan": "../../flexddg/apj_nb/analysis_output/alascan_summary.csv",
+ "routes": ["amide"],
+ "redesign_i1": true}

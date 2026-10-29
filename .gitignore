@@ -31,3 +31,11 @@ cyclize/*/output/
 cyclize/*/inputs/
 cyclize/*/logs/
 cyclize/*/tasks/
+
+# Derived structures: regenerable by scripts/representatives.py and scripts/interface.py from the
+# run data above. The CSV manifests beside them ARE tracked -- they are the distilled result and the
+# only part worth reading without Rosetta.
+cyclize/*/representatives/*.pdb
+cyclize/*/interface/complexes/
+cyclize/*/rescore/*.silent
+cyclize/*/rescore/*.reb

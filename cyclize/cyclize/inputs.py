@@ -20,13 +20,18 @@ def load_scaffold(cfg, name):
 def setup(target_dir):
     cfg = config.load(target_dir)
     scan = config.read_scan(cfg['scan'])
+    seeds = variants.sweep_seeds() if cfg['redesign_i1'] else None
     report, all_variants, problems = [], [], []
+    if seeds:
+        report.append('i+1 sweep: %d identities at i+1, i+2 held at GLY -- %s\n'
+                      % (len(seeds), ' '.join(s[0] for s in seeds)))
     for name in sorted(cfg['scaffolds']):
         res = load_scaffold(cfg, name)
         report.append('=== %s ===' % name)
         report.append(hairpin.describe(res, scan=scan))
         try:
             vs = variants.enumerate_variants(name, res, scan, cfg['hotspot'], cfg['routes'],
+                                             seeds=seeds,
                                              target_loop=cfg['protocol'].get('target_loop',
                                                                              variants.TARGET_LOOP))
         except variants.VariantError as e:

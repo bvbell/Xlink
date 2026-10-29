@@ -1,0 +1,8 @@
+target,residues,scaffold,variants,passed,clusters_1.00,largest
+apj,10,short,9,402,5,196
+apj,12,medium,9,107,12,50
+apj,14,long,9,126,6,85
+uor,8,short,1,50,1,50
+uor,10,short,9,308,16,122
+uor,12,medium,9,122,2,109
+uor,16,long,9,85,4,57

@@ -100,8 +100,13 @@ def submit(cfg, retry=False, then_analyze=True, dry_run=False, force=False):
     taskfile = os.path.join(cfg['dir'], 'tasks',
                             datetime.datetime.now().strftime('%Y%m%d-%H%M%S') + '.txt')
     os.makedirs(os.path.dirname(taskfile), exist_ok=True)
-    open(taskfile, 'w').write(''.join(t + '\n' for t in tasks))
     s = cfg['slurm']
+    # One variant takes about a minute, and a Slurm array of one-minute tasks is poor scheduler
+    # etiquette (and mostly queue latency). Pack several variants onto each array task; one line of
+    # the task file is one task. A line with a single id is still valid, so old task files replay.
+    per = max(1, int(s['per_task']))
+    lines = [tasks[i:i + per] for i in range(0, len(tasks), per)]
+    open(taskfile, 'w').write(''.join(' '.join(chunk) + '\n' for chunk in lines))
     script = write_script(taskfile[:-4] + '.sbatch', [
         'ml purge; ml %s' % cfg['rosetta_module'],
         'echo "cyclize task $SLURM_ARRAY_TASK_ID on $(hostname)"',
@@ -109,11 +114,12 @@ def submit(cfg, retry=False, then_analyze=True, dry_run=False, force=False):
             PYTHON, shlex.quote(cfg['dir']), shlex.quote(taskfile))])
     jid = sbatch(['-D', cfg['dir'], '-J', job_name(cfg), '-p', s['partition'], '-t', s['time'],
                   '-c', '1', '--mem', s['mem'],
-                  '--array=0-%d%%%d' % (len(tasks) - 1, s['max_concurrent']),
+                  '--array=0-%d%%%d' % (len(lines) - 1, s['max_concurrent']),
                   '-o', os.path.join(cfg['dir'], 'logs', '%A_%a.out'), '--export', env_export(), script])
     with open(os.path.join(cfg['dir'], 'tasks', 'submissions.tsv'), 'a') as f:
         f.write('%s\t%s\t%d\n' % (jid, os.path.basename(taskfile), len(tasks)))
-    print('submitted array job %s (%d tasks, %d at a time)' % (jid, len(tasks), s['max_concurrent']))
+    print('submitted array job %s (%d variants in %d tasks of up to %d, %d tasks at a time)'
+          % (jid, len(tasks), len(lines), per, s['max_concurrent']))
     if then_analyze:
         submit_analysis(cfg, after=jid)
     return jid
@@ -135,7 +141,18 @@ def submit_analysis(cfg, after=None):
 
 
 def run_task(cfg, taskfile, index):
-    vids = [l.strip() for l in open(taskfile) if l.strip()]
-    vid = vids[int(index)]
-    print('%s; target %s' % (vid, cfg['dir']), flush=True)
-    return runner.run_variant(cfg, vid, seed=int(index) + 1)
+    '''Run every variant on line `index` of the task file. One line = one array task.'''
+    lines = [l.split() for l in open(taskfile) if l.strip()]
+    vids = lines[int(index)]
+    # Seed from the variant's position in the whole file, not its position in the line, so every
+    # variant keeps a distinct RNG stream however the file happens to be chunked.
+    first = sum(len(l) for l in lines[:int(index)])
+    rc = 0
+    for i, vid in enumerate(vids):
+        print('[%d/%d] %s; target %s' % (i + 1, len(vids), vid, cfg['dir']), flush=True)
+        try:
+            rc |= runner.run_variant(cfg, vid, seed=first + i + 1)
+        except Exception as e:       # one bad variant must not take the other 19 down with it
+            print('%s FAILED: %s' % (vid, e), flush=True)
+            rc = 1
+    return rc

@@ -1,0 +1,92 @@
+i+1 sweep: 21 identities at i+1, i+2 held at GLY -- ASN ASP DALA DARG DASN DASP DGLN DGLU DHIS DILE DLEU DLYS DMET DPHE DSER DTHR DTRP DTYR DVAL HIS SER
+
+=== long ===
+V98-E111  n=14  VDVSYNFFFRSYTE
+  register K=209 (4/4 H-bonds agree)
+    99 N...O 110  2.86 A
+    101 N...O 108  2.77 A
+  termini V98+E111 = 209 (on register)
+    Ca-Ca 4.6  Cb-Cb 5.6  -> mutate-to-Cys staple too far (append Cys instead)
+    terminal ddG: V98=-0.46  E111=1.20
+  21 variants, loop 5 residues, releasing N[98, 99, 100] C[]
+=== medium ===
+V100-Y109  n=10  VSYNFFFRSY
+  register K=209 (2/2 H-bonds agree)
+    101 N...O 108  2.77 A
+  termini V100+Y109 = 209 (on register)
+    Ca-Ca 4.6  Cb-Cb 5.7  -> mutate-to-Cys staple too far (append Cys instead)
+    terminal ddG: V100=0.12  Y109=1.28
+  21 variants, loop 4 residues, releasing N[100, 101] C[]
+=== short ===
+S101-S108  n=8  SYNFFFRS
+  register K=209 (2/2 H-bonds agree)
+    101 N...O 108  2.77 A
+  termini S101+S108 = 209 (on register)
+    Ca-Ca 5.0  Cb-Cb 4.4  -> mutate-to-Cys staple viable
+    terminal ddG: S101=0.28  S108=0.74
+  21 variants, loop 4 residues, releasing N[101] C[108]
+
+variant                                      route  added  note
+long__amide__ASN-GLY                         amide      2  i+1 sweep
+long__amide__ASP-GLY                         amide      2  i+1 sweep
+long__amide__DALA-GLY                        amide      2  i+1 sweep
+long__amide__DARG-GLY                        amide      2  i+1 sweep
+long__amide__DASN-GLY                        amide      2  i+1 sweep
+long__amide__DASP-GLY                        amide      2  i+1 sweep
+long__amide__DGLN-GLY                        amide      2  i+1 sweep
+long__amide__DGLU-GLY                        amide      2  i+1 sweep
+long__amide__DHIS-GLY                        amide      2  i+1 sweep
+long__amide__DILE-GLY                        amide      2  i+1 sweep
+long__amide__DLEU-GLY                        amide      2  i+1 sweep
+long__amide__DLYS-GLY                        amide      2  i+1 sweep
+long__amide__DMET-GLY                        amide      2  i+1 sweep
+long__amide__DPHE-GLY                        amide      2  i+1 sweep
+long__amide__DSER-GLY                        amide      2  i+1 sweep
+long__amide__DTHR-GLY                        amide      2  i+1 sweep
+long__amide__DTRP-GLY                        amide      2  i+1 sweep
+long__amide__DTYR-GLY                        amide      2  i+1 sweep
+long__amide__DVAL-GLY                        amide      2  i+1 sweep
+long__amide__HIS-GLY                         amide      2  i+1 sweep
+long__amide__SER-GLY                         amide      2  i+1 sweep
+medium__amide__ASN-GLY                       amide      2  i+1 sweep
+medium__amide__ASP-GLY                       amide      2  i+1 sweep
+medium__amide__DALA-GLY                      amide      2  i+1 sweep
+medium__amide__DARG-GLY                      amide      2  i+1 sweep
+medium__amide__DASN-GLY                      amide      2  i+1 sweep
+medium__amide__DASP-GLY                      amide      2  i+1 sweep
+medium__amide__DGLN-GLY                      amide      2  i+1 sweep
+medium__amide__DGLU-GLY                      amide      2  i+1 sweep
+medium__amide__DHIS-GLY                      amide      2  i+1 sweep
+medium__amide__DILE-GLY                      amide      2  i+1 sweep
+medium__amide__DLEU-GLY                      amide      2  i+1 sweep
+medium__amide__DLYS-GLY                      amide      2  i+1 sweep
+medium__amide__DMET-GLY                      amide      2  i+1 sweep
+medium__amide__DPHE-GLY                      amide      2  i+1 sweep
+medium__amide__DSER-GLY                      amide      2  i+1 sweep
+medium__amide__DTHR-GLY                      amide      2  i+1 sweep
+medium__amide__DTRP-GLY                      amide      2  i+1 sweep
+medium__amide__DTYR-GLY                      amide      2  i+1 sweep
+medium__amide__DVAL-GLY                      amide      2  i+1 sweep
+medium__amide__HIS-GLY                       amide      2  i+1 sweep
+medium__amide__SER-GLY                       amide      2  i+1 sweep
+short__amide__ASN-GLY                        amide      2  i+1 sweep
+short__amide__ASP-GLY                        amide      2  i+1 sweep
+short__amide__DALA-GLY                       amide      2  i+1 sweep
+short__amide__DARG-GLY                       amide      2  i+1 sweep
+short__amide__DASN-GLY                       amide      2  i+1 sweep
+short__amide__DASP-GLY                       amide      2  i+1 sweep
+short__amide__DGLN-GLY                       amide      2  i+1 sweep
+short__amide__DGLU-GLY                       amide      2  i+1 sweep
+short__amide__DHIS-GLY                       amide      2  i+1 sweep
+short__amide__DILE-GLY                       amide      2  i+1 sweep
+short__amide__DLEU-GLY                       amide      2  i+1 sweep
+short__amide__DLYS-GLY                       amide      2  i+1 sweep
+short__amide__DMET-GLY                       amide      2  i+1 sweep
+short__amide__DPHE-GLY                       amide      2  i+1 sweep
+short__amide__DSER-GLY                       amide      2  i+1 sweep
+short__amide__DTHR-GLY                       amide      2  i+1 sweep
+short__amide__DTRP-GLY                       amide      2  i+1 sweep
+short__amide__DTYR-GLY                       amide      2  i+1 sweep
+short__amide__DVAL-GLY                       amide      2  i+1 sweep
+short__amide__HIS-GLY                        amide      2  i+1 sweep
+short__amide__SER-GLY                        amide      2  i+1 sweep
