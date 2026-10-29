@@ -7,7 +7,10 @@ flexddg/*/tasks/
 flexddg/*/fab_complete/
 flexddg/*/interim_complete/
 flexddg/*/timing/
+flexddg/*/relax/decoys/
+flexddg/*/relax/logs/
 flexddg/*/*_clean.pdb
+prep/chimera_work/
 motif_scaffold/runs/
 motif_scaffold/runs_prod/
 motif_scaffold/logs/
@@ -22,3 +25,9 @@ flexddg/pipeline/
 .claude/
 *.tmp
 __pycache__/
+
+# cyclize run data: regenerable from cyclize.json via `cyclize setup` / `submit`
+cyclize/*/output/
+cyclize/*/inputs/
+cyclize/*/logs/
+cyclize/*/tasks/

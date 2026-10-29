@@ -1,0 +1,55 @@
+=== long ===
+V98-E111  n=14  VDVSYNFFFRSYTE
+  register K=209 (4/4 H-bonds agree)
+    99 N...O 110  2.86 A
+    101 N...O 108  2.77 A
+  termini V98+E111 = 209 (on register)
+    Ca-Ca 4.6  Cb-Cb 5.6  -> mutate-to-Cys staple too far (append Cys instead)
+    terminal ddG: V98=-0.46  E111=1.20
+  9 variants, loop 5 residues, releasing N[98, 99, 100] C[]
+=== medium ===
+V100-Y109  n=10  VSYNFFFRSY
+  register K=209 (2/2 H-bonds agree)
+    101 N...O 108  2.77 A
+  termini V100+Y109 = 209 (on register)
+    Ca-Ca 4.6  Cb-Cb 5.7  -> mutate-to-Cys staple too far (append Cys instead)
+    terminal ddG: V100=0.12  Y109=1.28
+  9 variants, loop 4 residues, releasing N[100, 101] C[]
+=== short ===
+S101-S108  n=8  SYNFFFRS
+  register K=209 (2/2 H-bonds agree)
+    101 N...O 108  2.77 A
+  termini S101+S108 = 209 (on register)
+    Ca-Ca 5.0  Cb-Cb 4.4  -> mutate-to-Cys staple viable
+    terminal ddG: S101=0.28  S108=0.74
+  10 variants, loop 4 residues, releasing N[101] C[108]
+
+variant                                      route  added  note
+long__amide__DPRO-GLY                        amide      2  gold-standard nucleator
+long__amide__DPRO-PRO                        amide      2  rigid D-Pro/L-Pro template
+long__amide__ASN-GLY                         amide      2  most common natural hairpin turn
+long__amide__DALA-GLY                        amide      2  D-Pro alternative without ring strain
+long__amide__GLY-GLY                         amide      2  flexible control, unbiased
+long__ssapp__CYD-CYD                         ssapp      2  Cys appended beyond each terminus
+long__ssapp__CYD-DCYD                        ssapp      2  Cys appended beyond each terminus
+long__ssapp__DCYD-CYD                        ssapp      2  Cys appended beyond each terminus
+long__ssapp__DCYD-DCYD                       ssapp      2  Cys appended beyond each terminus
+medium__amide__DPRO-GLY                      amide      2  gold-standard nucleator
+medium__amide__DPRO-PRO                      amide      2  rigid D-Pro/L-Pro template
+medium__amide__ASN-GLY                       amide      2  most common natural hairpin turn
+medium__amide__DALA-GLY                      amide      2  D-Pro alternative without ring strain
+medium__amide__GLY-GLY                       amide      2  flexible control, unbiased
+medium__ssapp__CYD-CYD                       ssapp      2  Cys appended beyond each terminus
+medium__ssapp__CYD-DCYD                      ssapp      2  Cys appended beyond each terminus
+medium__ssapp__DCYD-CYD                      ssapp      2  Cys appended beyond each terminus
+medium__ssapp__DCYD-DCYD                     ssapp      2  Cys appended beyond each terminus
+short__amide__DPRO-GLY                       amide      2  gold-standard nucleator
+short__amide__DPRO-PRO                       amide      2  rigid D-Pro/L-Pro template
+short__amide__ASN-GLY                        amide      2  most common natural hairpin turn
+short__amide__DALA-GLY                       amide      2  D-Pro alternative without ring strain
+short__amide__GLY-GLY                        amide      2  flexible control, unbiased
+short__ssapp__CYD-CYD                        ssapp      2  Cys appended beyond each terminus
+short__ssapp__CYD-DCYD                       ssapp      2  Cys appended beyond each terminus
+short__ssapp__DCYD-CYD                       ssapp      2  Cys appended beyond each terminus
+short__ssapp__DCYD-DCYD                      ssapp      2  Cys appended beyond each terminus
+short__ssmut__CYS-CYS                        ssmut      0  native terminal pair stapled, Cb-Cb 4.4 A

@@ -1,0 +1,5 @@
+#!/bin/bash
+# cyclize CLI; uses the group miniconda python (numpy) unless CYCLIZE_PYTHON is set.
+ROOT=$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+exec "${CYCLIZE_PYTHON:-/home/groups/possu/miniconda/bin/python3}" -m cyclize "$@"

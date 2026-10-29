@@ -1,0 +1,152 @@
+'''Enumerate the closure variants for one scaffold.
+
+Three routes, all of which add 0 or 2 residues so the hairpin register survives (see hairpin.py):
+
+  amide  +2  a designed beta-turn bridging the terminal pair
+  ssapp  +2  one Cys appended beyond each terminus, disulfide between them
+  ssmut  +0  both terminal residues mutated to Cys, stapling the native pair; only offered where the
+             terminal Cb-Cb already sits in the natural disulfide window
+
+Asymmetric disulfides (append one end, mutate the other) are +1 and are deliberately NOT enumerated:
+an odd insertion shifts the register by one position and unzips the H-bond ladder.
+
+Turn seeds. A hairpin-capping turn is type I' or II', which require positive phi at i+1 (and at i+2
+for I'). Residue identity is what makes that reachable, so seeding the identity *is* seeding the
+geometry -- GenKIC's randomize_backbone_by_rama_prepro perturber draws from the residue's own
+Ramachandran table, so D-Pro cannot propose negative phi at all.
+
+  Gly    no Cbeta, so either sign -- legal anywhere
+  D-Pro  ring locks phi to about +63, so positive only -- i+1 only
+  L-Pro  ring locks phi to about -63, so negative only -- i+2 of a II' only, NEVER i+1
+  Asn    the one ordinary L residue that reaches positive phi (~+55), via a side-chain-to-backbone
+         H-bond that stabilises alphaL
+'''
+from . import hairpin
+
+# Which phi signs each residue can actually adopt. The point of the table is the negative rule:
+# PRO is absent from POS, so it can never be seeded at i+1.
+PHI_POS = {'GLY', 'ASN', 'ASP', 'HIS', 'SER', 'DPRO', 'DALA', 'DASN', 'DSER', 'DVAL', 'DLEU', 'DCYS'}
+PHI_NEG = {'GLY', 'PRO', 'ALA', 'ASN', 'ASP', 'SER', 'LEU', 'VAL', 'ILE', 'PHE', 'TYR', 'TRP',
+           'THR', 'MET', 'LYS', 'ARG', 'HIS', 'GLN', 'GLU', 'CYS'}
+
+# (i+1, i+2, turn type, note). Order is the order they get tried.
+TURN_SEEDS = [
+    ('DPRO', 'GLY', "II'", 'gold-standard nucleator'),
+    ('DPRO', 'PRO', "II'", 'rigid D-Pro/L-Pro template'),
+    ('ASN', 'GLY', "I'", 'most common natural hairpin turn'),
+    ('DALA', 'GLY', "I'", 'D-Pro alternative without ring strain'),
+    ('GLY', 'GLY', "I'/II'", 'flexible control, unbiased'),
+]
+
+CYS_FORMS = ['CYD', 'DCYD']
+ROUTES = ('amide', 'ssapp', 'ssmut')
+
+
+class VariantError(ValueError):
+    pass
+
+
+def check_seed(a, b, turn):
+    '''Reject a seed pair that cannot make the turn type it claims.'''
+    if a not in PHI_POS:
+        raise VariantError('%s cannot adopt positive phi, so it cannot sit at i+1 of a hairpin turn' % a)
+    want_pos = turn.startswith("I'")
+    if want_pos and b not in PHI_POS:
+        raise VariantError('%s cannot adopt positive phi, needed at i+2 of a type I\' turn' % b)
+    if not want_pos and b not in PHI_NEG:
+        raise VariantError('%s cannot adopt negative phi, needed at i+2 of a type II\' turn' % b)
+    return True
+
+
+def releasable(residues, scan, hotspot=1.0, side='N'):
+    '''The run of residues at one end that are cold enough to hand to GenKIC, outermost first.
+
+    Stops at the first hotspot, so the motif's load-bearing residues are never released.
+    '''
+    ordered = residues if side == 'N' else list(reversed(residues))
+    out = []
+    for r in ordered:
+        ddg = scan.get(r.num)
+        if ddg is not None and ddg > hotspot:
+            break
+        out.append(r)
+    return out
+
+
+# GenKIC's hard floor is 3 loop residues, but 3 is useless in practice: with CA pivots on three
+# consecutive residues, all six pivot torsions are solved by the closure algorithm and only the
+# omegas are left free, so the system is effectively determined -- it either closes on the first
+# attempt or never, regardless of closure_attempts. Measured on apj/short: 2000 attempts, zero
+# solutions. Give the sampler at least TARGET_LOOP residues so some torsions remain free.
+TARGET_LOOP = 5
+MIN_LOOP = 3
+
+
+def pick_release(cold_n, cold_c, n_added, target=TARGET_LOOP):
+    '''-> (from_N, from_C, loop_size): cold residues to release to reach `target` loop residues.
+
+    The N side is drained first because in both targets here every N-terminus is cold while most
+    C-termini are hotspots.
+    '''
+    need = max(MIN_LOOP, target) - n_added
+    take_n = cold_n[:max(0, need)]
+    take_c = cold_c[:max(0, need - len(take_n))]
+    return take_n, take_c, n_added + len(take_n) + len(take_c)
+
+
+def enumerate_variants(scaffold, residues, scan, hotspot=1.0, routes=ROUTES, seeds=None,
+                       target_loop=TARGET_LOOP):
+    '''-> [dict] one per variant, each carrying everything build.py needs.
+
+    `scan` maps resnum -> ddG (missing = not scanned, treated as cold). `scaffold` is the short name
+    used in variant ids.
+    '''
+    seeds = TURN_SEEDS if seeds is None else seeds
+    k, n_ok, n_tot = hairpin.register(residues)
+    term = hairpin.terminal_pair(residues, k)
+    if not term['on_register']:
+        raise VariantError('%s: termini %s+%s = %d but the register is K=%d; closure would shift the '
+                           'ladder. Pick an on-register motif (even length).'
+                           % (scaffold, term['first'], term['last'], term['sum'], k))
+    cold_n = releasable(residues, scan, hotspot, 'N')
+    cold_c = releasable(residues, scan, hotspot, 'C')
+    if not cold_n and not cold_c:
+        raise VariantError('%s: both terminal residues are hotspots, so GenKIC has no cold residue to '
+                           'release and still reach its 3-residue loop minimum.' % scaffold)
+    rel_n, rel_c, loop_size = pick_release(cold_n, cold_c, 2, target_loop)
+    out = []
+    for a, b, turn, note in seeds:
+        if 'amide' not in routes:
+            break
+        check_seed(a, b, turn)
+        out.append({'id': '%s__amide__%s-%s' % (scaffold, a, b), 'scaffold': scaffold,
+                    'route': 'amide', 'added': [a, b], 'turn': turn, 'note': note})
+    if 'ssapp' in routes:
+        for a in CYS_FORMS:
+            for b in CYS_FORMS:
+                out.append({'id': '%s__ssapp__%s-%s' % (scaffold, a, b), 'scaffold': scaffold,
+                            'route': 'ssapp', 'added': [b, a], 'turn': None,
+                            'note': 'Cys appended beyond each terminus'})
+    for v in out:
+        v.update({'release_n': [r.num for r in rel_n], 'release_c': [r.num for r in rel_c],
+                  'loop_size': loop_size, 'register': k, 'mutate': []})
+    if 'ssmut' in routes and term['staple_ok']:
+        # Nothing is appended and the native geometry already closes, so there is no loop to sample.
+        out.append({'id': '%s__ssmut__CYS-CYS' % scaffold, 'scaffold': scaffold, 'route': 'ssmut',
+                    'added': [], 'turn': None,
+                    'note': 'native terminal pair stapled, Cb-Cb %.1f A' % term['cb'],
+                    'release_n': [], 'release_c': [], 'loop_size': 0, 'register': k,
+                    'mutate': [(term['first'].num, 'CYS'), (term['last'].num, 'CYS')]})
+    for v in out:
+        v['n_added'] = len(v['added'])
+        v['cold_n'] = [r.num for r in cold_n]
+        v['cold_c'] = [r.num for r in cold_c]
+        v['underdetermined'] = v['route'] != 'ssmut' and v['loop_size'] <= MIN_LOOP
+    return out
+
+
+def summary(variants):
+    rows = ['%-44s %-6s %5s  %s' % ('variant', 'route', 'added', 'note')]
+    for v in variants:
+        rows.append('%-44s %-6s %5d  %s' % (v['id'], v['route'], v['n_added'], v['note']))
+    return '\n'.join(rows)

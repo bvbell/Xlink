@@ -1,0 +1,8 @@
+{"title": "mu-opioid receptor nanobody CDR3 macrocycles",
+ "complex": "../../uor_complex.pdb",
+ "motif_chain": "A",
+ "receptor_chain": "B",
+ "scaffolds": {"short": "../../uOR_scaffolds/short.pdb",
+               "medium": "../../uOR_scaffolds/medium.pdb",
+               "long": "../../uOR_scaffolds/long.pdb"},
+ "scan": "../../flexddg/uor_nb/analysis_output/alascan_summary.csv"}
