@@ -86,6 +86,13 @@ Measured during development on apj/long; these are the non-obvious results worth
   comparing raw coordinates reports several angstroms of pure rigid-body displacement.
 - **Rosetta writes D-amino acids as `HETATM`**, with name3 `DPR`, `DAL`, `DCS` etc. A reader that only
   takes `ATOM` silently drops every designed turn residue.
+- **A disulfide closure needs explicit `randomize_dihedral` perturbers.** `randomize_backbone_by_rama_prepro`
+  aborts on a residue missing a polymer connection, and in the ssapp topology the ring closes through
+  the S-S, so both Cys are polymer-terminal. Simply excluding them from that perturber is not enough:
+  nothing then moves them off the extended geometry PeptideStubMover built, and the sulfurs never meet
+  -- ssapp closed **0/50** that way, with no error, 100,000 attempts. `build.ss_torsions` mirrors
+  simple_cycpep_predict's terminal_disulfide setup (the S-S torsion, both side chains CA-CB-SG, and
+  what backbone each terminal Cys has), which takes it to 8/8.
 
 ## Clash threshold
 

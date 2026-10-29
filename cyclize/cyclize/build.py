@@ -57,6 +57,21 @@ def pick_pivots(loop):
     return [(loop[0], 'CA'), (loop[len(loop) // 2], 'CA'), (loop[-1], 'CA')]
 
 
+def ss_torsions(upper, lower):
+    """Torsions a disulfide closure has to sample, as (res, atom) pairs naming each central bond.
+
+    Mirrors simple_cycpep_predict's terminal_disulfide setup: the S-S torsion itself, both Cys side
+    chains marching CA-CB-SG, and what backbone each Cys has. `upper` is the appended Cys (polymer
+    upper terminus, so only phi is defined); `lower` is the prepended one (only psi is defined).
+    """
+    return [
+        [((upper, 'SG'), (lower, 'SG'))],
+        [((upper, 'CB'), (upper, 'SG')), ((upper, 'CA'), (upper, 'CB')),
+         ((lower, 'CB'), (lower, 'SG')), ((lower, 'CA'), (lower, 'CB'))],
+        [((upper, 'N'), (upper, 'CA')), ((lower, 'CA'), (lower, 'C'))],
+    ]
+
+
 def _indices(residues):
     '''-> (pdb_to_rosetta, rosetta_to_pdb) for a motif Rosetta will renumber 1..N.'''
     pdb2r = {r.num: i + 1 for i, r in enumerate(residues)}
@@ -78,7 +93,7 @@ def plan(variant, residues):
                 'mutate': [(pdb2r[num], name) for num, name in variant['mutate']],
                 'pdb2r': pdb2r, 'r2pdb': r2pdb, 'sample': False,
                 'prepend': None, 'append': None, 'motif_range': (1, n),
-                'polymer_termini': {1, n}, 'declare': False}
+                'polymer_termini': {1, n}, 'declare': False, 'ss_torsions': []}
     if variant['route'] == 'ssapp':
         # One Cys beyond each terminus, bonded to each other. Prepending renumbers the pose, so it is
         # done first and everything downstream shifts by one:
@@ -114,7 +129,8 @@ def plan(variant, residues):
             'pdb2r': pdb2r, 'r2pdb': r2pdb, 'sample': True, 'prepend': prepend, 'append': append,
             'motif_range': (2, n + 1) if variant['route'] == 'ssapp' else (1, n),
             'polymer_termini': {1, last} if variant['route'] == 'ssapp' else set(),
-            'declare': True}
+            'declare': True,
+            'ss_torsions': ss_torsions(last, 1) if variant['route'] == 'ssapp' else []}
 
 
 def runs(indices):
@@ -178,14 +194,24 @@ def xml(variant, p, protocol):
                    % (c['res1'], c['prior'], c['res1'], c['atom1'], c['res2'], c['atom2'],
                       c['res2'], c['following'], g['length'], g['angle1'], g['angle2']))
         # Each residue's own Ramachandran table does the seeding: D-Pro cannot propose negative phi.
-        # randomize_backbone_by_rama_prepro aborts on a residue lacking either polymer connection.
-        # In the ssapp topology the ring closes through the S-S, so residue 1 and residue `last` are
-        # polymer-terminal; their torsions come from CloseBond's randomize_flanking_torsions instead.
+        # randomize_backbone_by_rama_prepro aborts on a residue lacking either polymer connection, so
+        # in the ssapp topology (ring closes through the S-S) the two Cys are excluded from it.
         perturb = [r for r in p['loop'] if r not in p['polymer_termini']]
         if perturb:
             out.append('      <AddPerturber effect="randomize_backbone_by_rama_prepro">')
             for r in perturb:
                 out.append('        <AddResidue index="%d"/>' % r)
+            out.append('      </AddPerturber>')
+        # ...but leaving them unsampled entirely is why ssapp closed 0/50 on the first submission:
+        # PeptideStubMover builds them pointing off into space and nothing ever moves them, so the two
+        # sulfurs can never meet (100,000 attempts, zero solutions, no error). simple_cycpep_predict's
+        # terminal_disulfide mode randomizes them with explicit randomize_dihedral perturbers instead --
+        # the S-S torsion, each Cys side chain, and the Cys backbone - which is what this mirrors.
+        for tors in p['ss_torsions']:
+            out.append('      <AddPerturber effect="randomize_dihedral">')
+            for (r1, a1), (r2, a2) in tors:
+                out.append('        <AddAtoms res1="%d" atom1="%s" res2="%d" atom2="%s"/>'
+                           % (r1, a1, r2, a2))
             out.append('      </AddPerturber>')
         out.append('      <AddFilter type="loop_bump_check"/>')
         seed = seeded(variant, p['n'])
