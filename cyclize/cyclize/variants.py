@@ -38,7 +38,11 @@ TURN_SEEDS = [
     ('GLY', 'GLY', "I'/II'", 'flexible control, unbiased'),
 ]
 
-CYS_FORMS = ['CYD', 'DCYD']
+# (label, Rosetta resname). The disulfide-bonded cysteine is CYD for L -- plain CYS has no SG
+# connection for DeclareBond to attach to -- but there is NO "DCYD": the D form must be spelled
+# "DCYS:disulfide". Probed against rosetta/3.14: CYD ok, DCYS ok, DCYS:disulfide ok, DCYD INVALID,
+# CYD:D INVALID. The label is kept separate because a colon cannot go in a variant id / directory name.
+CYS_FORMS = [('CYD', 'CYD'), ('DCYD', 'DCYS:disulfide')]
 ROUTES = ('amide', 'ssapp', 'ssmut')
 
 
@@ -122,11 +126,12 @@ def enumerate_variants(scaffold, residues, scan, hotspot=1.0, routes=ROUTES, see
         out.append({'id': '%s__amide__%s-%s' % (scaffold, a, b), 'scaffold': scaffold,
                     'route': 'amide', 'added': [a, b], 'turn': turn, 'note': note})
     if 'ssapp' in routes:
-        for a in CYS_FORMS:
-            for b in CYS_FORMS:
-                out.append({'id': '%s__ssapp__%s-%s' % (scaffold, a, b), 'scaffold': scaffold,
-                            'route': 'ssapp', 'added': [b, a], 'turn': None,
-                            'note': 'Cys appended beyond each terminus'})
+        for a_label, a_res in CYS_FORMS:
+            for b_label, b_res in CYS_FORMS:
+                out.append({'id': '%s__ssapp__%s-%s' % (scaffold, a_label, b_label),
+                            'scaffold': scaffold, 'route': 'ssapp', 'added': [b_res, a_res],
+                            'turn': None, 'note': 'Cys appended beyond each terminus (%s / %s)'
+                                                  % (b_label, a_label)})
     for v in out:
         v.update({'release_n': [r.num for r in rel_n], 'release_c': [r.num for r in rel_c],
                   'loop_size': loop_size, 'register': k, 'mutate': []})

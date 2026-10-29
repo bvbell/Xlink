@@ -15,14 +15,19 @@ Closure results so far, by route -- the pattern is clean and worth knowing befor
 | ------- | ---------------------------------------------------------------------------- |
 | `amide` | **closes reliably, 50/50 on every variant tried**, both targets                 |
 | `ssmut` | **50/50** (uor/short, the only scaffold eligible)                               |
-| `ssapp` | **closed 0/50 on first submission** -- fixed in `b612855`, 8/8 on retest        |
+| `ssapp` | **0/50 on first submission from two separate bugs** -- both fixed, 6/6-8/8 on retest |
 
 ### Outstanding: ssapp variants need a retry
 
-The first submission of `ssapp` sampled nothing on the two terminal Cys, so the sulfurs could never
-meet (details in `cyclize/README.md`). Fixed, but the already-run tasks must be redone. `apj` inputs
-were regenerated before its array started, so some of its tasks picked the fix up and some did not,
-depending on when they launched.
+`ssapp` failed for two unrelated reasons, both now fixed (details in `cyclize/README.md`):
+
+1. **Nothing sampled the two terminal Cys**, so the sulfurs could never meet. Affected all 12 ssapp
+   variants per target. Fixed in `b612855`.
+2. **`DCYD` is not a valid residue name** -- the D disulfide cysteine is `DCYS:disulfide`. This is why
+   the three `CYD-CYD` variants reached 50/50 while all nine containing `DCYD` died instantly with
+   "The residue DCYD could not be generated".
+
+The already-run tasks must be redone either way.
 
 **Once both arrays finish** (`cyclize status <target>` shows no active job), rerun the failures:
 

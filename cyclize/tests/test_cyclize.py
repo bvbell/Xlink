@@ -155,6 +155,26 @@ def test_ssmut_needs_no_sampling():
     check('both termini mutated', sorted(n for n, _ in p['mutate']), [1, 8])
 
 
+def test_cys_names():
+    """There is no "DCYD": the D disulfide cysteine must be spelled "DCYS:disulfide"."""
+    print('cysteine naming')
+    labels = [l for l, _ in variants.CYS_FORMS]
+    resnames = [r for _, r in variants.CYS_FORMS]
+    check('L form resname', resnames[0], 'CYD')
+    check('D form resname', resnames[1], 'DCYS:disulfide')
+    check('no bare DCYD is ever emitted as a resname', 'DCYD' in resnames, False)
+    # A colon cannot appear in a variant id, because ids become directory names.
+    for lab in labels:
+        check('label %s is path-safe' % lab, ':' in lab or '/' in lab, False)
+    res = motif('apj_scaffolds/long.pdb')
+    scan = config.read_scan(os.path.join(REPO, 'flexddg/apj_nb/analysis_output/alascan_summary.csv'))
+    for v in variants.enumerate_variants('long', res, scan):
+        if ':' in v['id'] or '/' in v['id']:
+            FAILS.append('variant id %r is not path-safe' % v['id'])
+            print('  FAIL variant id %r is not path-safe' % v['id'])
+    print('  ok   every variant id is path-safe')
+
+
 def test_runs_helper():
     print('misc helpers')
     check('runs splits non-contiguous loops', build.runs([13, 14, 1, 2, 3]), [(1, 3), (13, 14)])
@@ -167,7 +187,7 @@ def test_runs_helper():
 
 if __name__ == '__main__':
     for fn in [test_register, test_staple_eligibility, test_turn_rules, test_offregister_refused,
-               test_plan_indices, test_ssmut_needs_no_sampling, test_runs_helper]:
+               test_plan_indices, test_ssmut_needs_no_sampling, test_cys_names, test_runs_helper]:
         fn()
     print('\n%d failure(s)' % len(FAILS))
     for f in FAILS:

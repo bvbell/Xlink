@@ -86,6 +86,12 @@ Measured during development on apj/long; these are the non-obvious results worth
   comparing raw coordinates reports several angstroms of pure rigid-body displacement.
 - **Rosetta writes D-amino acids as `HETATM`**, with name3 `DPR`, `DAL`, `DCS` etc. A reader that only
   takes `ATOM` silently drops every designed turn residue.
+- **There is no `DCYD`.** The disulfide-bonded cysteine is `CYD` for L, but the D form must be spelled
+  **`DCYS:disulfide`** -- `DCYD` fails with "The residue DCYD could not be generated", which is why 9
+  of 12 `ssapp` variants per target closed 0/50 on the first submission while all three `CYD-CYD` ones
+  reached 50/50. Probed against rosetta/3.14: `CYD` ok, `DCYS` ok, `DCYS:disulfide` ok, `DCYD` invalid,
+  `CYD:D` invalid. `variants.CYS_FORMS` therefore carries `(label, resname)` pairs, since the colon
+  cannot appear in a variant id.
 - **A disulfide closure needs explicit `randomize_dihedral` perturbers.** `randomize_backbone_by_rama_prepro`
   aborts on a residue missing a polymer connection, and in the ssapp topology the ring closes through
   the S-S, so both Cys are polymer-terminal. Simply excluding them from that perturber is not enough:

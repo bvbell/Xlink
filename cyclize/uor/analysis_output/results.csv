@@ -1,0 +1,854 @@
+variant,scaffold,route,structure,motif_rmsd,seed_phi,min_receptor_dist,closest_design_res,closest_receptor_res,pass,reasons
+long__amide__DPRO-GLY,long,amide,long_0001.pdb,0.7424220768135107,134.6108298169923,6.445109460065007,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0002.pdb,1.269936968818208,130.7602611874951,6.174398749580309,p15,K144,False,motif drifted 1.27 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0003.pdb,0.9293366225638074,132.1540070256799,6.44649186862985,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0004.pdb,0.8015482609455397,131.16410171499214,6.3292625591277885,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0005.pdb,1.2536190421399922,132.27413221686982,6.171437421891666,p15,K144,False,motif drifted 1.25 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0006.pdb,1.2785163574454685,132.27850684498188,6.1850012401513474,p15,K144,False,motif drifted 1.28 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0007.pdb,1.2533281028229275,131.8180467596764,6.279069770892909,p15,K144,False,motif drifted 1.25 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0008.pdb,1.950538727505633,127.17659064867752,6.5553311390939015,p15,R146,False,motif drifted 1.95 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0009.pdb,1.2371213174053857,131.48102617670338,6.159606357643171,p15,K144,False,motif drifted 1.24 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0010.pdb,1.3054291755497351,130.7533208797018,6.200464119999661,p15,K144,False,motif drifted 1.31 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0011.pdb,1.1586564028140829,132.2859964495432,6.141232197544079,p15,K144,False,motif drifted 1.16 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0012.pdb,0.9199312646102005,132.26948373857786,6.3423967472487695,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0013.pdb,1.414996807460461,128.19671461276357,6.247285592691938,p15,K144,False,motif drifted 1.41 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0014.pdb,1.2547835531837004,130.9063306353602,6.169620407273842,p15,K144,False,motif drifted 1.25 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0015.pdb,1.389272548701127,130.99002984418445,6.435972401896604,p15,K144,False,motif drifted 1.39 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0016.pdb,1.307393736967241,132.07601827889266,6.222886569679108,p15,K144,False,motif drifted 1.31 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0017.pdb,0.8108191512627505,129.22411001945602,6.723651654090623,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0018.pdb,1.1949355276190599,126.57952380651861,6.171697840056002,p15,K144,False,motif drifted 1.19 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0019.pdb,0.8124576878014657,131.49593709742086,6.246557068724307,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0020.pdb,1.0424164704750667,123.74145347377716,6.787187169704435,p15,K144,False,motif drifted 1.04 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0021.pdb,0.9906283641137654,129.96359397982215,6.4916036883421055,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0022.pdb,0.8996282262334705,132.48259090637012,6.246273159612044,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0023.pdb,1.2468239978282254,126.62056807450973,6.18359591678069,p15,K144,False,motif drifted 1.25 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0024.pdb,1.2560427160860863,133.1496873213477,6.286894457671139,p15,K144,False,motif drifted 1.26 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0025.pdb,1.2902367233528262,126.32532206762939,6.4057096319088105,p15,K144,False,motif drifted 1.29 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0026.pdb,1.222836279750703,126.45847710249613,6.20240184093821,p15,K144,False,motif drifted 1.22 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0027.pdb,0.7588803075970991,133.89702097243682,6.4539781628821995,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0028.pdb,1.2468087221705977,127.11550376097296,6.415824805854791,p15,K144,False,motif drifted 1.25 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0029.pdb,1.2172589406208663,128.2043808808291,6.708656631791522,p15,K144,False,motif drifted 1.22 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0030.pdb,1.2328920513721346,132.27975144848975,6.291666569377818,p15,K144,False,motif drifted 1.23 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0031.pdb,1.230308117862772,117.4641877886129,6.48905347474466,p15,K144,False,motif drifted 1.23 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0032.pdb,1.256405788468855,133.1279428115278,6.274155567478454,p15,K144,False,motif drifted 1.26 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0033.pdb,0.8414091369247807,134.01290124267993,6.3560696154424186,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0034.pdb,1.3098292219954344,131.16438332309554,6.2569595623327725,p15,K144,False,motif drifted 1.31 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0035.pdb,1.2726622083630525,132.0495254130625,6.186705005376625,p15,K144,False,motif drifted 1.27 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0036.pdb,1.4239334107954178,131.13105577671203,6.4425272227214725,p15,K144,False,motif drifted 1.42 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0037.pdb,1.2250160944681283,125.98451050922517,6.210864420364848,p15,K144,False,motif drifted 1.23 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0038.pdb,1.2647625914609062,132.43105962272153,6.171095508369526,p15,K144,False,motif drifted 1.26 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0039.pdb,1.3874963256162736,147.11705367901294,6.257226822467871,p15,K144,False,motif drifted 1.39 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0040.pdb,1.6269292657988381,121.09095544432915,6.41005532178786,p15,K144,False,motif drifted 1.63 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0041.pdb,1.2203897095342093,127.11968772077006,6.219884733675323,p15,K144,False,motif drifted 1.22 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0042.pdb,1.201374614021255,122.87907192554239,6.684054726543644,p15,K144,False,motif drifted 1.20 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0043.pdb,1.1711066935899856,130.28389688952345,6.214096992258997,p15,K144,False,motif drifted 1.17 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0044.pdb,1.2090785178629786,122.62716263987741,6.259976874893194,p15,K144,False,motif drifted 1.21 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0045.pdb,1.246325347000084,129.76245226215104,6.354928990407865,p15,K144,False,motif drifted 1.25 A (limit 1.00)
+long__amide__DPRO-GLY,long,amide,long_0046.pdb,0.7622387651398016,129.6455934240941,6.29517309547246,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0047.pdb,0.9763445577874461,132.0736228480378,6.581159777887618,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0048.pdb,0.5350921754711955,124.87983288381098,6.3977739398568,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0049.pdb,0.769612383127058,133.55949992835048,6.458125934564316,p15,K144,True,
+long__amide__DPRO-GLY,long,amide,long_0050.pdb,1.2395842798501089,126.46953430874134,6.223518647721643,p15,K144,False,motif drifted 1.24 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0001.pdb,0.8298370282270786,138.4694795185569,6.39717328337707,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0002.pdb,0.986218387229907,179.8479881479956,6.310054777538509,P16,T160,True,
+long__amide__DPRO-PRO,long,amide,long_0003.pdb,1.3094550184014546,138.2712199751159,6.247549893815811,p15,K144,False,motif drifted 1.31 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0004.pdb,1.265649400406146,135.76456433124284,6.2221767464447195,p15,K144,False,motif drifted 1.27 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0005.pdb,1.285904690982677,155.09098715159877,6.369724857679179,p15,K144,False,motif drifted 1.29 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0006.pdb,1.196376515577153,154.56780408220226,6.20244268958237,p15,K144,False,motif drifted 1.20 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0007.pdb,1.1901543941561175,150.6794599101022,6.30344458970454,p15,K144,False,motif drifted 1.19 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0008.pdb,0.7006252009943357,140.948404658124,6.457937227233151,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0009.pdb,0.5472647025600815,140.8765109950241,6.472118602597778,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0010.pdb,0.48804342116681054,138.32666906996815,6.663517465550563,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0011.pdb,1.3880144940544676,149.23301822856203,6.4161530912158815,p15,K144,False,motif drifted 1.39 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0012.pdb,0.7594381730842831,137.94893660532867,6.408317411083199,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0013.pdb,1.6185745406358671,179.29551003056613,6.1692988035816345,p15,R146,False,motif drifted 1.62 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0014.pdb,0.6425267511596925,136.74878250252462,6.349317119867603,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0015.pdb,0.9063809701639007,142.47530834975998,6.567464348849767,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0016.pdb,0.7870665955992134,142.39697835605503,6.3898850392280355,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0017.pdb,1.4895413842387448,148.95079039890925,6.5944845246688875,p15,K144,False,motif drifted 1.49 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0018.pdb,1.2889943109567623,147.46496897546874,6.36971461608552,p15,K144,False,motif drifted 1.29 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0019.pdb,1.0979024156728299,135.89944294899618,6.336594796075649,p15,K144,False,motif drifted 1.10 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0020.pdb,1.4701008790822645,149.99290315426006,6.4792020990612675,p15,K144,False,motif drifted 1.47 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0021.pdb,1.5915419999353686,150.65635094894967,6.68392330112801,p15,R146,False,motif drifted 1.59 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0022.pdb,1.0332335312769354,138.32402152230196,6.338218039918575,p15,K144,False,motif drifted 1.03 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0023.pdb,1.619361795191464,-176.46548115309488,6.614574808778841,p15,R146,False,"motif drifted 1.62 A (limit 1.00); seeded residue 15 came out at phi -176, wrong handedness for a I'/II' turn"
+long__amide__DPRO-PRO,long,amide,long_0024.pdb,1.0009180171763539,111.53384034341748,5.997555625246298,P16,R146,False,motif drifted 1.00 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0025.pdb,0.8369808999803326,144.97405832557422,6.191984659746993,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0026.pdb,0.7986823367281737,138.41642295210193,6.489625786599765,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0027.pdb,1.1258851651955102,148.7790669194572,6.327874373801666,p15,K144,False,motif drifted 1.13 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0028.pdb,1.1617616635096926,149.5275225043841,6.301970851711697,p15,K144,False,motif drifted 1.16 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0029.pdb,0.8239806960113203,137.80070496480388,6.469607257761791,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0030.pdb,1.2669487733636586,135.4816224248114,6.209225974017762,p15,K144,False,motif drifted 1.27 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0031.pdb,1.4517992612871058,149.87254893855936,6.439409400396882,p15,K144,False,motif drifted 1.45 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0032.pdb,1.062285285620236,136.76382182936976,6.447748261064098,p15,K144,False,motif drifted 1.06 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0033.pdb,0.8635971774660057,137.50001142397255,6.54735092518003,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0034.pdb,0.8606950503229703,132.916444078577,6.525212907210141,P16,R146,True,
+long__amide__DPRO-PRO,long,amide,long_0035.pdb,0.7151822534191576,131.61093522782446,6.4674125372694045,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0036.pdb,0.7485864354074572,137.78228666082413,6.455345172040279,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0037.pdb,1.4562520257714013,149.97866695615386,6.437645681652039,p15,K144,False,motif drifted 1.46 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0038.pdb,1.0526203497840083,130.2503709914587,6.3191944062582195,p15,K144,False,motif drifted 1.05 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0039.pdb,1.2298154362421978,149.84974245535412,6.272244600003498,p15,K144,False,motif drifted 1.23 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0040.pdb,1.2563829805041138,135.9495474345631,6.235284327202315,p15,K144,False,motif drifted 1.26 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0041.pdb,0.587384628788302,137.38534656629383,6.422234522156783,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0042.pdb,1.2748255285612642,136.12803027863296,6.2258607546614515,p15,K144,False,motif drifted 1.27 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0043.pdb,0.5488068188608569,137.0768627734608,6.475198129531848,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0044.pdb,0.8510156389711887,138.00350781712106,6.563597488047035,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0045.pdb,1.3233708590854223,146.25405833800514,6.425218159768105,p15,K144,False,motif drifted 1.32 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0046.pdb,1.226898849575025,135.46452255054342,6.229537017257749,p15,K144,False,motif drifted 1.23 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0047.pdb,0.7705144692781728,138.3696960457916,6.710326916548278,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0048.pdb,1.4240420027922711,150.20334277707977,6.416519574698694,p15,K144,False,motif drifted 1.42 A (limit 1.00)
+long__amide__DPRO-PRO,long,amide,long_0049.pdb,0.7270571951418511,138.8607056084668,6.46818699651404,p15,K144,True,
+long__amide__DPRO-PRO,long,amide,long_0050.pdb,1.3117711157034373,140.0279668559018,6.559855472918809,p15,K144,False,motif drifted 1.31 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0001.pdb,1.1567377324866603,96.79273486371467,4.665502272198619,N15,R146,False,motif drifted 1.16 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0002.pdb,1.4922185402775798,116.25214585712251,4.026580396776273,N15,R146,False,motif drifted 1.49 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0003.pdb,1.1788059672348268,77.88097041833723,5.078170587238326,N15,K144,False,motif drifted 1.18 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0004.pdb,1.6745211107485902,-149.718376941069,6.035100341499258,N15,R146,False,"motif drifted 1.67 A (limit 1.00); seeded residue 15 came out at phi -150, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0005.pdb,1.1584580147973087,77.95853247516256,4.8298330381639705,N15,K144,False,motif drifted 1.16 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0006.pdb,1.9399345230984284,-136.79436241326175,6.471613669217385,N15,R146,False,"motif drifted 1.94 A (limit 1.00); seeded residue 15 came out at phi -137, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0007.pdb,2.0302195040774,-128.6430609674756,6.3048303082715975,N15,R146,False,"motif drifted 2.03 A (limit 1.00); seeded residue 15 came out at phi -129, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0008.pdb,1.1519138654420713,77.86298656356674,5.147748553725661,N15,K144,False,motif drifted 1.15 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0009.pdb,1.0316118027567185,96.94652599967127,4.910532947542876,N15,R146,False,motif drifted 1.03 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0010.pdb,1.298134948308924,82.99893818521313,5.174148659024907,N15,R146,False,motif drifted 1.30 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0011.pdb,1.1346995274366545,77.87605256881282,4.913938552950709,N15,K144,False,motif drifted 1.13 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0012.pdb,1.887477928463352,-133.15134786271008,6.492017068661134,N15,R146,False,"motif drifted 1.89 A (limit 1.00); seeded residue 15 came out at phi -133, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0013.pdb,0.9371786386661706,88.83330249890479,4.998200827695453,N15,K144,True,
+long__amide__ASN-GLY,long,amide,long_0014.pdb,1.1056160708758198,77.58726566765894,4.860925680069071,N15,K144,False,motif drifted 1.11 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0015.pdb,1.5107287374879956,80.81777410973419,4.025821823460719,N15,K144,False,motif drifted 1.51 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0016.pdb,1.1844052093724955,78.29350980306552,4.970519011949346,N15,K144,False,motif drifted 1.18 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0017.pdb,1.2848297213527213,89.65349226352714,4.285763739012209,N15,K144,False,motif drifted 1.28 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0018.pdb,0.9409888995216703,89.56735706101813,4.176817538725413,N15,K144,True,
+long__amide__ASN-GLY,long,amide,long_0019.pdb,1.940882428149637,-136.7651594166104,6.471256170633399,N15,R146,False,"motif drifted 1.94 A (limit 1.00); seeded residue 15 came out at phi -137, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0020.pdb,1.099554662192422,96.2923466507243,4.402423214694864,N15,K144,False,motif drifted 1.10 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0021.pdb,1.12633888651978,77.5588691097119,5.2109324935851316,N15,K144,False,motif drifted 1.13 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0022.pdb,1.2751367794967345,88.85418070598118,4.889089287847851,N15,R146,False,motif drifted 1.28 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0023.pdb,0.6968156813761922,104.8895229209695,4.717920321545239,N15,R146,True,
+long__amide__ASN-GLY,long,amide,long_0024.pdb,1.7821183841374695,-147.90509751557803,6.428926102458056,N15,R146,False,"motif drifted 1.78 A (limit 1.00); seeded residue 15 came out at phi -148, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0025.pdb,1.154149124441005,77.85744565451455,5.040109958644,N15,K144,False,motif drifted 1.15 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0026.pdb,0.540157886682527,77.97093417139627,5.204893926457691,N15,K144,True,
+long__amide__ASN-GLY,long,amide,long_0027.pdb,1.1488487035920472,96.52430491315384,4.650840070947599,N15,R146,False,motif drifted 1.15 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0028.pdb,1.1991050287725427,77.70950998548987,5.073084640723533,N15,K144,False,motif drifted 1.20 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0029.pdb,1.1504374770391514,89.51838166735857,4.884872805579773,N15,K144,False,motif drifted 1.15 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0030.pdb,1.9218504518909936,-134.49952808377284,6.350489772798557,N15,R146,False,"motif drifted 1.92 A (limit 1.00); seeded residue 15 came out at phi -134, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0031.pdb,1.174956001208939,78.14107984494916,5.078986155805006,N15,K144,False,motif drifted 1.17 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0032.pdb,1.2447390128588987,-62.35943840282142,4.18932522342794,G16,R146,False,"motif drifted 1.24 A (limit 1.00); seeded residue 15 came out at phi -62, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0033.pdb,1.1833196375920454,89.6414145858188,4.607821378783954,N15,K144,False,motif drifted 1.18 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0034.pdb,2.0381447523221734,-129.70163925703238,6.2989708576065935,N15,R146,False,"motif drifted 2.04 A (limit 1.00); seeded residue 15 came out at phi -130, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0035.pdb,1.0747515028693913,77.82375345600563,3.8763314295802465,N15,K144,False,motif drifted 1.07 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0036.pdb,0.8601921099228352,78.26753314474166,3.8784494696286766,N15,K144,True,
+long__amide__ASN-GLY,long,amide,long_0037.pdb,1.1536773134605092,95.63192882768652,4.647474645139564,N15,R146,False,motif drifted 1.15 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0038.pdb,1.1645020117334879,77.93832105101595,5.362007067641894,N15,K144,False,motif drifted 1.16 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0039.pdb,1.2213016012295461,100.12207110760193,4.452842554299393,N15,K144,False,motif drifted 1.22 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0040.pdb,1.0363635303727796,89.49330310019589,4.285098601414165,N15,K144,False,motif drifted 1.04 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0041.pdb,1.9917811399031105,-132.87809965994632,6.3877586494248675,N15,R146,False,"motif drifted 1.99 A (limit 1.00); seeded residue 15 came out at phi -133, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0042.pdb,1.1173741697515551,77.75511555671908,5.054691450300206,N15,K144,False,motif drifted 1.12 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0043.pdb,0.8271991889182883,77.71076545382782,4.945850778332629,N15,K144,True,
+long__amide__ASN-GLY,long,amide,long_0044.pdb,1.7439924567366032,-146.72744512221414,6.49912764073372,N15,R146,False,"motif drifted 1.74 A (limit 1.00); seeded residue 15 came out at phi -147, wrong handedness for a I'/II' turn"
+long__amide__ASN-GLY,long,amide,long_0045.pdb,1.076823471798294,98.11456511042093,4.781617784947208,N15,R146,False,motif drifted 1.08 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0046.pdb,1.1155533914279478,102.6275629291184,4.471405180251045,N15,K144,False,motif drifted 1.12 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0047.pdb,1.1305310633247343,86.88214907891974,5.079390016089158,N15,R146,False,motif drifted 1.13 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0048.pdb,1.0705599197629478,86.02051887675239,5.044266026915344,N15,K144,False,motif drifted 1.07 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0049.pdb,1.8663323139469066,103.63377841900302,4.263286920875054,N15,R146,False,motif drifted 1.87 A (limit 1.00)
+long__amide__ASN-GLY,long,amide,long_0050.pdb,1.1459306754737597,84.86028862373709,5.193643374151065,N15,R146,False,motif drifted 1.15 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0001.pdb,1.481861464494227,153.94137467590318,6.3345215636561605,a15,K144,False,motif drifted 1.48 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0002.pdb,0.7746866666582217,154.00995367725193,6.275154025847405,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0003.pdb,0.9029540137208107,157.43142898892913,6.458185847395164,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0004.pdb,1.4729122102152756,154.39024747341048,6.273963477017152,a15,K144,False,motif drifted 1.47 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0005.pdb,0.7820690589107694,157.12358370045888,6.308164155947276,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0006.pdb,0.8161907986257586,157.23903392241695,6.324955059912429,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0007.pdb,1.0630515533078064,159.2963447401526,6.1753902237759455,a15,K144,False,motif drifted 1.06 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0008.pdb,1.5360960366007501,150.79886523051147,6.105238173834443,a15,K144,False,motif drifted 1.54 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0009.pdb,1.0464037661736025,156.91333177649108,6.152891366862398,a15,K144,False,motif drifted 1.05 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0010.pdb,1.4768641800849993,154.27444481626722,6.28084908622274,a15,K144,False,motif drifted 1.48 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0011.pdb,1.4722224451650268,151.55819425368108,6.278621593766681,a15,K144,False,motif drifted 1.47 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0012.pdb,1.52550539631997,130.75575305987547,6.486378577648343,a15,K144,False,motif drifted 1.53 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0013.pdb,1.381252836250583,154.9997144657058,6.167379387458006,a15,K144,False,motif drifted 1.38 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0014.pdb,1.0879603774911695,150.65267222959176,6.3963594961614625,a15,K144,False,motif drifted 1.09 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0015.pdb,1.4769792680503415,154.31810241391338,6.281437350525046,a15,K144,False,motif drifted 1.48 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0016.pdb,1.6854758523972349,177.95519245166943,5.886404724659044,a15,R146,False,motif drifted 1.69 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0017.pdb,0.7800136162811491,157.59693983973014,6.3100324496662985,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0018.pdb,1.409539943865364,153.3870355250878,6.1471346994707075,a15,K144,False,motif drifted 1.41 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0019.pdb,1.1104044297222602,162.10733652259378,6.536202168245778,a15,K144,False,motif drifted 1.11 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0020.pdb,1.5209542731133605,145.40015465483964,6.076032584901981,a15,K144,False,motif drifted 1.52 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0021.pdb,1.6853630242755724,151.32585394113758,6.527673346105238,a15,K144,False,motif drifted 1.69 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0022.pdb,1.5100204184865207,154.31500437919487,6.558704953604333,a15,K144,False,motif drifted 1.51 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0023.pdb,0.7360258384539392,158.56054493724147,6.346260382370632,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0024.pdb,1.5004025707965138,154.61119034125701,6.377255132457863,a15,K144,False,motif drifted 1.50 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0025.pdb,1.5666514650144574,168.52842629921147,6.420448951307107,a15,R146,False,motif drifted 1.57 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0026.pdb,1.4285784944667221,153.33372297244918,6.1612136384787055,a15,K144,False,motif drifted 1.43 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0027.pdb,0.8995415778526514,154.43681298912003,6.354882082326385,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0028.pdb,1.3077895699117528,154.620604931159,6.145989091118343,a15,K144,False,motif drifted 1.31 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0029.pdb,0.8692519575971268,157.15993486990604,6.194702821391683,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0030.pdb,1.7796783823835434,-118.68693419749441,5.660885080043883,a15,R146,False,"motif drifted 1.78 A (limit 1.00); seeded residue 15 came out at phi -119, wrong handedness for a I'/II' turn"
+long__amide__DALA-GLY,long,amide,long_0031.pdb,0.7487408637974494,157.56178564592955,6.2729302052547755,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0032.pdb,0.9290926768831548,148.75517970548597,6.223304855170851,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0033.pdb,1.4759521557913606,124.86546880157971,6.74991498055794,a15,R146,False,motif drifted 1.48 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0034.pdb,0.8079450428210884,157.19803715932653,6.289019141744827,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0035.pdb,1.1870397074388712,150.44497074956962,6.04028548200809,a15,K144,False,motif drifted 1.19 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0036.pdb,1.3493985187490485,154.94517425191586,6.499935186698586,a15,K144,False,motif drifted 1.35 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0037.pdb,1.4015373850145194,152.66209365700416,6.059367784089784,a15,K144,False,motif drifted 1.40 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0038.pdb,1.468242282080264,154.20220696539485,6.275282574433198,a15,K144,False,motif drifted 1.47 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0039.pdb,0.7178766883985513,157.7812346619763,6.313602659222789,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0040.pdb,0.8488879972867784,145.87192804717418,6.228671610479411,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0041.pdb,1.0555267439812974,155.4553969001241,6.141516275001731,a15,K144,False,motif drifted 1.06 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0042.pdb,1.505107728648031,152.1999748532491,6.332495490425955,a15,K144,False,motif drifted 1.51 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0043.pdb,1.1821415160154598,152.65737898525103,6.062472442262582,a15,K144,False,motif drifted 1.18 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0044.pdb,1.0578427508357124,152.09443750503945,6.2193417462601595,a15,K144,False,motif drifted 1.06 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0045.pdb,1.055641520676614,152.21764002566263,6.28593227250155,a15,K144,False,motif drifted 1.06 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0046.pdb,0.9594215522888753,18.74108726366514,5.012147378427992,G16,R146,True,
+long__amide__DALA-GLY,long,amide,long_0047.pdb,1.335376506341184,154.19014852629306,6.141168009990249,a15,K144,False,motif drifted 1.34 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0048.pdb,1.4951885841831531,153.7100356250333,6.246345212103689,a15,K144,False,motif drifted 1.50 A (limit 1.00)
+long__amide__DALA-GLY,long,amide,long_0049.pdb,0.7903955400289395,157.47925943692985,6.293683061019614,a15,K144,True,
+long__amide__DALA-GLY,long,amide,long_0050.pdb,2.272874469607617,-63.09175836866351,5.403564443644294,a15,R146,False,"motif drifted 2.27 A (limit 1.00); seeded residue 15 came out at phi -63, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0001.pdb,1.8606977486556977,-176.95138040986052,6.588000179444682,G15,R146,False,"motif drifted 1.86 A (limit 1.00); seeded residue 15 came out at phi -177, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0002.pdb,1.035732539519479,-173.77247759681026,6.909470231383703,G15,K144,False,"motif drifted 1.04 A (limit 1.00); seeded residue 15 came out at phi -174, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0003.pdb,1.7426970481974273,-172.81611958998744,6.650926231263219,G15,R146,False,"motif drifted 1.74 A (limit 1.00); seeded residue 15 came out at phi -173, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0004.pdb,0.9331133715614379,-169.17831013530898,6.598997490502882,G15,K144,False,"seeded residue 15 came out at phi -169, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0005.pdb,1.7145446858931803,-172.49016794353412,6.61743079925469,G15,R146,False,"motif drifted 1.71 A (limit 1.00); seeded residue 15 came out at phi -172, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0006.pdb,1.5306188634201585,-176.2838810240729,6.863844419615937,G15,R146,False,"motif drifted 1.53 A (limit 1.00); seeded residue 15 came out at phi -176, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0007.pdb,1.5536454672789524,165.286728522055,6.768829496420734,G15,R146,False,motif drifted 1.55 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0008.pdb,1.7205931883243666,-174.0448984096235,6.68253984777113,G15,R146,False,"motif drifted 1.72 A (limit 1.00); seeded residue 15 came out at phi -174, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0009.pdb,1.5755420591165838,177.01633503195953,6.79545703162976,G15,R146,False,motif drifted 1.58 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0010.pdb,0.9733467443886122,-169.085781271101,6.536437101566738,G15,K144,False,"seeded residue 15 came out at phi -169, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0011.pdb,1.6672298746155747,-177.25384968396986,6.708501329579032,G15,R146,False,"motif drifted 1.67 A (limit 1.00); seeded residue 15 came out at phi -177, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0012.pdb,1.220064390043704,-164.87842829490108,6.902665151356271,G15,R146,False,"motif drifted 1.22 A (limit 1.00); seeded residue 15 came out at phi -165, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0013.pdb,1.6805619506083271,-176.24443171784606,6.709318754939418,G15,R146,False,"motif drifted 1.68 A (limit 1.00); seeded residue 15 came out at phi -176, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0014.pdb,1.7480718371683963,-168.46016979832757,6.625656431707848,G15,R146,False,"motif drifted 1.75 A (limit 1.00); seeded residue 15 came out at phi -168, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0015.pdb,1.5454455370487958,175.90932403460815,7.0207801681001705,G15,R146,False,motif drifted 1.55 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0016.pdb,1.82462785706423,-171.06835390681633,6.6049480910438225,G15,R146,False,"motif drifted 1.82 A (limit 1.00); seeded residue 15 came out at phi -171, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0017.pdb,1.0228549229257506,-168.4066091060869,6.500122973508848,G15,K144,False,"motif drifted 1.02 A (limit 1.00); seeded residue 15 came out at phi -168, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0018.pdb,0.9723585026205871,-169.92487871639005,6.5292790507400165,G15,K144,False,"seeded residue 15 came out at phi -170, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0019.pdb,1.6371293686573143,-171.74275764604002,6.770827975535472,G15,R146,False,"motif drifted 1.64 A (limit 1.00); seeded residue 15 came out at phi -172, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0020.pdb,1.1398995048747154,-168.62067373728482,6.734342281800965,G15,K144,False,"motif drifted 1.14 A (limit 1.00); seeded residue 15 came out at phi -169, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0021.pdb,0.4078155905269707,-35.10152263919248,3.8753199353740033,G16,R146,False,"seeded residue 15 came out at phi -35, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0022.pdb,1.840216835170181,-171.2357855421131,6.4974512033807565,G15,R146,False,"motif drifted 1.84 A (limit 1.00); seeded residue 15 came out at phi -171, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0023.pdb,1.5643439783774575,-171.8615981925372,6.801623171529722,G15,R146,False,"motif drifted 1.56 A (limit 1.00); seeded residue 15 came out at phi -172, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0024.pdb,1.0233898852198244,-168.1725076902418,6.4950225002976,G15,K144,False,"motif drifted 1.02 A (limit 1.00); seeded residue 15 came out at phi -168, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0025.pdb,1.6186051989215942,-172.898647486069,6.874718816232488,G15,R146,False,"motif drifted 1.62 A (limit 1.00); seeded residue 15 came out at phi -173, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0026.pdb,1.5845188258736616,178.79432588135768,6.945356478919539,G15,R146,False,motif drifted 1.58 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0027.pdb,1.726550820004623,-169.68029689766558,6.665500006162751,G15,R146,False,"motif drifted 1.73 A (limit 1.00); seeded residue 15 came out at phi -170, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0028.pdb,1.7001932321222681,-157.68029917545002,6.808065600959374,G15,R146,False,"motif drifted 1.70 A (limit 1.00); seeded residue 15 came out at phi -158, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0029.pdb,1.1934312841348915,162.7183602030798,7.035076930687971,G16,R146,False,motif drifted 1.19 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0030.pdb,1.7110048693145354,179.95652720321803,6.687428053395638,G15,R146,False,motif drifted 1.71 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0031.pdb,1.78330420504163,-173.35021101848636,6.610552542262433,G15,R146,False,"motif drifted 1.78 A (limit 1.00); seeded residue 15 came out at phi -173, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0032.pdb,1.7326385543792504,-172.42235690294356,6.640723648032823,G15,R146,False,"motif drifted 1.73 A (limit 1.00); seeded residue 15 came out at phi -172, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0033.pdb,1.2907503337035604,-172.30199017703953,6.776346838797632,G15,K144,False,"motif drifted 1.29 A (limit 1.00); seeded residue 15 came out at phi -172, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0034.pdb,1.764280943866899,-177.0510298945386,6.752772519335274,G15,R146,False,"motif drifted 1.76 A (limit 1.00); seeded residue 15 came out at phi -177, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0035.pdb,0.9312859900369226,-169.57529201363525,6.616292412271956,G15,K144,False,"seeded residue 15 came out at phi -170, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0036.pdb,1.5630548901764403,-174.89674004564858,6.803095959258907,G15,R146,False,"motif drifted 1.56 A (limit 1.00); seeded residue 15 came out at phi -175, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0037.pdb,1.561460021166474,168.798583812447,6.894879272774261,G15,R146,False,motif drifted 1.56 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0038.pdb,1.6362559057486326,-168.72055808617228,6.73761644814901,G15,R146,False,"motif drifted 1.64 A (limit 1.00); seeded residue 15 came out at phi -169, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0039.pdb,1.6330219626295288,-175.45187052020896,6.730845159586774,G15,R146,False,"motif drifted 1.63 A (limit 1.00); seeded residue 15 came out at phi -175, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0040.pdb,1.4628286532628467,-168.26988433199628,6.624557485662623,G15,K144,False,"motif drifted 1.46 A (limit 1.00); seeded residue 15 came out at phi -168, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0041.pdb,1.3914026520864102,-168.82872994074646,6.748378876436723,G15,K144,False,"motif drifted 1.39 A (limit 1.00); seeded residue 15 came out at phi -169, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0042.pdb,1.0582563519989272,-165.48825392707855,6.539131376117428,G15,K144,False,"motif drifted 1.06 A (limit 1.00); seeded residue 15 came out at phi -165, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0043.pdb,0.8977140158456971,-169.96662467026079,6.62873220219085,G15,K144,False,"seeded residue 15 came out at phi -170, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0044.pdb,0.9784468332494112,168.54114650810095,7.1133096604992705,G15,K144,True,
+long__amide__GLY-GLY,long,amide,long_0045.pdb,1.0039226081536543,109.25476197028212,7.011888401234704,G16,R146,False,motif drifted 1.00 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0046.pdb,1.6680269021156406,165.93410005378786,6.714525422395865,G15,R146,False,motif drifted 1.67 A (limit 1.00)
+long__amide__GLY-GLY,long,amide,long_0047.pdb,1.59510187154327,-171.35441776204308,6.742626544946998,G15,K144,False,"motif drifted 1.60 A (limit 1.00); seeded residue 15 came out at phi -171, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0048.pdb,1.7958838315787853,-171.60730439447414,6.602393849288594,G15,R146,False,"motif drifted 1.80 A (limit 1.00); seeded residue 15 came out at phi -172, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0049.pdb,1.8070869775271428,-171.7002477054322,6.549526324726147,G15,R146,False,"motif drifted 1.81 A (limit 1.00); seeded residue 15 came out at phi -172, wrong handedness for a I'/II' turn"
+long__amide__GLY-GLY,long,amide,long_0050.pdb,0.9959874012043625,172.20801781147475,7.0950852758292156,G15,K144,True,
+long__ssapp__CYD-CYD,,,long_0007.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+long__ssapp__CYD-CYD,,,long_0016.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+long__ssapp__CYD-CYD,,,long_0021.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+medium__amide__DPRO-GLY,medium,amide,medium_0001.pdb,1.8902998287837862,130.03333879065303,4.593037645841599,p11,K144,False,motif drifted 1.89 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0002.pdb,1.7119880613797331,128.01843486710774,4.4984447422013005,p11,K144,False,motif drifted 1.71 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0003.pdb,0.6683932870727514,128.7355815909153,4.554214656755987,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0004.pdb,1.5453907063679788,133.23483872280772,4.711603124692671,p11,K144,False,motif drifted 1.55 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0005.pdb,0.7707227309345114,136.96013898534645,4.825489837879834,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0006.pdb,0.7268586946248019,104.38405389250288,4.558648884969511,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0007.pdb,1.2420189512861997,96.27342285225104,5.109045103074764,p11,K144,False,motif drifted 1.24 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0008.pdb,0.6224770329465659,126.58722984669335,4.544813490852905,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0009.pdb,0.7472276047483837,145.6161617251045,4.573839597718209,p11,T153,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0010.pdb,1.4521804243646323,127.14923125010026,4.583675256974376,p11,K144,False,motif drifted 1.45 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0011.pdb,1.5531514137958329,134.28788043320745,4.686830064984262,p11,K144,False,motif drifted 1.55 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0012.pdb,0.8043795971426002,138.89935501983638,4.7111266396757525,p11,T153,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0013.pdb,1.4870636246012752,128.80085725714244,4.603608868053654,p11,K144,False,motif drifted 1.49 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0014.pdb,0.8154596341213309,135.77997601161687,4.776613299583111,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0015.pdb,1.5077034204365591,-120.61068011116606,4.375360317346546,G12,T153,False,"motif drifted 1.51 A (limit 1.00); seeded residue 11 came out at phi -121, wrong handedness for a I'/II' turn"
+medium__amide__DPRO-GLY,medium,amide,medium_0016.pdb,1.3859428638273874,104.5684993633723,5.024011716132215,p11,K144,False,motif drifted 1.39 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0017.pdb,1.078691612865125,123.7277696723921,4.211140821629334,p11,K144,False,motif drifted 1.08 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0018.pdb,0.8583738376408766,121.24416970225926,4.350837522855777,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0019.pdb,1.6840808535324567,130.33905214842073,4.668627747568934,p11,K144,False,motif drifted 1.68 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0020.pdb,1.5429165985896403,137.65495243932887,4.733065223998029,p11,K144,False,motif drifted 1.54 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0021.pdb,1.4966894455713076,130.37563481584147,4.633298902770671,p11,K144,False,motif drifted 1.50 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0022.pdb,0.5820252685810476,127.0152562148196,4.552785669191556,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0023.pdb,1.0403493244375106,45.52430081402615,4.141837897666084,p11,K144,False,motif drifted 1.04 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0024.pdb,0.6187907379289016,107.41140269659643,4.354043607864536,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0025.pdb,0.8286498700575174,117.83656067548081,4.262390554654392,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0026.pdb,2.231910046736841,12.84963071177264,4.313641058288017,G12,T153,False,motif drifted 2.23 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0027.pdb,1.4867394157645941,129.55288754143984,4.615637508382644,p11,K144,False,motif drifted 1.49 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0028.pdb,1.3398604408030577,126.63741641811518,4.52123982966792,p11,K144,False,motif drifted 1.34 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0029.pdb,1.5480873866309932,134.46607958827838,4.682671692824274,p11,K144,False,motif drifted 1.55 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0030.pdb,0.7142144161859427,-46.209253504903174,4.207844152011996,p11,D151,False,"seeded residue 11 came out at phi -46, wrong handedness for a I'/II' turn"
+medium__amide__DPRO-GLY,medium,amide,medium_0031.pdb,1.0461779664283137,124.93931317830395,4.215713890620116,p11,K144,False,motif drifted 1.05 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0032.pdb,0.5947365715705125,128.9862817601911,4.591121173279981,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0033.pdb,1.4479918992836704,126.45000525698354,4.4546192356737935,p11,K144,False,motif drifted 1.45 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0034.pdb,1.0856788563778725,127.18356167541435,4.4369791345339,p11,K144,False,motif drifted 1.09 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0035.pdb,1.196193653633116,149.1360011813078,4.657482877149797,p11,T153,False,motif drifted 1.20 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0036.pdb,0.8776144913379261,112.16610723559626,4.492557137796077,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0037.pdb,0.9107946019762931,121.91870648166531,4.30019630858133,p11,K144,True,
+medium__amide__DPRO-GLY,medium,amide,medium_0038.pdb,1.506417831987874,129.60234340258876,4.6386304806457686,p11,K144,False,motif drifted 1.51 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0039.pdb,1.322245448324589,120.98645451117443,4.810463980686511,p11,K144,False,motif drifted 1.32 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0040.pdb,1.5342521517838834,132.88586267363007,4.6910875567146375,p11,K144,False,motif drifted 1.53 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0041.pdb,1.3594753599176266,130.02300099631304,4.5470174127389305,p11,K144,False,motif drifted 1.36 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0042.pdb,1.5705697558809357,135.23457233866037,4.757968907754777,p11,K144,False,motif drifted 1.57 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0043.pdb,1.5992830150935833,136.2608367402093,4.756940596993681,p11,K144,False,motif drifted 1.60 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0044.pdb,1.5955076113890831,135.89770746697056,4.746402403130452,p11,K144,False,motif drifted 1.60 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0045.pdb,1.3866600778561649,117.89062646947812,4.507759383119912,p11,K144,False,motif drifted 1.39 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0046.pdb,1.4438729873610012,124.66348758109571,4.546649760873466,p11,K144,False,motif drifted 1.44 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0047.pdb,1.000870674014367,121.29880469439813,4.0578836174782875,p11,K144,False,motif drifted 1.00 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0048.pdb,1.564924630853682,134.4990245990935,4.743665004234523,p11,K144,False,motif drifted 1.56 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0049.pdb,1.1766382909671647,139.57639236861505,4.631950774069204,p11,K144,False,motif drifted 1.18 A (limit 1.00)
+medium__amide__DPRO-GLY,medium,amide,medium_0050.pdb,1.4560977222877245,124.25603196396978,4.552324697144633,p11,K144,False,motif drifted 1.46 A (limit 1.00)
+medium__amide__DPRO-PRO,medium,amide,medium_0001.pdb,0.6882921944812104,164.1611419011389,4.3294724453350275,P12,E164,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0002.pdb,0.4587737200827464,123.40023722647219,4.453354540222061,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0003.pdb,0.8996610474108144,161.12624084950468,4.666701474800213,p11,T153,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0004.pdb,0.48134647509825124,129.71297728918412,4.498575746778218,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0005.pdb,0.5926067951490609,138.47632232000333,4.672653140263606,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0006.pdb,0.5951553917989019,139.01951124442084,4.6915266627469006,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0007.pdb,0.4552224482408162,127.45029373655414,4.481162785115388,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0008.pdb,0.5463670137650669,128.6515548501898,4.505197967293733,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0009.pdb,0.4693490789931056,125.59973816894369,4.397025776798846,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0010.pdb,0.5709515750346684,130.22100411635012,4.51704891809541,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0011.pdb,0.6164483088969985,130.07200530454372,4.575840700612426,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0012.pdb,0.6334723393460738,133.8097229408575,4.568462533198126,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0013.pdb,0.8320790398961597,165.27150855312559,4.7125283361296395,p11,T153,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0014.pdb,0.7643207036010516,169.42046379478407,4.384945914757734,P12,E164,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0015.pdb,1.0752022895785371,-178.51945167504556,4.620103502900595,p11,D151,False,"motif drifted 1.08 A (limit 1.00); seeded residue 11 came out at phi -179, wrong handedness for a I'/II' turn"
+medium__amide__DPRO-PRO,medium,amide,medium_0016.pdb,0.7096560669341543,148.37437245785696,4.699580304302522,p11,T153,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0017.pdb,0.5377660385537533,129.0989750616359,4.507815808719885,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0018.pdb,0.8081357150439983,132.349070509231,4.785435419149232,P12,E164,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0019.pdb,0.6081013811063465,144.32622091768425,4.848581816772216,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0020.pdb,0.5805197930951276,136.25012979349611,4.619942336181003,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0021.pdb,1.133138169701375,134.12106943173,5.077081591989775,p11,R146,False,motif drifted 1.13 A (limit 1.00)
+medium__amide__DPRO-PRO,medium,amide,medium_0022.pdb,0.5750042503325421,132.02400571244183,4.547050991071102,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0023.pdb,1.1618141195027258,134.26303392893516,4.890276346041945,p11,K144,False,motif drifted 1.16 A (limit 1.00)
+medium__amide__DPRO-PRO,medium,amide,medium_0024.pdb,0.5804045993296836,125.60605326971792,4.438030384034479,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0025.pdb,1.290367539338224,-178.48966718115886,4.6774382485528685,p11,D151,False,"motif drifted 1.29 A (limit 1.00); seeded residue 11 came out at phi -178, wrong handedness for a I'/II' turn"
+medium__amide__DPRO-PRO,medium,amide,medium_0026.pdb,0.5826770767412044,136.03489692600877,4.6138188917845495,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0027.pdb,0.7096459590439874,93.81675764690279,4.36495843930457,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0028.pdb,1.0075373277317372,104.75961608399057,4.516100727999264,P12,E164,False,motif drifted 1.01 A (limit 1.00)
+medium__amide__DPRO-PRO,medium,amide,medium_0029.pdb,0.7230628786116862,149.5633639112635,4.685092892428702,p11,T153,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0030.pdb,1.252072486045414,169.27296112104938,4.616260930527218,p11,R146,False,motif drifted 1.25 A (limit 1.00)
+medium__amide__DPRO-PRO,medium,amide,medium_0031.pdb,1.031958125345734,144.39204722269736,5.173236778815865,p11,D151,False,motif drifted 1.03 A (limit 1.00)
+medium__amide__DPRO-PRO,medium,amide,medium_0032.pdb,0.6004382988319743,140.7305905925777,4.737749818016862,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0033.pdb,0.5257215068339939,142.66414831875014,4.783294025872182,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0034.pdb,0.5661645331063102,126.0429887329307,4.434306418999138,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0035.pdb,0.5748136347159145,130.42539569827625,4.50879911993325,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0036.pdb,0.6632956444695729,147.41315328646184,4.313926335414828,P12,E164,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0037.pdb,0.5530130095330245,127.80283480563587,4.556924167751698,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0038.pdb,0.3843713842677311,130.92916767128258,4.425530077575157,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0039.pdb,0.5011092124846969,129.67471698457885,4.504775996836866,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0040.pdb,0.4753487182937173,98.85859465244424,4.700678994898267,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0041.pdb,1.1593280788170326,177.22288110776879,3.9824296924395077,P12,E164,False,motif drifted 1.16 A (limit 1.00)
+medium__amide__DPRO-PRO,medium,amide,medium_0042.pdb,1.6300551256180904,138.07170410760995,5.050448163325143,p11,K144,False,motif drifted 1.63 A (limit 1.00)
+medium__amide__DPRO-PRO,medium,amide,medium_0043.pdb,0.6131216826777858,131.14238631379024,4.611845798318888,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0044.pdb,0.6978575448174069,128.7986621477691,4.754696437967896,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0045.pdb,0.504729928952206,126.99000163112797,4.415478894450732,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0046.pdb,0.546980124917725,123.14586354410652,4.447884487735582,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0047.pdb,0.5974450513059777,130.13105381849607,4.585905530782529,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0048.pdb,0.6154758743710738,131.59645385936903,4.642051824533864,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0049.pdb,0.5050347104221552,126.71517395050616,4.4202173817787145,p11,K144,True,
+medium__amide__DPRO-PRO,medium,amide,medium_0050.pdb,0.9650862927441695,171.99722939407638,4.790184118568264,p11,T153,True,
+medium__amide__ASN-GLY,medium,amide,medium_0001.pdb,1.9868982914400637,-153.32606605780242,5.067311729992904,G12,E164,False,"motif drifted 1.99 A (limit 1.00); seeded residue 11 came out at phi -153, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0002.pdb,1.9852645053905296,-152.97347963246085,5.108509619623404,G12,E164,False,"motif drifted 1.99 A (limit 1.00); seeded residue 11 came out at phi -153, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0003.pdb,1.0005761737769296,36.124699255164636,3.780054612046003,N11,K144,False,motif drifted 1.00 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0004.pdb,2.0918207805902536,-155.47504985384055,5.016041168055382,G12,E164,False,"motif drifted 2.09 A (limit 1.00); seeded residue 11 came out at phi -155, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0005.pdb,1.4839956344717629,82.32554640557437,2.2717667392913508,N11,D151,False,motif drifted 1.48 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0006.pdb,0.9453941402751441,135.37541916826487,3.9682828279759406,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0007.pdb,1.0296096821956837,81.59292392778835,2.5966919859056388,N11,D151,False,motif drifted 1.03 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0008.pdb,1.119212401131265,148.82227423640987,3.8716150207313165,N11,D151,False,motif drifted 1.12 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0009.pdb,1.987494951767772,-153.29500493040115,5.089487406858946,G12,E164,False,"motif drifted 1.99 A (limit 1.00); seeded residue 11 came out at phi -153, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0010.pdb,1.8018191394361993,-157.98492651370586,5.219291989346684,N11,K144,False,"motif drifted 1.80 A (limit 1.00); seeded residue 11 came out at phi -158, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0011.pdb,1.3858711656613611,77.47379918941598,2.3948298268255392,N11,D151,False,motif drifted 1.39 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0012.pdb,0.9284070356895345,79.78910647175927,2.432764356132833,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0013.pdb,1.3941010207892766,82.32488348180068,2.3109606063441133,N11,D151,False,motif drifted 1.39 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0014.pdb,1.9454362507098673,89.7057708779912,2.291742318590003,N11,D151,False,motif drifted 1.95 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0015.pdb,0.38804180584237485,79.78424341231705,2.73272951270485,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0016.pdb,1.6070595282531548,87.5257221810368,2.1203499876874368,N11,D151,False,motif drifted 1.61 A (limit 1.00); added residue N11 within 2.12 A of receptor D151 (limit 2.20)
+medium__amide__ASN-GLY,medium,amide,medium_0017.pdb,1.168972830597292,110.46875832723113,3.1213658252060323,N11,D151,False,motif drifted 1.17 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0018.pdb,1.3923050001618849,79.84196166098887,2.27099337693388,N11,D151,False,motif drifted 1.39 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0019.pdb,1.8214316410315745,78.45790520573755,2.7654304278777175,N11,D151,False,motif drifted 1.82 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0020.pdb,0.6559713620330003,94.13051436304934,2.813130095062092,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0021.pdb,0.7162963177542898,88.12648157963501,2.343767738229337,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0022.pdb,0.615218237337829,84.53742833274748,2.540507588278791,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0023.pdb,0.6101975831568293,83.36444591533767,2.401844640525531,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0024.pdb,1.8581561463199712,-154.39204492733117,5.1922421995011545,N11,K144,False,"motif drifted 1.86 A (limit 1.00); seeded residue 11 came out at phi -154, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0025.pdb,0.6102766352905756,131.7137446271689,3.802136799295943,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0026.pdb,1.408406741512502,77.82570753827758,2.280370431801375,N11,D151,False,motif drifted 1.41 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0027.pdb,1.985634334558965,-152.99667788950057,5.108956509044593,G12,E164,False,"motif drifted 1.99 A (limit 1.00); seeded residue 11 came out at phi -153, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0028.pdb,1.1694928387559682,80.77009829106699,2.2926115925351054,N11,D151,False,motif drifted 1.17 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0029.pdb,0.9524469996579323,88.7899148854049,2.45535557394451,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0030.pdb,1.3784281158018477,176.90152784353984,4.537544067386945,N11,T153,False,motif drifted 1.38 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0031.pdb,1.5416350661917655,82.13847707055922,2.2491968394309514,N11,D151,False,motif drifted 1.54 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0032.pdb,1.39543411885355,82.17699636286595,2.2895495385433913,N11,D151,False,motif drifted 1.40 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0033.pdb,1.7229691903697968,82.77229272222554,2.537650000369514,N11,D151,False,motif drifted 1.72 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0034.pdb,1.8706068760296248,-153.92915150793422,5.205816001583717,N11,K144,False,"motif drifted 1.87 A (limit 1.00); seeded residue 11 came out at phi -154, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0035.pdb,0.9254623255969118,-96.3117890664213,4.061492487644904,G12,D151,False,"seeded residue 11 came out at phi -96, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0036.pdb,1.8007882120099925,-157.49433922140958,5.209876416708879,N11,K144,False,"motif drifted 1.80 A (limit 1.00); seeded residue 11 came out at phi -157, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0037.pdb,1.8641605112772714,-152.95141619898058,5.219034009736607,N11,K144,False,"motif drifted 1.86 A (limit 1.00); seeded residue 11 came out at phi -153, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0038.pdb,1.7369827940600246,-160.4942468720929,4.9333566905199495,N11,K144,False,"motif drifted 1.74 A (limit 1.00); seeded residue 11 came out at phi -160, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0039.pdb,1.419390328194838,81.79154983578874,2.3137029843001327,N11,D151,False,motif drifted 1.42 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0040.pdb,1.9797838207103151,-154.0261984627265,5.035807562106439,G12,E164,False,"motif drifted 1.98 A (limit 1.00); seeded residue 11 came out at phi -154, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0041.pdb,1.0573257753581398,38.20004694500615,3.822138448116006,N11,K144,False,motif drifted 1.06 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0042.pdb,1.1353878864454,179.32249347531908,4.683315070836194,N11,T153,False,motif drifted 1.14 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0043.pdb,1.3367818830366995,-177.03703903473698,4.855502532432373,N11,T153,False,"motif drifted 1.34 A (limit 1.00); seeded residue 11 came out at phi -177, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0044.pdb,0.6100580693539503,136.02770483977685,3.645708239323683,N11,D151,True,
+medium__amide__ASN-GLY,medium,amide,medium_0045.pdb,1.83301236967558,-158.67127102942084,5.061421619723941,N11,K144,False,"motif drifted 1.83 A (limit 1.00); seeded residue 11 came out at phi -159, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0046.pdb,1.0888901911966462,116.57395192799902,3.203623613662646,N11,D151,False,motif drifted 1.09 A (limit 1.00)
+medium__amide__ASN-GLY,medium,amide,medium_0047.pdb,1.8428237149650721,-159.3814504576378,5.15310651925807,G12,E164,False,"motif drifted 1.84 A (limit 1.00); seeded residue 11 came out at phi -159, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0048.pdb,1.981974570794033,-152.61297496171156,5.1016400820639936,G12,E164,False,"motif drifted 1.98 A (limit 1.00); seeded residue 11 came out at phi -153, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0049.pdb,1.5267975147415167,-177.93218064459649,4.857448068852897,N11,T153,False,"motif drifted 1.53 A (limit 1.00); seeded residue 11 came out at phi -178, wrong handedness for a I'/II' turn"
+medium__amide__ASN-GLY,medium,amide,medium_0050.pdb,1.8631134753219458,-161.90620384525275,4.51504793868774,G12,E164,False,"motif drifted 1.86 A (limit 1.00); seeded residue 11 came out at phi -162, wrong handedness for a I'/II' turn"
+medium__amide__DALA-GLY,medium,amide,medium_0001.pdb,1.6672158097331513,152.17909262005608,4.5684056606702725,a11,D151,False,motif drifted 1.67 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0002.pdb,0.6580453325823226,154.17992718208677,4.8326717682283515,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0003.pdb,0.6516521551579044,153.52318114044522,4.857770412786156,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0004.pdb,0.6756578207867749,154.45708269187236,4.794881721283872,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0005.pdb,0.6631683187397748,155.1665615639992,4.7338670338773765,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0006.pdb,1.7283556337227326,151.83177210906533,4.587383443855596,a11,D151,False,motif drifted 1.73 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0007.pdb,0.7291415808099562,151.64188340944554,4.8925739296641195,a11,D151,True,
+medium__amide__DALA-GLY,medium,amide,medium_0008.pdb,0.7128980986566614,150.78718411401775,4.907481891881207,a11,D151,True,
+medium__amide__DALA-GLY,medium,amide,medium_0009.pdb,1.6586022004727168,151.6378925271647,4.579487504397314,a11,D151,False,motif drifted 1.66 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0010.pdb,0.6723604707174123,153.72536077532274,4.8405992933839075,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0011.pdb,1.4499181821959406,157.9425702533888,4.528281091927981,a11,D151,False,motif drifted 1.45 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0012.pdb,1.6435974560778783,153.64692628271942,4.594665627443592,a11,D151,False,motif drifted 1.64 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0013.pdb,1.734958051822798,151.36024059483256,4.604602220931113,a11,D151,False,motif drifted 1.73 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0014.pdb,0.6778041652472191,156.20215323484342,4.71848105076876,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0015.pdb,0.6445375841266506,153.77448851682453,4.863978034449664,a11,D151,True,
+medium__amide__DALA-GLY,medium,amide,medium_0016.pdb,0.698174123842368,154.0377623528185,4.8552699654984695,a11,D151,True,
+medium__amide__DALA-GLY,medium,amide,medium_0017.pdb,1.4552895230322387,151.81254786788475,4.581771440482431,a11,D151,False,motif drifted 1.46 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0018.pdb,0.675790842157354,153.67527710444602,4.834604474454469,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0019.pdb,1.6878505391614038,151.4994456345783,4.60152874827308,a11,D151,False,motif drifted 1.69 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0020.pdb,0.6728233894915902,154.91935805421588,4.832668577034841,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0021.pdb,0.6955562545943406,154.56841004472525,4.722172177237393,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0022.pdb,1.3935645679845594,155.49652756506268,4.549837596837896,a11,D151,False,motif drifted 1.39 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0023.pdb,1.6320962878308818,154.9579483764694,4.575102837604086,a11,D151,False,motif drifted 1.63 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0024.pdb,0.6816503249152854,154.06485228454127,4.790843479775497,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0025.pdb,0.6685232293110607,153.6539521338122,4.831683975004269,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0026.pdb,0.6911074644333421,154.939596184582,4.673675984256815,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0027.pdb,0.6660592848429575,154.6925242418076,4.843214648775387,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0028.pdb,0.6704218155109849,154.2214659214111,4.8037123830356085,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0029.pdb,0.6605080974317682,157.74283557101438,4.7227449387172085,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0030.pdb,1.667392936101434,153.09043042555507,4.553988706393847,a11,D151,False,motif drifted 1.67 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0031.pdb,0.9445144789721588,155.66600110855242,4.664873968426993,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0032.pdb,0.681017025413429,155.52273890402944,4.704441677776734,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0033.pdb,1.5612707112888284,156.75029214242122,4.508748310297408,a11,D151,False,motif drifted 1.56 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0034.pdb,1.6447995361707917,150.8945925116957,4.587280198553012,a11,D151,False,motif drifted 1.64 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0035.pdb,0.6699766169094983,153.87612536020993,4.842995556379753,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0036.pdb,1.6707186994152068,152.4261555925597,4.591829020985863,a11,D151,False,motif drifted 1.67 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0037.pdb,0.6775501088566929,153.6219789300511,4.835103714452204,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0038.pdb,1.6536797260633693,152.82555309632107,4.562075159512759,a11,D151,False,motif drifted 1.65 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0039.pdb,0.7576599961535979,150.28370531385048,4.915533834354803,a11,D151,True,
+medium__amide__DALA-GLY,medium,amide,medium_0040.pdb,1.4979914831562529,152.345159804737,4.564382383735814,a11,D151,False,motif drifted 1.50 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0041.pdb,0.7417054015484479,150.29699204787974,4.910772235499285,a11,D151,True,
+medium__amide__DALA-GLY,medium,amide,medium_0042.pdb,1.6911930011928258,151.4530089410453,4.606591288702557,a11,D151,False,motif drifted 1.69 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0043.pdb,1.75648212311062,152.69354132496701,4.6141567856951875,a11,D151,False,motif drifted 1.76 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0044.pdb,1.6444494865231252,152.9726885297964,4.557294062486478,a11,D151,False,motif drifted 1.64 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0045.pdb,1.7245050160056898,154.8411109885198,4.5210653360177036,a11,D151,False,motif drifted 1.72 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0046.pdb,0.6708180984373221,154.42023678837546,4.72808455115053,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0047.pdb,0.6669275525608639,155.5879814584378,4.772864189056276,a11,T153,True,
+medium__amide__DALA-GLY,medium,amide,medium_0048.pdb,1.5192388049511973,151.14416210074307,4.583623558662129,a11,D151,False,motif drifted 1.52 A (limit 1.00)
+medium__amide__DALA-GLY,medium,amide,medium_0049.pdb,0.7962426876652233,151.0219842160359,4.886003817656716,a11,D151,True,
+medium__amide__DALA-GLY,medium,amide,medium_0050.pdb,1.612837617969641,149.16862559824895,4.608309019644415,a11,D151,False,motif drifted 1.61 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0001.pdb,1.7890767076284009,-177.6626625193867,4.605160180563644,G12,E164,False,"motif drifted 1.79 A (limit 1.00); seeded residue 11 came out at phi -178, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0002.pdb,1.6572470013274658,170.35973762702469,4.941363045757075,G11,K144,False,motif drifted 1.66 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0003.pdb,1.4327948247185953,-169.84742374019137,4.927081859878284,G11,T153,False,"motif drifted 1.43 A (limit 1.00); seeded residue 11 came out at phi -170, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0004.pdb,1.7679521210939921,-175.70685676933866,5.175716625775169,G11,K144,False,"motif drifted 1.77 A (limit 1.00); seeded residue 11 came out at phi -176, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0005.pdb,0.5478352018138198,147.10288718394523,5.114094197942053,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0006.pdb,1.7727360064771773,-178.35620892809118,4.978773173671915,G11,T153,False,"motif drifted 1.77 A (limit 1.00); seeded residue 11 came out at phi -178, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0007.pdb,1.094309319727605,171.25268375500403,5.032096209610003,G11,T153,False,motif drifted 1.09 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0008.pdb,0.954005762349472,-176.04358008017894,4.907027736474878,G11,T153,False,"seeded residue 11 came out at phi -176, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0009.pdb,0.9940455246151035,172.67438415111266,4.948577385843171,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0010.pdb,1.1214196810424315,-170.96222382307104,4.662535402960531,G11,T153,False,"motif drifted 1.12 A (limit 1.00); seeded residue 11 came out at phi -171, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0011.pdb,0.8548510451152112,171.52184560513155,4.942325423224684,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0012.pdb,0.8742160083449947,175.923915787389,4.851759793107301,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0013.pdb,0.9169452118304174,-179.32130185223255,4.665107448751616,G11,T153,False,"seeded residue 11 came out at phi -179, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0014.pdb,1.056317717189696,164.99118307933716,5.1894428081156,G11,T153,False,motif drifted 1.06 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0015.pdb,2.2924091744307282,145.03150906180818,4.383136178477385,G12,E164,False,motif drifted 2.29 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0016.pdb,1.0433201073478506,178.13895351871332,4.8602666674116985,G11,T153,False,motif drifted 1.04 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0017.pdb,1.2239821400919693,-171.75565248614757,4.479249245694366,G11,T153,False,"motif drifted 1.22 A (limit 1.00); seeded residue 11 came out at phi -172, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0018.pdb,0.9357667871729534,-176.3440064749726,4.784018235373172,G11,T153,False,"seeded residue 11 came out at phi -176, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0019.pdb,0.8819441212090349,156.745047094521,5.072043474099073,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0020.pdb,0.5977288961449964,147.05981333434877,5.060502589972195,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0021.pdb,0.8386501140982473,171.41702015943957,4.841167567805287,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0022.pdb,1.7404812058536958,-176.89680551355858,5.0060739468521485,G12,T153,False,"motif drifted 1.74 A (limit 1.00); seeded residue 11 came out at phi -177, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0023.pdb,1.8828508466160196,-168.70002866946845,4.590493755035376,G12,E164,False,"motif drifted 1.88 A (limit 1.00); seeded residue 11 came out at phi -169, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0024.pdb,0.9781289083565059,176.55990863669314,4.715397333599684,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0025.pdb,0.48834885499653813,129.2069219068544,5.121974250250051,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0026.pdb,1.180207338549575,-174.8642055559522,4.953522981835167,G11,T153,False,"motif drifted 1.18 A (limit 1.00); seeded residue 11 came out at phi -175, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0027.pdb,0.8253539206558052,170.1339088850541,5.005111899359694,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0028.pdb,1.0846533571558827,155.37603268410814,5.19557494797571,G11,T153,False,motif drifted 1.08 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0029.pdb,1.1422800506217596,177.79012399534034,4.807523357354433,G11,T153,False,motif drifted 1.14 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0030.pdb,1.1087757914255647,148.5735249634233,4.697456366193997,G11,T153,False,motif drifted 1.11 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0031.pdb,1.190020789370953,-173.06761762985877,4.9026996192936165,G11,T153,False,"motif drifted 1.19 A (limit 1.00); seeded residue 11 came out at phi -173, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0032.pdb,1.2790221475366534,-159.0176372343329,4.9360453172908265,G12,T153,False,"motif drifted 1.28 A (limit 1.00); seeded residue 11 came out at phi -159, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0033.pdb,1.4177246336283404,-173.44982967030688,5.148650200720111,G11,T153,False,"motif drifted 1.42 A (limit 1.00); seeded residue 11 came out at phi -173, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0034.pdb,1.185840757674013,-56.157863835800896,4.165371242785434,G12,D151,False,"motif drifted 1.19 A (limit 1.00); seeded residue 11 came out at phi -56, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0035.pdb,1.5490226899177915,142.02835112610722,5.178536620102622,G11,T153,False,motif drifted 1.55 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0036.pdb,1.6715732460043566,-172.67382380866349,4.830459790170389,G11,T153,False,"motif drifted 1.67 A (limit 1.00); seeded residue 11 came out at phi -173, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0037.pdb,1.1964789533057127,174.39082616219304,4.8405138594700015,G11,T153,False,motif drifted 1.20 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0038.pdb,0.5404976753710319,145.59544764926432,5.083786505375796,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0039.pdb,0.9162291045699508,179.07920236510083,4.586323198598173,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0040.pdb,0.8399951014073058,171.74370296239607,5.097205281056637,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0041.pdb,1.2122326085558262,-169.9830321047529,4.486529394742024,G11,T153,False,"motif drifted 1.21 A (limit 1.00); seeded residue 11 came out at phi -170, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0042.pdb,0.8803098450865169,177.8650653776721,4.699398427702167,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0043.pdb,1.4946963446102184,-163.2234922819793,4.896858451347349,G11,T153,False,"motif drifted 1.49 A (limit 1.00); seeded residue 11 came out at phi -163, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0044.pdb,1.9502785078137728,166.57114989040826,4.878640524674466,G12,E164,False,motif drifted 1.95 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0045.pdb,1.4446520535752196,-175.1869256795985,5.008224138346085,G11,T153,False,"motif drifted 1.44 A (limit 1.00); seeded residue 11 came out at phi -175, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0046.pdb,1.1948606182441048,101.89623223856837,5.219948961770643,G12,E164,False,motif drifted 1.19 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0047.pdb,0.4326411881025322,131.35938652262536,5.004368032365423,G11,T153,True,
+medium__amide__GLY-GLY,medium,amide,medium_0048.pdb,1.4402743258381483,166.66408618226262,5.087053292643657,G11,T153,False,motif drifted 1.44 A (limit 1.00)
+medium__amide__GLY-GLY,medium,amide,medium_0049.pdb,1.2209029440584245,-167.43111261755038,4.552956747262048,G11,T153,False,"motif drifted 1.22 A (limit 1.00); seeded residue 11 came out at phi -167, wrong handedness for a I'/II' turn"
+medium__amide__GLY-GLY,medium,amide,medium_0050.pdb,0.8896985646649891,178.75963337301877,4.694550978423427,G11,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0001.pdb,0.03173555006349843,102.5805974662133,2.7292722644514957,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0002.pdb,0.07327198332418836,67.5944281996953,5.178983043477625,p9,D151,True,
+short__amide__DPRO-GLY,short,amide,short_0003.pdb,0.2937083174099633,20.841534623104003,1.718236316337474,p9,T153,False,added residue p9 within 1.72 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0004.pdb,0.1638933851451916,72.94772458539302,3.0887865534462278,p9,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0005.pdb,0.0190686240819743,-50.736006544875465,3.543717608593079,G10,E164,False,"seeded residue 9 came out at phi -51, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0006.pdb,0.8372853693510924,-35.96317872834981,2.584755993806205,p9,D151,False,"seeded residue 9 came out at phi -36, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0007.pdb,0.0010044334942355755,98.85312001081203,2.69460760151061,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0008.pdb,0.07383845519354756,70.69056357869337,3.211911965413055,p9,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0009.pdb,0.3697565353770054,59.3081914812473,1.6223170287200381,p9,T153,False,added residue p9 within 1.62 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0010.pdb,0.008877946543032277,69.9336726289145,2.460547437355476,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0011.pdb,0.09825293257492955,73.19458736378068,2.5513535412667583,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0012.pdb,0.6748191072411033,98.5729722221536,2.492410340066798,p9,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0013.pdb,0.3562717532814741,55.43069812540486,1.192987836969463,p9,T153,False,added residue p9 within 1.19 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0014.pdb,0.8231423720507705,-134.3890899359193,5.35297090047335,G10,E245,False,"seeded residue 9 came out at phi -134, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0015.pdb,0.5750447125159961,-156.93144707890312,4.798433563040217,G10,E164,False,"seeded residue 9 came out at phi -157, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0016.pdb,0.09248449782468413,79.99009040773947,2.9233651207951508,p9,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0017.pdb,0.23837047424230495,60.305935313588975,3.599403285274425,G10,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0018.pdb,0.11125242831508694,76.57401870579992,3.1885358480328403,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0019.pdb,0.23400681561938844,17.181804084273978,0.7697050298453236,p9,T153,False,added residue p9 within 0.77 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0020.pdb,0.5750099109694454,19.761428765705872,2.2616297619202945,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0021.pdb,0.004784012725553102,72.77429894547623,2.3650530342822993,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0022.pdb,0.18032497452996024,48.00215512058936,1.2873774313904907,p9,T153,False,added residue p9 within 1.29 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0023.pdb,0.41826168271138864,-177.19030759772008,4.4564929215575955,G10,E164,False,"seeded residue 9 came out at phi -177, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0024.pdb,0.27288676757571834,50.88440850702017,1.6909274499636653,p9,T153,False,added residue p9 within 1.69 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0025.pdb,0.5012091093929435,-115.91219966722778,2.5430397599304477,p9,T153,False,"seeded residue 9 came out at phi -116, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0026.pdb,0.5750752820174236,57.0244582495119,2.169532333955554,p9,T153,False,added residue p9 within 2.17 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0027.pdb,0.028222674590903617,143.09112786852785,4.96237866268289,G10,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0028.pdb,0.0346051574321175,88.55922848441936,3.539530403376752,p9,D151,True,
+short__amide__DPRO-GLY,short,amide,short_0029.pdb,0.8539715296053243,81.83359578165907,2.817235270321218,p9,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0030.pdb,0.3834437362218959,93.2286347805589,1.0775655256206524,p9,T153,False,added residue p9 within 1.08 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0031.pdb,0.097106286204092,53.691966607320325,4.644403774327061,G10,E245,True,
+short__amide__DPRO-GLY,short,amide,short_0032.pdb,0.4316571061791875,65.14156762430417,1.856600993726808,p9,T153,False,added residue p9 within 1.86 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0033.pdb,0.10719050004235951,71.91653192688389,5.971210637636167,p9,R146,True,
+short__amide__DPRO-GLY,short,amide,short_0034.pdb,0.6790991651452157,78.48169450652665,4.646256582465427,p9,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0035.pdb,0.03281984901788824,-165.50483314943747,5.838906647985335,p9,R146,False,"seeded residue 9 came out at phi -166, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0036.pdb,0.12456134645241589,124.4149196855456,5.734485678218877,p9,R146,True,
+short__amide__DPRO-GLY,short,amide,short_0037.pdb,0.02305085424283238,39.79804592544521,4.890023056522947,G10,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0038.pdb,0.04353612338470496,71.54903695259584,2.7687450563991427,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0039.pdb,0.04858917819597135,69.40453523709172,2.8189453810258778,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0040.pdb,0.01751390032217859,89.01173370246026,2.654837432241865,p9,T153,True,
+short__amide__DPRO-GLY,short,amide,short_0041.pdb,0.2872768359112405,52.26734098252269,0.9647650816850062,p9,T153,False,added residue p9 within 0.96 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0042.pdb,0.029446588405106302,54.47731869189907,4.428928259637561,p9,D151,True,
+short__amide__DPRO-GLY,short,amide,short_0043.pdb,0.37793889395733354,63.36635375561123,1.2742525390539803,p9,T153,False,added residue p9 within 1.27 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0044.pdb,0.024035769946933603,36.66139361835965,4.885048707337566,G10,E164,True,
+short__amide__DPRO-GLY,short,amide,short_0045.pdb,0.86852596957949,50.587135499961505,1.7561515201301554,p9,T153,False,added residue p9 within 1.76 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0046.pdb,0.2645032312417038,81.79212884964748,1.4291019720203664,p9,T153,False,added residue p9 within 1.43 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0047.pdb,0.00835949928408162,-153.8804096795887,4.06638192965083,G10,E164,False,"seeded residue 9 came out at phi -154, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0048.pdb,0.28573299816700454,19.14116164543487,0.7072613742567012,p9,T153,False,added residue p9 within 0.71 A of receptor T153 (limit 2.20)
+short__amide__DPRO-GLY,short,amide,short_0049.pdb,0.10234297231582948,-20.979031991409112,1.4450823162919828,p9,T153,False,"added residue p9 within 1.45 A of receptor T153 (limit 2.20); seeded residue 9 came out at phi -21, wrong handedness for a I'/II' turn"
+short__amide__DPRO-GLY,short,amide,short_0050.pdb,0.181044941395219,79.5870271714977,4.6957676481772666,G10,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0001.pdb,0.1261457642960956,77.55852728158871,2.2951480798068657,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0002.pdb,0.1581790658499023,72.28300814437269,3.0384431626027553,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0003.pdb,0.22596887094882212,109.80595521065686,2.4537245326032084,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0004.pdb,0.2186005322068558,77.74836598737483,2.1044761303981723,p9,T153,False,added residue p9 within 2.10 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0005.pdb,0.10416582233827353,72.81532499636033,2.637563020601731,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0006.pdb,0.0931697977116004,70.2093365990585,2.0993891863429646,p9,T153,False,added residue p9 within 2.10 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0007.pdb,0.12862525268778913,78.57893652876496,2.3118999981380552,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0008.pdb,0.09593143896409488,72.8387652880692,3.0160201460927056,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0009.pdb,0.02602993076021722,71.95474580366995,2.495372159733537,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0010.pdb,0.1834058629764055,58.832237992426116,2.457077099044219,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0011.pdb,0.015563952742473925,12.810837144424912,2.664326530364801,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0012.pdb,0.28415423377757265,71.46657100714609,2.0714866361004423,p9,T153,False,added residue p9 within 2.07 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0013.pdb,0.08955004040127663,73.72991948890126,2.983668720967685,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0014.pdb,0.08981441761556434,73.39904206863108,2.9984937119200654,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0015.pdb,0.002162978497767482,79.43932267620926,3.2892990793497012,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0016.pdb,0.07364044002226784,74.34888470373626,2.197250296541774,p9,T153,False,added residue p9 within 2.20 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0017.pdb,0.10852360322709502,72.91289056854698,2.9689136698768688,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0018.pdb,0.02479579267500955,80.42635773728855,2.3447334737939376,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0019.pdb,0.046556345998574764,75.56374031699238,2.266905806989665,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0020.pdb,0.2885015138133478,110.62048288058448,3.017272110959047,p9,D151,True,
+short__amide__DPRO-PRO,short,amide,short_0021.pdb,0.048179429243041555,86.96672708738049,2.7938654608679507,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0022.pdb,0.09867109487554315,72.86464797513935,2.9884873939746197,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0023.pdb,0.1264534924294832,64.49591901445633,2.0222509710465673,P10,E164,False,added residue P10 within 2.02 A of receptor E164 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0024.pdb,0.10621165265560405,72.97440099316218,2.9728565039053643,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0025.pdb,0.13950485033437857,98.44138485050152,1.8852624601492571,p9,T153,False,added residue p9 within 1.89 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0026.pdb,0.09353259149149551,68.65765790449299,2.5198409271177318,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0027.pdb,0.2305770040354152,110.67135977972409,2.476693351509895,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0028.pdb,0.10163802838737897,77.29444709272232,2.298795278651849,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0029.pdb,0.06718698087857321,74.63855327070853,2.1941542339761186,p9,T153,False,added residue p9 within 2.19 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0030.pdb,0.7482301645844683,67.92632294925052,3.8624468710971986,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0031.pdb,0.08588978019188619,76.79039803655989,2.908736855854181,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0032.pdb,0.02231855602698152,59.659185405413105,3.070735587233929,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0033.pdb,0.03227687171946356,91.82145497600942,2.805586863019833,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0034.pdb,0.09362750852517468,86.39739148428478,2.4872457885066552,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0035.pdb,0.27678342993676547,81.10251226585854,2.140576769138458,p9,T153,False,added residue p9 within 2.14 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0036.pdb,0.09521247589006802,76.68564186576147,2.9669100542347926,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0037.pdb,0.042158454099577254,55.14317491242504,2.3837199439034986,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0038.pdb,0.12409408297610099,80.74995811806116,3.001580092735753,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0039.pdb,0.04451686129752751,84.13228489749844,2.0742496072781065,p9,T153,False,added residue p9 within 2.07 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0040.pdb,0.19096576327247627,105.22187013745243,3.0947545941932235,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0041.pdb,0.03488621736567668,80.133397292662,2.2021983899986637,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0042.pdb,0.04132924457975246,83.8780309010005,2.1075734967927775,p9,T153,False,added residue p9 within 2.11 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0043.pdb,0.046453211524909076,80.09598631441311,2.1974466895214606,p9,T153,False,added residue p9 within 2.20 A of receptor T153 (limit 2.20)
+short__amide__DPRO-PRO,short,amide,short_0044.pdb,0.06896222872180999,74.45319472413279,3.1941955548695096,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0045.pdb,0.17512920000472182,102.8898752670148,3.07900467932378,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0046.pdb,0.08264885701097564,91.90236191371253,3.5349105923638,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0047.pdb,0.06837173360058109,70.9560760466199,2.229332248445644,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0048.pdb,0.04759500038007084,88.35207947182872,3.4054645935315753,p9,T153,True,
+short__amide__DPRO-PRO,short,amide,short_0049.pdb,0.09185176644983659,74.87181172613198,3.0264929440714985,p9,E164,True,
+short__amide__DPRO-PRO,short,amide,short_0050.pdb,0.1642756635625035,98.98573136422662,3.4819401793759073,p9,T153,True,
+short__amide__ASN-GLY,short,amide,short_0001.pdb,0.613362179291913,13.360498195474706,2.064878208031357,N9,T153,False,added residue N9 within 2.06 A of receptor T153 (limit 2.20)
+short__amide__ASN-GLY,short,amide,short_0002.pdb,0.23323165885448807,62.818189254316806,3.343508487537246,N9,T153,True,
+short__amide__ASN-GLY,short,amide,short_0003.pdb,0.26145947032372946,-78.72163502309836,2.634910545240793,N9,T153,False,"seeded residue 9 came out at phi -79, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0004.pdb,0.00986004454308784,-74.6876492047518,3.248738454199867,N9,E164,False,"seeded residue 9 came out at phi -75, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0005.pdb,0.18147154099833426,-165.34682529208663,3.8426653859131115,N9,D151,False,"seeded residue 9 came out at phi -165, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0006.pdb,0.058229890600826006,-174.4680733598042,2.669895540069188,G10,E164,False,"seeded residue 9 came out at phi -174, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0007.pdb,0.17033612900361547,-165.25261376296788,2.88518199595206,N9,T153,False,"seeded residue 9 came out at phi -165, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0008.pdb,0.547750320518337,-90.9357751178301,3.9950225903672756,N9,E245,False,"seeded residue 9 came out at phi -91, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0009.pdb,0.8794132660861885,-33.5963893345086,3.1906298024747466,N9,K144,False,"seeded residue 9 came out at phi -34, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0010.pdb,0.059548672521452815,-60.266802470974596,2.041100496049288,N9,E245,False,"added residue N9 within 2.04 A of receptor E245 (limit 2.20); seeded residue 9 came out at phi -60, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0011.pdb,0.0383433112498969,-91.18066828351616,3.945220146082463,N9,T153,False,"seeded residue 9 came out at phi -91, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0012.pdb,0.13428508337689324,17.464319873788355,4.993071591145896,G10,E164,True,
+short__amide__ASN-GLY,short,amide,short_0013.pdb,0.14333781883296226,-111.8542517872059,3.910140968273383,N9,T153,False,"seeded residue 9 came out at phi -112, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0014.pdb,0.03972195354561194,-163.4590706813422,3.7988543786463653,N9,K144,False,"seeded residue 9 came out at phi -163, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0015.pdb,0.07918798994545136,-72.92310491839089,3.5665559783018446,N9,T153,False,"seeded residue 9 came out at phi -73, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0016.pdb,0.5750060997409312,-164.08803357414087,2.7863185795839347,G10,E164,False,"seeded residue 9 came out at phi -164, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0017.pdb,0.189198868108144,-69.30559299183989,2.8862270104339895,N9,E245,False,"seeded residue 9 came out at phi -69, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0018.pdb,0.060682294972238995,-76.9572433770605,5.206059370210718,N9,K144,False,"seeded residue 9 came out at phi -77, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0019.pdb,0.2570692676960418,-143.59867399903538,3.1650328176173126,N9,D151,False,"seeded residue 9 came out at phi -144, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0020.pdb,0.1698817077769747,-164.21377153896412,2.7815614125825703,N9,L154,False,"seeded residue 9 came out at phi -164, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0021.pdb,0.09017274170935712,-117.41992186683225,4.84553225015926,G10,E164,False,"seeded residue 9 came out at phi -117, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0022.pdb,0.17384644282853828,-64.97206361223967,4.089816795941525,N9,K144,False,"seeded residue 9 came out at phi -65, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0023.pdb,0.5750190280224181,-17.390931154662304,1.2047414057318677,N9,T153,False,"added residue N9 within 1.20 A of receptor T153 (limit 2.20); seeded residue 9 came out at phi -17, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0024.pdb,0.3100409074228461,-44.92059852775454,2.783759239974,N9,E245,False,"seeded residue 9 came out at phi -45, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0025.pdb,0.7530798106421215,-132.39813591023346,4.9275797348546355,N9,R146,False,"seeded residue 9 came out at phi -132, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0026.pdb,0.03215908782449331,16.97447182382654,5.030271204526834,N9,K144,True,
+short__amide__ASN-GLY,short,amide,short_0027.pdb,0.138835956421095,68.7508493270773,5.66355990861945,G10,E164,True,
+short__amide__ASN-GLY,short,amide,short_0028.pdb,0.055493295793453405,-75.8202841702144,3.525826086362757,N9,T153,False,"seeded residue 9 came out at phi -76, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0029.pdb,0.5750246795274113,-138.35931570225029,1.8558039180282702,G10,E164,False,"added residue G10 within 1.86 A of receptor E164 (limit 2.20); seeded residue 9 came out at phi -138, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0030.pdb,0.01419633294468888,-155.79407694996485,4.81220142239096,N9,E245,False,"seeded residue 9 came out at phi -156, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0031.pdb,0.8245336110078288,-102.2161097962764,2.9198806790404657,G10,E164,False,"seeded residue 9 came out at phi -102, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0032.pdb,0.09377232466980343,-117.53801608922228,4.8830198475047855,G10,E164,False,"seeded residue 9 came out at phi -118, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0033.pdb,0.878345973354049,-100.88628830829374,2.935037158847104,N9,L154,False,"seeded residue 9 came out at phi -101, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0034.pdb,0.11585702463590467,109.282357928848,4.780258074952335,G10,E164,True,
+short__amide__ASN-GLY,short,amide,short_0035.pdb,0.2001265199687736,-117.62266561144763,4.837108961893414,G10,E164,False,"seeded residue 9 came out at phi -118, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0036.pdb,0.1619333251445274,171.8731054337008,4.924478761969201,N9,R146,True,
+short__amide__ASN-GLY,short,amide,short_0037.pdb,0.04833441784949474,-95.92215292532302,3.4636908588196538,N9,T153,False,"seeded residue 9 came out at phi -96, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0038.pdb,0.009604684545575408,-139.1879033531448,3.6518135970842796,N9,T153,False,"seeded residue 9 came out at phi -139, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0039.pdb,0.07271432369981833,-90.67963336671453,3.9025318875321715,N9,T153,False,"seeded residue 9 came out at phi -91, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0040.pdb,0.019687542538763803,-139.41664327921748,2.7384982815386376,N9,T153,False,"seeded residue 9 came out at phi -139, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0041.pdb,0.04109605812679887,-71.57967717100854,2.925551523061079,G10,E164,False,"seeded residue 9 came out at phi -72, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0042.pdb,0.8347473658549769,52.31640115286971,1.2747124188717547,N9,E164,False,added residue N9 within 1.27 A of receptor E164 (limit 2.20)
+short__amide__ASN-GLY,short,amide,short_0043.pdb,0.12531747231717452,-154.49926178708475,3.889215230941047,N9,D151,False,"seeded residue 9 came out at phi -154, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0044.pdb,0.005371698889882843,-135.78183746779249,4.633276995116868,N9,K144,False,"seeded residue 9 came out at phi -136, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0045.pdb,0.08892796071668463,-116.04374431099731,4.8337122713424385,G10,E164,False,"seeded residue 9 came out at phi -116, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0046.pdb,0.1516791326116761,-5.640299719316423,2.719702615094402,G10,E164,False,"seeded residue 9 came out at phi -6, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0047.pdb,0.042543325072589185,-160.6604380154908,2.5305246384924884,N9,E164,False,"seeded residue 9 came out at phi -161, wrong handedness for a I'/II' turn"
+short__amide__ASN-GLY,short,amide,short_0048.pdb,0.06453480819018101,34.11461402816312,4.208608362839945,N9,D151,True,
+short__amide__ASN-GLY,short,amide,short_0049.pdb,0.8015857286684935,178.25101620568802,3.0640147400541538,N9,E245,True,
+short__amide__ASN-GLY,short,amide,short_0050.pdb,0.03519485206810558,-77.48624836795176,4.0287026770769385,N9,E164,False,"seeded residue 9 came out at phi -77, wrong handedness for a I'/II' turn"
+short__amide__DALA-GLY,short,amide,short_0001.pdb,0.21441188780528467,155.10234359792773,5.511558206044909,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0002.pdb,0.053101234446959134,59.040800323111874,5.867724478009389,a9,T153,True,
+short__amide__DALA-GLY,short,amide,short_0003.pdb,0.14284578640934825,136.40975340777726,3.6316715689380468,G10,E245,True,
+short__amide__DALA-GLY,short,amide,short_0004.pdb,0.1731175460231507,129.72635496322832,5.162681898115705,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0005.pdb,0.17500956845465,148.44010403141144,5.209667100482098,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0006.pdb,0.24215889762823814,87.36176446202991,4.76231063355926,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0007.pdb,0.17253925047140203,147.73928244273324,3.749946624593857,G10,E245,True,
+short__amide__DALA-GLY,short,amide,short_0008.pdb,0.024254399822240574,54.08837076622367,5.334853371523916,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0009.pdb,0.032580164948648745,65.21553332609417,2.961810477757236,a9,E164,True,
+short__amide__DALA-GLY,short,amide,short_0010.pdb,0.07159472826090421,-79.01204715878065,3.4046595044068564,a9,E164,False,"seeded residue 9 came out at phi -79, wrong handedness for a I'/II' turn"
+short__amide__DALA-GLY,short,amide,short_0011.pdb,0.23657508404978267,107.99817274180978,3.8078889055047247,G10,E245,True,
+short__amide__DALA-GLY,short,amide,short_0012.pdb,0.13235410761491093,61.14583471243666,4.0716746026762,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0013.pdb,0.05937930767934662,129.92971650406955,3.1143392859359147,a9,E164,True,
+short__amide__DALA-GLY,short,amide,short_0014.pdb,0.03784416694281727,79.10200405512084,3.6387671752341384,a9,T153,True,
+short__amide__DALA-GLY,short,amide,short_0015.pdb,0.023917117881204267,40.04950827814446,3.452910707749837,a9,E164,True,
+short__amide__DALA-GLY,short,amide,short_0016.pdb,0.11980337457362972,120.29157360488568,4.973418245175355,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0017.pdb,0.14234794953309582,149.58037940841362,4.7045741265208445,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0018.pdb,0.16284477844841555,127.0809574137092,4.517478227240108,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0019.pdb,0.035607710668947815,140.07230455191342,5.402176314053943,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0020.pdb,0.0757574739681207,98.52328276782889,5.590648957914378,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0021.pdb,0.02085576495776049,141.7402431050433,3.8534913081937576,a9,E245,True,
+short__amide__DALA-GLY,short,amide,short_0022.pdb,0.06552248274393481,85.28927455791741,3.52175831994889,a9,T153,True,
+short__amide__DALA-GLY,short,amide,short_0023.pdb,0.054512589267549295,73.56672140370485,3.4898111122783417,a9,T153,True,
+short__amide__DALA-GLY,short,amide,short_0024.pdb,0.11938955003364388,-63.92073230427331,4.143237898272095,a9,T153,False,"seeded residue 9 came out at phi -64, wrong handedness for a I'/II' turn"
+short__amide__DALA-GLY,short,amide,short_0025.pdb,0.0895162234546706,118.1772966720985,4.133667430690984,G10,E245,True,
+short__amide__DALA-GLY,short,amide,short_0026.pdb,0.07433142751512177,38.51758328657238,5.273814486405947,a9,E245,True,
+short__amide__DALA-GLY,short,amide,short_0027.pdb,0.03468655689263829,108.98556491444398,5.80668697237166,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0028.pdb,0.0010250483727138803,-24.757800920138195,4.929404281683609,a9,D151,False,"seeded residue 9 came out at phi -25, wrong handedness for a I'/II' turn"
+short__amide__DALA-GLY,short,amide,short_0029.pdb,0.07749701139020881,147.31392499613838,5.518443396418939,a9,R146,True,
+short__amide__DALA-GLY,short,amide,short_0030.pdb,0.04143862116426735,148.95440739168743,3.7913833982849168,a9,E245,True,
+short__amide__DALA-GLY,short,amide,short_0031.pdb,0.1065128925553335,97.96133216420992,4.653753019456339,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0032.pdb,0.14722386303802737,67.52897404167423,4.037211055660197,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0033.pdb,0.12498801864071207,133.62208688048764,6.214317277437624,a9,E164,True,
+short__amide__DALA-GLY,short,amide,short_0034.pdb,0.059583822794818504,147.00096684973514,3.388757657071099,G10,E245,True,
+short__amide__DALA-GLY,short,amide,short_0035.pdb,0.6668976931292038,-173.340877219397,3.609192222497036,G10,E164,False,"seeded residue 9 came out at phi -173, wrong handedness for a I'/II' turn"
+short__amide__DALA-GLY,short,amide,short_0036.pdb,0.06072940277206844,74.4882222948069,3.6276416833166802,a9,T153,True,
+short__amide__DALA-GLY,short,amide,short_0037.pdb,0.17622394571581662,26.04031616270065,3.882642721077779,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0038.pdb,0.21745576241706763,101.37862713120924,3.8253954631659206,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0039.pdb,0.011497643731937752,150.22398325348996,3.7625159337052883,a9,E245,True,
+short__amide__DALA-GLY,short,amide,short_0040.pdb,0.03389805836915987,139.94709354646076,3.112202541975252,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0041.pdb,0.20596059842933212,62.83151148240995,3.923555424981143,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0042.pdb,0.13429673129529351,65.04733129928026,4.380823663410653,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0043.pdb,0.13054128498213796,117.9847069430153,5.019170996198797,a9,E164,True,
+short__amide__DALA-GLY,short,amide,short_0044.pdb,0.03837846437106208,80.13561522255715,5.71609799342544,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0045.pdb,0.13137701835758184,173.90021495770054,3.5766659809237313,G10,E245,True,
+short__amide__DALA-GLY,short,amide,short_0046.pdb,0.0095245589819825,104.53819629361803,4.36638878303642,G10,E164,True,
+short__amide__DALA-GLY,short,amide,short_0047.pdb,0.1018671079639004,154.41005249891674,3.671814928536171,G10,E245,True,
+short__amide__DALA-GLY,short,amide,short_0048.pdb,0.12862188980753161,144.95887914777398,5.929487954216836,a9,R146,True,
+short__amide__DALA-GLY,short,amide,short_0049.pdb,0.028897081631418346,80.0677803428398,2.613756362873686,a9,E164,True,
+short__amide__DALA-GLY,short,amide,short_0050.pdb,0.023617745441129795,52.61445657766749,5.203450865222054,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0001.pdb,0.0484468694076096,172.34887246205216,2.304353922728689,G9,E164,True,
+short__amide__GLY-GLY,short,amide,short_0002.pdb,0.05625564463817272,75.20022105643272,5.530109301742657,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0003.pdb,0.16283495896331332,-48.94192758515053,5.779818560502762,G9,T153,False,"seeded residue 9 came out at phi -49, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0004.pdb,0.12057465886317728,128.64035404084166,5.607132264766672,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0005.pdb,0.07254036299637866,-104.85200185962644,3.2209007150837605,G10,E164,False,"seeded residue 9 came out at phi -105, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0006.pdb,0.03615569648092505,-152.61152960302437,3.2583590518613152,G10,E164,False,"seeded residue 9 came out at phi -153, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0007.pdb,0.056322424626446745,145.4399460840666,6.122150362445836,G9,D151,True,
+short__amide__GLY-GLY,short,amide,short_0008.pdb,0.060712624847238786,76.59671769059088,3.892604087476226,G9,T153,True,
+short__amide__GLY-GLY,short,amide,short_0009.pdb,0.07891725655620326,-89.97392619836752,5.599703741523166,G9,T153,False,"seeded residue 9 came out at phi -90, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0010.pdb,0.09309416639481057,100.13438578051726,3.9007168556187537,G9,T153,True,
+short__amide__GLY-GLY,short,amide,short_0011.pdb,0.11464091766096524,-55.25147844407469,5.550545304021779,G9,D151,False,"seeded residue 9 came out at phi -55, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0012.pdb,0.10425660288188884,-49.33369583864281,5.451663729785925,G9,D151,False,"seeded residue 9 came out at phi -49, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0013.pdb,0.18912833328539058,116.43313399173678,2.7674255789489357,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0014.pdb,0.6827494450309255,69.99177296060755,3.9336935883028383,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0015.pdb,0.3090853473697413,72.558946136026,2.420319104519901,G9,T153,True,
+short__amide__GLY-GLY,short,amide,short_0016.pdb,0.1436773516776012,-141.36066727903756,3.8172778607613647,G10,E164,False,"seeded residue 9 came out at phi -141, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0017.pdb,0.04262613308226739,76.51808642546386,3.7323743139556167,G9,T153,True,
+short__amide__GLY-GLY,short,amide,short_0018.pdb,0.15560826036491798,99.12509350000444,3.0010640730508658,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0019.pdb,0.048000689959391274,90.58206022943112,2.408809460507991,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0020.pdb,0.23264972646807597,-144.40525439938753,5.338258256039748,G10,E164,False,"seeded residue 9 came out at phi -144, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0021.pdb,0.04365452687174484,164.12779278415022,2.6187578996704057,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0022.pdb,0.12762133820909607,-53.0314544609724,5.084604237976059,G10,E245,False,"seeded residue 9 came out at phi -53, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0023.pdb,0.21179592175872178,69.77380032529325,3.49613766912509,G9,T153,True,
+short__amide__GLY-GLY,short,amide,short_0024.pdb,0.15346598074089193,-41.766779048564814,5.21515002709552,G9,D151,False,"seeded residue 9 came out at phi -42, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0025.pdb,0.0751185077234867,179.22121262873944,2.586712880490606,G9,E164,True,
+short__amide__GLY-GLY,short,amide,short_0026.pdb,0.18230107850327087,-66.26482039934503,5.892873776325484,G9,T153,False,"seeded residue 9 came out at phi -66, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0027.pdb,0.08486298843812823,-69.61238497168495,4.703936308285486,G10,E245,False,"seeded residue 9 came out at phi -70, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0028.pdb,0.007570795685271535,32.15740596198798,4.831491673066202,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0029.pdb,0.03938132143651071,-78.3419191965085,3.5012902677034736,G9,E164,False,"seeded residue 9 came out at phi -78, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0030.pdb,0.046021752074427234,-111.63473120771495,3.033344231024417,G9,E164,False,"seeded residue 9 came out at phi -112, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0031.pdb,0.027245875766233118,-69.74829262733769,3.2155185342877433,G9,E164,False,"seeded residue 9 came out at phi -70, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0032.pdb,0.08205256721047792,-106.40925165195996,5.453755138785092,G9,T153,False,"seeded residue 9 came out at phi -106, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0033.pdb,0.008312708907185872,47.06808365810143,5.464371666883266,G9,E164,True,
+short__amide__GLY-GLY,short,amide,short_0034.pdb,0.8075423630451449,82.99055204258615,4.104360629394864,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0035.pdb,0.5750522231242953,48.922535792128826,4.838217634237474,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0036.pdb,0.1000807093823046,99.6381439534164,5.335886522431947,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0037.pdb,0.2690226934987909,-125.49111919090542,5.663242796269642,G9,E164,False,"seeded residue 9 came out at phi -125, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0038.pdb,0.025952616348100404,56.334676615919804,5.670303789686331,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0039.pdb,0.04220382144740445,25.798111579905367,4.527692291509471,G9,E164,True,
+short__amide__GLY-GLY,short,amide,short_0040.pdb,0.020637463926960205,168.66782972404658,2.2520672403836506,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0041.pdb,0.1553286802112377,135.34096281932943,4.510919629578755,G9,E164,True,
+short__amide__GLY-GLY,short,amide,short_0042.pdb,0.08895090205213516,67.63065213115664,3.6666018836075565,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0043.pdb,0.03557749640048478,-89.55331529665372,3.3962857802380277,G9,T153,False,"seeded residue 9 came out at phi -90, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0044.pdb,0.12759804954377077,68.2692980472737,2.378692828837569,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0045.pdb,0.16491302328437527,125.02637092047195,2.675798634814174,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0046.pdb,0.1526888195807785,82.71282214609312,5.019251086575759,G9,T153,True,
+short__amide__GLY-GLY,short,amide,short_0047.pdb,0.08099702078697311,131.91465631642606,6.211541171598747,G9,E164,True,
+short__amide__GLY-GLY,short,amide,short_0048.pdb,0.05600761253469104,-57.94419175890877,5.741506922140009,G9,T153,False,"seeded residue 9 came out at phi -58, wrong handedness for a I'/II' turn"
+short__amide__GLY-GLY,short,amide,short_0049.pdb,0.01856639395584217,53.409429679822736,5.675885593276197,G10,E164,True,
+short__amide__GLY-GLY,short,amide,short_0050.pdb,0.08688798475294669,126.90582349423241,5.527945373741079,G10,E164,True,
+short__ssapp__CYD-CYD,,,short_0001.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0002.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0003.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0004.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0005.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0006.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0007.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0008.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0009.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0010.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0011.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0012.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0013.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0014.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0015.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0016.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0017.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0018.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0019.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0020.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0021.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0022.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0023.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0024.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0025.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0026.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0027.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0028.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0029.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0030.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0031.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0032.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0033.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0034.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0035.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0036.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0037.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0038.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0039.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0040.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0041.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0042.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0043.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0044.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0045.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0046.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0047.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0048.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0049.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssapp__CYD-CYD,,,short_0050.pdb,,,,,,False,unreadable: only 2 motif residues matched by name and position; the design and the scaffold are not the same motif
+short__ssmut__CYS-CYS,short,ssmut,short_0001.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0002.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0003.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0004.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0005.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0006.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0007.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0008.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0009.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0010.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0011.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0012.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0013.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0014.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0015.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0016.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0017.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0018.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0019.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0020.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0021.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0022.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0023.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0024.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0025.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0026.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0027.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0028.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0029.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0030.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0031.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0032.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0033.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0034.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0035.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0036.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0037.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0038.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0039.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0040.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0041.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0042.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0043.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0044.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0045.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0046.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0047.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0048.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0049.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)
+short__ssmut__CYS-CYS,short,ssmut,short_0050.pdb,0.0,,1.0895935021832646,Y102,K238,False,added residue Y102 within 1.09 A of receptor K238 (limit 2.20)

@@ -34,25 +34,25 @@ long__amide__DPRO-PRO                        amide      2  rigid D-Pro/L-Pro tem
 long__amide__ASN-GLY                         amide      2  most common natural hairpin turn
 long__amide__DALA-GLY                        amide      2  D-Pro alternative without ring strain
 long__amide__GLY-GLY                         amide      2  flexible control, unbiased
-long__ssapp__CYD-CYD                         ssapp      2  Cys appended beyond each terminus
-long__ssapp__CYD-DCYD                        ssapp      2  Cys appended beyond each terminus
-long__ssapp__DCYD-CYD                        ssapp      2  Cys appended beyond each terminus
-long__ssapp__DCYD-DCYD                       ssapp      2  Cys appended beyond each terminus
+long__ssapp__CYD-CYD                         ssapp      2  Cys appended beyond each terminus (CYD / CYD)
+long__ssapp__CYD-DCYD                        ssapp      2  Cys appended beyond each terminus (DCYD / CYD)
+long__ssapp__DCYD-CYD                        ssapp      2  Cys appended beyond each terminus (CYD / DCYD)
+long__ssapp__DCYD-DCYD                       ssapp      2  Cys appended beyond each terminus (DCYD / DCYD)
 medium__amide__DPRO-GLY                      amide      2  gold-standard nucleator
 medium__amide__DPRO-PRO                      amide      2  rigid D-Pro/L-Pro template
 medium__amide__ASN-GLY                       amide      2  most common natural hairpin turn
 medium__amide__DALA-GLY                      amide      2  D-Pro alternative without ring strain
 medium__amide__GLY-GLY                       amide      2  flexible control, unbiased
-medium__ssapp__CYD-CYD                       ssapp      2  Cys appended beyond each terminus
-medium__ssapp__CYD-DCYD                      ssapp      2  Cys appended beyond each terminus
-medium__ssapp__DCYD-CYD                      ssapp      2  Cys appended beyond each terminus
-medium__ssapp__DCYD-DCYD                     ssapp      2  Cys appended beyond each terminus
+medium__ssapp__CYD-CYD                       ssapp      2  Cys appended beyond each terminus (CYD / CYD)
+medium__ssapp__CYD-DCYD                      ssapp      2  Cys appended beyond each terminus (DCYD / CYD)
+medium__ssapp__DCYD-CYD                      ssapp      2  Cys appended beyond each terminus (CYD / DCYD)
+medium__ssapp__DCYD-DCYD                     ssapp      2  Cys appended beyond each terminus (DCYD / DCYD)
 short__amide__DPRO-GLY                       amide      2  gold-standard nucleator
 short__amide__DPRO-PRO                       amide      2  rigid D-Pro/L-Pro template
 short__amide__ASN-GLY                        amide      2  most common natural hairpin turn
 short__amide__DALA-GLY                       amide      2  D-Pro alternative without ring strain
 short__amide__GLY-GLY                        amide      2  flexible control, unbiased
-short__ssapp__CYD-CYD                        ssapp      2  Cys appended beyond each terminus
-short__ssapp__CYD-DCYD                       ssapp      2  Cys appended beyond each terminus
-short__ssapp__DCYD-CYD                       ssapp      2  Cys appended beyond each terminus
-short__ssapp__DCYD-DCYD                      ssapp      2  Cys appended beyond each terminus
+short__ssapp__CYD-CYD                        ssapp      2  Cys appended beyond each terminus (CYD / CYD)
+short__ssapp__CYD-DCYD                       ssapp      2  Cys appended beyond each terminus (DCYD / CYD)
+short__ssapp__DCYD-CYD                       ssapp      2  Cys appended beyond each terminus (CYD / DCYD)
+short__ssapp__DCYD-DCYD                      ssapp      2  Cys appended beyond each terminus (DCYD / DCYD)
