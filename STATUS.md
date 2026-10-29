@@ -59,6 +59,18 @@ all six scaffolds are on-register and therefore even-length.
   mutations including W261K at the W6.48 toggle. Neither receptor has a ligand modelled. Details in
   `prep/nanobody_gpcr_prep.md`.
 
+## Resuming from a fresh session
+
+Everything needed is committed: the package, both `cyclize.json` files, the scaffolds, the complexes,
+the alascan summaries, `variants.txt` and `setup.log`. `inputs/` and `output/` are gitignored but
+`inputs/` is fully regenerable with `cyclize setup <target>` (deterministic). Start with
+`cyclize/README.md`, then `cyclize status apj`.
+
+```bash
+cd cyclize && python3 tests/test_cyclize.py      # ~2 s, no Rosetta, confirms the package is sane
+./bin/cyclize status apj                          # job state and per-variant closure counts
+```
+
 ## Repo hygiene
 
 Everything is in `$SCRATCH`, purged at 90 days of no modification. Nothing here is a sole copy of

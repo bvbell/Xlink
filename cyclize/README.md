@@ -145,6 +145,9 @@ possu tree is still the place to *read* source, offline docs and integration tes
 - `cyclize/`: `struct` (PDB + geometry), `hairpin` (register), `variants` (enumeration + seed rules),
   `build` (XML generation), `inputs` (setup), `runner` (one variant), `slurm`, `validate`
   (superposition + filters), `analysis`, `__main__` (CLI).
+- `tests/test_cyclize.py`: `python3 tests/test_cyclize.py` (~2 s, no Rosetta needed). Pins the
+  register, which routes each scaffold is eligible for, the phi-sign turn rules, and the pose index
+  arithmetic in the generated XML. A real Rosetta run is not covered -- use `cyclize smoke`.
 - Python: `/home/groups/possu/miniconda/bin/python3` (3.8, numpy 1.24), set in `bin/cyclize`;
   override with `CYCLIZE_PYTHON`.
 
