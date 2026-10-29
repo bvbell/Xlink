@@ -124,6 +124,18 @@ def test_plan_indices():
     xs = build.xml(vs['long__ssapp__CYD-CYD'], ss, config.DEFAULTS['protocol'])
     check('ssapp uses ForceDisulfides', 'ForceDisulfides' in xs, True)
     check('ssapp prepends', '<Prepend' in xs, True)
+    # Without these the sulfurs are never moved off the extended build geometry and ssapp closes 0/50.
+    check('ssapp randomizes the S-S torsion',
+          '<AddAtoms res1="14" atom1="SG" res2="1" atom2="SG"/>' in xs, True)
+    addatoms = [l for l in xs.splitlines() if '<AddAtoms' in l]
+    check('ssapp randomizes both Cys side chains',
+          sum('atom1="CB"' in l and 'atom2="SG"' in l for l in addatoms), 2)
+    check('ssapp perturbs 7 torsions in total', len(addatoms), 7)
+    check('ssapp randomizes the terminal Cys backbone',
+          '<AddAtoms res1="14" atom1="N" res2="14" atom2="CA"/>' in xs, True)
+    check('ssapp has 3 randomize_dihedral perturbers',
+          xs.count('effect="randomize_dihedral"'), 3)
+    check('amide has none', x.count('effect="randomize_dihedral"'), 0)
 
 
 def test_ssmut_needs_no_sampling():
@@ -149,6 +161,8 @@ def test_runs_helper():
     check('pivots spread across the loop', [x[0] for x in build.pick_pivots([13, 14, 1, 2, 3])],
           [13, 1, 3])
     check('D residues read from HETATM', struct.AA3to1['DPR'], 'p')
+    check('ss_torsions groups: bond, sidechains, backbone',
+          [len(g) for g in build.ss_torsions(14, 1)], [1, 4, 2])
 
 
 if __name__ == '__main__':
