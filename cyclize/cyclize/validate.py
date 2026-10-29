@@ -80,12 +80,20 @@ def seed_phi(design, seed_num):
     return pp.get(seed_num, (None, None))[0]
 
 
-def check(design_path, native_motif, receptor, motif_nums, clash=3.0, motif_rmsd=1.0, seed_num=None,
-          offset=0):
-    '''-> dict verdict for one closed design.'''
+def check(design_path, native_motif, receptor, motif_nums=None, clash=3.0, motif_rmsd=1.0,
+          seed_num=None, offset=0, n_motif=None):
+    '''-> dict verdict for one closed design.
+
+    The motif is identified by POSITION in the design, not by residue number: routes that add residues
+    make Rosetta renumber the pose 1..N, but ssmut adds nothing so the original PDB numbering survives.
+    A numeric range therefore matches one and not the other -- which made uOR ssmut report its own
+    motif hotspot Y102 as an "added residue" clashing with the receptor, failing all 50 structures.
+    '''
     des = struct.chain_residues(struct.read(design_path), 'A')
     transform, rms, npair = superimpose_on_motif(des, native_motif, offset=offset)
-    dist, dres, rres = min_receptor_distance(des, receptor, transform, skip_nums=set(motif_nums))
+    n_motif = n_motif if n_motif is not None else len(native_motif)
+    skip = {r.num for r in des[offset:offset + n_motif]}
+    dist, dres, rres = min_receptor_distance(des, receptor, transform, skip_nums=skip)
     reasons = []
     if rms > motif_rmsd:
         reasons.append('motif drifted %.2f A (limit %.2f)' % (rms, motif_rmsd))

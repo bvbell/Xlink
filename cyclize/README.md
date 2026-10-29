@@ -100,6 +100,12 @@ Measured during development on apj/long; these are the non-obvious results worth
   simple_cycpep_predict's terminal_disulfide setup (the S-S torsion, both side chains CA-CB-SG, and
   what backbone each terminal Cys has), which takes it to 8/8.
 
+The motif is located **by position in the design, not by residue number**. Routes that add residues
+make Rosetta renumber the pose 1..N, but `ssmut` adds nothing so the input PDB numbering survives
+(101-108). A numeric range matches one and not the other, which made uOR `ssmut` report its own motif
+hotspot Y102 as an "added residue" clashing with the receptor and fail all 50 structures. For `ssmut`
+the reported receptor distance is `inf`, correctly: it adds no residues, so there is nothing to check.
+
 ## Clash threshold
 
 `validate.clash` defaults to **2.2 A, not 3.0**. The native APJ interface packs motif residues to
@@ -172,6 +178,10 @@ possu tree is still the place to *read* source, offline docs and integration tes
 - `design_i2` is accepted in the config but **not yet implemented**: i+2 of the turn is currently
   always taken from the seed pair rather than designed. Chirality is only load-bearing at i+1, so
   designing i+2 freely among L residues is the obvious next step.
+- **The uOR input model has a 1.09 A heavy-atom contact** between motif Y102 and receptor K238. That
+  is a genuine clash in the Coot-built structure, not a design artifact -- `ssmut` designs reproduce the
+  native backbone at 0.00 A RMSD and inherit it. Worth resolving in the input before trusting fine
+  distance filtering on uOR.
 - Hotspot coverage is only 60-78% of the alanine-scan signal for these motifs; the rest sits in CDR1
   and CDR2 (APJ loses R27 + Y33 = 5.6 REU, uOR loses E54 + L32 = 3.0 REU) and no CDR3-only macrocycle
   can recover it. See `../flexddg/README.md`.

@@ -25,13 +25,13 @@ def analyse(cfg):
         seed_num = man['n_motif'] + 1 if man['route'] == 'amide' and man['added'] else None
         # ssapp prepends a Cys, so the motif starts at design position 2, not 1.
         offset = man.get('motif_range', [1])[0] - 1
-        motif_nums = range(offset + 1, offset + man['n_motif'] + 1)
         got = sorted(glob.glob(os.path.join(runner.variant_dir(cfg, vid), '*.pdb')))
         passes, best = 0, None
         for f in got:
             try:
-                r = validate.check(f, native, rec, motif_nums, cfg['validate']['clash'],
-                                   cfg['validate']['motif_rmsd'], seed_num, offset=offset)
+                r = validate.check(f, native, rec, clash=cfg['validate']['clash'],
+                                   motif_rmsd=cfg['validate']['motif_rmsd'], seed_num=seed_num,
+                                   offset=offset, n_motif=man['n_motif'])
             except (struct.StructError, ValueError) as e:
                 rows.append({'variant': vid, 'structure': os.path.basename(f), 'pass': False,
                              'reasons': 'unreadable: %s' % e})

@@ -3,34 +3,48 @@
 Last updated 2026-10-29. Hand-maintained; `cyclize status <target>` and `flexddg status <target>` are
 the live sources of truth for job state.
 
-## Running right now
+## Results — all 55 variants complete
 
-| job        | what                                   | tasks | note                        |
-| ---------- | -------------------------------------- | ----- | --------------------------- |
-| `50156669` | apj retry of 9 failed `ssapp` variants  | 9     | + analysis `50156670`        |
-| `50156673` | uor retry of 11 failed variants         | 11    | + analysis `50156674`        |
+Both arrays and both retries finished; every variant closed 50/50. **2750 structures, 1200 passed
+validation.** Numbers from `cyclize/<target>/analysis_output/summary.csv`.
 
-The first pass (`50154360` apj, `50154369` uor) is finished. Its `amide` and `ssmut` results are valid
-and already analysed; its `ssapp` results are not, and those variants are what the retries above cover.
+| target | route   | variants | closed | passed | rate |
+| ------ | ------- | -------- | ------ | ------ | ---- |
+| apj    | `amide` | 15       | 750    | 403    | 54%  |
+| apj    | `ssapp` | 12       | 600    | 232    | 39%  |
+| uor    | `amide` | 15       | 750    | 318    | 42%  |
+| uor    | `ssapp` | 12       | 600    | 197    | 33%  |
+| uor    | `ssmut` | 1        | 50     | 50     | 100% |
 
-### First-pass results, apj (900 structures, all scored)
+**Closure is not the discriminator — every variant closed 50/50.** The scaffold is:
 
-| route   | variants | closed      | passed   |
-| ------- | -------- | ----------- | -------- |
-| `amide` | 15       | 750 (100%)  | 403      |
-| `ssapp` | 12       | 150         | 61       |
+| scaffold | apj          | uor          |
+| -------- | ------------ | ------------ |
+| short    | **89%**      | **72%**      |
+| medium   | 24%          | 27%          |
+| long     | 28%          | 19%          |
 
-`amide` closes 50/50 on every variant of every scaffold. Validation pass rate is where they separate,
-and **apj/short is the standout**: all five turn seeds pass at 96-100% with motif RMSD down to
-**0.09 A**. apj/long and apj/medium pass at 4-54%, failing mostly on seed handedness. `ASN-GLY` is the
-sharpest split -- 50/50 on short, 4/50 on long, 2/50 on medium -- so turn choice is strongly
-scaffold-dependent and the five-seed sweep is earning its keep.
+The shortest motif wins on both targets by a factor of 3, which is the **opposite** of what hotspot
+coverage predicts: short keeps only 60-67% of the alanine-scan signal but is far and away the most
+buildable. Fewer released motif residues means less for the sampler to distort. Whether that trade is
+worth it cannot be settled from these numbers -- it needs ddG on the survivors.
 
-`ssapp` passes 61/150, failing mostly on motif drift of 1.5-1.9 A against the 1.0 A limit: releasing
-motif residues into the loop plus a ring that closes through a rotatable S-S gives it more slack than
-the amide route.
+Best per target:
 
-Read with `cyclize status <target>` and `cyclize/<target>/analysis_output/summary.csv`.
+- **apj**: `short__amide__ASN-GLY`, `short__amide__DALA-GLY`, `short__amide__DPRO-GLY` -- all 50/50,
+  best motif RMSD **0.09 A**. Four of the five turn seeds pass at 100% on short.
+- **uor**: `short__ssmut__CYS-CYS` 50/50 at **0.00 A** (it reproduces the native backbone exactly, by
+  construction), then `short__amide__DALA-GLY` 46/50 and `short__ssapp__DCYD-DCYD` 44/50.
+
+`ASN-GLY` is the sharpest scaffold split on apj -- 50/50 on short, 4/50 on long, 2/50 on medium -- so
+turn choice is strongly scaffold-dependent and the five-seed sweep earned its keep.
+
+### What to do next
+
+1. **Flex ddG the survivors.** Validation only checks geometry; nothing here is a binding number.
+2. **Fix the uOR input.** It carries a 1.09 A Y102-K238 clash (see `cyclize/README.md`), which makes
+   fine distance filtering on that target untrustworthy.
+3. Consider pushing `short` harder -- more nstruct, and the unimplemented `design_i2`.
 
 ## Where each piece stands
 
@@ -44,15 +58,15 @@ Read with `cyclize status <target>` and `cyclize/<target>/analysis_output/summar
 | `uor_nb/`         | done | 8 hotspots > 1 REU, 13.6 REU total; noisier (Coot-built model)  |
 | `cldn6_9v32fab/`  | **not run** | set up but `analysis_output/` is empty; chimera input, see README caveats |
 
-**Running — CDR3 macrocyclisation** (`cyclize/`, see its README). Six motifs, three closure routes,
-55 variants. The design constraint that drives everything is the hairpin register **i + j = 209**;
-all six scaffolds are on-register and therefore even-length. Amide and ssmut closure both work; ssapp
-needs the retry described above.
+**Done — CDR3 macrocyclisation** (`cyclize/`, see its README). Six motifs, three closure routes,
+55 variants, all complete; results above. The design constraint that drives everything is the hairpin
+register **i + j = 209**; all six scaffolds are on-register and therefore even-length.
 
 **Not started:**
-- Flex ddG on the closed macrocycles. The current validation only filters on motif RMSD, seed
-  handedness and receptor clash -- it says nothing about binding energy. Re-scoring survivors through
-  `flexddg/` would give numbers directly comparable to the nanobody scans.
+- Flex ddG on the closed macrocycles -- the single biggest gap. Validation only filters on motif RMSD,
+  seed handedness and receptor clash; **no number here is a binding energy.** Re-scoring the 1200
+  survivors through `flexddg/` would give values directly comparable to the nanobody scans, and is the
+  only way to test whether `short` winning on buildability survives contact with affinity.
 - `cldn6_9v32fab/` scan.
 - Whether APJ's R27 + Y33 (5.6 REU of CDR1) contact the same receptor surface as the CDR3 tip. This
   decides how much affinity a CDR3-only macrocycle can possibly retain, and is still an open question.
@@ -67,9 +81,9 @@ needs the retry described above.
 - **`ssmut` gives a strained disulfide** (1.70 A measured vs 2.05 ideal) because the motif is pinned.
   Only uOR/short qualifies for that route at all. `ssapp`, which builds its Cys on free backbone,
   reaches 2.04-2.43 A instead -- so the strain really is the pinning, not the chemistry.
-- **~30% of closed amide designs will fail on seed handedness.** D-Pro cannot be a GenKIC pivot and
-  keep its chirality, and moving the pivot off it stops closure entirely, so wrong-handed solutions
-  are filtered after the fact rather than prevented.
+- **Seed handedness costs real yield.** D-Pro cannot be a GenKIC pivot and keep its chirality, and
+  moving the pivot off it stops closure entirely, so wrong-handed solutions are filtered after the fact
+  rather than prevented. Measured across both targets, amide passes 42-54% of closed structures.
 - **uOR inputs are a Coot-built model**, APJ is an AlphaFold3 model carrying the 5VBL construct's five
   mutations including W261K at the W6.48 toggle. Neither receptor has a ligand modelled. Details in
   `prep/nanobody_gpcr_prep.md`.

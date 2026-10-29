@@ -159,6 +159,27 @@ def test_ssmut_needs_no_sampling():
     check('both termini mutated', sorted(n for n, _ in p['mutate']), [1, 8])
 
 
+def test_motif_identified_by_position():
+    """ssmut adds nothing, so Rosetta keeps the input PDB numbering while other routes renumber 1..N.
+
+    validate.check must therefore locate the motif by position, not by residue number: a numeric range
+    matched the renumbered routes but not ssmut, which reported its own motif hotspot Y102 as an
+    "added residue" clashing with the receptor and failed all 50 uOR structures.
+    """
+    print('motif located by position')
+    res = motif('uOR_scaffolds/short.pdb')
+    check('scaffold keeps PDB numbering', (res[0].num, res[-1].num), (101, 108))
+    scan = config.read_scan(os.path.join(REPO, 'flexddg/uor_nb/analysis_output/alascan_summary.csv'))
+    vs = {v['id']: v for v in variants.enumerate_variants('short', res, scan)}
+    p_ss = build.plan(vs['short__ssmut__CYS-CYS'], res)
+    p_am = build.plan(vs['short__amide__DPRO-GLY'], res)
+    check('ssmut adds nothing, so numbering is untouched', p_ss['added'], [])
+    check('amide adds 2, so the pose is renumbered', len(p_am['added']), 2)
+    # Both start the motif at design position 1 here; the offset only differs for ssapp.
+    check('ssmut offset', p_ss['motif_range'][0] - 1, 0)
+    check('ssapp offset differs', build.plan(vs['short__ssapp__CYD-CYD'], res)['motif_range'][0] - 1, 1)
+
+
 def test_cys_names():
     """There is no "DCYD": the D disulfide cysteine must be spelled "DCYS:disulfide"."""
     print('cysteine naming')
@@ -191,7 +212,8 @@ def test_runs_helper():
 
 if __name__ == '__main__':
     for fn in [test_register, test_staple_eligibility, test_turn_rules, test_offregister_refused,
-               test_plan_indices, test_ssmut_needs_no_sampling, test_cys_names, test_runs_helper]:
+               test_plan_indices, test_ssmut_needs_no_sampling, test_motif_identified_by_position,
+               test_cys_names, test_runs_helper]:
         fn()
     print('\n%d failure(s)' % len(FAILS))
     for f in FAILS:
