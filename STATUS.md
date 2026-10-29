@@ -74,9 +74,12 @@ scaffold split" rests on 2-4 structures.
    short 549 against medium 299 and long 232.
 
    **These are raw pass counts and have not been de-duplicated yet.** The 55-variant grid collapsed
-   5:1 under clustering and this one will too, so the next step is `representatives.py` then
-   `rescore.py` and `interface.py` on `apj_i1`/`uor_i1`. No conclusion about *which* identity is best
-   should be drawn from the counts above.
+   5:1 under clustering and this one probably will too, so the "six identities pass 50/50" result
+   may be one backbone wearing six side chains. **No conclusion about which identity is best should
+   be drawn from the counts above** until the distillation lands — job **50173650**
+   (`cyclize/scripts/distill.sbatch`), which runs `compare_prebug`, then `representatives`,
+   `rescore` and `interface` over all four targets and writes
+   `<target>/{representatives,rescore,interface}/*.csv`. Read `cyclize/logs/distill_50173650.out`.
 2. **Score the sweep** on total `rama_prepro`, loop-only `rama_prepro`, and InterfaceAnalyzer
    `dG_separated`. The mechanics are now verified against rosetta/3.14 and written up under "Scoring
    a closed design" in `cyclize/README.md`. The headline: **reading a cyclic pose naively gives the
@@ -101,18 +104,30 @@ scaffold split" rests on 2-4 structures.
    (the designs are peptide-only; chain B is never in the pose) and scores `dG_separated` and `ddg`
    with an identical sidechain repack on every design, ~3.6 s/structure. Two results:
 
+   Caveat on the committed CSVs: the `ssapp`/`ssmut` rows in `representatives.csv`, `rescore.csv`
+   and `interface.csv` were computed on the **pre-fix** disulfide structures and are stale. Job
+   50173650 regenerates all of them. The amide rows, including the apj result below, are unaffected.
+
    - **apj looks sane and reorders the ranking.** Best is `short__amide__DPRO-GLY` at **-25.2 REU**
      over 1429 A^2 buried, then `short__amide__ASN-GLY` at -21.7. Note that
      `short__amide__DALA-GLY` -- the 50/50 pass-rate winner with the 0.09 A motif RMSD -- comes in
      at only -15.4. **Buildability and interface score disagree**, which is the first evidence that
      the pass-rate ranking in the table above was measuring the wrong thing.
-   - **uOR numbers are unusable**, at +370 to +413 REU. That is the known 1.09 A Y102-K238 clash:
-     Y102 is a pinned motif residue in all three uOR scaffolds and the contact is interface-side, so
-     it does not cancel in `dG_separated`. The spread among the best few is the same size as the
-     differences being ranked. **Fix the input before reading anything into uOR binding.**
-3. **Fix the uOR input.** It carries a 1.09 A Y102-K238 clash (see `cyclize/README.md`), which makes
-   fine distance filtering on that target untrustworthy. It also shows up in the energies: uOR's
-   `rama_prepro` runs 33-37 against apj's 10-14, so **only within-target ranking is meaningful**.
+   - **uOR numbers are unusable**, at +370 to +413 REU — but **not** for the reason recorded below.
+     The 1.09 A Y102-K238 clash does not reproduce: re-measured in the current `uor_complex.pdb`,
+     that pair is 3.39 A apart. The real problem is global. Scoring the **native** motif:receptor
+     pair — the real nanobody CDR3 in its real position — through the identical protocol gives
+     `dG_separated` **+34 to +45** and `total_score` **+180 to +209** for uOR, against **-6 to -19**
+     and ~-240 for apj. **The native uOR complex scores as a non-binder**, which puts a floor under
+     every uOR number and means the fix is a better input model, not a local repair. (The designs
+     are ~330 REU worse again than that floor, which is not yet explained.)
+3. **Replace the uOR input model.** This is now the biggest single problem in the project, and it is
+   larger than previously recorded: the native uOR complex scores as a non-binder (see above), and
+   uOR's `rama_prepro` runs 33-37 against apj's 10-14. Both say the Coot-built model is strained
+   throughout rather than wrong in one place, so a local repair will not fix it. Until it is
+   replaced, **no uOR number is interpretable in absolute terms and only within-target ranking has
+   any meaning** — and that includes the `flexddg/uor_nb/` alanine scan that selected the uOR motifs
+   in the first place, which was run on this same model.
 4. Flex ddG remains undone and is no longer treated as a prerequisite -- the motifs come from real
    binders, so the sweep is ranked on torsion quality plus a fast interface score instead.
 
@@ -151,12 +166,19 @@ register **i + j = 209**; all six scaffolds are on-register and therefore even-l
 - **Every `ssapp` run carries a ~10 REU phantom energy on residue 1.** `build.xml` strips
   `LOWER_TERMINUS_VARIANT` from residue 1 for all routes, but `ssapp` closes through S-S and never
   bonds anything to that N, so Rosetta scores its rama at phi = 0 -- a forbidden region. The artifact
-  was present during `FastRelax` in all 600 apj + 600 uOR `ssapp` structures, so it biased the
-  sampling, not just the reported score. **Fixed 2026-10-29** -- the two movers are now guarded on
-  the closure chemistry (`build.py`, emitted only when the ring closes through a peptide bond). The
-  completed `ssapp` and `ssmut` runs were produced *before* the fix and still carry it; rerun them
-  if their geometry matters. `scripts/rescore.py` reads the PDBs as-is and does not reproduce the
-  artifact, so the rescored numbers are clean. Details in `cyclize/README.md`.
+  was present during `FastRelax` in all 600 apj + 600 uOR `ssapp` structures. **Fixed 2026-10-29** --
+  the two movers are now guarded on the closure chemistry (`build.py`, emitted only when the ring
+  closes through a peptide bond), and all 25 disulfide variants were **resubmitted** the same day
+  (arrays 50171634 apj / 50171636 uor). The pre-fix runs are kept in `<target>/output_prebug/` so
+  the effect can be measured rather than assumed: `scripts/compare_prebug.py` compares psi(1), the
+  S-S distance and the yields across the fix. `scripts/rescore.py` reads PDBs as-is and never
+  reproduced the artifact, so the rescored numbers were already clean.
+
+  Whether the bug moved *geometry* as well as scores is an **inference, not yet a measurement**:
+  phi(1) is fixed garbage that minimisation cannot touch, but psi(1) is real and free and residue 1
+  sits in the GenKIC loop with backbone enabled in the relax MoveMap, so relax should have optimised
+  psi(1) against a bogus phi. Residue 1 is the prepended Cys, whose backbone places SG. The
+  comparison above is what settles it.
 - **`ssmut` gives a strained disulfide** (1.70 A measured vs 2.05 ideal) because the motif is pinned.
   Only uOR/short qualifies for that route at all. `ssapp`, which builds its Cys on free backbone,
   reaches 2.04-2.43 A instead -- so the strain really is the pinning, not the chemistry.

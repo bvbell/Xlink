@@ -39,3 +39,6 @@ cyclize/*/representatives/*.pdb
 cyclize/*/interface/complexes/
 cyclize/*/rescore/*.silent
 cyclize/*/rescore/*.reb
+
+# Pre-bugfix disulfide runs, kept to measure what the rm_lower phantom did to geometry
+cyclize/*/output_prebug/

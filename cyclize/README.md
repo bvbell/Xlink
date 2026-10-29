@@ -279,14 +279,30 @@ repack only; backbone clash from the superposition is not relieved, which is int
 `validate` has already rejected anything closer than 2.2 A. Cost is ~3.6 s/structure, so the 51
 representatives take about three minutes.
 
-**uOR interface numbers are not usable, and this is not a scoring artifact.** Its 61 representatives
-come out at **+370 to +413 REU** against apj's -25. The cause is the known 1.09 A Y102-K238 contact
-in the Coot-built input: Y102 is a *motif* residue, present and pinned in all three uOR scaffolds
-(checked: 98-111, 100-109, 101-108 all contain it), and the contact is interface-side, so unlike a
-receptor-internal strain it does **not** cancel in `dG_separated` -- it lands entirely in the bound
-state. Every uOR design therefore inherits a large positive penalty, and the spread among the best
-few (369 to 413) is the same size as the differences we would be trying to rank. Fix the input before
-reading anything into uOR binding numbers; apj is unaffected.
+**uOR interface numbers are not usable.** Its 61 representatives come out at **+370 to +413 REU**
+against apj's -25. The cause is *not* one bad contact, and the Y102-K238 clash recorded under Known
+caveats does not explain it -- measured in the current `uor_complex.pdb`, Y102:CD1 to K238:CD is
+**3.39 A**, an ordinary van der Waals contact, with nothing below 3.3 A between them. Either that
+1.09 A figure refers to an earlier file or it was repaired at some point; it is not in the input
+being used. Treat the Known-caveats entry as unverified.
+
+The real finding is worse, and comes from scoring the **native** motif:receptor pair -- the actual
+nanobody CDR3 in its actual position, a real binder -- through the identical protocol:
+
+| control | `dG_separated` | `ddg` | `total_score` |
+| ------- | -------------- | ----- | ------------- |
+| apj short / medium / long  | -5.7 / -12.9 / -19.1 | -4.8 / -15.5 / -13.3 | ~-240 |
+| uOR short / medium / long  | **+34.4 / +41.7 / +45.2** | +97.3 / +91.6 / +93.8 | **+180 to +209** |
+
+**The native uOR complex scores as a non-binder.** apj's natives sit at -5.7 to -19.1 REU with a
+total score near -240; uOR's are positive on every measure. That is a global property of the
+Coot-built model, not a single repairable contact, and it sets a floor under every uOR number: no
+design can score well against a receptor whose own native complex does not. The designs are a
+further ~330 REU worse again, which that floor does not explain and which has not been chased down.
+
+So: **apj interface numbers are usable, uOR's are not**, and the fix is a better uOR input model
+rather than a local repair. Run this control after any change to an input complex -- it costs
+seconds and it is the only thing that distinguishes a bad design from a bad receptor.
 
 ## Use
 
@@ -308,7 +324,19 @@ python3 scripts/representatives.py                # <target>/representatives/, o
 ml biology rosetta/3.14
 python3 scripts/rescore.py apj uor                # <target>/rescore/rescore.csv
 python3 scripts/interface.py apj uor              # <target>/interface/interface.csv
+python3 scripts/compare_prebug.py                 # pre/post rm_lower-fix geometry, reports only
 ```
+
+All of the above over every target at once, as a job rather than in an `sh_dev` session -- the
+interface scoring is ~3.6 s/structure and the four targets carry several hundred representatives:
+
+```bash
+sbatch -D $PWD -J cyclize_distill -p normal,possu -t 04:00:00 -c 1 --mem 8G \
+       -o logs/distill_%j.out scripts/distill.sbatch
+```
+
+Order matters inside it: `rescore` and `interface` both read
+`<target>/representatives/representatives.csv`, so `representatives` runs first.
 
 The i+1 sweep lives in its own target directories, `apj_i1/` and `uor_i1/`, rather than in `apj/` and
 `uor/`. `setup` rewrites `variants.txt` and `inputs/`, so running it in place with a different
@@ -373,13 +401,18 @@ possu tree is still the place to *read* source, offline docs and integration tes
 
 ## Known caveats
 
-- **`ssapp` strips a terminus it never bonds, costing a ~10 REU phantom on residue 1.** `build.xml`
-  emits `rm_upper`/`rm_lower` unconditionally (`build.py:249`, no route guard), so an `ssapp` protocol
-  removes `LOWER_TERMINUS_VARIANT` from residue 1 and then closes the ring through S-S instead,
+- **`ssapp` stripped a terminus it never bonds, costing a ~10 REU phantom on residue 1. FIXED
+  2026-10-29.** `build.xml` emitted `rm_upper`/`rm_lower` unconditionally, so an `ssapp` protocol
+  removed `LOWER_TERMINUS_VARIANT` from residue 1 and then closed the ring through S-S instead,
   leaving residue 1 with nothing bonded to its N. Rosetta evaluates its rama at phi = 0, a forbidden
   region, and invents about **+10 REU that is not real geometry** (measured 9.993 on
-  `long__ssapp__CYD-CYD`). This was in effect during the `FastRelax` of every `ssapp` run to date and
-  in their reported scores, so it biased those runs, not just their reporting. When rescoring, read
+  `long__ssapp__CYD-CYD`). The movers are now emitted only when the ring closes through a peptide
+  bond (`close['atom1'] != 'SG'`), and all 25 disulfide variants were rerun. Pre-fix structures are
+  kept under `<target>/output_prebug/`; `scripts/compare_prebug.py` measures what actually changed.
+  Whether the artifact moved geometry or only the reported score is an **inference** until that
+  comparison runs: phi(1) is fixed garbage that minimisation cannot touch, but psi(1) is real, free,
+  and inside the relax MoveMap, so relax should have optimised it against a bogus phi -- and
+  residue 1 is the prepended Cys, whose backbone places SG. When rescoring, read
   the PDB as-is. Fixing it means guarding those two movers on `route == 'amide'`.
 - **`ssmut` produces a strained disulfide** (measured 1.70 A S-S against an ideal 2.05) because the
   motif is pinned, so the bond cannot relax into place. Loosening `protocol.coord_dev` or allowing the
@@ -388,10 +421,14 @@ possu tree is still the place to *read* source, offline docs and integration tes
   always taken from the seed pair rather than designed. Chirality is only load-bearing at i+1, so
   designing i+2 freely among L residues is the obvious next step -- and now that `redesign_i1` exists
   it should be built the same way, by enumeration through `sweep_seeds`, not by adding a packer.
-- **The uOR input model has a 1.09 A heavy-atom contact** between motif Y102 and receptor K238. That
-  is a genuine clash in the Coot-built structure, not a design artifact -- `ssmut` designs reproduce the
-  native backbone at 0.00 A RMSD and inherit it. Worth resolving in the input before trusting fine
-  distance filtering on uOR.
+- **The uOR input model is globally strained, and the "1.09 A Y102-K238 clash" does not reproduce.**
+  The original note here recorded a 1.09 A heavy-atom contact between motif Y102 and receptor K238.
+  Re-measured 2026-10-29 in `../uor_complex.pdb`, the closest Y102-K238 heavy-atom pair is **3.39 A**
+  (CD1-CD), entirely normal, so that figure either refers to an earlier file or was repaired. What is
+  real and worse: the **native** uOR motif:receptor pair scores `dG_separated` +34 to +45 and
+  `total_score` +180 to +209, where apj's natives score -6 to -19 and ~-240. The uOR model scores as
+  a non-binder in its own native geometry, which puts a floor under every uOR number. See "Interface
+  score" above. A better input model is needed, not a local repair.
 - Hotspot coverage is only 60-78% of the alanine-scan signal for these motifs; the rest sits in CDR1
   and CDR2 (APJ loses R27 + Y33 = 5.6 REU, uOR loses E54 + L32 = 3.0 REU) and no CDR3-only macrocycle
   can recover it. See `../flexddg/README.md`.
