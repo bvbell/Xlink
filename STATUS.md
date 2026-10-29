@@ -5,40 +5,32 @@ the live sources of truth for job state.
 
 ## Running right now
 
-Arrays `50154360` (apj, 27 variants) and `50154369` (uor, 28 variants) are part way through, each with
-a validation job chained `afterany` (`50154361`, `50154371`). 50 structures per variant, one Rosetta
-process per array task.
+| job        | what                                   | tasks | note                        |
+| ---------- | -------------------------------------- | ----- | --------------------------- |
+| `50156669` | apj retry of 9 failed `ssapp` variants  | 9     | + analysis `50156670`        |
+| `50156673` | uor retry of 11 failed variants         | 11    | + analysis `50156674`        |
 
-Closure results so far, by route -- the pattern is clean and worth knowing before reading any numbers:
+The first pass (`50154360` apj, `50154369` uor) is finished. Its `amide` and `ssmut` results are valid
+and already analysed; its `ssapp` results are not, and those variants are what the retries above cover.
 
-| route   | outcome                                                                      |
-| ------- | ---------------------------------------------------------------------------- |
-| `amide` | **closes reliably, 50/50 on every variant tried**, both targets                 |
-| `ssmut` | **50/50** (uor/short, the only scaffold eligible)                               |
-| `ssapp` | **0/50 on first submission from two separate bugs** -- both fixed, 6/6-8/8 on retest |
+### First-pass results, apj (900 structures, all scored)
 
-### Outstanding: ssapp variants need a retry
+| route   | variants | closed      | passed   |
+| ------- | -------- | ----------- | -------- |
+| `amide` | 15       | 750 (100%)  | 403      |
+| `ssapp` | 12       | 150         | 61       |
 
-`ssapp` failed for two unrelated reasons, both now fixed (details in `cyclize/README.md`):
+`amide` closes 50/50 on every variant of every scaffold. Validation pass rate is where they separate,
+and **apj/short is the standout**: all five turn seeds pass at 96-100% with motif RMSD down to
+**0.09 A**. apj/long and apj/medium pass at 4-54%, failing mostly on seed handedness. `ASN-GLY` is the
+sharpest split -- 50/50 on short, 4/50 on long, 2/50 on medium -- so turn choice is strongly
+scaffold-dependent and the five-seed sweep is earning its keep.
 
-1. **Nothing sampled the two terminal Cys**, so the sulfurs could never meet. Affected all 12 ssapp
-   variants per target. Fixed in `b612855`.
-2. **`DCYD` is not a valid residue name** -- the D disulfide cysteine is `DCYS:disulfide`. This is why
-   the three `CYD-CYD` variants reached 50/50 while all nine containing `DCYD` died instantly with
-   "The residue DCYD could not be generated".
+`ssapp` passes 61/150, failing mostly on motif drift of 1.5-1.9 A against the 1.0 A limit: releasing
+motif residues into the loop plus a ring that closes through a rotatable S-S gives it more slack than
+the amide route.
 
-The already-run tasks must be redone either way.
-
-**Once both arrays finish** (`cyclize status <target>` shows no active job), rerun the failures:
-
-```bash
-cyclize status apj                 # confirm the empty ones are ssapp and nothing else
-cyclize submit apj --retry         # reruns empty/partial variants only
-cyclize submit uor --retry
-```
-
-`submit` refuses while an array is active, so this cannot be done early. Expect roughly 10-12 empty
-`ssapp` variants per target.
+Read with `cyclize status <target>` and `cyclize/<target>/analysis_output/summary.csv`.
 
 ## Where each piece stands
 
