@@ -28,6 +28,7 @@ import collections
 import glob
 import os
 import shutil
+import sys
 
 import numpy as np
 
@@ -135,6 +136,11 @@ def main():
     ap.add_argument('--write', action='store_true')
     args = ap.parse_args()
 
+    # Chained afterany on the relax, not afterok: the relax is paced to finish ~10 decoys in about
+    # the time it is allotted, so a timeout on the last one is likely and is harmless -- 9 decoys
+    # are as good as 10 for picking a relaxed pose. But if NOTHING was produced we must fail loudly
+    # so the geometry test (afterok on this job) does not run against missing inputs.
+    wrote = 0
     for target, cfg in TARGETS.items():
         ranges = scaffold_ranges(cfg['scaffold_dir'])
         allnums = sorted({n for v in ranges.values() for n in v})
@@ -157,6 +163,11 @@ def main():
             print('  wrote %-44s %2d residues, %3d atoms'
                   % (os.path.relpath(dest, ROOT), len(nums), n))
         print('  wrote %s' % os.path.relpath(cfg['out_complex'], ROOT))
+        wrote += 1
+
+    if args.write and wrote < len(TARGETS):
+        sys.exit('ERROR: wrote %d of %d targets -- relax produced no usable decoys for the rest'
+                 % (wrote, len(TARGETS)))
 
 
 if __name__ == '__main__':
