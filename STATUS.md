@@ -319,11 +319,14 @@ Committed: the `cyclize` package and both target configs, the scaffolds, both co
 `apj_nb`/`uor_nb` alascan summaries and plots. The ~6 GB of trajectories under `*/output/` is
 gitignored and regenerable.
 
-Still uncommitted and worth a decision: `prep/`, `scripts/`, `flexddg/cldn6_9v32fab/`, and several
-loose PDB/CIF files at the repo root (`apj_complex.pdb` and `uor_complex.pdb` are now tracked, but
-`cldn6_9v32fab_complex.pdb`, `cldn6_9v32fab_relaxed_complex.pdb`, the Coot `Rosetta_9_real_trunc_*`
-model and `d006_lmpnn_fkd2_run7_af3 (1).cif` are not). `prep/` matters most: the two prep notes it
-holds are what the flexddg README points at for input provenance.
+All of that is now committed (2026-10-29): `prep/`, `scripts/`, `flexddg/cldn6_9v32fab/`, the chimera
+and relaxed-chimera PDBs, and the raw Coot `Rosetta_9_real_trunc_*` and `d006_lmpnn_fkd2_*.cif`
+models, which `prep/nanobody_gpcr_prep.md` and `scripts/prep_structures.py` reference as the input
+provenance for `uor_complex.pdb` and `apj_complex.pdb`. The 17 MB of relax decoys under
+`flexddg/cldn6_9v32fab/relax/decoys/` stays gitignored and is regenerable from `relax.sbatch`.
+
+**Nothing has been pushed.** The remote is the durable copy and `$SCRATCH` purges at 90 days, so
+`git push` is the next housekeeping step.
 
 `motif_scaffold/` checked 2026-10-29: the 512 rows of `scores_prod.csv` correspond 1:1 to 512 PDBs in
 `motif_scaffold/runs_prod/` (plus 1024 trajectory frames under `runs_prod/traj/`), so that scored set
