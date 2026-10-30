@@ -291,7 +291,7 @@ score in REU with no reference-state correction, so it is only ever a relative r
 
 `scripts/interface.py` implements this: it builds the complex, then scores with
 `pack_separated="true" pack_input="true"` so every design gets the same sidechain repack. That is
-enough to put apj into sensible territory -- the 51 representatives run **-25.2 to positive**, with
+enough to put apj into sensible territory -- the 52 representatives run **-25.2 to positive**, with
 `short__amide__DPRO-GLY` best at -25.2 REU over 1429 A^2 of buried surface. It is a **sidechain**
 repack only; backbone clash from the superposition is not relieved, which is intended, since
 `validate` has already rejected anything closer than 2.2 A. Cost is ~3.6 s/structure, so the 51
