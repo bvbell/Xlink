@@ -1,0 +1,13 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) devel   2) math
+=== uor long__ssapp__DCYD-DCYD__c00 arm=asis (relax=0) on sh04-01n17.int 18:40:28 ===
+  exit 0 ; score:
+SCORE: total_score complex_normalized           dG_cross dG_cross/dSASAx100 dG_separated dG_separated/dSASAx100 dSASA_hphobic dSASA_int dSASA_polar         ddg delta_unsatHbonds dslf_fa13    fa_atr   
+SCORE:    2648.892              5.532            328.255             19.254      401.131                 23.528      1086.957  1704.883     617.926     852.511            20.000     1.225 -1856.256   
+=== uor long__ssapp__DCYD-DCYD__c00 arm=relax (relax=1) on sh04-01n17.int 18:40:40 ===
+  exit 0 ; score:
+SCORE: total_score VirtualRootMover_root complex_normalized           dG_cross dG_cross/dSASAx100 dG_separated dG_separated/dSASAx100 dSASA_hphobic dSASA_int dSASA_polar         ddg delta_unsatHbonds 
+SCORE:    -685.027               303.000             -2.268              0.000              0.000      -29.929                 -1.600      1099.088  1870.084     770.996     -29.192            16.000 
+=== done Thu Oct 29 18:42:28 PDT 2026 ===

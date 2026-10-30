@@ -483,6 +483,22 @@ possu tree is still the place to *read* source, offline docs and integration tes
   above is the candidate explanation for the ~330 REU the designs sit *below* that floor. A better
   input model fixes the floor; job 50216944 tests whether a restrained relax fixes the rest. See
   "Interface score" above.
+- **The RNG seed is the variant's position in the task file, so resubmitting can silently rerun the
+  identical trajectory.** `slurm.run_task` computes `seed = first + i + 1` from the variant's offset
+  in the whole task file and `runner.command` passes `-constant_seed -jran $((1000 + seed))`, which
+  makes Rosetta fully deterministic. The intent (in the code comment) is that each variant keeps a
+  distinct stream however the file is chunked; the side effect is that **the same variant at the same
+  position in a later submission draws the same seed and reproduces its output bit-for-bit**.
+
+  This bit once, on 2026-10-29: the uOR retry and the uOR `rm_lower` rerun had task files sharing
+  their first eight entries, so those eight variants came out 50/50 byte-identical and looked like a
+  failed rerun. They were not -- distinct inodes, genuinely recomputed, identical because the seed and
+  the sampling were both unchanged. apj escaped only because its retry file omitted one variant and
+  shifted all the rest. Useful accident: those eight are the project's one *paired* pre/post
+  comparison, and they show the terminus fix changed nothing about the sampling.
+
+  If you want a controlled comparison, pin the seed deliberately; if you want an independent sample,
+  change the ordering. Do not assume a resubmission gives you either.
 - Hotspot coverage is only 60-78% of the alanine-scan signal for these motifs; the rest sits in CDR1
   and CDR2 (APJ loses R27 + Y33 = 5.6 REU, uOR loses E54 + L32 = 3.0 REU) and no CDR3-only macrocycle
   can recover it. See `../flexddg/README.md`.

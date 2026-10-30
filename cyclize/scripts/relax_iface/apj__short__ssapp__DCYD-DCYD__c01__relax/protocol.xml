@@ -1,0 +1,35 @@
+<ROSETTASCRIPTS>
+  <SCOREFXNS>
+    <ScoreFunction name="sfxn" weights="ref2015"/>
+    <ScoreFunction name="sfxn_cst" weights="ref2015">
+      <Reweight scoretype="coordinate_constraint" weight="1.0"/>
+    </ScoreFunction>
+  </SCOREFXNS>
+  <RESIDUE_SELECTORS><Chain name="pep" chains="P"/></RESIDUE_SELECTORS>
+  <MOVERS>
+
+    <VirtualRoot name="vroot" removable="true"/>
+    <AddConstraints name="addcst">
+      <CoordinateConstraintGenerator name="coordgen" sd="0.5" ca_only="true"/>
+    </AddConstraints>
+    <FastRelax name="relax" scorefxn="sfxn_cst" repeats="1"/>
+    <RemoveConstraints name="rmcst" constraint_generators="coordgen"/>
+    <InterfaceAnalyzerMover name="ia" scorefxn="sfxn" interface="P_B"
+                            pack_separated="true" pack_input="true"
+                            packstat="false" interface_sc="true"
+                            scorefile_reporting_prefix="if"/>
+  </MOVERS>
+  <FILTERS>
+    <Ddg name="ddg" scorefxn="sfxn" jump="1" repeats="1" repack="1" confidence="0"/>
+  </FILTERS>
+  <PROTOCOLS>
+
+    <Add mover="vroot"/>
+    <Add mover="addcst"/>
+    <Add mover="relax"/>
+    <Add mover="rmcst"/>
+    <Add mover="ia"/>
+    <Add filter="ddg"/>
+  </PROTOCOLS>
+  <OUTPUT scorefxn="sfxn"/>
+</ROSETTASCRIPTS>

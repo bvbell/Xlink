@@ -1,0 +1,13 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) devel   2) math
+=== apj short__amide__DPRO-GLY__c00 arm=asis (relax=0) on sh02-10n48.int 18:40:29 ===
+  exit 0 ; score:
+SCORE: total_score complex_normalized           dG_cross dG_cross/dSASAx100 dG_separated dG_separated/dSASAx100 dSASA_hphobic dSASA_int dSASA_polar         ddg delta_unsatHbonds dslf_fa13    fa_atr   
+SCORE:    3236.509              8.528            -26.185             -1.832      -20.706                 -1.449      1071.713  1429.150     357.436     -14.601            21.000     7.393 -2125.530   
+=== apj short__amide__DPRO-GLY__c00 arm=relax (relax=1) on sh02-10n48.int 18:40:48 ===
+  exit 0 ; score:
+SCORE: total_score VirtualRootMover_root complex_normalized           dG_cross dG_cross/dSASAx100 dG_separated dG_separated/dSASAx100 dSASA_hphobic dSASA_int dSASA_polar         ddg delta_unsatHbonds 
+SCORE:    -843.530               362.000             -2.337              0.000              0.000      -37.395                 -2.210      1138.401  1692.289     553.888     -39.035            15.000 
+=== done Thu Oct 29 18:42:55 PDT 2026 ===
