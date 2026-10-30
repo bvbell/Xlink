@@ -39,8 +39,69 @@ record how each input structure was built and what is wrong with it. Read those 
   `L_S99`, `L_Y100` and `L_F102` out of the 5 A interface and adds the chimera-only `L_Q27 L_S28
   L_L29 L_L30 L_N37`. For the matched comparison against the CLDN18.2 run, filter at analysis time
   rather than restricting the scan.
+
+  **The scan finished 2026-10-30** (array 50209855, 595 trajectories; analysis 50209859). It is a
+  much weaker interface than CLDN18.2's: **one hotspot above 1 REU** (`L_Y38A`, 2.94 REU GAM), 5.3
+  REU over all 17 positions against 9.7 over CLDN18.2's 16. On the 12 shared positions CLDN6 sums
+  3.9 against 7.4, and the loss is specific -- `H_N103A` 1.62 -> 0.31, `L_K36A` 1.30 -> 0.00,
+  `H_W100A` 1.06 -> -0.10, while `L_Y38A` alone *gains* (1.90 -> 2.94). The five chimera-only
+  contacts recover only ~1.4 REU between them.
+
+  That is a partial answer to the open question above, in the direction of "real": the chimera does
+  not merely clash, it loses four of CLDN18.2's five hotspots while keeping one. Full numbers and
+  the matched table are in `../STATUS.md`.
+
+  **The mechanism, worked out 2026-10-30.** This is a clean same-antibody comparison: the Fab
+  coordinates are *identical* between the two complexes (1588 H + 1661 L atoms; the relax moved the
+  Fab only 0.32 A CA RMSD), so every ddG difference is attributable to the antigen.
+
+  **The 9V32 epitope is the least conserved part of the protein.** Structurally aligning the two
+  antigens (nearest-CA, 2.5 A) gives 34% identity globally but **1 of 9 aligned epitope residues
+  conserved -- 11%**. The lone survivor is V54 -> V55. Four further CLDN18.2 epitope residues (V40,
+  T41, A42, S57) have no partner within 2.5 A at all: the backbone itself diverges there.
+
+  Every lost hotspot maps onto a specific substitution, and each loses its partner twice over -- by
+  chemistry *and* by distance:
+
+  | Fab position | ddG 18.2 -> 6   | partner in CLDN18.2      | in CLDN6     | min distance      |
+  | ------------ | --------------- | ------------------------ | ------------ | ----------------- |
+  | `L_K36`      | 1.30 -> **0.00**  | E62, NZ-OE1 salt bridge  | E -> **Q**63 | 3.70 -> **7.41 A** |
+  | `H_N103`     | 1.62 -> **0.31**  | E56, N-OE1 H-bond        | E -> **Q**57 | 3.45 -> **6.44 A** |
+  | `H_W100`     | 1.06 -> **-0.10** | F60, aromatic/backbone   | F -> **Q**61 | 4.12 -> **6.22 A** |
+  | `L_Y100`     | 1.51 -> *dropped* | S57, V40, A42, T41       | unalignable  | --                |
+
+  Three acidic/aromatic -> glutamine swaps (E56Q, F60Q, E62Q) wipe out three of CLDN18.2's five
+  hotspots, and the partners do not merely change identity -- they recede to 6-7 A, well past
+  contact. `L_Y38` survives and *gains* (1.90 -> 2.94) because it picks up four contacts in CLDN6
+  against two in CLDN18.2.
+
+  **The dead heavy chain is an artifact of the construction, not a finding.** Contacts under 4.5 A
+  go heavy 58 -> 48 but light **72 -> 172**: the chimera levers the heavy chain off the antigen while
+  jamming the light chain into it. The light chain's new contacts buy almost nothing (`L_L29` 0.86,
+  `L_Q27` 0.57, `L_S28` 0.04, `L_L30` -0.06, `L_N37` 0.01) -- nonspecific packing, not recognition.
+  This resolves the question flagged above; no further check of heavy-chain placement is needed.
+
+  **Interpretive limit, which bounds everything in this subsection.** The chimera holds the Fab in
+  its CLDN18.2 pose, so the scan measures what 9V32 would get *if it approached CLDN6 exactly as it
+  approaches CLDN18.2*. A real CLDN6 complex would re-dock. This is therefore strong evidence for
+  **why** the Fab is CLDN18.2-specific, and a sound lower bound on cross-reactivity, but it is **not
+  a prediction of a CLDN6 binding mode** and the 5.3 REU total must not be read as "CLDN6 affinity".
 - **`uor_nb/`** is a Coot-built model of a nanobody on the human mu-opioid receptor (OPRM1 68-353; chain B
-  numbering is OPRM1 minus 65). Clean input: no gaps, breaks, altlocs or missing atoms.
+  numbering is OPRM1 minus 65). No gaps, breaks, altlocs or missing atoms.
+
+  > **This scan's results are not currently trustworthy (found 2026-10-30).** Nanobody residues
+  > **102-107 are D-amino acids** in `../uor_complex.pdb` -- six consecutive residues at the CDR3
+  > tip, verified by the improper dihedral N-CA-C-CB (-50 to -92 deg against +57.6 +- 1.3 for the
+  > rest of the chain; 0 inverted in the receptor, in the apj nanobody, and in experimental 9v32).
+  > Bond lengths are normal, so it is a mirror-imaged backbone, almost certainly a local Coot
+  > artifact -- the source filename contains "flip" twice and the prep report checked occupancies,
+  > altlocs, missing atoms and bond lengths but never chirality.
+  >
+  > **Y102 is one of the six.** Since this scan is what identified the uOR hotspots and those
+  > hotspots are what selected the cyclize motif, the ddG values here were measured on D residues
+  > scored against L Ramachandran and rotamer terms. **Re-run this scan on the relaxed model**
+  > (`../uor_complex_relaxed.pdb`, see `../STATUS.md` "The 2026-10-30 rebuild") before relying on any uOR hotspot, and treat the "8 hotspots > 1 REU, 13.6 REU total"
+  > line in `../STATUS.md` as provisional. See `../cyclize/README.md`, "Actual root cause".
 - **`apj_nb/`** is an AlphaFold3 model of the d006 nanobody on APJ. Chain B is the PDB **5VBL** construct,
   so it carries that construct's five mutations (V117A, T177N, **W261K** at the W6.48 toggle switch,
   C325L, C326M) and has *C. pasteurianum* rubredoxin replacing ICL3 at chain-B residues 213-266. The
@@ -90,8 +151,8 @@ Optional sections and their defaults (see `flexddg/config.py`; unknown keys are 
 - `analysis`: bootstrap 1000, seed 0, hotspot 1.0 kcal/mol, min_nstruct (default: nstruct)
 - `rosetta_module`: "biology rosetta/3.14"
 
-Chain breaks are reported in `chain_breaks.txt` but kept as Rosetta reads them (bonded neighbors). Both
-current targets have gaps far from the interface and were run that way.
+Chain breaks are reported in `chain_breaks.txt` but kept as Rosetta reads them (bonded neighbors). The
+two nanobody-GPCR targets have gaps far from the interface and were run that way.
 
 ## Layout
 
@@ -100,7 +161,7 @@ current targets have gaps far from the interface and were run that way.
   tutorial's files, unchanged.
 - `tests/test_flexddg.py`: `python3 tests/test_flexddg.py` (~1.5 min). Golden files in `tests/golden/`
   pin the original TROP2 setup and summary and the inputs of the first CLDN run.
-- `pipeline/`: the previous scripts, still read by array job 49679178 (CLDN). Delete once it has finished.
+- `pipeline/`: the previous scripts. Array job 49679178 (CLDN), the last reader, completed long ago, so this directory can now be deleted.
 - `trop2_9pi9/old_scripts/`: the original one-off TROP2 scripts. TROP2's original outputs keep their names
   (`fab_complete-*.csv`, `fab_alascan_summary.csv`, `plots/fab_alascan_*`); `alascan_summary.csv` etc. are
   the same numbers regenerated by this package.

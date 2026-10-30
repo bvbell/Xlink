@@ -36,9 +36,19 @@ cyclize/*/tasks/
 # run data above. The CSV manifests beside them ARE tracked -- they are the distilled result and the
 # only part worth reading without Rosetta.
 cyclize/*/representatives/*.pdb
+# inspection set: regenerable by scripts/inspect_set.py. manifest.csv and README.md ARE tracked.
+cyclize/inspect/*/*/*.pdb
+cyclize/inspect/reference/
 cyclize/*/interface/complexes/
 cyclize/*/rescore/*.silent
 cyclize/*/rescore/*.reb
 
 # Pre-bugfix disulfide runs, kept to measure what the rm_lower phantom did to geometry
 cyclize/*/output_prebug/
+
+# Rebuild run artifacts (2026-10-30): regenerable by the sbatch scripts beside them.
+cyclize/logs/
+cyclize/scripts/relax_inputs/
+cyclize/scripts/relax_uor_test/
+cyclize/scripts/geom_test/
+cyclize/scripts/relax_iface/

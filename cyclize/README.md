@@ -155,8 +155,9 @@ Measured during development on apj/long; these are the non-obvious results worth
   simple_cycpep_predict's terminal_disulfide setup (the S-S torsion, both side chains CA-CB-SG, and
   what backbone each terminal Cys has), which takes it to 8/8.
 - **Sampling saturates long before nstruct 50, so pass counts badly overstate how many designs there
-  are.** Clustering the passing structures on N/CA/C RMSD (`scripts/degeneracy.py`) gave **112
-  distinct conformations at 1.0 A** -- apj 51, uOR 61. The variants with the best pass rates are the
+  are.** Clustering the passing structures on N/CA/C RMSD (`scripts/degeneracy.py`) gave **120
+  distinct conformations at 1.0 A** -- apj 52, uOR 68. (The earlier 112 / 51 / 61 were measured on
+  the pre-rerun set of 1200; see ../STATUS.md.) The variants with the best pass rates are the
   most collapsed, not the most productive: apj `short__amide__DALA-GLY` and `DPRO-PRO` are 50/50 and
   still a single cluster at **0.25 A**. Pooling across turn seeds is worse -- apj's 402 short
   structures from nine seed/route combinations are **5** backbones, uOR's 122 medium are **2**. The
@@ -239,7 +240,7 @@ this term at all.
 
 All of the above is implemented. It splits the structures by route, runs each group under the right
 protocol, hands the pose on as a binary silent, and sums the breakdown's pair rows over the variant's
-`rosetta_loop` from `input.json`. Output is `<target>/rescore/rescore.csv`; the 112 representatives
+`rosetta_loop` from `input.json`. Output is `<target>/rescore/rescore.csv`; the representatives
 score in about 25 s per target.
 
 Two details in the arithmetic worth knowing before trusting a column:
@@ -297,10 +298,18 @@ repack only; backbone clash from the superposition is not relieved, which is int
 `validate` has already rejected anything closer than 2.2 A. Cost is ~3.6 s/structure, so the 51
 representatives take about three minutes.
 
+> **That "which is intended" was wrong, and it is the bug this whole section failed to catch**
+> (established 2026-10-30, job 50216944). `validate`'s 2.2 A filter is measured on the **motif**, not
+> on every transplanted sidechain, so it lets through complexes with sub-1.0 A interchain pairs
+> elsewhere -- and a sidechain repack cannot escape them. Adding a CA-restrained relax before scoring
+> moves uOR from +367/+913 to -14/-33 and apj by a further 15-25 REU. **Every number in this section
+> and in the committed `interface.csv` files is an as-is number and is therefore suspect.** See
+> "Resolved 2026-10-30" below before using any of them.
+
 **uOR interface numbers are not usable.** Its 68 representatives come out at **+370 to +413 REU**
 against apj's -25. In the *input pose* this is not a single bad contact: measured in the current
 `uor_complex.pdb`, Y102:CD1 to K238:CD is **3.39 A**, an ordinary van der Waals contact, and the
-whole chain A/B interface has **nothing under 2.0 A**, closest approach 2.27 A. So the 1.09 A figure
+whole chain A/B interface has **nothing under 2.0 A**, closest approach 2.27 A. So the 1.08 A figure
 under Known caveats is not a property of the input being used.
 
 **But it is a property of the built complexes** (measured 2026-10-29). The transplant puts it back:
@@ -323,6 +332,11 @@ nanobody CDR3 in its actual position, a real binder -- through the identical pro
 | apj short / medium / long  | -5.7 / -12.9 / -19.1 | -4.8 / -15.5 / -13.3 | ~-240 |
 | uOR short / medium / long  | **+34.4 / +41.7 / +45.2** | +97.3 / +91.6 / +93.8 | **+180 to +209** |
 
+> *Superseded 2026-10-30 — kept for the reasoning trail. The control below was an as-is
+> measurement dominated by the transplant clash, and the `rama_prepro` evidence behind it is the
+> D-vs-L table mismatch. Do not quote the +34 to +45 floor. See "Resolved 2026-10-30" and "Actual
+> root cause" below.*
+
 **The native uOR complex scores as a non-binder.** apj's natives sit at -5.7 to -19.1 REU with a
 total score near -240; uOR's are positive on every measure. That is a global property of the
 Coot-built model, not a single repairable contact, and it sets a floor under every uOR number: no
@@ -335,19 +349,275 @@ and the designs average 1.19 A, which is exactly the kind of gap `fa_rep` turns 
 If so, the uOR problem is **two** problems -- a strained model setting the floor, and a transplant
 artifact adding the rest -- and only the first needs a new input structure.
 
-`scripts/relax_interface.sbatch` (job 50216944) tests the second half: 6 uOR and 3 apj complexes
-scored as-is and after a CA-restrained FastRelax through the identical protocol, results in
-`scripts/relax_iface/`. The as-is arm is validated -- it reproduces `long__amide__DPRO-GLY__c00` at
-`dG_separated` 367.635, matching the committed CSV exactly. Caveat on reading it: adding relax means
-the arms are no longer prepared identically, so relaxed numbers compare only among themselves.
+### Resolved 2026-10-30: the clash half was right, the floor half was not
+
+`scripts/relax_interface.sbatch` (job 50216944) scored 6 uOR and 3 apj complexes as-is and after a
+CA-restrained FastRelax (sd 0.5 A) through the identical protocol; results in `scripts/relax_iface/`,
+logs `logs/relax_iface_50216944_*.out`. The as-is arm is validated -- it reproduces
+`long__amide__DPRO-GLY__c00` at `dG_separated` 367.635, matching the committed CSV exactly.
+
+The relax clears the clash on every uOR structure and takes the score negative with it:
+
+| structure                     | as-is `dG_separated` | relaxed | closest approach |
+| ----------------------------- | -------------------- | ------- | ---------------- |
+| uor `long__amide__GLY-GLY`    | +369.2 | **-33.0** | 0.77 -> 2.88 A |
+| uor `long__ssapp__DCYD-DCYD`  | +401.1 | **-29.9** | 1.45 -> 2.85 A |
+| uor `medium__amide__ASN-GLY`  | +526.0 | **-31.2** | 1.14 -> 2.45 A |
+| uor `long__amide__ASN-GLY`    | +367.3 | **-24.1** | 1.29 -> 2.73 A |
+| uor `short__ssmut__CYS-CYS`   | +913.0 | **-20.8** | 1.09 -> 2.64 A |
+| uor `long__amide__DPRO-GLY`   | +367.6 | **-14.2** | 1.15 -> 2.76 A |
+| apj `short__ssapp__DCYD-DCYD` | -19.4  | -44.5     | 2.49 -> 2.52 A |
+| apj `short__amide__DPRO-GLY`  | -20.7  | -37.4     | 2.44 -> 2.57 A |
+| apj `short__ssapp__CYD-CYD`   | -22.4  | -36.8     | 2.36 -> 2.51 A |
+
+So the ~400 REU was **this protocol's refusal to relieve backbone**, not the input model: one
+sidechain overlap no rotamer can escape dominated the entire number. The prediction two paragraphs
+up -- "sidechain overlaps that a *restrained* relax may be able to clear" -- held exactly.
+
+Three things bound that conclusion:
+
+- **The relax arm is not a neutral control.** apj improves 15-25 REU too, so relaxed and as-is
+  numbers are not comparable and the whole set must be rescored before anything is ranked. The
+  relaxed ordering already differs from the as-is one: `short__ssapp__DCYD-DCYD` (-44.5) overtakes
+  `short__amide__DPRO-GLY` (-37.4).
+- **The relief comes from moving the design, and motif fidelity was not re-measured.** The receptor
+  barely moves (CA RMSD 0.13-0.17 A) but the peptide does: 0.43-0.72 A on uOR, up to **1.26 A (max
+  2.88 A)** on apj `short__amide__DPRO-GLY`. Against original motif RMSDs of 0.09-0.65 A that is a
+  shift comparable to the whole motif-fidelity budget. **Post-relax motif RMSD against the parent
+  nanobody is the missing measurement**; until it exists, a relaxed pose scoring -33 cannot be
+  claimed to still present the pharmacophore it was built for. If it turns out large, the protocol
+  needs motif-atom restraints rather than CA-only.
+- `dG_cross` reads 0.000 in every relax arm (the `VirtualRoot` changes the fold tree). Use
+  `dG_separated` and `ddg`, which are consistent across both arms.
+
+**This also undercuts the native-pair floor in the table above.** Relaxed uOR designs (-14 to -33)
+score *better* than the +34 to +45 that control reported -- so the control, also run as-is, was
+itself measuring clash rather than strain. A residual uOR-vs-apj gap of roughly 10-25 REU survives
+under relax and is plausibly the real model-strain penalty, but **the floor is now unquantified**
+and has to be re-measured under the relax protocol before +34 / +41 / +45 is quoted again. The
+~~independent strain evidence is untouched: uOR `rama_prepro` still runs 33-37 against apj's
+10-14.~~ **Superseded 2026-10-30:** that gap is D residues scored against L Ramachandran tables,
+not strain — a CA-restrained relax of chain A takes `rama_prepro` from 31.96 to 9.50.
 
 Caveat on the native control itself: it is a real per-scaffold measurement but **no committed script
 reproduces it**, so it cannot currently be re-run after an input change. Rebuilding it as a
-`--native` flag on `interface.py` is the obvious fix and would make the control usable as intended.
+`--native` flag on `interface.py` is the obvious fix and would make the control usable as intended --
+now doubly needed, since the control has to be redone under relax regardless.
 
-So: **apj interface numbers are usable, uOR's are not.** Run this control after any change to an
-input complex -- it costs seconds and it is the only thing that distinguishes a bad design from a bad
-receptor.
+### The uOR clash is a chirality error in the input model (2026-10-30)
+
+> **Correction.** This section first diagnosed the clash as a sidechain *rotamer* problem in the
+> designs and recommended fixing the repack. **That was wrong.** The measurements below are correct
+> and still worth reading, but the cause is one level deeper and is given under "Actual root cause":
+> **residues 102-107 of the uOR nanobody are D-amino acids.** Do not act on the fix order that
+> follows the table without reading to the end of this section.
+
+Comparing the transplanted motif Tyr against native Y102 in `../uor_complex.pdb`:
+
+| complex                       | Tyr->K238 | backbone vs native Y102 | **sidechain vs native** |
+| ----------------------------- | --------- | ----------------------- | ----------------------- |
+| `long__amide__ASN-GLY__c00`   | 1.69 A    | 0.37 A                  | **2.59 A** (max 3.25)   |
+| `long__amide__DALA-GLY__c00`  | 1.26 A    | 0.15 A                  | **2.93 A** (max 3.64)   |
+| `long__amide__DALA-GLY__c01`  | 1.33 A    | 0.50 A                  | **3.93 A** (max 5.01)   |
+| `long__amide__DPRO-GLY__c00`  | 1.48 A    | 0.22 A                  | **2.83 A** (max 3.49)   |
+
+Native contact is **CD1**-CD at 3.39 A; every design contacts through **CE2**. The backbone lands
+within 0.15-0.50 A of native -- the CA superposition is working exactly as intended -- while the ring
+has rotated into a different chi. The clash originates in the design's own rotamer.
+
+**Root cause: the designs are built and relaxed as peptide-only poses with the receptor absent**
+(see this script's own docstring, "chain B is never in the pose"). The motif sidechains therefore
+optimise against solvent in a free macrocycle, settle into rotamers that are perfectly reasonable for
+an isolated peptide, and only then does the receptor get pasted in around them. The transplant does
+not so much *create* the clash as **reveal that the motif sidechains were never optimised in the
+presence of the thing they are meant to bind.**
+
+Two details in `cyclize/validate.py` let this through unnoticed:
+
+- `superimpose_on_motif` fits on **CA only** (`atom='CA'`, `validate.py:39`). For a transplant whose
+  entire purpose is reproducing specific sidechain contacts, nothing constrains the sidechains.
+- `min_receptor_distance` is called with `skip_nums={motif residues}` (`validate.py:96`), so the
+  2.2 A clash filter is measured **only on residues the design added**. The skip is deliberate and
+  its stated rationale is sound -- without it, native contacts like Y102 get flagged as clashes and
+  all 50 structures fail. But the rationale assumes the motif keeps its native sidechain geometry,
+  which is precisely what breaks here. **A motif Tyr at 1.08 A is invisible to validation by
+  construction**, which is why 68 of 68 passed.
+
+So the fix order is cheapest-first, and a restrained relax is *not* the first thing to try:
+
+1. **Check why `pack_input=true` is not already fixing a Tyr chi flip.** The emitted XML uses the
+   default rotamer library -- no `-ex1 -ex2`, no TaskOperations. A repack able to reach the native
+   rotamer should resolve most of this for free, with no relax and no peptide movement. Test on one
+   structure; if extra rotamers fix it, this is a packer-resolution bug and everything downstream
+   gets simpler.
+2. **If that is not enough, restrain motif *sidechain* atoms to native during the relax**, not just
+   CA. That is the targeted version of 50216944 and it addresses that job's open caveat directly:
+   it relieves the clash without letting the peptide walk off the pharmacophore.
+3. **For a real ddG, score the native peptide through the identical pipeline and report
+   design - native.** `dG_separated` is explicitly not a ddG. A native reference is what cancels the
+   uOR model's intrinsic strain and makes its numbers comparable to apj -- worth considerably more
+   than any change to the alignment target, and it is the `--native` flag already on the backlog.
+
+Items 1-2 patch this at **scoring** time, which is the right place to start because it is cheap and
+changes nothing upstream. The **durable** fix is further back: relax the final designs with the
+receptor present, so the motif sidechains are optimised against the surface they have to bind rather
+than against solvent. That is a change to the build, not to `interface.py`, and it should wait until
+item 1 has established how much of the problem is merely packer resolution.
+
+### Actual root cause: uOR residues 102-107 are D-amino acids
+
+**The fix order above does not apply to uOR.** No packer setting and no relax can fix this, because
+the coordinates being matched are mirror-imaged. Verified 2026-10-30 by the improper dihedral
+N-CA-C-CB, whose sign is the backbone's chirality:
+
+```
+uor_complex.pdb chain A        other chains (controls)
+  100 VAL  +57.7                uOR receptor chain B   0 / 277 inverted
+  101 SER  +58.1                apj nanobody chain A   0 / 107 inverted
+  102 TYR  -50.3  <-- D         9v32 Fab H / L / A     0 / 545 inverted
+  103 ASN  -53.5  <-- D
+  104 PHE  -53.7  <-- D        L-residues in this chain: +57.6 +- 1.3 deg
+  105 PHE  -64.2  <-- D        (sign convention fixed against experimental
+  106 PHE  -91.7  <-- D         9v32, where every residue is L by definition)
+  107 ARG  -53.7  <-- D
+  108 SER  +57.8
+```
+
+Six consecutive residues, **exactly the CDR3 tip, exactly the transplanted motif**, with a sharp
+boundary at 101/102 and 107/108. Bond lengths through the region are normal (N-CA 1.48-1.51, CA-C
+1.49-1.55, CA-CB 1.52-1.53 A), so this is not broken connectivity -- it is a mirror-imaged backbone,
+almost certainly a local Coot refit artifact. The source filename contains "flip" twice:
+`../Rosetta_9_real_trunc_model_1_flip_fit_J126map-coot-0_flip.pdb`. `../prep/nanobody_gpcr_prep.md`
+checked occupancies, altlocs, missing atoms and bond lengths, but never chirality.
+
+**It propagated into every uOR scaffold**: `../uOR_scaffolds/{short,medium,long}.pdb` each carry all
+six (short is 8 residues of which **6 are D**). apj scaffolds: 0.
+
+**How that produces the clash.** Rosetta builds the designs correctly as **L** -- in
+`uor/interface/complexes/long__amide__ASN-GLY__c00.pdb`, 14 of 15 residues are +57. The design is
+then CA-superimposed onto D target coordinates. Backbone matches; CB lands on the opposite side:
+
+| native | dCA | dCB | |
+| ------ | --- | --- | --- |
+| 100, 101 | 0.52, 0.49 | 0.88, 0.46 | L in native -- normal |
+| 102 TYR | 0.42 | **2.02** | D in native, rebuilt L |
+| 103 ASN | 0.25 | **2.33** | D in native, rebuilt L |
+| 104 PHE | 0.28 | **2.22** | D in native, rebuilt L |
+| 105 PHE | 0.34 | **2.59** | D in native, rebuilt L |
+| 106 PHE | 0.14 | **0.24** | **D in native, and the design kept it D (-91.6 vs -91.7)** |
+| 107 ARG | 0.28 | **2.68** | D in native, rebuilt L |
+| 108-111 | 0.18-0.57 | 0.07-0.61 | L in native -- normal |
+
+**Residue 106 is the control that settles it.** It is the one motif residue the build left as D, and
+it is the one motif residue whose CB does *not* move -- 0.24 A against 2.0-2.7 A for the five that
+were rebuilt as L. Nothing but a chirality mismatch produces that pattern. The consequence at the
+interface: the design's Tyr reaches 1.01 A of LYS238:NZ, where native Y102's closest receptor
+contact is an ordinary 2.48 A.
+
+The per-atom gradient on `long__amide__DALA-GLY__c00` vs native Y102 makes the same point in one
+line, and rules out the rotamer explanation outright:
+
+```
+N 0.23   CA 0.17   C 0.09   O 0.09   |   CB 2.21   CG 2.56   CZ 3.26   OH 3.64
+```
+
+**CB is not a rotamer degree of freedom** -- its position is fixed by the backbone. A 2.21 A CB
+displacement sitting behind a 0.17 A CA is the signature of inverted chirality and of nothing else;
+no chi angle can move CB at all. The growing displacement out along the sidechain (2.21 -> 3.64) is
+just that error being levered outward.
+
+**So every uOR anomaly recorded in these docs has one cause.** The `rama_prepro` of 33-37 against
+apj's 10-14 is D residues scored against L Ramachandran tables, not "global strain". The native-pair
+control at +34 to +45 "scoring as a non-binder" is the same six residues, not a bad receptor. The
+68-of-68 clash is structurally unavoidable rather than a packing failure. And the earlier reading on
+this page -- that the designs' sidechains were simply never optimised against the receptor -- is
+**wrong**: the designs are right, the target is wrong.
+
+**What this means for the work.** uOR designs cannot be rescored into validity; they were pinned to
+mirror-imaged targets and need rebuilding. The repair is cheaper than the "replace the uOR input
+model" item it supersedes -- it is a six-residue local geometry fix, not a new structure -- but it
+sits upstream of everything: repair the model, re-run the `../flexddg/uor_nb/` alanine scan (the
+hotspots that **selected this motif** were measured on D residues, so Y102's hotspot status is not
+yet trustworthy), re-excise the scaffolds from the repaired pose, then rebuild. **apj is untouched
+by all of this** and the scoring fixes above still apply to it.
+
+One caution on the repair itself: reflecting CB across the N-CA-C plane is the minimal correction,
+but the sidechains then need rebuilding and the loop needs refinement against the original J126
+density, which is what the hand should ultimately be decided by. Treat "idealize and refit" as the
+shape of the fix, not as a one-command operation.
+
+#### Rosetta has been silently re-imposing L geometry all along (tested 2026-10-30)
+
+A CA-restrained `FastRelax` (3 repeats, sd 0.5 A) on chain A alone, scored before and after
+(`scripts/relax_uor_test/`):
+
+| | `total_score` | `rama_prepro` | `omega` | D-residues |
+| --- | --- | --- | --- | --- |
+| input | +45.3 | **31.96** | 3.01 | **6** |
+| relaxed | -339.1 | **9.50** | 9.29 | **1** |
+
+At face value that looks like a repair -- `rama_prepro` falls by 22 REU and five of the six D
+residues read out as L afterwards. **It is not a repair, and minimization did not do it.** Energy
+minimization cannot invert a stereocentre; that needs bonds broken and reformed. What actually
+happens is that the PDB labels these residues with standard L three-letter codes (`TYR`, `ASN`,
+`PHE`, `ARG`), so **Rosetta assigns L residue types on read and rebuilds CB and the sidechain from
+ideal L internal coordinates**, silently discarding the input's hand.
+
+The cost shows in what moved -- backbone stays put, sidechains swing:
+
+| res | N | CA | C | CB | sidechain tip |
+| --- | --- | --- | --- | --- | --- |
+| 102 TYR | 0.36 | 0.28 | 0.69 | **1.94** | 2.14 |
+| 103 ASN | 0.49 | 0.45 | 0.42 | **1.24** | 3.20 |
+| 104 PHE | 0.42 | 0.38 | 0.33 | **2.39** | **6.65** |
+| 105 PHE | 0.72 | 0.68 | 0.68 | **2.42** | 5.43 |
+| 106 PHE | 0.65 | 0.67 | 0.72 | 0.59 | 2.61 |
+| 107 ARG | 0.42 | 0.42 | 0.45 | **2.44** | **6.70** |
+
+**This is the mechanism behind every uOR anomaly, now observed directly and in isolation.** Rosetta
+L-ifies the motif on read; the designs are therefore built L; they are then CA-superimposed back
+onto the original **D** coordinates; CB lands 2.0-2.7 A away and the sidechain points into the
+receptor. That is the 68-of-68 clash.
+
+Residue **106 PHE resisted** -- improper unchanged at -88.3, CB moving only 0.59 A, with no missing
+atoms to explain it. -88.3 is neither clean L nor clean D, so it is distorted in some further way
+the rebuild did not resolve. It is also the one motif residue whose CB does not move in the built
+designs (0.24 A), which is the control described above.
+
+**Practical consequences.**
+
+1. **A relax cannot decide the hand, and will always silently choose L** because of the residue
+   naming. Do not use it as the repair, and do not read the `rama_prepro` drop as evidence of one.
+2. **The hand must be settled against the original J126 density.** The two cases need different
+   fixes: if the Coot backbone is mis-built and the protein is really L, Rosetta's L-ification
+   points the right way, but the sidechain positions it invents are packer guesses sitting 2-7 A
+   from the deposited ones and must be re-refined against density rather than accepted. If the
+   density instead supports the deposited sidechains, the rebuild is wrong and the backbone has to
+   be rebuilt to match.
+3. **If a D residue is ever intended, it must carry a D residue type** (`DTY`, `DPH`, `DAR`, ...).
+   Under standard L names Rosetta converts it without warning -- which is exactly how this survived
+   an alanine scan and two full design sweeps unnoticed.
+
+**Not a fix: re-aligning the designs onto a relaxed input pose** -- *as scoped here, meaning
+relaxing the receptor while keeping the ORIGINAL scaffolds.* The 2026-10-30 rebuild does something
+different and is not contradicted by this paragraph: it re-excises the motif **from the relaxed
+pose itself**, so the scaffold and the alignment target are the same object and the D-vs-L
+mismatch disappears by construction. The point below stands only against the narrow version.
+The clash is on the design side;
+relaxing the input moves K238 and native Y102 by a few tenths of an A, which cannot absorb a 2.6-3.9 A
+sidechain displacement, and there is nothing in the input to repair anyway -- it is clean at 2.27 A.
+
+**But one consistency requirement does follow.** The alignment target and the receptor must come from
+the same pose. They currently do: `../uOR_scaffolds/{short,medium,long}.pdb` are excised verbatim
+from `../uor_complex.pdb` chain A -- 8/8, 10/10 and 14/14 CAs at **0.000 A** deviation. If the uOR
+receptor is ever replaced, **the scaffolds must be regenerated from that same replacement pose** or
+every design inherits a systematic offset.
+
+So: **every committed `interface.csv` number is an as-is number and therefore suspect**, uOR's
+catastrophically and apj's by 15-25 REU. The fix is to port this sbatch's protocol into
+`interface.py` (keeping the route-aware `PeptideCyclizeMover` guard) and rescore all four targets.
+Run the native control after any change to an input complex -- it costs seconds and it is the only
+thing that distinguishes a bad design from a bad receptor.
 
 ## Use
 
@@ -423,7 +693,19 @@ Optional sections and their defaults (see `cyclize/config.py`; unknown keys are 
 - `redesign_i1`: false. True sweeps every legal identity at i+1 instead of using `TURN_SEEDS`.
 - `protocol`: nstruct 50, closure_attempts 2000, min_solutions 1, scorefxn ref2015, relax_rounds 1,
   rama_cutoff null, seed_rama_cutoff null, coord_dev 0.5, design_i2 false, target_loop 5,
-  extra_flags []
+  **omega_trans true**, omega_weight null, extra_flags []
+  - **`omega_trans`** (added 2026-10-30, default **on**) emits a GenKIC `set_dihedral` perturber
+    fixing every sampled peptide bond to omega 180. This is the fix for the defect that
+    invalidated the first design set: with CA pivots the closure solves phi/psi at the pivots and
+    leaves **omega free** (see the note above `variants.TARGET_LOOP`), and `PeptideCyclizeMover`
+    constrains only the closure bond -- so 47% of the bonds flanking the closure came out >30 deg
+    from planar and 50% came out non-proline cis. Because omega is not a solved DOF, setting it
+    holds through the closure solve. The disulfide bond is skipped; only peptide bonds are pinned.
+    Turn it off only to reproduce the old behaviour.
+  - **`target_loop`** raises the number of GenKIC loop residues by releasing additional **cold**
+    terminal motif residues (`pick_release` never releases a hotspot). Released residues keep
+    their identity -- only their backbone is sampled, nothing is designed -- and the motif still
+    gains only the 2 residues the route adds. Raise it only if `omega_trans` alone cannot close.
 - `validate`: clash 2.2 A, motif_rmsd 1.0 A
 - `slurm`: partition normal,possu, time 02:00:00, mem 2G, max_concurrent 100, per_task 20, analysis_*
 - `rosetta_module`: `"biology rosetta/3.14"`
@@ -446,6 +728,146 @@ possu tree is still the place to *read* source, offline docs and integration tes
 
 ## Known caveats
 
+- **The closure carbonyl oxygen is misplaced in 57% of amide designs, and no metric can see it.**
+  At the ring-closure bond of `apj medium__amide__DPRO-GLY__c00`, `O...N` is **0.38 A** against an
+  ideal **2.25 A**, with `O=C-N` at **16.3 deg** against 123 -- the oxygen sits on top of the next
+  residue's nitrogen. (That structure is the geometry-ranked inspection set's top pick, *not* the
+  dG-best `short__amide__DPRO-GLY` named earlier on this page, whose closure is a correct 2.23 A
+  and which fails on flanking omega instead.) It is purely a closure defect -- all **2627** internal
+  peptide bonds measure 2.23-2.29 A -- and it affects **136 / 239** amide complexes (median
+  1.85 A, min 0.14 A), in the raw build output as well as the scored complexes.
+
+  **The closure is paid for by distorting its neighbours.** By ring-distance from the closure
+  bond: distance 0 is pristine (0% non-planar, 0% cis), distance 1 is **47% non-planar and 50%
+  non-proline cis**, distance 2 is 24% / 43%, and by distance 3 it is clean again.
+  `PeptideCyclizeMover` constrains the closure `C-N` and nothing else, so GenKIC buys the ring by
+  flipping the flanking bonds cis and twisting them out of plane.
+
+  **Why nothing caught it:** `O` and `N` are a **1-3 pair through `C`**, which `fa_rep` excludes --
+  so a 0.14 A overlap costs nothing in score (`corr(closure O...N, total_score) = +0.10`). The
+  intra-peptide clash scan skips the closure pair by construction. `validate.py` tests motif RMSD,
+  seed phi and receptor distance, none of which involve the oxygen. It was found by eye.
+
+  **Combined with the omega and self-intersection criteria, 0 of 311 scored complexes are clean**
+  -- 75 of 239 amides have a correct closure oxygen, 1 of those also avoids non-proline cis next
+  to the closure, and none of those has planar flanking bonds. See `../STATUS.md` "Recommendations":
+  filtering cannot fix this and the closure protocol needs replacing.
+
+- **The cyclisation bond is never declared in the output PDBs, so every design *looks* open.**
+  Rosetta writes no `LINK` or `CONECT` record for the ring closure, and viewers only auto-bond
+  sequentially numbered residues -- so the last-residue `C` to residue-1 `N` bond is not drawn and
+  the macrocycle renders as a linear peptide whose ends happen to sit 1.33 A apart. **This is a
+  display artifact and is the first thing to rule out when a design looks broken on inspection.**
+  The underlying geometry is textbook in every amide design checked: closure `C-N` **1.33 A**,
+  `CA-C-N` **116.2 deg**, `C-N-CA` **121.7 deg**. `scripts/inspect_set.py` now appends `CONECT`
+  records and emits an `inspect/view.pml` that issues explicit PyMOL `bond` commands, since PyMOL
+  ignores `CONECT` for `ATOM` records under its default `connect_mode`. Disulfide (`ssapp`,
+  `ssmut`) routes close through S-S and are drawn correctly without help.
+
+- **Omega is not planar: the amide bonds are broken, and that is why the rings self-intersect**
+  (found 2026-10-30; the most serious problem on this page, and it affects **both** GPCR targets).
+
+  Bond *lengths* are correct -- every peptide bond in `apj short__amide__DPRO-GLY` measures
+  1.31-1.34 A, and all bond *angles* are ideal (N-CA-C 108-114, CA-C-N 115-119, C-N-CA 119-126).
+  What is wrong is the dihedral. Measuring omega (CA-C-N-CA; validated against experimental 9v32,
+  which reads +175 to +179 throughout):
+
+  ```
+   1 VAL ->  2 LEU   -75.0   <-- NON-PLANAR
+   2 LEU ->  3 GLY  -178.4   trans
+   ...
+   8 GLU ->  9 DPR    -0.1   cis (before D-Pro -- legitimate)
+   9 DPR -> 10 GLY   +45.2   <-- NON-PLANAR
+  10 GLY ->  1 VAL  +178.3   trans
+  ```
+
+  (One correction in the designs' favour: the companion "self-intersection" claim below used an
+  `intra_min >= 3.4 A` cutoff that ignored atom type, and a 2.8-3.0 A N...O contact is a hydrogen
+  bond rather than a clash. Of 143 apj structures, **80 genuinely clash** below 2.5 A, 56 are
+  polar contacts at 2.5-3.0 A, and 10 are nonpolar at 2.5-3.0 A -- so ~56% self-intersect, not
+  100%. The closure findings are unaffected and remain 0 of 311.)
+
+  Across all **314** built complexes in all four targets (314 PDBs on disk; **311** carry a
+  scored `interface.csv` row, which is the denominator for the validity counts below):
+
+  | measure | value |
+  | ------- | ----- |
+  | complexes with >= 1 bond > 30 deg from planar | **281 / 314 (89%)** |
+  | bonds non-planar (> 30 deg off) | 476 / 3716 (**13%**) |
+  | worst deviation per complex | median 65 deg, **max 90 deg** |
+  | cis bonds **not** before proline | **618** (vs 25 legitimate cis-Pro) |
+
+  A 90-degree omega has no partial double-bond character -- it is not a peptide bond. And
+  non-proline cis runs ~0.03% in real proteins against **17%** here.
+
+  **With omega free, the chain can fold back in ways a real peptide cannot.** That is what produces
+  the self-intersection: `CA8-CA10` **1.87 A**, `CA7-CA10` 2.40 A, `7:C - 10:N` **0.64 A**. GenKIC
+  found a valid *closure* that is not a valid *structure* -- and it did so by breaking the amide.
+
+  **Why nothing caught it.** Three independent gaps:
+  1. GenKIC runs `loop_bump_check` and `rama_prepro_check` (`build.py:247` and `:252`) but
+     **no omega filter** -- omega is not among the quantities it tests.
+  2. `FastRelax` cannot repair it: the MoveMap sets `bb="0"` globally and enables `bb="1"` only on
+     loop spans, so **motif-residue omega is frozen** at whatever the closure produced, and the
+     motif is additionally pinned by CA coordinate constraints.
+  3. The scorefunction *did* flag it -- build-time `score.sc` reads `omega` **34.7** and
+     `rama_prepro` **40.9** -- but `fa_rep` **3278.8** swamps them in `total_score`, and nothing
+     downstream filtered on any of these.
+
+  The cheap diagnostic fix is to enable omega minimization on motif residues (`bb="1"` plus the
+  existing CA constraints, rather than freezing the backbone) and add a post-GenKIC omega filter.
+  Whether that leaves any surviving closures is the open question in `../STATUS.md` under
+  "Recommendations" -- if a 2-residue turn cannot close with planar amides, this is a dead end
+  rather than a bug, and the `i + j = 209` register is what has to give.
+
+  Across all 143 scored apj structures the worst non-adjacent intra-peptide contact has median
+  **2.43 A**, p25 **1.39 A**, minimum **0.38 A**, and the largest is **2.99 A**. Per the
+  correction above, count genuine self-intersection as the **80 of 143** below 2.5 A; the 56
+  structures whose closest contact is a 2.5-3.0 A N...O pair are making hydrogen bonds.
+
+  It is in the builds, not the scoring: `apj/output/short__amide__DPRO-GLY/short_0001.pdb` has the
+  identical geometry and its build-time `score.sc` reads `total_score` 3358.7 with **`fa_rep`
+  3278.8**. `FastRelax` cannot relieve it because the motif is pinned and the ring cannot open.
+  This is the origin of the multi-thousand-REU `total_score` values seen throughout the interface
+  tables above. Decomposed on one complex: receptor alone -270.5 (`fa_rep` 350.8), **peptide alone
+  +3415.8 (`fa_rep` +3337.1)**.
+
+  **The amide bond was the obvious suspect and it is innocent -- do not re-investigate it.** Scoring
+  the same complex three ways gives, to the decimal:
+
+  | treatment | total |
+  | --------- | ----- |
+  | raw read, no cyclization | 4009.6 |
+  | `PeptideCyclizeMover` only (what `interface.py` does) | **3236.5** |
+  | `ModifyVariantType` x2 + `PeptideCyclizeMover` | **3236.5** |
+
+  `PeptideCyclizeMover` strips the terminus variants itself, so the `ModifyVariantType` pair that
+  `build.py` emits (lines 181-183, guarded on `strip_termini`, with a comment saying it is
+  required) being **absent** from `interface.py`'s XML is harmless. Cyclization is working and is
+  worth 773 REU.
+
+  **`dG_separated` is structurally blind to it.** Intra-peptide energy appears in both the complex
+  and the separated-chains term and cancels exactly, so a self-intersecting peptide pays no dG
+  penalty while its collapsed mass buries extra surface and gains `fa_atr`. The ranking was
+  selecting *for* the defect -- `corr(intra, total_score) = -0.61`, and all seven top designs by dG
+  sit at 0.38-0.69 A. Never rank on `dG_separated` alone again.
+
+  The disulfides are less bad but not clean: `short__ssapp__DCYD-DCYD` runs 1.72-1.93 A. When
+  checking `ssapp` by hand, note the Cys pair is non-adjacent in sequence so the S-S bond can
+  masquerade as a clash -- it is not the problem here (SG-SG is a legitimate 2.37-2.52 A; the
+  offenders are backbone overlaps such as `2:O - 10:CB` at 1.93 A).
+
+  **Root cause in this package:** `validate.py` gates on motif RMSD, seed phi, and
+  design-versus-*receptor* distance via `min_receptor_distance`. **It never checks the design
+  against itself.** Combined with that function's motif-skipping (see the chirality section), there
+  are two independent blind spots in the same validator, and each one let a whole target's worth of
+  bad structures through. Add an intra-peptide clash gate before rebuilding anything.
+
+  Open design question this raises: a 2-residue turn may be too short to span the hairpin gap at
+  all, in which case the closures are geometrically infeasible rather than badly sampled -- which
+  would tie straight back to the `i + j = 209` register that forces even-length motifs and 0- or
+  2-residue closures. Settle that before spending compute on a rebuild.
+
 - **`ssapp` stripped a terminus it never bonds, costing a ~10 REU phantom on residue 1. FIXED
   2026-10-29.** `build.xml` emitted `rm_upper`/`rm_lower` unconditionally, so an `ssapp` protocol
   removed `LOWER_TERMINUS_VARIANT` from residue 1 and then closed the ring through S-S instead,
@@ -454,11 +876,14 @@ possu tree is still the place to *read* source, offline docs and integration tes
   `long__ssapp__CYD-CYD`). The movers are now emitted only when the ring closes through a peptide
   bond (`close['atom1'] != 'SG'`), and all 25 disulfide variants were rerun. Pre-fix structures are
   kept under `<target>/output_prebug/`; `scripts/compare_prebug.py` measures what actually changed.
-  Whether the artifact moved geometry or only the reported score is an **inference** until that
-  comparison runs: phi(1) is fixed garbage that minimisation cannot touch, but psi(1) is real, free,
-  and inside the relax MoveMap, so relax should have optimised it against a bogus phi -- and
-  residue 1 is the prepended Cys, whose backbone places SG. When rescoring, read
-  the PDB as-is. Fixing it means guarding those two movers on `route == 'amide'`.
+  **Settled 2026-10-29 (job 50173650): the artifact moved scores, not geometry** -- psi(1) shifted
+  by +3.18 deg on apj and -3.48 deg on uOR, against a within-variant spread of ~100 deg, and the
+  S-S distance by <=0.01 A. The reasoning that made it look like it might have moved geometry, kept
+  because it is the right thing to check next time: phi(1) is fixed garbage that minimisation
+  cannot touch, but psi(1) is real, free and inside the relax MoveMap, so relax *should* have
+  optimised it against a bogus phi -- and residue 1 is the prepended Cys, whose backbone places SG.
+  When rescoring, read the PDB as-is. **The fix landed the same day**: the two movers are guarded
+  on the closure chemistry in `build.py` (`strip_termini`).
 - **`ssmut` produces a strained disulfide** (measured 1.70 A S-S against an ideal 2.05) because the
   motif is pinned, so the bond cannot relax into place. Loosening `protocol.coord_dev` or allowing the
   two Cys backbones to move would fix it, at the cost of some motif rigidity.
@@ -466,8 +891,10 @@ possu tree is still the place to *read* source, offline docs and integration tes
   always taken from the seed pair rather than designed. Chirality is only load-bearing at i+1, so
   designing i+2 freely among L residues is the obvious next step -- and now that `redesign_i1` exists
   it should be built the same way, by enumeration through `sweep_seeds`, not by adding a packer.
-- **The uOR input model is globally strained, *and* the Y102-K238 clash is real -- in the built
-  complexes, not in the input.** The two were conflated twice, in both directions. Settled
+- **~~The uOR input model is globally strained~~, *and* the Y102-K238 clash is real -- in the
+  built complexes, not in the input.** *(The "globally strained" half is superseded: the strain
+  signal was D residues scored against L tables. The clash half stands and its mechanism is the
+  chirality mismatch -- see "Actual root cause" above.)* The two were conflated twice, in both directions. Settled
   2026-10-29:
   - In `../uor_complex.pdb` the closest Y102-K238 heavy-atom pair is **3.39 A** (CD1-CD) and the
     whole A/B interface has nothing under 2.0 A (closest 2.27 A). The input pose is clean.
@@ -477,12 +904,22 @@ possu tree is still the place to *read* source, offline docs and integration tes
     reintroduces it -- the 2.2 A clash filter is measured on the motif, not on every transplanted
     sidechain.
 
-  Separately and still true: the **native** uOR motif:receptor pair scores `dG_separated` +34 to +45
-  and `total_score` +180 to +209, where apj's natives score -6 to -19 and ~-240. The model scores as
-  a non-binder in its own native geometry, which puts a **floor** under every uOR number; the clash
-  above is the candidate explanation for the ~330 REU the designs sit *below* that floor. A better
-  input model fixes the floor; job 50216944 tests whether a restrained relax fixes the rest. See
-  "Interface score" above.
+  **Job 50216944 answered the rest on 2026-10-30: the clash is fully recoverable and the model is
+  not the main culprit.** A CA-restrained FastRelax clears all six uOR test structures (0.77-1.45 A
+  -> 2.45-2.88 A) and flips `dG_separated` from +367/+913 to **-14 to -33**, while the three apj
+  controls barely move on geometry. So the ~400 REU was `interface.py` never relieving backbone.
+  Two consequences: the relax arm is *not* neutral (apj improves 15-25 REU too, and its top two
+  reorder), and the relief is bought by moving the peptide up to 1.26 A CA RMSD, so **post-relax
+  motif RMSD is the missing measurement**.
+
+  The **native**-pair control -- uOR `dG_separated` +34 to +45 and `total_score` +180 to +209 against
+  apj's -6 to -19 and ~-240 -- was read as a **floor** under every uOR number. That reading did
+  **not** survive: the relaxed designs score below the supposed floor, so the control was itself an
+  as-is measurement dominated by clash. Its real size is unknown until it is re-run under relax. The
+  ~~model is still strained on independent evidence (`rama_prepro` 33-37 vs apj's 10-14)~~ --
+  **that reading did not survive either**: the 33-37 gap is the D residues being scored against L
+  Ramachandran tables, and a CA-restrained relax of chain A takes it to 9.50 with no refitting. Any
+  residual strain is worth perhaps 10-25 REU, not 400. See "Interface score" above.
 - **The RNG seed is the variant's position in the task file, so resubmitting can silently rerun the
   identical trajectory.** `slurm.run_task` computes `seed = first + i + 1` from the variant's offset
   in the whole task file and `runner.command` passes `-constant_seed -jran $((1000 + seed))`, which
