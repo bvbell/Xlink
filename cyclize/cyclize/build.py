@@ -220,6 +220,30 @@ def xml(variant, p, protocol):
                 out.append('        <AddAtoms res1="%d" atom1="%s" res2="%d" atom2="%s"/>'
                            % (r1, a1, r2, a2))
             out.append('      </AddPerturber>')
+        # Pin every sampled peptide bond to trans.
+        #
+        # This is the fix for the defect that invalidated the first design set (2026-10-30). With
+        # CA pivots the closure algorithm solves phi/psi at the pivots and leaves **omega free** --
+        # the note above TARGET_LOOP in variants.py says so explicitly -- and nothing downstream
+        # constrains it. The result: 47% of the bonds flanking the closure came out more than 30
+        # deg from planar and 50% came out non-proline cis, against ~0% more than three bonds away.
+        # PeptideCyclizeMover constrains the closure bond itself, which is why that one bond was
+        # always clean, but it does not touch the neighbours.
+        #
+        # Because omega is NOT a solved DOF, setting it here holds through the closure solve.
+        # Perturbers are emitted before the filters deliberately: GenKIC applies them in order.
+        if protocol.get('omega_trans'):
+            ss_pairs = {(min(a, b), max(a, b))
+                        for tors in p['ss_torsions'] for (a, _), (b, _) in tors}
+            loop = p['loop']
+            for i in range(len(loop) - 1):
+                r1, r2 = loop[i], loop[i + 1]
+                if (min(r1, r2), max(r1, r2)) in ss_pairs:
+                    continue          # disulfide, not a peptide bond
+                out += ['      <AddPerturber effect="set_dihedral">',
+                        '        <AddAtoms res1="%d" atom1="C" res2="%d" atom2="N"/>' % (r1, r2),
+                        '        <AddValue value="180"/>',
+                        '      </AddPerturber>']
         out.append('      <AddFilter type="loop_bump_check"/>')
         seed = seeded(variant, p['n'])
         for r in p['loop']:

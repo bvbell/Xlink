@@ -30,6 +30,7 @@ DEFAULTS = {
     'redesign_i1': False,
     'protocol': {'nstruct': 50, 'closure_attempts': 2000, 'min_solutions': 1,
                  'scorefxn': 'ref2015', 'relax_rounds': 1, 'design_i2': False, 'rama_cutoff': None, 'seed_rama_cutoff': None, 'coord_dev': 0.5,
+                 'omega_trans': True, 'omega_weight': None,
                  # target_loop was read by inputs.py but missing here, so _merge rejected any
                  # cyclize.json that set it -- the option was unreachable. See variants.TARGET_LOOP.
                  'target_loop': 5,

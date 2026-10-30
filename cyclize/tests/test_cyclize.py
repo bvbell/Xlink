@@ -131,15 +131,39 @@ def test_plan_indices():
     # Without these the sulfurs are never moved off the extended build geometry and ssapp closes 0/50.
     check('ssapp randomizes the S-S torsion',
           '<AddAtoms res1="14" atom1="SG" res2="1" atom2="SG"/>' in xs, True)
-    addatoms = [l for l in xs.splitlines() if '<AddAtoms' in l]
+    # Count only the randomize_dihedral atoms. set_dihedral perturbers (omega_trans) also emit
+    # <AddAtoms>, so an unscoped count conflates the two and moves whenever either changes.
+    def addatoms_of(xml, effect):
+        out, inside = [], False
+        for line in xml.splitlines():
+            if 'AddPerturber' in line:
+                inside = ('effect="%s"' % effect) in line
+            elif inside and '<AddAtoms' in line:
+                out.append(line)
+        return out
+    addatoms = addatoms_of(xs, 'randomize_dihedral')
     check('ssapp randomizes both Cys side chains',
           sum('atom1="CB"' in l and 'atom2="SG"' in l for l in addatoms), 2)
-    check('ssapp perturbs 7 torsions in total', len(addatoms), 7)
+    check('ssapp randomizes 7 torsions in total', len(addatoms), 7)
     check('ssapp randomizes the terminal Cys backbone',
           '<AddAtoms res1="14" atom1="N" res2="14" atom2="CA"/>' in xs, True)
     check('ssapp has 3 randomize_dihedral perturbers',
           xs.count('effect="randomize_dihedral"'), 3)
     check('amide has none', x.count('effect="randomize_dihedral"'), 0)
+
+    # omega_trans: every sampled peptide bond is pinned trans, because GenKIC leaves omega free
+    # (see variants.TARGET_LOOP) and that is what produced the cis / non-planar bonds flanking the
+    # closure in the first design set.
+    check('amide pins omega trans', x.count('effect="set_dihedral"'), len(amide['loop']) - 1)
+    check('amide omega value is 180', x.count('<AddValue value="180"/>'), len(amide['loop']) - 1)
+    ss_omega = addatoms_of(xs, 'set_dihedral')
+    check('ssapp skips the S-S bond when pinning omega',
+          any('atom1="SG"' in l for l in ss_omega), False)
+    check('ssapp pins omega on its peptide bonds only', len(ss_omega), len(ss['loop']) - 2)
+
+    off = dict(config.DEFAULTS['protocol'], omega_trans=False)
+    check('omega_trans is switchable off',
+          'set_dihedral' in build.xml(vs['long__amide__DPRO-GLY'], amide, off), False)
 
 
 def test_ssmut_needs_no_sampling():
