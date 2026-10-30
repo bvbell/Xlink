@@ -1,0 +1,16 @@
+<ROSETTASCRIPTS>
+  <SCOREFXNS><ScoreFunction name="sfxn" weights="ref2015"/></SCOREFXNS>
+  <RESIDUE_SELECTORS><Chain name="pep" chains="A"/></RESIDUE_SELECTORS>
+  <SIMPLE_METRICS>
+    <TotalEnergyMetric name="rpp_tot" scoretype="rama_prepro" scorefxn="sfxn"/>
+  </SIMPLE_METRICS>
+  <MOVERS>
+    <PeptideCyclizeMover name="cyc" residue_selector="pep"/>
+    <RunSimpleMetrics name="report" metrics="rpp_tot" prefix="rpp_"/>
+  </MOVERS>
+  <PROTOCOLS>
+    <Add mover="cyc"/>
+    <Add mover="report"/>
+  </PROTOCOLS>
+  <OUTPUT scorefxn="sfxn"/>
+</ROSETTASCRIPTS>

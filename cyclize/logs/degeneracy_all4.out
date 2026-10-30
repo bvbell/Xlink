@@ -1,0 +1,216 @@
+
+=== apj: 643 passing structures in 27 variants ===
+variant                           pass <0.25A  <0.50A  <1.00A
+long__amide__ASN-GLY                 4     3      1      1   top cluster 4/4
+long__amide__DALA-GLY               20    17      4      1   top cluster 20/20
+long__amide__DPRO-GLY               27    17      6      2   top cluster 24/27
+long__amide__DPRO-PRO               26    13      3      1   top cluster 26/26
+long__amide__GLY-GLY                12    12      8      2   top cluster 11/12
+long__ssapp__CYD-CYD                11     9      8      2   top cluster 10/11
+long__ssapp__CYD-DCYD                9     8      7      1   top cluster 9/9
+long__ssapp__DCYD-CYD               15    15      9      3   top cluster 13/15
+long__ssapp__DCYD-DCYD              13    11      8      2   top cluster 12/13
+medium__amide__ASN-GLY               2     2      2      1   top cluster 2/2
+medium__amide__DALA-GLY             20    15      6      1   top cluster 20/20
+medium__amide__DPRO-GLY             18    15     11      3   top cluster 15/18
+medium__amide__DPRO-PRO             17    16     11      3   top cluster 10/17
+medium__amide__GLY-GLY               9     9      9      2   top cluster 5/9
+medium__ssapp__CYD-CYD              10    10      9      3   top cluster 6/10
+medium__ssapp__CYD-DCYD              3     3      3      2   top cluster 2/3
+medium__ssapp__DCYD-CYD             12    12     11      5   top cluster 6/12
+medium__ssapp__DCYD-DCYD             6     6      6      3   top cluster 4/6
+short__amide__ASN-GLY               50     4      3      2   top cluster 48/50
+short__amide__DALA-GLY              50     1      1      1   top cluster 50/50
+short__amide__DPRO-GLY              50     2      1      1   top cluster 50/50
+short__amide__DPRO-PRO              50     1      1      1   top cluster 50/50
+short__amide__GLY-GLY               48     1      1      1   top cluster 48/48
+short__ssapp__CYD-CYD               43    13      5      1   top cluster 43/43
+short__ssapp__CYD-DCYD              36    11      6      3   top cluster 34/36
+short__ssapp__DCYD-CYD              39    18     10      2   top cluster 38/39
+short__ssapp__DCYD-DCYD             43    18      8      2   top cluster 41/43
+-- unique sequences: 27 across 27 variants
+-- within-variant clusters, summed: 0.25A=262  0.50A=158  1.00A=52
+-- cross-variant (same backbone length = same scaffold, different turn):
+    10 residues   9 variants   409 structures ->    6 clusters <1.0A (largest 196)
+    12 residues   9 variants    97 structures ->    9 clusters <1.0A (largest 50)
+    14 residues   9 variants   137 structures ->    5 clusters <1.0A (largest 85)
+
+=== uor: 562 passing structures in 28 variants ===
+variant                           pass <0.25A  <0.50A  <1.00A
+long__amide__ASN-GLY                 6     6      3      1   top cluster 6/6
+long__amide__DALA-GLY               15     9      3      2   top cluster 14/15
+long__amide__DPRO-GLY               14     8      2      1   top cluster 14/14
+long__amide__DPRO-PRO               21    10      3      1   top cluster 21/21
+long__amide__GLY-GLY                 2     2      2      1   top cluster 2/2
+long__ssapp__CYD-CYD                 7     7      5      1   top cluster 7/7
+long__ssapp__CYD-DCYD               12    12      7      1   top cluster 12/12
+long__ssapp__DCYD-CYD                2     2      2      2   top cluster 1/2
+long__ssapp__DCYD-DCYD               6     6      6      1   top cluster 6/6
+medium__amide__ASN-GLY              10    10      5      1   top cluster 10/10
+medium__amide__DALA-GLY             28     2      1      1   top cluster 28/28
+medium__amide__DPRO-GLY             14    10      3      1   top cluster 14/14
+medium__amide__DPRO-PRO             41    11      3      1   top cluster 41/41
+medium__amide__GLY-GLY              16     5      2      1   top cluster 16/16
+medium__ssapp__CYD-CYD               5     4      3      1   top cluster 5/5
+medium__ssapp__CYD-DCYD              4     3      2      1   top cluster 4/4
+medium__ssapp__DCYD-CYD              3     3      3      2   top cluster 2/3
+medium__ssapp__DCYD-DCYD             1     1      1      1   top cluster 1/1
+short__amide__ASN-GLY                8     7      6      2   top cluster 6/8
+short__amide__DALA-GLY              46    20      9      2   top cluster 35/46
+short__amide__DPRO-GLY              27    19     12      5   top cluster 20/27
+short__amide__DPRO-PRO              39    12      5      2   top cluster 38/39
+short__amide__GLY-GLY               31    20     12      3   top cluster 26/31
+short__ssapp__CYD-CYD               34    34     31     10   top cluster 14/34
+short__ssapp__CYD-DCYD              37    33     23      8   top cluster 18/37
+short__ssapp__DCYD-CYD              38    37     26      7   top cluster 21/38
+short__ssapp__DCYD-DCYD             45    38     23      7   top cluster 27/45
+short__ssmut__CYS-CYS               50     1      1      1   top cluster 50/50
+-- unique sequences: 28 across 28 variants
+-- within-variant clusters, summed: 0.25A=332  0.50A=204  1.00A=68
+-- cross-variant (same backbone length = same scaffold, different turn):
+     8 residues   1 variants    50 structures ->    1 clusters <1.0A (largest 50)
+    10 residues   9 variants   305 structures ->   17 clusters <1.0A (largest 122)
+    12 residues   9 variants   122 structures ->    2 clusters <1.0A (largest 109)
+    16 residues   9 variants    85 structures ->    4 clusters <1.0A (largest 57)
+
+=== apj_i1: 1403 passing structures in 60 variants ===
+variant                           pass <0.25A  <0.50A  <1.00A
+long__amide__ASN-GLY                 5     4      2      1   top cluster 5/5
+long__amide__ASP-GLY                 2     1      1      1   top cluster 2/2
+long__amide__DALA-GLY               11    11      7      2   top cluster 9/11
+long__amide__DARG-GLY               15    15      5      1   top cluster 15/15
+long__amide__DASN-GLY               20    19      9      2   top cluster 19/20
+long__amide__DASP-GLY               19    13      5      1   top cluster 19/19
+long__amide__DGLN-GLY               17    14      5      1   top cluster 17/17
+long__amide__DGLU-GLY               11    11      5      1   top cluster 11/11
+long__amide__DHIS-GLY               10     8      4      3   top cluster 8/10
+long__amide__DILE-GLY               21    15      7      1   top cluster 21/21
+long__amide__DLEU-GLY               19    15      6      1   top cluster 19/19
+long__amide__DLYS-GLY               13    11      5      3   top cluster 11/13
+long__amide__DMET-GLY               38    11      3      1   top cluster 38/38
+long__amide__DPHE-GLY               12     9      3      1   top cluster 12/12
+long__amide__DSER-GLY               21    17      6      2   top cluster 20/21
+long__amide__DTHR-GLY               42    17      5      1   top cluster 42/42
+long__amide__DTRP-GLY               18    13      5      2   top cluster 17/18
+long__amide__DTYR-GLY               15     8      2      1   top cluster 15/15
+long__amide__DVAL-GLY               23    17      5      1   top cluster 23/23
+long__amide__HIS-GLY                 6     3      2      1   top cluster 6/6
+long__amide__SER-GLY                 2     2      2      1   top cluster 2/2
+medium__amide__ASN-GLY               1     1      1      1   top cluster 1/1
+medium__amide__DALA-GLY             30    25     17      6   top cluster 25/30
+medium__amide__DARG-GLY              1     1      1      1   top cluster 1/1
+medium__amide__DASN-GLY              9     9      5      2   top cluster 8/9
+medium__amide__DASP-GLY             17    16     11      5   top cluster 13/17
+medium__amide__DGLN-GLY              4     4      4      1   top cluster 4/4
+medium__amide__DGLU-GLY              4     4      2      2   top cluster 3/4
+medium__amide__DHIS-GLY             14    13     10      2   top cluster 12/14
+medium__amide__DILE-GLY             13     9      6      2   top cluster 11/13
+medium__amide__DLEU-GLY             12    11     11      3   top cluster 10/12
+medium__amide__DLYS-GLY             15    13      6      2   top cluster 14/15
+medium__amide__DMET-GLY             12     9      4      1   top cluster 12/12
+medium__amide__DPHE-GLY             12    12      5      2   top cluster 11/12
+medium__amide__DSER-GLY             17    12      5      1   top cluster 17/17
+medium__amide__DTHR-GLY             19    11      6      1   top cluster 19/19
+medium__amide__DTRP-GLY              8     6      4      1   top cluster 8/8
+medium__amide__DTYR-GLY              9     9      7      2   top cluster 8/9
+medium__amide__DVAL-GLY             14     8      4      1   top cluster 14/14
+medium__amide__HIS-GLY               2     2      2      2   top cluster 1/2
+short__amide__ASN-GLY               50     2      1      1   top cluster 50/50
+short__amide__ASP-GLY               50     1      1      1   top cluster 50/50
+short__amide__DALA-GLY              50     1      1      1   top cluster 50/50
+short__amide__DARG-GLY              45     1      1      1   top cluster 45/45
+short__amide__DASN-GLY              50     3      2      2   top cluster 49/50
+short__amide__DASP-GLY              50     6      3      2   top cluster 44/50
+short__amide__DGLN-GLY              50     4      3      2   top cluster 46/50
+short__amide__DGLU-GLY              48     2      1      1   top cluster 48/48
+short__amide__DHIS-GLY               2     1      1      1   top cluster 2/2
+short__amide__DILE-GLY              49     2      1      1   top cluster 49/49
+short__amide__DLEU-GLY              48     4      1      1   top cluster 48/48
+short__amide__DLYS-GLY              44     2      1      1   top cluster 44/44
+short__amide__DMET-GLY              22     2      2      1   top cluster 22/22
+short__amide__DPHE-GLY              45     1      1      1   top cluster 45/45
+short__amide__DSER-GLY              50     1      1      1   top cluster 50/50
+short__amide__DTHR-GLY              50     1      1      1   top cluster 50/50
+short__amide__DTYR-GLY              35     2      1      1   top cluster 35/35
+short__amide__DVAL-GLY              50     1      1      1   top cluster 50/50
+short__amide__HIS-GLY               12     6      5      2   top cluster 9/12
+short__amide__SER-GLY               50     1      1      1   top cluster 50/50
+-- unique sequences: 60 across 60 variants
+-- within-variant clusters, summed: 0.25A=453  0.50A=235  1.00A=91
+-- cross-variant (same backbone length = same scaffold, different turn):
+    10 residues  20 variants   850 structures ->    2 clusters <1.0A (largest 656)
+    12 residues  19 variants   213 structures ->    8 clusters <1.0A (largest 190)
+    14 residues  21 variants   340 structures ->    3 clusters <1.0A (largest 330)
+
+=== uor_i1: 1080 passing structures in 62 variants ===
+variant                           pass <0.25A  <0.50A  <1.00A
+long__amide__ASN-GLY                 6     6      4      1   top cluster 6/6
+long__amide__ASP-GLY                 5     5      3      2   top cluster 4/5
+long__amide__DALA-GLY               12    10      5      2   top cluster 11/12
+long__amide__DARG-GLY                7     5      3      1   top cluster 7/7
+long__amide__DASN-GLY                8     4      2      1   top cluster 8/8
+long__amide__DASP-GLY               18     9      2      1   top cluster 18/18
+long__amide__DGLN-GLY               10     7      2      1   top cluster 10/10
+long__amide__DGLU-GLY                8     4      1      1   top cluster 8/8
+long__amide__DHIS-GLY               11     7      3      1   top cluster 11/11
+long__amide__DILE-GLY               20    15      5      1   top cluster 20/20
+long__amide__DLEU-GLY               10     5      3      1   top cluster 10/10
+long__amide__DLYS-GLY               21    11      3      1   top cluster 21/21
+long__amide__DMET-GLY               14     6      2      1   top cluster 14/14
+long__amide__DPHE-GLY                8     3      3      2   top cluster 7/8
+long__amide__DSER-GLY               12     6      2      1   top cluster 12/12
+long__amide__DTHR-GLY               21     9      1      1   top cluster 21/21
+long__amide__DTRP-GLY                8     8      1      1   top cluster 8/8
+long__amide__DTYR-GLY               10     3      1      1   top cluster 10/10
+long__amide__DVAL-GLY               10    10      2      2   top cluster 9/10
+long__amide__HIS-GLY                 4     2      1      1   top cluster 4/4
+long__amide__SER-GLY                 9     5      2      1   top cluster 9/9
+medium__amide__ASN-GLY               2     2      2      1   top cluster 2/2
+medium__amide__ASP-GLY              21    10      2      1   top cluster 21/21
+medium__amide__DALA-GLY             19     6      2      1   top cluster 19/19
+medium__amide__DARG-GLY              1     1      1      1   top cluster 1/1
+medium__amide__DASN-GLY             25    12      3      1   top cluster 25/25
+medium__amide__DASP-GLY             22     7      3      1   top cluster 22/22
+medium__amide__DGLN-GLY             29     3      1      1   top cluster 29/29
+medium__amide__DGLU-GLY             40     3      1      1   top cluster 40/40
+medium__amide__DHIS-GLY              5     3      2      1   top cluster 5/5
+medium__amide__DILE-GLY             33     7      1      1   top cluster 33/33
+medium__amide__DLEU-GLY             15    12      5      1   top cluster 15/15
+medium__amide__DLYS-GLY              3     1      1      1   top cluster 3/3
+medium__amide__DMET-GLY              6     2      1      1   top cluster 6/6
+medium__amide__DPHE-GLY              2     1      1      1   top cluster 2/2
+medium__amide__DSER-GLY             31     3      1      1   top cluster 31/31
+medium__amide__DTHR-GLY             10     4      2      1   top cluster 10/10
+medium__amide__DTRP-GLY              8     4      1      1   top cluster 8/8
+medium__amide__DVAL-GLY             13     3      1      1   top cluster 13/13
+medium__amide__HIS-GLY               3     3      3      1   top cluster 3/3
+medium__amide__SER-GLY              11     2      1      1   top cluster 11/11
+short__amide__ASN-GLY                9     6      3      1   top cluster 9/9
+short__amide__ASP-GLY                6     3      1      1   top cluster 6/6
+short__amide__DALA-GLY              47    14      6      3   top cluster 45/47
+short__amide__DARG-GLY              20    14      7      2   top cluster 13/20
+short__amide__DASN-GLY              29    24     13      4   top cluster 22/29
+short__amide__DASP-GLY              19    19     13      5   top cluster 15/19
+short__amide__DGLN-GLY              27    20     11      3   top cluster 21/27
+short__amide__DGLU-GLY              25    17      9      2   top cluster 24/25
+short__amide__DHIS-GLY              35    18      7      3   top cluster 23/35
+short__amide__DILE-GLY              32    22     12      3   top cluster 28/32
+short__amide__DLEU-GLY              24    16      9      3   top cluster 16/24
+short__amide__DLYS-GLY              20    12      6      2   top cluster 15/20
+short__amide__DMET-GLY              33    26     15      3   top cluster 28/33
+short__amide__DPHE-GLY              35    15      6      3   top cluster 21/35
+short__amide__DSER-GLY              46    20      9      2   top cluster 43/46
+short__amide__DTHR-GLY              39    25     10      2   top cluster 34/39
+short__amide__DTRP-GLY              31     8      4      2   top cluster 22/31
+short__amide__DTYR-GLY              24    16     10      3   top cluster 16/24
+short__amide__DVAL-GLY              37    23     12      4   top cluster 28/37
+short__amide__HIS-GLY                9     9      6      3   top cluster 5/9
+short__amide__SER-GLY                2     2      1      1   top cluster 2/2
+-- unique sequences: 62 across 62 variants
+-- within-variant clusters, summed: 0.25A=558  0.50A=256  1.00A=100
+-- cross-variant (same backbone length = same scaffold, different turn):
+    10 residues  21 variants   549 structures ->    8 clusters <1.0A (largest 416)
+    12 residues  20 variants   299 structures ->    1 clusters <1.0A (largest 299)
+    16 residues  21 variants   232 structures ->    2 clusters <1.0A (largest 229)
+wrote scripts/degeneracy_variants.csv
+wrote scripts/degeneracy_cross.csv

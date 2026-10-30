@@ -1,0 +1,6 @@
+{"title": "CLDN6 + 9v32 Fab (superposition chimera, relaxed)",
+ "pdb": "../../cldn6_9v32fab_relaxed_complex.pdb",
+ "groups": {"fab": ["H", "L"], "antigen": ["A"]},
+ "move": "antigen",
+ "chain_labels": {"H": "Heavy chain", "L": "Light chain", "A": "CLDN6"},
+ "scan": {"side": ["fab"]}}

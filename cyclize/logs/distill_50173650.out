@@ -1,0 +1,236 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) devel   2) math
+=== distill on sh02-02n20.int, Thu Oct 29 13:32:17 PDT 2026 ===
+
+### compare_prebug
+
+=== apj ===
+variant                         n_pre n_post  psi(1) pre          psi(1) post          S-S pre         S-S post       
+long__ssapp__CYD-CYD               50     50    51.48 +/- 84.10     70.91 +/- 85.61       2.30 +/- 0.25     2.35 +/- 0.26 
+long__ssapp__CYD-DCYD              50     50   -71.74 +/- 74.66    -57.40 +/- 75.88       2.30 +/- 0.23     2.33 +/- 0.25 
+long__ssapp__DCYD-CYD              50     50    65.57 +/- 73.05     56.41 +/- 91.76       2.13 +/- 0.12     2.16 +/- 0.18 
+long__ssapp__DCYD-DCYD             50     50   -48.96 +/- 80.09    -49.07 +/- 73.18       2.17 +/- 0.16     2.13 +/- 0.16 
+medium__ssapp__CYD-CYD             50     50    74.46 +/- 64.55     57.44 +/- 65.52       2.16 +/- 0.13     2.17 +/- 0.11 
+medium__ssapp__CYD-DCYD            50     50   -76.04 +/- 72.80    -57.74 +/- 78.18       2.14 +/- 0.11     2.20 +/- 0.38 
+medium__ssapp__DCYD-CYD            50     50    63.18 +/- 70.90     59.24 +/- 69.86       2.14 +/- 0.13     2.19 +/- 0.17 
+medium__ssapp__DCYD-DCYD           50     50   -67.51 +/- 71.45    -56.09 +/- 69.69       2.14 +/- 0.14     2.24 +/- 0.22 
+short__ssapp__CYD-CYD              50     50    42.67 +/- 90.23     37.19 +/- 92.99       3.70 +/- 0.86     3.34 +/- 0.85 
+short__ssapp__CYD-DCYD             50     50   -54.60 +/- 108.85   -71.64 +/- 106.03      3.64 +/- 1.52     3.67 +/- 1.46 
+short__ssapp__DCYD-CYD             50     50     0.06 +/- 93.10     16.53 +/- 95.10       2.94 +/- 1.03     3.07 +/- 1.17 
+short__ssapp__DCYD-DCYD            50     50   -82.30 +/- 96.16    -71.38 +/- 92.68       2.98 +/- 1.14     3.00 +/- 1.03 
+----------------------------------------------------------------------------------------------------------------------
+psi(residue 1)                 pre   -8.64 +/- 102.85   post   -5.47 +/- 101.35   shift +3.18
+S-S distance                   pre    2.56 +/- 0.89    post    2.57 +/- 0.86    shift +0.01
+
+=== uor ===
+variant                         n_pre n_post  psi(1) pre          psi(1) post          S-S pre         S-S post       
+long__ssapp__CYD-CYD               50     50    43.77 +/- 84.35     43.77 +/- 84.35       2.18 +/- 0.18     2.18 +/- 0.18 
+long__ssapp__CYD-DCYD              50     50   -57.00 +/- 68.14    -57.00 +/- 68.14       2.24 +/- 0.22     2.24 +/- 0.22 
+long__ssapp__DCYD-CYD              50     50    43.43 +/- 86.73     43.43 +/- 86.73       2.71 +/- 0.58     2.71 +/- 0.58 
+long__ssapp__DCYD-DCYD             50     50   -57.50 +/- 67.48    -57.50 +/- 67.48       2.53 +/- 0.56     2.53 +/- 0.56 
+medium__ssapp__CYD-CYD             50     50    48.32 +/- 82.72     48.32 +/- 82.72       2.18 +/- 0.17     2.18 +/- 0.17 
+medium__ssapp__CYD-DCYD            50     50   -52.32 +/- 74.90    -52.32 +/- 74.90       2.25 +/- 0.35     2.25 +/- 0.35 
+medium__ssapp__DCYD-CYD            50     50    57.20 +/- 82.55     57.20 +/- 82.55       2.52 +/- 0.37     2.52 +/- 0.37 
+medium__ssapp__DCYD-DCYD           50     50   -36.87 +/- 71.83    -36.87 +/- 71.83       2.56 +/- 0.43     2.56 +/- 0.43 
+short__ssapp__CYD-CYD              50     50    52.70 +/- 86.21     47.90 +/- 88.51       2.31 +/- 0.28     2.28 +/- 0.19 
+short__ssapp__CYD-DCYD             50     50   -73.06 +/- 66.46    -81.28 +/- 82.93       2.25 +/- 0.18     2.23 +/- 0.16 
+short__ssapp__DCYD-CYD             50     50    75.07 +/- 85.56     54.09 +/- 84.32       2.27 +/- 0.30     2.31 +/- 0.28 
+short__ssapp__DCYD-DCYD            50     50   -48.08 +/- 79.99    -59.25 +/- 88.58       2.31 +/- 0.24     2.26 +/- 0.23 
+short__ssmut__CYS-CYS              50     50   136.79 +/- 0.00     136.79 +/- 0.00        1.70 +/- 0.00     1.70 +/- 0.00 
+----------------------------------------------------------------------------------------------------------------------
+psi(residue 1)                 pre   10.19 +/- 98.96   post    6.71 +/- 100.56   shift -3.48
+S-S distance                   pre    2.31 +/- 0.41    post    2.31 +/- 0.41    shift -0.00
+
+### degeneracy (apj, uor only -- the committed plot covers the original grid)
+
+=== apj: 643 passing structures in 27 variants ===
+variant                           pass <0.25A  <0.50A  <1.00A
+long__amide__ASN-GLY                 4     3      1      1   top cluster 4/4
+long__amide__DALA-GLY               20    17      4      1   top cluster 20/20
+long__amide__DPRO-GLY               27    17      6      2   top cluster 24/27
+long__amide__DPRO-PRO               26    13      3      1   top cluster 26/26
+long__amide__GLY-GLY                12    12      8      2   top cluster 11/12
+long__ssapp__CYD-CYD                11     9      8      2   top cluster 10/11
+long__ssapp__CYD-DCYD                9     8      7      1   top cluster 9/9
+long__ssapp__DCYD-CYD               15    15      9      3   top cluster 13/15
+long__ssapp__DCYD-DCYD              13    11      8      2   top cluster 12/13
+medium__amide__ASN-GLY               2     2      2      1   top cluster 2/2
+medium__amide__DALA-GLY             20    15      6      1   top cluster 20/20
+medium__amide__DPRO-GLY             18    15     11      3   top cluster 15/18
+medium__amide__DPRO-PRO             17    16     11      3   top cluster 10/17
+medium__amide__GLY-GLY               9     9      9      2   top cluster 5/9
+medium__ssapp__CYD-CYD              10    10      9      3   top cluster 6/10
+medium__ssapp__CYD-DCYD              3     3      3      2   top cluster 2/3
+medium__ssapp__DCYD-CYD             12    12     11      5   top cluster 6/12
+medium__ssapp__DCYD-DCYD             6     6      6      3   top cluster 4/6
+short__amide__ASN-GLY               50     4      3      2   top cluster 48/50
+short__amide__DALA-GLY              50     1      1      1   top cluster 50/50
+short__amide__DPRO-GLY              50     2      1      1   top cluster 50/50
+short__amide__DPRO-PRO              50     1      1      1   top cluster 50/50
+short__amide__GLY-GLY               48     1      1      1   top cluster 48/48
+short__ssapp__CYD-CYD               43    13      5      1   top cluster 43/43
+short__ssapp__CYD-DCYD              36    11      6      3   top cluster 34/36
+short__ssapp__DCYD-CYD              39    18     10      2   top cluster 38/39
+short__ssapp__DCYD-DCYD             43    18      8      2   top cluster 41/43
+-- unique sequences: 27 across 27 variants
+-- within-variant clusters, summed: 0.25A=262  0.50A=158  1.00A=52
+-- cross-variant (same backbone length = same scaffold, different turn):
+    10 residues   9 variants   409 structures ->    6 clusters <1.0A (largest 196)
+    12 residues   9 variants    97 structures ->    9 clusters <1.0A (largest 50)
+    14 residues   9 variants   137 structures ->    5 clusters <1.0A (largest 85)
+
+=== uor: 562 passing structures in 28 variants ===
+variant                           pass <0.25A  <0.50A  <1.00A
+long__amide__ASN-GLY                 6     6      3      1   top cluster 6/6
+long__amide__DALA-GLY               15     9      3      2   top cluster 14/15
+long__amide__DPRO-GLY               14     8      2      1   top cluster 14/14
+long__amide__DPRO-PRO               21    10      3      1   top cluster 21/21
+long__amide__GLY-GLY                 2     2      2      1   top cluster 2/2
+long__ssapp__CYD-CYD                 7     7      5      1   top cluster 7/7
+long__ssapp__CYD-DCYD               12    12      7      1   top cluster 12/12
+long__ssapp__DCYD-CYD                2     2      2      2   top cluster 1/2
+long__ssapp__DCYD-DCYD               6     6      6      1   top cluster 6/6
+medium__amide__ASN-GLY              10    10      5      1   top cluster 10/10
+medium__amide__DALA-GLY             28     2      1      1   top cluster 28/28
+medium__amide__DPRO-GLY             14    10      3      1   top cluster 14/14
+medium__amide__DPRO-PRO             41    11      3      1   top cluster 41/41
+medium__amide__GLY-GLY              16     5      2      1   top cluster 16/16
+medium__ssapp__CYD-CYD               5     4      3      1   top cluster 5/5
+medium__ssapp__CYD-DCYD              4     3      2      1   top cluster 4/4
+medium__ssapp__DCYD-CYD              3     3      3      2   top cluster 2/3
+medium__ssapp__DCYD-DCYD             1     1      1      1   top cluster 1/1
+short__amide__ASN-GLY                8     7      6      2   top cluster 6/8
+short__amide__DALA-GLY              46    20      9      2   top cluster 35/46
+short__amide__DPRO-GLY              27    19     12      5   top cluster 20/27
+short__amide__DPRO-PRO              39    12      5      2   top cluster 38/39
+short__amide__GLY-GLY               31    20     12      3   top cluster 26/31
+short__ssapp__CYD-CYD               34    34     31     10   top cluster 14/34
+short__ssapp__CYD-DCYD              37    33     23      8   top cluster 18/37
+short__ssapp__DCYD-CYD              38    37     26      7   top cluster 21/38
+short__ssapp__DCYD-DCYD             45    38     23      7   top cluster 27/45
+short__ssmut__CYS-CYS               50     1      1      1   top cluster 50/50
+-- unique sequences: 28 across 28 variants
+-- within-variant clusters, summed: 0.25A=332  0.50A=204  1.00A=68
+-- cross-variant (same backbone length = same scaffold, different turn):
+     8 residues   1 variants    50 structures ->    1 clusters <1.0A (largest 50)
+    10 residues   9 variants   305 structures ->   17 clusters <1.0A (largest 122)
+    12 residues   9 variants   122 structures ->    2 clusters <1.0A (largest 109)
+    16 residues   9 variants    85 structures ->    4 clusters <1.0A (largest 57)
+wrote scripts/degeneracy_variants.csv
+wrote scripts/degeneracy_cross.csv
+
+### representatives apj
+apj    643 passing structures ->  52 distinct conformations at 1.00 A  (16 are singletons)  -> /scratch/users/bvbell/xlink/cyclize/apj/representatives
+      short__amide__DALA-GLY             c00   50/50  of passing  motif 0.09 A
+      short__amide__DPRO-GLY             c00   50/50  of passing  motif 0.65 A
+      short__amide__DPRO-PRO             c00   50/50  of passing  motif 0.23 A
+      short__amide__ASN-GLY              c00   48/50  of passing  motif 0.20 A
+      short__amide__GLY-GLY              c00   48/48  of passing  motif 0.10 A
+
+### representatives uor
+uor    562 passing structures ->  68 distinct conformations at 1.00 A  (23 are singletons)  -> /scratch/users/bvbell/xlink/cyclize/uor/representatives
+      short__ssmut__CYS-CYS              c00   50/50  of passing  motif 0.00 A
+      medium__amide__DPRO-PRO            c00   41/41  of passing  motif 0.38 A
+      short__amide__DPRO-PRO             c00   38/39  of passing  motif 0.00 A
+      short__amide__DALA-GLY             c00   35/46  of passing  motif 0.01 A
+      medium__amide__DALA-GLY            c00   28/28  of passing  motif 0.65 A
+
+### representatives apj_i1
+apj_i1 1403 passing structures ->  91 distinct conformations at 1.00 A  (28 are singletons)  -> /scratch/users/bvbell/xlink/cyclize/apj_i1/representatives
+      short__amide__ASN-GLY              c00   50/50  of passing  motif 0.13 A
+      short__amide__ASP-GLY              c00   50/50  of passing  motif 0.13 A
+      short__amide__DALA-GLY             c00   50/50  of passing  motif 0.10 A
+      short__amide__DSER-GLY             c00   50/50  of passing  motif 0.10 A
+      short__amide__DTHR-GLY             c00   50/50  of passing  motif 0.08 A
+
+### representatives uor_i1
+uor_i1 1080 passing structures -> 100 distinct conformations at 1.00 A  (22 are singletons)  -> /scratch/users/bvbell/xlink/cyclize/uor_i1/representatives
+      short__amide__DALA-GLY             c00   45/47  of passing  motif 0.00 A
+      short__amide__DSER-GLY             c00   43/46  of passing  motif 0.00 A
+      medium__amide__DGLU-GLY            c00   40/40  of passing  motif 0.67 A
+      short__amide__DTHR-GLY             c00   34/39  of passing  motif 0.00 A
+      medium__amide__DILE-GLY            c00   33/33  of passing  motif 0.43 A
+
+### rescore apj
+apj/cyclic: 23 structures (PeptideCyclizeMover)
+apj/linear: 29 structures (read as-is)
+  -> /scratch/users/bvbell/xlink/cyclize/apj/rescore/rescore.csv (52 rows)
+      long__ssapp__DCYD-CYD              loop   -0.12 over 5/5 res   total     3.79
+      short__ssapp__CYD-DCYD             loop   -0.02 over 3/3 res   total     3.99
+      short__ssapp__CYD-CYD              loop    0.17 over 3/3 res   total     4.16
+      medium__ssapp__CYD-CYD             loop    0.47 over 5/5 res   total     4.38
+      medium__ssapp__DCYD-CYD            loop    0.89 over 5/5 res   total     4.80
+
+### rescore uor
+uor/cyclic: 25 structures (PeptideCyclizeMover)
+uor/linear: 43 structures (read as-is)
+  -> /scratch/users/bvbell/xlink/cyclize/uor/rescore/rescore.csv (68 rows)
+      medium__ssapp__CYD-CYD             loop   -0.29 over 4/4 res   total    29.28
+      medium__ssapp__CYD-DCYD            loop   -0.03 over 4/4 res   total    29.54
+      long__ssapp__CYD-CYD               loop    0.00 over 5/5 res   total    29.55
+      short__ssapp__CYD-CYD              loop    0.07 over 4/4 res   total    29.60
+      long__ssapp__CYD-DCYD              loop    0.55 over 5/5 res   total    30.07
+
+### rescore apj_i1
+apj_i1/cyclic: 91 structures (PeptideCyclizeMover)
+  -> /scratch/users/bvbell/xlink/cyclize/apj_i1/rescore/rescore.csv (91 rows)
+      medium__amide__DTHR-GLY            loop    0.40 over 5/5 res   total     4.30
+      medium__amide__DILE-GLY            loop    1.25 over 5/5 res   total     5.15
+      medium__amide__DTYR-GLY            loop    1.33 over 5/5 res   total     5.25
+      medium__amide__DLYS-GLY            loop    3.09 over 5/5 res   total     7.00
+      medium__amide__DASN-GLY            loop    3.75 over 5/5 res   total     7.66
+
+### rescore uor_i1
+uor_i1/cyclic: 100 structures (PeptideCyclizeMover)
+  -> /scratch/users/bvbell/xlink/cyclize/uor_i1/rescore/rescore.csv (100 rows)
+      short__amide__DHIS-GLY             loop    0.58 over 4/4 res   total    30.04
+      short__amide__DILE-GLY             loop    0.94 over 4/4 res   total    30.41
+      short__amide__DARG-GLY             loop    1.00 over 4/4 res   total    30.47
+      short__amide__DASN-GLY             loop    1.18 over 4/4 res   total    30.67
+      short__amide__DLYS-GLY             loop    1.27 over 4/4 res   total    30.74
+
+### interface apj
+apj: built 52 complexes -> /scratch/users/bvbell/xlink/cyclize/apj/interface/complexes
+  cyclic: 23 structures (PeptideCyclizeMover)
+  linear: 29 structures (read as-is)
+  -> /scratch/users/bvbell/xlink/cyclize/apj/interface/interface.csv (52 rows)
+      short__amide__DPRO-GLY             dG_sep    -25.21  ddg    -14.90  dSASA  1429.2  motif 0.65
+      short__ssapp__DCYD-DCYD            dG_sep    -21.13  ddg    -10.37  dSASA  1494.5  motif 0.21
+      short__ssapp__CYD-CYD              dG_sep    -19.07  ddg     -5.22  dSASA  1493.3  motif 0.11
+      short__amide__ASN-GLY              dG_sep    -17.86  ddg    -15.28  dSASA  1437.3  motif 0.64
+      medium__amide__DALA-GLY            dG_sep    -17.69  ddg    -10.51  dSASA  1824.3  motif 0.08
+
+### interface uor
+uor: built 68 complexes -> /scratch/users/bvbell/xlink/cyclize/uor/interface/complexes
+  cyclic: 25 structures (PeptideCyclizeMover)
+  linear: 43 structures (read as-is)
+  -> /scratch/users/bvbell/xlink/cyclize/uor/interface/interface.csv (68 rows)
+      long__amide__DPRO-GLY              dG_sep    367.63  ddg    442.70  dSASA  1675.2  motif 0.54
+      long__amide__GLY-GLY               dG_sep    369.87  ddg    397.54  dSASA  1688.1  motif 0.98
+      long__amide__ASN-GLY               dG_sep    371.40  ddg    329.22  dSASA  1748.2  motif 0.54
+      long__ssapp__DCYD-DCYD             dG_sep    401.87  ddg    852.51  dSASA  1704.9  motif 0.59
+      medium__amide__ASN-GLY             dG_sep    413.06  ddg    330.59  dSASA  1649.2  motif 0.39
+
+### interface apj_i1
+apj_i1: built 91 complexes -> /scratch/users/bvbell/xlink/cyclize/apj_i1/interface/complexes
+  cyclic: 91 structures (PeptideCyclizeMover)
+  -> /scratch/users/bvbell/xlink/cyclize/apj_i1/interface/interface.csv (91 rows)
+      long__amide__DALA-GLY              dG_sep   -100.39  ddg     69.79  dSASA  1921.4  motif 0.50
+      short__amide__DGLU-GLY             dG_sep    -27.04  ddg    -16.80  dSASA  1479.5  motif 0.66
+      short__amide__DASN-GLY             dG_sep    -25.72  ddg    -15.11  dSASA  1464.2  motif 0.64
+      short__amide__DASP-GLY             dG_sep    -25.14  ddg    -14.79  dSASA  1446.4  motif 0.65
+      short__amide__DGLN-GLY             dG_sep    -24.30  ddg    -15.62  dSASA  1461.0  motif 0.64
+
+### interface uor_i1
+uor_i1: built 100 complexes -> /scratch/users/bvbell/xlink/cyclize/uor_i1/interface/complexes
+  cyclic: 100 structures (PeptideCyclizeMover)
+  -> /scratch/users/bvbell/xlink/cyclize/uor_i1/interface/interface.csv (100 rows)
+      long__amide__ASN-GLY               dG_sep    370.94  ddg    466.75  dSASA  1679.6  motif 0.51
+      long__amide__DILE-GLY              dG_sep    371.96  ddg    439.87  dSASA  1664.4  motif 0.49
+      long__amide__DPHE-GLY              dG_sep    400.64  ddg    708.87  dSASA  1645.2  motif 0.79
+      long__amide__DTRP-GLY              dG_sep    434.33  ddg    383.44  dSASA  1725.8  motif 0.56
+      long__amide__DTYR-GLY              dG_sep    446.05  ddg    407.46  dSASA  1733.9  motif 0.66
+
+=== done Thu Oct 29 14:05:22 PDT 2026 ===

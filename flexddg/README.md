@@ -8,7 +8,7 @@ which purges files not modified for 90 days: push this repo somewhere, and copy 
 | ----------------- | ------------------------------ | ----------------------------------- | -------- | -------- |
 | `trop2_9pi9/`     | `../9pi9_complex.pdb`          | fab (A heavy, B light), antigen (E) | antigen  | fab      |
 | `cldn18_9v32/`    | `../9v32_complex.pdb`          | fab (H heavy, L light), antigen (A) | antigen  | fab      |
-| `cldn6_9v32fab/`  | `../cldn6_9v32fab_complex.pdb` | fab (H heavy, L light), antigen (A) | antigen  | fab      |
+| `cldn6_9v32fab/`  | `../cldn6_9v32fab_relaxed_complex.pdb` | fab (H heavy, L light), antigen (A) | antigen  | fab      |
 | `uor_nb/`         | `../uor_complex.pdb`           | nanobody (A), receptor (B)          | receptor | nanobody |
 | `apj_nb/`         | `../apj_complex.pdb`           | nanobody (A), receptor (B)          | receptor | nanobody |
 
@@ -19,9 +19,26 @@ record how each input structure was built and what is wrong with it. Read those 
 
 - **`cldn6_9v32fab/`** is a chimera, not a measured complex: CLDN6 superimposed onto CLDN18.2 in 9v32
   (PyMOL `super`, 1.60 A over 763 atom pairs, 38% identity) with the Fab left where it was. The raw
-  superposition had 56 heavy-atom pairs under 2.0 A against the Fab, so it is relaxed first — see
-  `cldn6_9v32fab/relax/relax.sbatch`. Whether those clashes are a placement artifact or the actual
+  superposition had 56 heavy-atom pairs under 2.0 A against the Fab, so **the target reads the
+  relaxed model, not the raw chimera**. Whether those clashes are a placement artifact or the actual
   reason this Fab is CLDN18.2-specific is an open question the ddG numbers alone will not settle.
+
+  The relax is done (array 49878193, 2026-10-27, `cldn6_9v32fab/relax/relax.sbatch`): 20 constrained
+  FastRelax decoys at two coordinate-constraint strengths, `sd05` (0.5 A) and `sd10` (1.0 A).
+  `../scripts/05_pick_relaxed_chimera.py` picks among them — lowest `total_score` of the decoys with
+  zero sub-2.0 A pairs — and writes `../cldn6_9v32fab_relaxed_complex.pdb` with hydrogens stripped.
+  **All 20 cleared every sub-2.0 A pair** and both pre-existing chain-H gaps survived; the winner is
+  `decoys/sd10/15` at -766.5 REU, 0.31 A CA RMSD from the superposition (0.67 A over the interface).
+  Residual contacts are 0 / 1 / 6 at 2.0 / 2.5 / 3.0 A with the worst at 2.47 A (a Gln-Tyr hydrogen
+  bond), against 0 / 1 / 3 for the original 9v32. The `sd10` set beats `sd05` by ~135 REU even after
+  subtracting the `coordinate_constraint` term, so it is genuinely better relaxed rather than just
+  less restrained.
+
+  Setup on the relaxed model yields **17 Fab positions to scan** (33 interface residues, 4 skipped as
+  Ala/Gly), which is not the same 17 as the prep note's "shared with CLDN18.2" set: relaxation drops
+  `L_S99`, `L_Y100` and `L_F102` out of the 5 A interface and adds the chimera-only `L_Q27 L_S28
+  L_L29 L_L30 L_N37`. For the matched comparison against the CLDN18.2 run, filter at analysis time
+  rather than restricting the scan.
 - **`uor_nb/`** is a Coot-built model of a nanobody on the human mu-opioid receptor (OPRM1 68-353; chain B
   numbering is OPRM1 minus 65). Clean input: no gaps, breaks, altlocs or missing atoms.
 - **`apj_nb/`** is an AlphaFold3 model of the d006 nanobody on APJ. Chain B is the PDB **5VBL** construct,

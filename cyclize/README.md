@@ -100,6 +100,24 @@ is not an L_AA base type has no D form: **`DGLY` is invalid** (glycine is achira
 `DCYD` is invalid (`CYD` is a variant, not a base type -- use `DCYS:disulfide`). Resname validity is
 worth probing for anything new here; a bad one does not error, it silently closes 0/50.
 
+**Result (2026-10-29): i+1 identity does not change the backbone.** The sweep ran to completion --
+126 variants, 2483 passing structures -- and then clustered to almost nothing. On apj/short, 20 i+1
+identities and 850 passing structures give **2 backbones** at 1.0 A, 656 of them in a single cluster;
+apj/long gives 3 over 340 structures, uOR/medium gives **1** over 299, uOR/long gives 2 over 232.
+Only uOR/short keeps any spread (8 clusters over 549).
+
+So the sweep answered its question in the negative: i+1 is **conformationally inert**, and a pass
+count per identity carries no structural information. The earlier reading ("D-Ala is not special --
+six identities all close 50/50") is true but trivial, because those six are one backbone wearing six
+side chains. What this does buy is the thing the sweep was for: i+1 can now be chosen on chemistry
+and on interface score, with the confidence that doing so will not cost closure. Caveat: the sweep is
+amide-only, so some of the collapse against the 55-variant grid's 5-6 clusters per scaffold is route
+homogeneity -- `ssapp` supplied most of the grid's conformational diversity.
+
+Reproduce with `python3 scripts/degeneracy.py apj uor apj_i1 uor_i1 --csv-dir=scripts`; the
+cross-variant block at the end of each target is the relevant one, and the CSVs it writes now cover
+all four targets.
+
 ## What the sampling actually does, and what it cannot
 
 Measured during development on apj/long; these are the non-obvious results worth keeping:
