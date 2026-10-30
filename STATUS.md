@@ -32,10 +32,10 @@ The shortest motif wins on both targets by a factor of 3, the **opposite** of wh
 predicts: short keeps only 60-67% of the alanine-scan signal but is far and away the most buildable.
 
 **Two later results cut against reading much into this table, and both are below.** Pass rate
-largely measures how collapsed a variant's conformational ensemble is, not how good it is — the 1200
-passers are only 112 distinct backbones. And on apj the interface score reorders the winners
-outright: `short__amide__DALA-GLY` tops this table at 50/50 but scores only -15.4 REU, against
--25.2 for `short__amide__DPRO-GLY`.
+largely measures how collapsed a variant's conformational ensemble is, not how good it is — the 1205
+passers are only **120** distinct backbones. And on apj the interface score reorders the winners
+outright: `short__amide__DALA-GLY` tops this table at 50/50 but scores only **-13.7** REU, against
+**-25.2** for `short__amide__DPRO-GLY`.
 
 Best per target **by pass count**, which is the weakest of the three rankings now available:
 
