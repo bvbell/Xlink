@@ -297,12 +297,23 @@ repack only; backbone clash from the superposition is not relieved, which is int
 `validate` has already rejected anything closer than 2.2 A. Cost is ~3.6 s/structure, so the 51
 representatives take about three minutes.
 
-**uOR interface numbers are not usable.** Its 61 representatives come out at **+370 to +413 REU**
-against apj's -25. The cause is *not* one bad contact, and the Y102-K238 clash recorded under Known
-caveats does not explain it -- measured in the current `uor_complex.pdb`, Y102:CD1 to K238:CD is
-**3.39 A**, an ordinary van der Waals contact, with nothing below 3.3 A between them. Either that
-1.09 A figure refers to an earlier file or it was repaired at some point; it is not in the input
-being used. Treat the Known-caveats entry as unverified.
+**uOR interface numbers are not usable.** Its 68 representatives come out at **+370 to +413 REU**
+against apj's -25. In the *input pose* this is not a single bad contact: measured in the current
+`uor_complex.pdb`, Y102:CD1 to K238:CD is **3.39 A**, an ordinary van der Waals contact, and the
+whole chain A/B interface has **nothing under 2.0 A**, closest approach 2.27 A. So the 1.09 A figure
+under Known caveats is not a property of the input being used.
+
+**But it is a property of the built complexes** (measured 2026-10-29). The transplant puts it back:
+**68 of 68** complexes in `uor/interface/complexes/` have an interchain heavy-atom pair under 2.0 A,
+mean closest approach **1.19 A**, worst **0.77 A**, and the recurring offender is the transplanted
+motif Tyr at **1.08 A** from LYS238:CD. apj, for contrast, is 26 of 55 (47%) at a mean of 1.80 A --
+which tracks its usable scores. Backbone-backbone pairs under 2.8 A are zero in every complex
+checked, so these are sidechain overlaps that a *restrained* relax may be able to clear even though
+the sidechain-only repack in this protocol cannot.
+
+This matters because it is a candidate explanation for the residual the native control below leaves
+open. `validate` rejects anything closer than 2.2 A, so these complexes passed the clash filter --
+worth knowing that the filter is measured on the motif, not on every transplanted sidechain.
 
 The real finding is worse, and comes from scoring the **native** motif:receptor pair -- the actual
 nanobody CDR3 in its actual position, a real binder -- through the identical protocol:
@@ -315,12 +326,28 @@ nanobody CDR3 in its actual position, a real binder -- through the identical pro
 **The native uOR complex scores as a non-binder.** apj's natives sit at -5.7 to -19.1 REU with a
 total score near -240; uOR's are positive on every measure. That is a global property of the
 Coot-built model, not a single repairable contact, and it sets a floor under every uOR number: no
-design can score well against a receptor whose own native complex does not. The designs are a
-further ~330 REU worse again, which that floor does not explain and which has not been chased down.
+design can score well against a receptor whose own native complex does not.
 
-So: **apj interface numbers are usable, uOR's are not**, and the fix is a better uOR input model
-rather than a local repair. Run this control after any change to an input complex -- it costs
-seconds and it is the only thing that distinguishes a bad design from a bad receptor.
+**The two findings compose; they do not compete.** The native control puts a floor at +34 to +45, and
+the designs land ~330 REU below *that*, which this table explicitly did not explain. The universal
+transplant clash above is the leading candidate for that residual: the native pair is clean at 2.27 A
+and the designs average 1.19 A, which is exactly the kind of gap `fa_rep` turns into hundreds of REU.
+If so, the uOR problem is **two** problems -- a strained model setting the floor, and a transplant
+artifact adding the rest -- and only the first needs a new input structure.
+
+`scripts/relax_interface.sbatch` (job 50216944) tests the second half: 6 uOR and 3 apj complexes
+scored as-is and after a CA-restrained FastRelax through the identical protocol, results in
+`scripts/relax_iface/`. The as-is arm is validated -- it reproduces `long__amide__DPRO-GLY__c00` at
+`dG_separated` 367.635, matching the committed CSV exactly. Caveat on reading it: adding relax means
+the arms are no longer prepared identically, so relaxed numbers compare only among themselves.
+
+Caveat on the native control itself: it is a real per-scaffold measurement but **no committed script
+reproduces it**, so it cannot currently be re-run after an input change. Rebuilding it as a
+`--native` flag on `interface.py` is the obvious fix and would make the control usable as intended.
+
+So: **apj interface numbers are usable, uOR's are not.** Run this control after any change to an
+input complex -- it costs seconds and it is the only thing that distinguishes a bad design from a bad
+receptor.
 
 ## Use
 
@@ -439,14 +466,23 @@ possu tree is still the place to *read* source, offline docs and integration tes
   always taken from the seed pair rather than designed. Chirality is only load-bearing at i+1, so
   designing i+2 freely among L residues is the obvious next step -- and now that `redesign_i1` exists
   it should be built the same way, by enumeration through `sweep_seeds`, not by adding a packer.
-- **The uOR input model is globally strained, and the "1.09 A Y102-K238 clash" does not reproduce.**
-  The original note here recorded a 1.09 A heavy-atom contact between motif Y102 and receptor K238.
-  Re-measured 2026-10-29 in `../uor_complex.pdb`, the closest Y102-K238 heavy-atom pair is **3.39 A**
-  (CD1-CD), entirely normal, so that figure either refers to an earlier file or was repaired. What is
-  real and worse: the **native** uOR motif:receptor pair scores `dG_separated` +34 to +45 and
-  `total_score` +180 to +209, where apj's natives score -6 to -19 and ~-240. The uOR model scores as
-  a non-binder in its own native geometry, which puts a floor under every uOR number. See "Interface
-  score" above. A better input model is needed, not a local repair.
+- **The uOR input model is globally strained, *and* the Y102-K238 clash is real -- in the built
+  complexes, not in the input.** The two were conflated twice, in both directions. Settled
+  2026-10-29:
+  - In `../uor_complex.pdb` the closest Y102-K238 heavy-atom pair is **3.39 A** (CD1-CD) and the
+    whole A/B interface has nothing under 2.0 A (closest 2.27 A). The input pose is clean.
+  - In `uor/interface/complexes/` the clash is back and universal: **68 of 68** complexes have an
+    interchain pair under 2.0 A, mean closest approach **1.19 A**, and the transplanted motif Tyr
+    sits **1.08 A** from LYS238:CD. apj is 26 of 55 at a mean 1.80 A. So `validate.superimpose_on_motif`
+    reintroduces it -- the 2.2 A clash filter is measured on the motif, not on every transplanted
+    sidechain.
+
+  Separately and still true: the **native** uOR motif:receptor pair scores `dG_separated` +34 to +45
+  and `total_score` +180 to +209, where apj's natives score -6 to -19 and ~-240. The model scores as
+  a non-binder in its own native geometry, which puts a **floor** under every uOR number; the clash
+  above is the candidate explanation for the ~330 REU the designs sit *below* that floor. A better
+  input model fixes the floor; job 50216944 tests whether a restrained relax fixes the rest. See
+  "Interface score" above.
 - Hotspot coverage is only 60-78% of the alanine-scan signal for these motifs; the rest sits in CDR1
   and CDR2 (APJ loses R27 + Y33 = 5.6 REU, uOR loses E54 + L32 = 3.0 REU) and no CDR3-only macrocycle
   can recover it. See `../flexddg/README.md`.

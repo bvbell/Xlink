@@ -157,17 +157,29 @@ scaffold split" rests on 2-4 structures.
      `interface.py` repacks sidechains but never relieves backbone, so a clash no rotamer can escape
      lands as a large positive `dG_separated`. Measure it with the snippet under Open questions.
 
-     The older native-pair reference (`dG_separated` +34 to +45 and `total_score` +180 to +209 for
-     uOR against -6 to -19 and ~-240 for apj) was an ad-hoc measurement, is not reproduced by any
-     committed script, and sits oddly against a native complex this clean. **Treat it as unverified**
-     until it is rebuilt; it is the evidence the "replace the model" conclusion rested on.
-3. **Replace the uOR input model.** This is now the biggest single problem in the project, and it is
-   larger than previously recorded: the native uOR complex scores as a non-binder (see above), and
-   uOR's `rama_prepro` runs 33-37 against apj's 10-14. Both say the Coot-built model is strained
-   throughout rather than wrong in one place, so a local repair will not fix it. Until it is
-   replaced, **no uOR number is interpretable in absolute terms and only within-target ranking has
-   any meaning** — and that includes the `flexddg/uor_nb/` alanine scan that selected the uOR motifs
-   in the first place, which was run on this same model.
+     **The two findings compose rather than compete.** The native-pair control (uOR +34.4 / +41.7 /
+     +45.2 by scaffold against apj's -5.7 / -12.9 / -19.1) stands and still says the Coot model is
+     strained -- it sets a **floor**. What it explicitly did not explain was the designs landing
+     ~330 REU below that floor, and the universal transplant clash is the leading candidate for
+     exactly that residual. If it holds, uOR is **two** problems: a strained model setting the floor,
+     and a transplant artifact adding the rest -- and only the first needs a new input structure.
+
+     Caveat on the control: it is a real per-scaffold measurement but **no committed script
+     reproduces it**, so it cannot be re-run after an input change. Rebuilding it as a `--native`
+     flag on `interface.py` would make it usable as the regression check it was meant to be.
+3. **Replace the uOR input model — but wait for job 50216944 to size the job first.** The native uOR
+   complex scores as a non-binder and uOR's `rama_prepro` runs 33-37 against apj's 10-14, so the
+   Coot-built model is genuinely strained throughout and a local repair will not fix *that* part.
+   Until it is replaced, **no uOR number is interpretable in absolute terms and only within-target
+   ranking has any meaning** — and that includes the `flexddg/uor_nb/` alanine scan that selected the
+   uOR motifs in the first place, which was run on this same model.
+
+   What changed on 2026-10-29 is the **size** of what a new model would buy. The strained model sets
+   a floor at +34 to +45 REU; the designs sit ~330 REU below it because of a transplant clash that is
+   present in 68 of 68 built complexes and absent from the input pose (see item 2 and Open questions).
+   A new input structure fixes the floor, not the residual. If 50216944 shows the residual clears
+   under a restrained relax, then **most of the uOR gap is a scoring-pipeline bug in `interface.py`,
+   not the model**, and the cheaper fix comes first.
 4. Flex ddG remains undone and is no longer treated as a prerequisite -- the motifs come from real
    binders, so the sweep is ranked on torsion quality plus a fast interface score instead.
 
@@ -333,18 +345,27 @@ cd ../flexddg && ./bin/flexddg status cldn6_9v32fab   # the one target with work
 
 **Picking up where 2026-10-29 left off**, in priority order:
 
-1. **Watch the `cldn6_9v32fab` scan** -- the only xlink work in the queue. `flexddg status
-   cldn6_9v32fab`, then `flexddg summarize` + `flexddg plot` once the trajectories land. It is the
-   first scan on a relaxed input, so compare its hotspots against `cldn18_9v32/` on the 14 positions
-   the two share.
-2. **Explain the 8 bit-identical uOR variants** (Open questions). This is a correctness question
+1. **Read out job 50216944** (`scripts/relax_iface/`, logs `cyclize/logs/relax_iface_50216944_*.out`).
+   It is the cheapest decisive result outstanding: does a CA-restrained relax clear the transplant
+   clash and pull uOR's `dG_separated` negative? Goes negative -> most of the uOR gap is a bug in
+   `interface.py`, fix that before sourcing a new model. Stays positive -> the placement is wrong and
+   item 4 is the only route. Compare arm `asis` against arm `relax` per structure; the apj tasks are
+   controls and should barely move.
+2. **Watch the `cldn6_9v32fab` scan** -- 595 trajectories, array 50209855, analysis 50209859 chained
+   behind it. `flexddg status cldn6_9v32fab`, then `summarize` + `plot` once it lands. It is the
+   first scan on a relaxed input, so compare its hotspots against `cldn18_9v32/` on the positions the
+   two share (14 of the 17, since relaxation shifted the interface -- see `flexddg/README.md`).
+3. **Explain the 8 bit-identical uOR variants** (Open questions). This is a correctness question
    about the rerun machinery, not about chemistry, and it currently invalidates one claim in commit
    `d79f800`. Start from `cyclize/logs/50171636_0.out` and `scripts/compare_prebug.py`.
-3. **Put a `total_score` sanity filter in `scripts/interface.py`** before anyone ranks on
-   `dG_separated` again, and drop `apj_i1 long__amide__DALA-GLY__c01`.
-4. **Replace the uOR input model.** Unchanged as the biggest scientific problem; the i+1 sweep
-   confirmed it at +370 to +446 REU, so it is not specific to the original grid.
-5. `design_i2`, and the APJ CDR1/CDR3 surface question, both still open and both unstarted.
+4. **Fix `scripts/interface.py`**, in this order: a `total_score` sanity filter before anything ranks
+   on `dG_separated`, dropping `apj_i1 long__amide__DALA-GLY__c01`; then a `--native` flag that
+   rebuilds the native-pair control, so it can be re-run after an input change instead of living only
+   in the README table; then whatever 50216944 says about clash relief.
+5. **Replace the uOR input model.** Still the biggest *scientific* problem, but item 1 decides how
+   much of the +370 to +446 it would actually buy -- the model sets a floor at +34 to +45 and the
+   transplant clash may account for the rest.
+6. `design_i2`, and the APJ CDR1/CDR3 surface question, both still open and both unstarted.
 
 Do **not** re-run the i+1 sweep or add nstruct to it: item 1 under "What to do next" shows the
 sampling is saturated and i+1 is conformationally inert, so more of either buys nothing.
