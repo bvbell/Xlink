@@ -143,14 +143,24 @@ scaffold split" rests on 2-4 structures.
      -24.3. Since i+1 is conformationally inert (item 1), these four are the *same backbone* scored
      with four side chains -- which is exactly the regime where an interface score, rather than a
      pass count, is the right discriminator. Read them as a side-chain ranking on one scaffold.
-   - **uOR numbers are unusable**, at +370 to +413 REU — but **not** for the reason recorded below.
-     The 1.09 A Y102-K238 clash does not reproduce: re-measured in the current `uor_complex.pdb`,
-     that pair is 3.39 A apart. The real problem is global. Scoring the **native** motif:receptor
-     pair — the real nanobody CDR3 in its real position — through the identical protocol gives
-     `dG_separated` **+34 to +45** and `total_score` **+180 to +209** for uOR, against **-6 to -19**
-     and ~-240 for apj. **The native uOR complex scores as a non-binder**, which puts a floor under
-     every uOR number and means the fix is a better input model, not a local repair. (The designs
-     are ~330 REU worse again than that floor, which is not yet explained.)
+   - **uOR numbers are unusable**, at +370 to +413 REU. **The clash explanation is back, and the
+     retraction in `083402e` was measured against the wrong object** (corrected 2026-10-29). Both
+     things are true at once:
+     - the **native** `uor_complex.pdb` is clean -- 0 interchain pairs under 2.0 A, closest approach
+       2.27 A, and Y102 CD1 - K238 CD really is 3.39 A apart, which is what `083402e` measured;
+     - but the **built design complexes** are not. **All 68 of 68** carry a sub-2.0 A interchain
+       pair, mean closest approach **1.19 A**, worst **0.77 A**, and the recurring offender is the
+       transplanted motif Tyr at 1.08 A from LYS238 CD. apj, for contrast, is 26 of 55 (47%) with a
+       mean of 1.80 A.
+
+     So the **transplant creates the clash** -- it is not in the input pose and it is not global.
+     `interface.py` repacks sidechains but never relieves backbone, so a clash no rotamer can escape
+     lands as a large positive `dG_separated`. Measure it with the snippet under Open questions.
+
+     The older native-pair reference (`dG_separated` +34 to +45 and `total_score` +180 to +209 for
+     uOR against -6 to -19 and ~-240 for apj) was an ad-hoc measurement, is not reproduced by any
+     committed script, and sits oddly against a native complex this clean. **Treat it as unverified**
+     until it is rebuilt; it is the evidence the "replace the model" conclusion rested on.
 3. **Replace the uOR input model.** This is now the biggest single problem in the project, and it is
    larger than previously recorded: the native uOR complex scores as a non-binder (see above), and
    uOR's `rama_prepro` runs 33-37 against apj's 10-14. Both say the Coot-built model is strained
@@ -205,6 +215,35 @@ register **i + j = 209**; all six scaffolds are on-register and therefore even-l
   APJ loses R27 + Y33 (5.6 REU), uOR loses E54 + L32 (3.0 REU). APJ is the worse case. Expect the
   macrocycles to be substantially weaker binders than the parent nanobodies regardless of how
   faithfully the motif is transplanted.
+- **Every built uOR design complex clashes with the receptor; the input pose does not.** All 68 of 68
+  uOR complexes in `uor/interface/complexes/` have an interchain heavy-atom pair under 2.0 A (mean
+  closest approach 1.19 A, worst 0.77 A) against 26 of 55 and 1.80 A for apj, while native
+  `uor_complex.pdb` is clean at 2.27 A. The transplant, not the model, puts the motif Tyr 1.08 A into
+  LYS238 CD. **Job 50216944 tests whether this is recoverable**: it scores 6 uOR and 3 apj complexes
+  twice through the identical InterfaceAnalyzer protocol, as-is and after a CA-restrained FastRelax
+  (`scripts/relax_interface.sbatch`, results in `scripts/relax_iface/`, log
+  `logs/relax_iface_50216944_*.out`). The as-is arm is validated -- it reproduces
+  `long__amide__DPRO-GLY__c00` at `dG_separated` 367.635 exactly. If the relaxed arm goes strongly
+  negative the uOR numbers are a recoverable clash artifact and the model does not need replacing; if
+  it stays positive the placement itself is wrong.
+
+  ```bash
+  cd /scratch/users/bvbell/xlink/cyclize   # count complexes with a sub-2.0 A interchain pair
+  python3 - <<'PY'
+  import glob; import numpy as np
+  for t in ('uor','apj'):
+      bad=tot=0
+      for f in glob.glob(t+'/interface/complexes/*.pdb'):
+          P=[];R=[]
+          for l in open(f):
+              if l.startswith(('ATOM','HETATM')) and l[76:78].strip()!='H':
+                  (P if l[21]=='P' else R).append([float(l[30+8*i:38+8*i]) for i in range(3)])
+          if not P or not R: continue
+          d=np.linalg.norm(np.array(P)[:,None]-np.array(R)[None],axis=-1); tot+=1; bad+=d.min()<2.0
+      print(t, bad, '/', tot)
+  PY
+  ```
+
 - **`total_score` varies by ~5000 REU across the interface set, which undermines the ranking.** In
   `apj_i1/interface/interface.csv` the scored complexes run from -175 REU (`medium__amide__DTHR-GLY`)
   to +4904 (`short__amide__HIS-GLY`), and several designs in the dG top-6 sit above +3200 --
