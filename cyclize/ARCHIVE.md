@@ -94,6 +94,16 @@ selected the motif in the first place.
   pinning, the validation harness, and the scoring work on `rama_prepro` and interface terms are
   all sound and are reused by the rebuild.
 
+## The gates that would have caught it
+
+Added to `validate.py` on 2026-10-30 (`c369694`) and regression-tested against this archive:
+**they reject 314 of 314 with zero false passes.** By gate — cis 311, intra 288, omega 270,
+amide closure O 143, S-S distance 48, S-S chi3 14. Full table in `../cyclize/README.md` under
+`validate`.
+
+That regression is the point of keeping the archive reachable: any future change to the gates can
+be re-checked against a set that is known-bad in five different ways.
+
 ## What replaced it
 
 See `../STATUS.md` → "The 2026-10-30 rebuild". In short: relax both input complexes, re-excise the

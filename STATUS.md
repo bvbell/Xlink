@@ -110,10 +110,15 @@ and the `cldn6_9v32fab` scan (array 50209855 + analysis 50209859).
 > | + flanking planar | 1 |
 > | + no self-intersection (≥3.0 Å) | **0** |
 >
-> Every amide design has a broken closure oxygen, or a non-proline cis bond beside the closure, or
-> a non-planar flanking bond — usually more than one. **The GenKIC closure protocol as configured
-> does not produce chemically valid macrocycles**, and this cannot be fixed by filtering, because
-> there is nothing to filter down to.
+> Every amide design has a broken closure oxygen, or a cis bond beside the closure, or a
+> non-planar flanking bond — usually more than one. **The GenKIC closure protocol as configured
+> does not produce chemically valid macrocycles**, and this could not be fixed by filtering,
+> because there was nothing to filter down to.
+>
+> **`validate.py` now has gates for all of this** (2026-10-30, `c369694`): no cis bonds at all,
+> omega planarity, route-aware closure geometry, intra-peptide clash, and chirality. They reject
+> **314 of 314** archived complexes with zero false passes. The protocol fix is `omega_trans`
+> (default on). Both are in place *before* the rebuild, which is the point.
 >
 > **One correction to the self-intersection claim above, in the designs' favour.** The `intra_min`
 > criterion of ≥3.4 Å did not distinguish atom types, and a 2.8–3.0 Å N···O contact is a hydrogen
@@ -932,16 +937,68 @@ register **i + j = 209**; all six scaffolds are on-register and therefore even-l
 
 ## Resuming from a fresh session
 
-Everything needed is committed: the package, both `cyclize.json` files, the scaffolds, the complexes,
-the alascan summaries, `variants.txt` and `setup.log`. `inputs/` and `output/` are gitignored but
-`inputs/` is fully regenerable with `cyclize setup <target>` (deterministic). Start with
-`cyclize/README.md`, then `cyclize status apj`.
+**Read in this order: the banner at the top of this file, then `cyclize/ARCHIVE.md`, then "The
+2026-10-30 rebuild" above.** The short version: every cyclize design built before 2026-10-30 is
+chemically invalid and archived, both GPCR targets are being rebuilt, and no pre-10-30 cyclize
+number should be quoted. The flex ddG scans are unaffected except `uor_nb`.
+
+Everything is committed and pushed through `c369694`. `inputs/` and `output/` are gitignored but
+`inputs/` is regenerable with `cyclize setup <target>` (deterministic).
 
 ```bash
-cd cyclize && python3 tests/test_cyclize.py      # ~2 s, no Rosetta, confirms the package is sane
-./bin/cyclize status apj                          # job state and per-variant closure counts
-cd ../flexddg && ./bin/flexddg status cldn6_9v32fab   # all five flexddg scans are done
+cd cyclize && python3 tests/test_cyclize.py        # ~2 s, no Rosetta; includes the geometry gates
+sacct -j 50318433,50319161,50321818 \
+      --format=JobID,JobName%14,State,Elapsed      # the rebuild chain
+cd ../flexddg && ./bin/flexddg status uor_nb        # the one scan that needs re-running
 ```
+
+### State as of 2026-10-30
+
+| piece | state |
+| --- | --- |
+| pre-10-30 design set | **invalid**, archived to OAK, see `cyclize/ARCHIVE.md` |
+| `validate.py` geometry gates | **done** — 5 gates, reject 314/314 archived, 21 tests |
+| `omega_trans` GenKIC fix | **done**, default on, test-covered |
+| rebuild chain | relax `50318433` -> re-excise `50319161` -> geometry test `50321818` |
+| relaxed inputs | not written until `50319161` runs |
+| `flexddg/uor_nb` | **needs re-running** on the relaxed model |
+| `interface.py` scoring fixes | not started |
+| production rebuild | blocked on the geometry test reading out |
+
+### Standing decisions (do not re-litigate without reason)
+
+1. **Design against the relaxed structures.** The relax performs the L conversion Rosetta was
+   already doing silently and puts the motif source and alignment target in one pose. Accepted
+   cost: the uOR motif conformation is Rosetta's, not experimental.
+2. **No cis peptide bonds at all** — not merely no non-proline cis. Both input nanobodies are 100%
+   trans, so nothing native is forbidden. Enforced by `validate.py` and by `omega_trans`.
+3. **Never rank on `dG_separated` alone.** It cancels intra-peptide energy, so it rewards
+   self-intersection — that is how the worst structures came to top the old ranking.
+4. **`cldn6_9v32fab` is a recommended no-go** for scaffolding: one-residue pharmacophore on an
+   11%-conserved epitope.
+
+### How to read out the geometry test
+
+```bash
+cd /scratch/users/bvbell/xlink/cyclize
+column -s, -t scripts/geom_test/*/result.csv | less -S     # per-structure
+# or, the number that decides everything:
+python3 - <<'EOF'
+import csv, glob, collections
+c = collections.Counter()
+for f in glob.glob('scripts/geom_test/*/result.csv'):
+    for r in csv.DictReader(open(f)):
+        c[(r['arm'], r['route'], r['valid'])] += 1
+for (arm, route, v), n in sorted(c.items()):
+    print(arm, route, 'valid' if v == '1' else 'invalid', n)
+EOF
+```
+
+`base` should be ~0 valid. If `omega` is substantially better, that is the fix and production can
+follow. If `omega` is also ~0, try `loop7`; if both fail, the GenKIC closure is not salvageable and
+the next move is `simple_cycpep_predict`. **Before scaling, also check motif RMSD held and what the
+closure yield per attempt did** — pinning omega removes degrees of freedom and may cost closures;
+raise `closure_attempts` before lengthening the loop.
 
 **Picking up where 2026-10-30 left off**, in priority order. The 10-29 jobs are read out; the
 rebuild chain (50318433 -> 50319161 -> 50321818) is in flight and is item 1.
@@ -965,19 +1022,20 @@ rebuild chain (50318433 -> 50319161 -> 50321818) is in flight and is item 1.
    makes the motif source and alignment target consistent, which is what the design needs.
    Settling the hand against the J126 density is still worthwhile for the structural record but is
    off the critical path.)*
-3. **Fix the two blind spots in `cyclize/validate.py`, then re-audit everything already built.**
-   Both failures above slipped through the same function:
-   a. an **intra-peptide clash gate** -- it currently checks the design against the receptor but
-      never against itself. Add it, re-run over the existing output, and size the damage properly
-      (the 143-structure sample says 0 survive at 3.0 A, but that is apj's interface set, not the
-      full 2750);
-   b. a **chirality gate** (improper dihedral N-CA-C-CB, three lines), and the same check in the
-      prep pipeline -- `prep/nanobody_gpcr_prep.md` verified occupancies, altlocs, missing atoms
-      and bond lengths but never chirality;
-   c. note the existing receptor-clash filter skips motif residues by construction, which is the
-      third blind spot (see Open questions).
-   This is the highest-leverage item on the list: without it, a rebuild reproduces the same defects.
-4. **Work out why GenKIC cannot close these rings physically, before rebuilding apj.** A 2-residue
+3. **~~Fix the blind spots in `cyclize/validate.py`~~ — DONE 2026-10-30 (`c369694`).** Five gates
+   added: no cis peptide bonds **at all**, omega within 30 deg of planar, route-aware closure
+   (amide `O...N` 2.05-2.45 A; disulfide S-S 1.90-2.20 A with |chi3| 60-120 deg), intra-peptide
+   clash (3.0 A, 2.6 A for N/O pairs), and chirality. The receptor-clash test no longer exempts
+   the motif — it gets a slacker 2.2 A threshold instead. **Regression: the gates reject 314 of
+   314 archived complexes with zero false passes** (cis 311, intra 288, omega 270, closure_O 143,
+   ss_dist 48, ss_chi3 14), and 21 test assertions cover them. Full table in `cyclize/README.md`
+   under `validate`.
+
+   Still outstanding from this item: **add the chirality check to the prep pipeline too**
+   (`prep/nanobody_gpcr_prep.md` verified occupancies, altlocs, missing atoms and bond lengths but
+   never chirality — which is how the uOR D residues reached an alanine scan and two sweeps).
+4. **Find out whether GenKIC can close these rings physically — this is what the geometry test
+   measures, so it is item 1's output, not separate work.** Background: A 2-residue
    turn may simply be too short to span the hairpin gap, which would tie directly to the `i+j=209`
    register constraint that forces even-length motifs and 0- or 2-residue closures. If the geometry
    is infeasible, no amount of sampling fixes it and the register itself has to be revisited. This
