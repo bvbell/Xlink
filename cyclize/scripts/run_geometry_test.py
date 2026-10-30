@@ -5,6 +5,9 @@ Driven by scripts/geometry_test.sbatch; see that file for the experimental desig
 real `build.xml` path so the test measures the production protocol, not a reimplementation of it.
 
 Arms:
+Validity requires NO cis peptide bonds at all (user's rule, 2026-10-30) -- not merely no
+non-proline cis. Both input nanobodies are 100% trans, so this forbids nothing that was native.
+
   base    relaxed input, omega unconstrained   (control -- expected to reproduce the failure)
   omega   omega_trans=True                     (pin every sampled peptide bond trans)
   loop7   omega_trans=True, target_loop=7      (also release two more cold terminal motif
@@ -94,7 +97,7 @@ def geometry(path):
     nums = sorted(res)
     if len(nums) < 4:
         return None
-    worst_dev, cis_nonpro, L = 0.0, 0, len(nums)
+    worst_dev, cis_nonpro, n_cis, L = 0.0, 0, 0, len(nums)
     for i, n in enumerate(nums):
         nxt = nums[(i + 1) % L]
         try:
@@ -102,8 +105,14 @@ def geometry(path):
         except KeyError:
             continue
         worst_dev = max(worst_dev, min(abs(om), abs(abs(om) - 180.0)))
-        if abs(om) < 90 and seq[nxt] not in ('PRO', 'DPR', 'DPRO'):
-            cis_nonpro += 1
+        # No cis bonds AT ALL -- cis-Pro is legitimate in nature but a liability in a synthesised
+        # macrocycle, and both input nanobodies are 100% trans, so nothing native is lost.
+        # cis_nonpro is still reported separately because it is what the archived set was measured
+        # against, but validity below uses the total.
+        if abs(om) < 90:
+            n_cis += 1
+            if seq[nxt] not in ('PRO', 'DPR', 'DPRO'):
+                cis_nonpro += 1
     # amide closure: the carbonyl O must sit ~2.25 A from the next N (O=C-N ~123 deg).
     # disulfide closure: SG-SG ~2.05 A with |CB-SG-SG-CB| in the 60-120 deg gauche window.
     last, first = nums[-1], nums[0]
@@ -125,7 +134,7 @@ def geometry(path):
             for x in res[a].values():
                 for y in res[b].values():
                     intra = min(intra, float(np.linalg.norm(x - y)))
-    return {'omega_max_dev': round(worst_dev, 2), 'cis_nonpro': cis_nonpro,
+    return {'omega_max_dev': round(worst_dev, 2), 'cis_nonpro': cis_nonpro, 'n_cis': n_cis,
             'closure_ON': round(on, 3), 'ss_dist': round(ss_dist, 3),
             'ss_chi3': round(ss_chi3, 1), 'is_ss': int(is_ss),
             'intra_min': round(intra, 2), 'n_res': L}
@@ -212,7 +221,7 @@ def main():
             # Validity is route-aware: the two chemistries close through different bonds, so the
             # closure criterion differs. Everything else (flanking planarity, no non-proline cis)
             # applies to both -- omega_trans pins peptide bonds for the disulfide routes too.
-            backbone_ok = g['cis_nonpro'] == 0 and g['omega_max_dev'] <= 30
+            backbone_ok = g['n_cis'] == 0 and g['omega_max_dev'] <= 30
             if g['is_ss']:
                 closure_ok = (1.95 <= g['ss_dist'] <= 2.15
                               and 60 <= abs(g['ss_chi3']) <= 120)
@@ -223,8 +232,8 @@ def main():
 
     if rows:
         fields = ['target', 'scaffold', 'arm', 'route', 'variant', 'loop', 'structure',
-                  'closure_ON', 'ss_dist', 'ss_chi3', 'omega_max_dev', 'cis_nonpro',
-                  'intra_min', 'n_res', 'valid']
+                  'closure_ON', 'ss_dist', 'ss_chi3', 'omega_max_dev', 'n_cis',
+                  'cis_nonpro', 'intra_min', 'n_res', 'valid']
         with open(os.path.join(work, 'result.csv'), 'w', newline='') as fh:
             w = csv.DictWriter(fh, fieldnames=fields)
             w.writeheader()

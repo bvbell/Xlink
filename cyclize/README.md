@@ -706,7 +706,24 @@ Optional sections and their defaults (see `cyclize/config.py`; unknown keys are 
     terminal motif residues (`pick_release` never releases a hotspot). Released residues keep
     their identity -- only their backbone is sampled, nothing is designed -- and the motif still
     gains only the 2 residues the route adds. Raise it only if `omega_trans` alone cannot close.
-- `validate`: clash 2.2 A, motif_rmsd 1.0 A
+- `validate`: clash 2.2 A, motif_rmsd 1.0 A, plus the geometry gates added 2026-10-30 (see
+  `cyclize/validate.py`). Those gates exist because the entire first design set -- 311 scored
+  complexes -- passed validation while being chemically invalid, and a regression run of the new
+  gates over the archived set rejects **314 of 314**:
+
+  | gate | rule | what it catches |
+  | ---- | ---- | --------------- |
+  | `cis` | **no cis peptide bonds at all** | 311 of 314. Not merely no non-proline cis: cis-Pro is legitimate in nature but a liability in a synthesised macrocycle, and both input nanobodies are 100% trans so nothing native is lost |
+  | `omega` | within 30 deg of planar | 270. GenKIC leaves omega free under CA pivots |
+  | `intra` | >= 3.0 A non-adjacent, 2.6 A for N/O pairs | 288. The old check never compared the design to itself; polar pairs get slack because 2.8 A N...O is a hydrogen bond |
+  | `closure` (amide) | O...N 2.05-2.45 A | 143. Invisible to `fa_rep`, which excludes 1-3 pairs |
+  | `closure` (S-S) | 1.90-2.20 A, \|chi3\| 60-120 deg | 48 + 14. `ssapp` ran a median 2.28 A and as high as 5.82 |
+  | `chirality` | no unintended D residues | the uOR 102-107 failure; `expect_d` passes the deliberate turn D residues |
+
+  The receptor-clash test **no longer skips the motif**. It did, for a defensible reason -- without
+  the skip, native contacts like Y102 are flagged and every structure fails -- but that assumed the
+  motif keeps its native sidechain geometry, which is what broke. Motif residues are now held to a
+  slacker `motif_clash` (2.2 A) instead of being exempt.
 - `slurm`: partition normal,possu, time 02:00:00, mem 2G, max_concurrent 100, per_task 20, analysis_*
 - `rosetta_module`: `"biology rosetta/3.14"`
 

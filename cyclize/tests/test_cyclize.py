@@ -166,6 +166,87 @@ def test_plan_indices():
           'set_dihedral' in build.xml(vs['long__amide__DPRO-GLY'], amide, off), False)
 
 
+def test_geometry_gates():
+    """The gates added 2026-10-30, after 311 chemically invalid designs passed validation.
+
+    Each assertion corresponds to a defect that actually shipped; see validate.py's docstring.
+    Fixtures are built from ideal geometry rather than from archived PDBs, which are gitignored
+    and purge with $SCRATCH.
+    """
+    print('geometry gates')
+    from cyclize import validate
+
+    def res(num, name, **atoms):
+        r = struct.Residue('A', num, name)
+        r.atoms = {k: list(v) for k, v in atoms.items()}
+        return r
+
+    # planarity folds both planar values onto zero
+    check('omega 180 is planar', round(validate._planarity(180.0), 6), 0.0)
+    check('omega -179 is near planar', round(validate._planarity(-179.0), 6), 1.0)
+    check('omega 0 is planar but cis', round(validate._planarity(0.0), 6), 0.0)
+    check('omega 90 is maximally non-planar', round(validate._planarity(90.0), 6), 90.0)
+
+    # a trans and a cis dipeptide, built by placing CA atoms either side of the C-N bond
+    trans = [res(1, 'ALA', CA=(0, 1.2, 0), C=(0, 0, 0), N=(0, 0, 0)),
+             res(2, 'ALA', N=(1.33, 0, 0), CA=(1.9, -1.2, 0), C=(3, 0, 0))]
+    trans[0].atoms['C'] = [0.0, 0.0, 0.0]
+    trans[1].atoms['N'] = [1.33, 0.0, 0.0]
+    bonds = validate.ring_bonds(trans, cyclic=False)
+    check('one bond between two residues', len(bonds), 1)
+    check('CA atoms on opposite sides read as trans', abs(bonds[0][2]) > 90, True)
+
+    cis = [res(1, 'ALA', CA=(0, 1.2, 0), C=(0, 0, 0)),
+           res(2, 'PRO', N=(1.33, 0, 0), CA=(1.9, 1.2, 0), C=(3, 0, 0))]
+    bonds = validate.ring_bonds(cis, cyclic=False)
+    check('CA atoms on the same side read as cis', abs(bonds[0][2]) < 90, True)
+    # the rule is no cis AT ALL, so a cis-Pro must still be caught
+    check('cis before proline is still cis', cis[1].name, 'PRO')
+
+    # amide closure: O must be ~2.25 A from the next N, not on top of it
+    good = [res(1, 'GLY', N=(2.25, 0, 0)), res(2, 'GLY', C=(0, 0, 0), O=(0, 0, 0))]
+    good[1].atoms['O'] = [0.0, 0.0, 0.0]
+    g = validate.closure_geometry(good, 'amide')
+    check('closure O...N measured', round(g['closure_ON'], 2), 2.25)
+    bad = [res(1, 'GLY', N=(0.38, 0, 0)), res(2, 'GLY', C=(1.3, 0, 0), O=(0, 0, 0))]
+    g = validate.closure_geometry(bad, 'amide')
+    check('the 0.38 A failure mode is measurable', round(g['closure_ON'], 2), 0.38)
+
+    # disulfide closure
+    ss = [res(1, 'CYS', CB=(0, 1.5, 0), SG=(0, 0, 0)),
+          res(2, 'CYS', SG=(2.05, 0, 0), CB=(2.05, 0, 1.5))]
+    g = validate.closure_geometry(ss, 'ssapp')
+    check('S-S distance measured', round(g['ss_dist'], 2), 2.05)
+    check('chi3 is gauche for perpendicular CBs', round(abs(g['ss_chi3'])), 90)
+    check('amide route reports no S-S', validate.closure_geometry(ss, 'amide')['ss_dist'], None)
+
+    # self-intersection, with polar pairs held to a slacker cutoff
+    far = [res(1, 'ALA', CB=(0, 0, 0)), res(2, 'ALA', CB=(10, 0, 0)),
+           res(3, 'ALA', CB=(20, 0, 0)), res(4, 'ALA', CB=(30, 0, 0))]
+    nonpolar, polar = validate.min_intra_distance(far)
+    check('non-adjacent carbons measured', round(nonpolar), 20)
+    check('no polar pair present', polar == float('inf'), True)
+    near = [res(1, 'ALA', CB=(0, 0, 0)), res(2, 'ALA', CB=(10, 0, 0)),
+            res(3, 'ALA', CB=(1.5, 0, 0)), res(4, 'ALA', CB=(30, 0, 0))]
+    nonpolar, _ = validate.min_intra_distance(near)
+    check('threading is caught', nonpolar < validate.INTRA_MIN, True)
+    hb = [res(1, 'ASN', OD1=(0, 0, 0)), res(2, 'ALA', CB=(10, 0, 0)),
+          res(3, 'ASN', ND2=(2.8, 0, 0)), res(4, 'ALA', CB=(30, 0, 0))]
+    _, polar = validate.min_intra_distance(hb)
+    check('a 2.8 A N...O pair is allowed as a hydrogen bond',
+          polar >= validate.INTRA_MIN_POLAR, True)
+
+    # chirality: the sign convention is fixed against experimental 9v32 (all L, all positive)
+    nb = struct.chain_residues(struct.read('../9v32_complex.pdb'), 'H')
+    check('experimental Fab has no D residues', len(validate.d_residues(nb)), 0)
+    uor = struct.chain_residues(struct.read('../uor_complex.pdb'), 'A')
+    check('uOR nanobody has exactly 6 D residues', len(validate.d_residues(uor)), 6)
+    check('and they are 102-107',
+          [r.num for r in validate.d_residues(uor)], [102, 103, 104, 105, 106, 107])
+    apj = struct.chain_residues(struct.read('../apj_complex.pdb'), 'A')
+    check('apj nanobody has none', len(validate.d_residues(apj)), 0)
+
+
 def test_ssmut_needs_no_sampling():
     '''uOR/short staples the native pair, so there is no loop and no bond to declare.'''
     print('ssmut')
@@ -236,7 +317,8 @@ def test_runs_helper():
 
 if __name__ == '__main__':
     for fn in [test_register, test_staple_eligibility, test_turn_rules, test_offregister_refused,
-               test_plan_indices, test_ssmut_needs_no_sampling, test_motif_identified_by_position,
+               test_plan_indices, test_geometry_gates, test_ssmut_needs_no_sampling,
+               test_motif_identified_by_position,
                test_cys_names, test_runs_helper]:
         fn()
     print('\n%d failure(s)' % len(FAILS))

@@ -184,8 +184,10 @@ volume. The originals stay under `cyclize/<target>/` until `$SCRATCH` purges the
 | `loop7` | `omega_trans` + `target_loop=7` — release two more cold terminal motif residues |
 
 Validity is **route-aware**: amide needs closure `O···N` 2.15-2.35 Å; disulfide needs S-S
-1.95-2.15 Å with |CB-SG-SG-CB| in 60-120°. Both additionally need zero non-proline cis bonds and
-every bond within 30° of planar.
+1.95-2.15 Å with |CB-SG-SG-CB| in 60-120°. Both additionally need **zero cis peptide bonds at all**
+— not merely no non-proline cis — and every bond within 30° of planar. Both input nanobodies are
+100% trans, so the stricter rule forbids nothing that was native; it does mean a cis-Pro turn,
+which `base` sometimes produced, is now a rejection.
 
 **The `omega` arm is the actual fix.** GenKIC with CA pivots solves phi/psi at the pivots and
 leaves omega free — `variants.TARGET_LOOP`'s own comment says so — and `PeptideCyclizeMover`
